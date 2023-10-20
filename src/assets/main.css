@@ -1,9 +1,5 @@
 /* @import './base.css'; */
-@import './styles/styles.css';
 @import './styles/color.css';
-@import './styles/components/footer.css';
-@import './styles/components/route-options.css';
-@import './styles/components/select-item.css';
 
 #app {
   background-color: var(--bg);
@@ -17,13 +13,55 @@
   justify-content: space-between;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
 body {
   display: flex;
   place-items: center;
+}
+
+:root {
+  --space-small: var(--space-2);
+  --space-medium: var(--space-4);
+  --space-large: var(--space-6);
+  --side-size: 26rem;
+}
+
+:root {
+  --space-1: 0.2rem;
+  --space-2: 0.4rem;
+  --space-3: 0.8rem;
+  --space-4: 1rem;
+  --space-5: 1.2rem;
+  --space-6: 1.4rem;
+  --space-7: 1.6rem;
+  --space-8: 1.8rem;
+  --space-9: 2.4rem;
+  --space-10: 3.2rem;
+  --space-11: 4rem;
+  --space-12: 4.8rem;
+  --space-13: 6.4rem;
+}
+
+*:hover {
+  outline: 1px blue solid;
+}
+
+* {
+  color: var(--font-color-1);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--primary-dull);
+  border-radius: 12px;
+}
+
+select,
+option {
+  color: var(--font-color-2);
 }
