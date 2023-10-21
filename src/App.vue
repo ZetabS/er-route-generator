@@ -2,7 +2,8 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import MapComponent from './components/MapComponent.vue';
-import TargetItemComponent from './components/sidebar/TargetItemComponent.vue';
+import ItemSelectComponent from './components/sidebar/ItemSelectComponent.vue';
+import TestComponent from './components/sidebar/TestComponent.vue';
 import OptionComponent from './components/sidebar/OptionComponent.vue';
 import PopupContainer from './components/popup/PopupContainer.vue';
 </script>
@@ -10,7 +11,7 @@ import PopupContainer from './components/popup/PopupContainer.vue';
 <template>
   <HeaderComponent />
   <div class="sidebar left">
-    <TargetItemComponent />
+    <ItemSelectComponent />
     <OptionComponent />
   </div>
 
@@ -19,9 +20,9 @@ import PopupContainer from './components/popup/PopupContainer.vue';
   </div>
 
   <div class="sidebar right">
-    <div class="side-component test1">test1</div>
-    <div class="side-component test2">test2</div>
-    <div class="side-component test3">test3</div>
+    <TestComponent />
+    <TestComponent />
+    <TestComponent />
   </div>
   <PopupContainer />
   <FooterComponent />

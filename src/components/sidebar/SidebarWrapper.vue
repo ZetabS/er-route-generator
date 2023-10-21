@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .side-component {
   background-color: var(--bg-focus);
   height: 10rem;

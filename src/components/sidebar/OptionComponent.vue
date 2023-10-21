@@ -39,7 +39,7 @@ import SidebarWrapper from './SidebarWrapper.vue';
   </SidebarWrapper>
 </template>
 
-<style>
+<style scoped>
 .route-select-container {
   width: 24rem;
   flex: 0 0 auto;

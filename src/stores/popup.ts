@@ -1,43 +1,37 @@
-import { ref, computed } from 'vue';
+import { ref, computed, type Ref } from 'vue';
 import { defineStore } from 'pinia';
 
 export const usePopupStore = defineStore('popup', () => {
   const isPopupOpen = computed(() => {
-    return isItemPopupOpen.value || isOtherPopupOpen.value;
+    return isItemPopupOpen.value || isWeaponSelectPopupOpen.value;
   });
 
   const isItemPopupOpen = ref(false);
-  const isOtherPopupOpen = ref(false);
+  const currentItemType: Ref<string> = ref(null);
+  const isWeaponSelectPopupOpen = ref(false);
 
   function closePopup() {
     isItemPopupOpen.value = false;
-    isOtherPopupOpen.value = false;
+    isWeaponSelectPopupOpen.value = false;
+    currentItemType.value = null;
   }
 
-  function openItemPopup() {
+  function openItemSelectPopup(itemType: string) {
     isItemPopupOpen.value = true;
+    currentItemType.value = itemType;
   }
 
-  function closeItemPopup() {
-    isItemPopupOpen.value = false;
-  }
-
-  function openOtherPopup() {
-    isOtherPopupOpen.value = true;
-  }
-
-  function closeOtherPopup() {
-    isOtherPopupOpen.value = false;
+  function openWeaponSelectPopup() {
+    isWeaponSelectPopupOpen.value = true;
   }
 
   return {
     isPopupOpen,
     isItemPopupOpen,
-    isOtherPopupOpen,
-    closePopup,
-    openItemPopup,
-    closeItemPopup,
-    openOtherPopup,
-    closeOtherPopup
+    isWeaponSelectPopupOpen,
+    currentItemType,
+    openItemSelectPopup,
+    openWeaponSelectPopup,
+    closePopup
   };
 });

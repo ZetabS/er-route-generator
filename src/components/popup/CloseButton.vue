@@ -11,7 +11,7 @@ const pStore = usePopupStore();
   </div>
 </template>
 
-<style>
+<style scoped>
 .close-button {
   background-color: var(--bg-duller);
 
