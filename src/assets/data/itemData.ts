@@ -103,8 +103,8 @@ export function filteredItemData(callback: CallableFunction) {
   return filteredItemData;
 }
 
-function getUniqueElementsByKey(key: string): Array<string> {
-  const uniqueElements = [];
+function getUniqueElementsByKey(key: string): Array<string | number> {
+  const uniqueElements: Array<string | number> = [];
 
   for (const code in itemData) {
     const element = itemData[code][key];
