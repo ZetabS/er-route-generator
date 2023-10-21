@@ -13,11 +13,14 @@
 <style scoped>
 header {
   background-color: var(--bg-duller);
-  padding: 0.6rem;
+  grid-area: header;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 nav {
+  margin-left: var(--space-medium);
   width: 100%;
   text-align: left;
 }
@@ -28,7 +31,6 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
 }
 
 nav a {

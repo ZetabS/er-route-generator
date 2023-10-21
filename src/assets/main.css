@@ -1,28 +1,13 @@
-/* @import './base.css'; */
-@import './styles/color.css';
-
-#app {
-  background-color: var(--bg);
-  overflow-x: hidden;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-body {
-  display: flex;
-  place-items: center;
-}
+@import './reset.css';
+@import './color.css';
 
 :root {
   --space-small: var(--space-2);
   --space-medium: var(--space-4);
   --space-large: var(--space-6);
-  --side-size: 26rem;
+  --sidebar-width: calc(26rem + var(--space-medium));
+  --header-size: 2.5rem;
+  --footer-size: 1.9rem;
 }
 
 :root {
@@ -41,6 +26,19 @@ body {
   --space-13: 6.4rem;
 }
 
+html,
+body {
+  background-color: var(--bg);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  place-items: center;
+}
+
 *:hover {
   outline: 1px blue solid;
 }
@@ -50,15 +48,23 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
 }
 
 *::-webkit-scrollbar {
   width: 10px;
+  height: 0;
 }
 
 *::-webkit-scrollbar-thumb {
   background: var(--primary-dull);
   border-radius: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  width: 10px;
+  height: 0;
 }
 
 select,

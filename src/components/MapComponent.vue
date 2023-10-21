@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted, type Ref } from 'vue'
 const areas = [
   { name: '골목길', style: { top: '10%', left: '53%' } },
   { name: '양궁장', style: { top: '25%', left: '22%' } },
@@ -20,6 +21,7 @@ const areas = [
   { name: '고급 주택가', style: { top: '73%', left: '30%' } },
   { name: '창고', style: { top: '83%', left: '45%' } }
 ]
+
 const polygons = [
   {
     dataName: 'Alley',
@@ -114,17 +116,43 @@ const polygons = [
       '261 781 271 788 296 813 297 818 332 851 365 819 370 823 397 795 399 798 439 758 373 691 332 733 321 722'
   }
 ]
+
+const elementWidth = ref(0)
+const elementHeight = ref(0)
+const imgElement: Ref<HTMLElement | null> = ref(null)
+
+const elementSize = computed(() => {
+  return {
+    width: elementWidth.value + 'px',
+    height: elementHeight.value + 'px'
+  }
+})
+
+function resizeElements() {
+  if (imgElement.value) {
+    elementWidth.value = imgElement.value.offsetWidth
+    elementHeight.value = imgElement.value.offsetHeight
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('resize', resizeElements)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', resizeElements)
+})
 </script>
 
 <template>
   <div class="component">
-    <img src="/images/map/map.webp" alt="Lumia Island Map" />
-    <div class="area-container">
+    <img ref="imgElement" @load="resizeElements()" src="/images/map/map.webp" alt="Lumia Map" />
+    <div class="area-container" :style="elementSize">
       <div class="area-name" v-for="(area, index) in areas" :key="index" :style="area.style">
         {{ area.name }}
       </div>
     </div>
-    <svg class="area-container" viewBox="0 0 772 927">
+    <svg class="area-container" :style="elementSize" viewBox="0 0 772 927">
       <polygon
         v-for="(polygon, index) in polygons"
         :key="index"
@@ -140,16 +168,17 @@ const polygons = [
 <style scoped>
 .component {
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 img {
   width: 100%;
+  max-height: 100%;
 }
 
 .area-container {
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0; /* 이거 지우면 안 겹쳐진다 */
   left: 0;
 }

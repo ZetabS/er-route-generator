@@ -9,65 +9,98 @@ import PopupContainer from './components/popup/PopupContainer.vue'
 
 <template>
   <HeaderComponent />
-  <main>
-    <div class="main-container side">
-      <TargetItemComponent />
-      <OptionComponent />
-    </div>
+  <div class="sidebar left">
+    <TargetItemComponent />
+    <OptionComponent />
+  </div>
 
-    <div class="main-container center">
-      <MapComponent />
-    </div>
+  <div class="center">
+    <MapComponent />
+  </div>
 
-    <div class="main-container side">
-      <div class="side-component test1">test1</div>
-      <div class="side-component test2">test2</div>
-      <div class="side-component test3">test3</div>
-    </div>
-    <PopupContainer />
-  </main>
+  <div class="sidebar right">
+    <div class="side-component test1">test1</div>
+    <div class="side-component test2">test2</div>
+    <div class="side-component test3">test3</div>
+  </div>
+  <PopupContainer />
   <FooterComponent />
 </template>
 
-<style scoped>
-main {
-  flex: 1 1 auto;
-  margin: var(--space-medium);
-  display: flex;
+<style>
+#app {
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    ' left  center right '
+    'footer footer footer';
+
+  grid-template-columns: var(--sidebar-width) auto var(--sidebar-width);
+  grid-template-rows:
+    var(--header-size)
+    minmax(0, 1fr)
+    var(--footer-size);
+
+  gap: var(--space-medium);
   justify-content: space-between;
 }
 
-.main-container {
+@media (max-width: 1024px) {
+  #app {
+    grid-template-areas:
+      'header'
+      ' left '
+      'right '
+      'center'
+      'footer';
+
+    grid-template-columns: auto;
+    grid-template-rows:
+      var(--header-size)
+      auto
+      auto
+      auto
+      var(--footer-size);
+
+    justify-content: stretch;
+  }
+}
+</style>
+
+<style scoped>
+.center {
+  grid-area: center;
+  margin-left: var(--space-medium);
+  margin-right: var(--space-medium);
+}
+
+.sidebar {
   display: flex;
   flex-direction: column;
+  gap: var(--space-medium);
   justify-content: flex-start;
 }
 
-@media (min-width: 961px) {
-  main {
-    flex-direction: row;
-  }
-
-  .main-container.side {
-    flex: 0 0 var(--side-size);
-  }
-
-  .main-container.center {
-    flex: 0 1 35%;
-  }
+.sidebar.left {
+  grid-area: left;
+  margin-left: var(--space-medium);
 }
 
-@media (max-width: 960px) {
-  main {
-    flex-direction: column;
+.sidebar.right {
+  grid-area: right;
+  margin-right: var(--space-medium);
+}
+
+@media (max-width: 1024px) {
+  .sidebar.left {
+    margin-right: var(--space-medium);
   }
 
-  .main-container {
-    min-width: var(--side-size);
-  }
-
-  .main-container.center {
-    order: 999;
+  .sidebar.right {
+    margin-left: var(--space-medium);
   }
 }
 </style>

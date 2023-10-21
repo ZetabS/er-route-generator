@@ -8,10 +8,9 @@
 
 <style>
 .side-component {
-  flex: 0 0 10rem;
   background-color: var(--bg-focus);
+  height: 10rem;
   padding: var(--space-medium);
-  margin-bottom: var(--space-medium);
   border-style: hidden;
   border-radius: var(--space-2);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);

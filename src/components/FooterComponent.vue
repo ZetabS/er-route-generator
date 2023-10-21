@@ -12,8 +12,8 @@
 <style scoped>
 footer {
   background-color: var(--bg-duller);
+  grid-area: footer;
   padding: 0.6rem;
-
   text-align: center;
   font-size: xx-small;
 }
