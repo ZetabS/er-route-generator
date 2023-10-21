@@ -7,13 +7,13 @@ export const usePopupStore = defineStore('popup', () => {
   });
 
   const isItemPopupOpen = ref(false);
-  const currentItemSlot: Ref<string | null> = ref(null);
+  const currentItemSlot: Ref<string> = ref('');
   const isWeaponSelectPopupOpen = ref(false);
 
   function closePopup() {
     isItemPopupOpen.value = false;
     isWeaponSelectPopupOpen.value = false;
-    currentItemSlot.value = null;
+    currentItemSlot.value = '';
   }
 
   function openItemSelectPopup(slot: string) {

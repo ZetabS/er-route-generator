@@ -2,6 +2,7 @@ import itemDatabase from './itemDatabase';
 export const itemData: ItemData = itemDatabase;
 
 export interface Item {
+  [key: string]: any;
   code: number;
   name: string;
   modeType: number;
@@ -87,7 +88,7 @@ export interface Item {
 }
 
 export type ItemData = {
-  [key: number]: Item;
+  [code: number | string]: Item;
 };
 
 export function filteredItemData(callback: CallableFunction) {

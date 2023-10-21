@@ -7,7 +7,7 @@ import type { Item, ItemData } from '@/assets/data/itemData';
 import { usePopupStore } from '@/stores/popup';
 const popupStore = usePopupStore();
 
-const itemType = popupStore.currentItemType;
+const itemType = popupStore.currentItemSlot;
 
 function compareItemType(itemType: string) {
   return (item: Item) => item.itemType == itemType;
