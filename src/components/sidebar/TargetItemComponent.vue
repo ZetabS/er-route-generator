@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import SidebarWrapper from './SidebarWrapper.vue'
-import { usePopupStore } from '@/stores/popup'
-const popup = usePopupStore()
+import SidebarWrapper from './SidebarWrapper.vue';
+import { usePopupStore } from '@/stores/popup';
+const popup = usePopupStore();
 </script>
 
 <template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PopupWrapper from './PopupWrapper.vue'
+import PopupWrapper from './PopupWrapper.vue';
 </script>
 
 <template>

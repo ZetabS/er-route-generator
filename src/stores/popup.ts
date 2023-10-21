@@ -1,33 +1,33 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+import { ref, computed } from 'vue';
+import { defineStore } from 'pinia';
 
 export const usePopupStore = defineStore('popup', () => {
   const isPopupOpen = computed(() => {
-    return isItemPopupOpen.value || isOtherPopupOpen.value
-  })
+    return isItemPopupOpen.value || isOtherPopupOpen.value;
+  });
 
-  const isItemPopupOpen = ref(false)
-  const isOtherPopupOpen = ref(false)
+  const isItemPopupOpen = ref(false);
+  const isOtherPopupOpen = ref(false);
 
   function closePopup() {
-    isItemPopupOpen.value = false
-    isOtherPopupOpen.value = false
+    isItemPopupOpen.value = false;
+    isOtherPopupOpen.value = false;
   }
 
   function openItemPopup() {
-    isItemPopupOpen.value = true
+    isItemPopupOpen.value = true;
   }
 
   function closeItemPopup() {
-    isItemPopupOpen.value = false
+    isItemPopupOpen.value = false;
   }
 
   function openOtherPopup() {
-    isOtherPopupOpen.value = true
+    isOtherPopupOpen.value = true;
   }
 
   function closeOtherPopup() {
-    isOtherPopupOpen.value = false
+    isOtherPopupOpen.value = false;
   }
 
   return {
@@ -39,5 +39,5 @@ export const usePopupStore = defineStore('popup', () => {
     closeItemPopup,
     openOtherPopup,
     closeOtherPopup
-  }
-})
+  };
+});

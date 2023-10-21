@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import HeaderComponent from './components/HeaderComponent.vue'
-import FooterComponent from './components/FooterComponent.vue'
-import MapComponent from './components/MapComponent.vue'
-import TargetItemComponent from './components/sidebar/TargetItemComponent.vue'
-import OptionComponent from './components/sidebar/OptionComponent.vue'
-import PopupContainer from './components/popup/PopupContainer.vue'
+import HeaderComponent from './components/HeaderComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
+import MapComponent from './components/MapComponent.vue';
+import TargetItemComponent from './components/sidebar/TargetItemComponent.vue';
+import OptionComponent from './components/sidebar/OptionComponent.vue';
+import PopupContainer from './components/popup/PopupContainer.vue';
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { usePopupStore } from '@/stores/popup'
-const pStore = usePopupStore()
+import { usePopupStore } from '@/stores/popup';
+const pStore = usePopupStore();
 </script>
 
 <template>

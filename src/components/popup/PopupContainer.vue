@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import ItemPopup from './ItemPopup.vue'
-import { usePopupStore } from '@/stores/popup'
-const popup = usePopupStore()
+import ItemPopup from './ItemPopup.vue';
+import { usePopupStore } from '@/stores/popup';
+const popup = usePopupStore();
 </script>
 
 <template>

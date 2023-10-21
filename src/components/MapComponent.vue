@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted, type Ref } from 'vue'
+import { ref, computed, onMounted, onUnmounted, type Ref } from 'vue';
 const areas = [
   { name: '골목길', style: { top: '10%', left: '53%' } },
   { name: '양궁장', style: { top: '25%', left: '22%' } },
@@ -20,7 +20,7 @@ const areas = [
   { name: '절', style: { top: '27%', left: '85%' } },
   { name: '고급 주택가', style: { top: '73%', left: '30%' } },
   { name: '창고', style: { top: '83%', left: '45%' } }
-]
+];
 
 const polygons = [
   {
@@ -115,33 +115,33 @@ const polygons = [
     points:
       '261 781 271 788 296 813 297 818 332 851 365 819 370 823 397 795 399 798 439 758 373 691 332 733 321 722'
   }
-]
+];
 
-const elementWidth = ref(0)
-const elementHeight = ref(0)
-const imgElement: Ref<HTMLElement | null> = ref(null)
+const elementWidth = ref(0);
+const elementHeight = ref(0);
+const imgElement: Ref<HTMLElement | null> = ref(null);
 
 const elementSize = computed(() => {
   return {
     width: elementWidth.value + 'px',
     height: elementHeight.value + 'px'
-  }
-})
+  };
+});
 
 function resizeElements() {
   if (imgElement.value) {
-    elementWidth.value = imgElement.value.offsetWidth
-    elementHeight.value = imgElement.value.offsetHeight
+    elementWidth.value = imgElement.value.offsetWidth;
+    elementHeight.value = imgElement.value.offsetHeight;
   }
 }
 
 onMounted(() => {
-  window.addEventListener('resize', resizeElements)
-})
+  window.addEventListener('resize', resizeElements);
+});
 
 onUnmounted(() => {
-  window.removeEventListener('resize', resizeElements)
-})
+  window.removeEventListener('resize', resizeElements);
+});
 </script>
 
 <template>
