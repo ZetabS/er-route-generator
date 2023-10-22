@@ -2,20 +2,20 @@
 import { computed } from 'vue';
 import { usePopupStore } from '@/stores/popup';
 const popupStore = usePopupStore();
-const { slotType } = defineProps(['slotType']);
+const props = defineProps(['slotType']);
 
 const imgPath = computed(() => {
-  return import.meta.env.BASE_URL + `images/equipable-type/${slotType}.webp`;
+  return import.meta.env.BASE_URL + `images/equipable-type/${props.slotType}.webp`;
 });
 </script>
 
 <template>
   <div
     class="item-slot"
-    :id="`item-slot-${slotType.toLowerCase()}`"
-    @click="popupStore.openItemSelectPopup(slotType)"
+    :id="`item-slot-${props.slotType.toLowerCase()}`"
+    @click="popupStore.openItemSelectPopup(props.slotType)"
   >
-    <img :src="imgPath" :alt="slotType" />
+    <img :src="imgPath" :alt="props.slotType" />
   </div>
 </template>
 

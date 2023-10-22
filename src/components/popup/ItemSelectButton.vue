@@ -7,19 +7,19 @@ const selectedItemStore = useSelectedStore();
 import { usePopupStore } from '@/stores/popup';
 const popupStore = usePopupStore();
 
-const { item } = defineProps(['item']);
+const props = defineProps(['item']);
 </script>
 
 <template>
   <div
     class="item-button"
     @click="
-      selectedItemStore.selectItem(item);
+      selectedItemStore.selectItem(props.item);
       popupStore.closePopup();
     "
   >
-    <ItemIcon :item="item" :size="4" />
-    <span>{{ item.name }}</span>
+    <ItemIcon :item="props.item" :size="4" />
+    <span>{{ props.item.name }}</span>
   </div>
 </template>
 

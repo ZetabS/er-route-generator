@@ -9,11 +9,7 @@ const selectedStore = useSelectedStore();
 
 <template>
   <div class="slot" @click="popupStore.openWeaponSelectPopup()">
-    <WeaponTypeIcon
-      :weapon-type="selectedStore.selectedWeaponType"
-      :width="`1.5rem`"
-      :height="`1.5rem`"
-    />
+    <WeaponTypeIcon :weapon-type="selectedStore.selectedWeaponType" :size="2" />
   </div>
 </template>
 

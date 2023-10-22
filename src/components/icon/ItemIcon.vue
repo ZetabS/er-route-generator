@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 
-const { item, size } = defineProps(['item', 'size']);
-const width = size + 'rem';
-const height = size * 0.6 + 'rem';
-const imgHeight = size * 0.45 + 'rem';
+const props = defineProps(['item', 'size']);
+const width = props.size + 'rem';
+const height = props.size * 0.6 + 'rem';
+const imgHeight = props.size * 0.45 + 'rem';
 const iconStyle = `min-width: ${width}; max-width: ${width}; min-height: ${height}; max-height: ${height};`;
 
 const isImageError = ref(false);
@@ -13,19 +13,19 @@ const imgPath = computed(() => {
   const base = import.meta.env.BASE_URL + 'images/item/';
   if (isImageError.value) {
     return import.meta.env.BASE_URL + 'images/image-error.svg';
-  } else if (item.itemType == item.subType) {
-    return base + `${item.itemType}/item-${item.code}.png`;
+  } else if (props.item.itemType == props.item.subType) {
+    return base + `${props.item.itemType}/item-${props.item.code}.png`;
   } else {
-    return base + `${item.itemType}/${item.subType}/item-${item.code}.png`;
+    return base + `${props.item.itemType}/${props.item.subType}/item-${props.item.code}.png`;
   }
 });
 </script>
 
 <template>
-  <div :class="`item-icon ${item.itemGrade.toLowerCase()}`" :style="iconStyle">
+  <div :class="`item-icon ${props.item.itemGrade.toLowerCase()}`" :style="iconStyle">
     <img
       :src="imgPath"
-      :alt="item.name"
+      :alt="props.item.name"
       :style="`height: ${imgHeight};`"
       @error="isImageError = true"
     />

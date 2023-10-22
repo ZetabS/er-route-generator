@@ -1,20 +1,15 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue';
-const { weaponType, width, height } = defineProps(['weaponType', 'width', 'height']);
+import { computed } from 'vue';
+const props = defineProps(['weaponType', 'size']);
+const imgStyle = `width: ${props.size}rem; height: ${props.size}rem;`;
 
-const imgPath = ref('');
-
-watch(imgPath, () => {
-  return `/er-route-generator/images/weapon-type/${weaponType}.png`;
+const imgPath = computed(() => {
+  return import.meta.env.BASE_URL + `images/weapon-type/${props.weaponType}.png`;
 });
 </script>
 
 <template>
-  <img
-    :src="`/er-route-generator/images/weapon-type/${weaponType}.png`"
-    :style="`width: ${width}; height: ${height}; `"
-    alt="Weapon"
-  />
+  <img :src="imgPath" :style="imgStyle" alt="Weapon" />
 </template>
 
 <style scoped></style>

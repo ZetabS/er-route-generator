@@ -5,21 +5,21 @@ import { usePopupStore } from '@/stores/popup';
 const selectedStore = useSelectedStore();
 const popupStore = usePopupStore();
 
-const { weaponType } = defineProps(['weaponType']);
+const props = defineProps(['weaponType']);
 </script>
 
 <template>
   <div
     class="button"
     @click="
-      selectedStore.selectWeaponType(weaponType);
+      selectedStore.selectWeaponType(props.weaponType);
       popupStore.closePopup();
     "
   >
     <div class="icon-background">
-      <WeaponTypeIcon :weapon-type="weaponType" :width="`1.5rem`" :height="`1.5rem`" />
+      <WeaponTypeIcon :weapon-type="props.weaponType" :size="2" />
     </div>
-    <span>{{ weaponType }}</span>
+    <span>{{ props.weaponType }}</span>
   </div>
 </template>
 
