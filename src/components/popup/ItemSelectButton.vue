@@ -7,14 +7,14 @@ const selectedItemStore = useSelectedStore();
 import { usePopupStore } from '@/stores/popup';
 const popupStore = usePopupStore();
 
-const props = defineProps(['item']);
+const props = defineProps(['item', 'slotType']);
 </script>
 
 <template>
   <div
     class="item-button"
     @click="
-      selectedItemStore.selectItem(props.item);
+      selectedItemStore.selectedItems[props.slotType] = props.item;
       popupStore.closePopup();
     "
   >

@@ -8,9 +8,9 @@ import { usePopupStore } from '@/stores/popup';
 import { computed } from 'vue';
 const selectedStore = useSelectedStore();
 const popupStore = usePopupStore();
+const slotType = popupStore.currentItemSlotType;
 
 const itemType = computed(() => {
-  const slotType = popupStore.currentItemSlotType;
   if (slotType == 'Weapon') {
     return selectedStore.selectedWeaponType;
   } else {
@@ -29,7 +29,12 @@ const itemData: ItemData = filteredItemData(compareItemType(itemType.value));
   <PopupWrapper>
     <h2>목표 아이템</h2>
     <div class="item-button-container">
-      <ItemSelectButton v-for="item in itemData" :key="item.code" :item="item" />
+      <ItemSelectButton
+        v-for="item in itemData"
+        :key="item.code"
+        :item="item"
+        :slot-type="slotType"
+      />
     </div>
   </PopupWrapper>
 </template>

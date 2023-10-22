@@ -4,44 +4,31 @@ import { type Item } from '../assets/data/itemData';
 
 export const useSelectedStore = defineStore('selected', () => {
   const selectedWeaponType: Ref<string> = ref('Rapier');
-  const selectedWeapon: Ref<Item | null> = ref(null);
-  const selectedChest: Ref<Item | null> = ref(null);
-  const selectedHead: Ref<Item | null> = ref(null);
-  const selectedArm: Ref<Item | null> = ref(null);
-  const selectedLeg: Ref<Item | null> = ref(null);
 
-  function selectWeaponType(weaponType: string) {
-    selectedWeaponType.value = weaponType;
-  }
+  type SelectedItems = {
+    [slotType: string]: Item;
+    Weapon: Item | null;
+    Chest: Item | null;
+    Head: Item | null;
+    Arm: Item | null;
+    Leg: Item | null;
+  };
 
-  function selectItem(item: Item) {
-    switch (item.itemType) {
-      case 'Weapon':
-        selectedWeapon.value = item;
-        break;
-      case 'Chest':
-        selectedChest.value = item;
-        break;
-      case 'Head':
-        selectedHead.value = item;
-        break;
-      case 'Arm':
-        selectedArm.value = item;
-        break;
-      case 'Leg':
-        selectedLeg.value = item;
-        break;
-    }
+  const selectedItems: Ref<SelectedItems> = ref({
+    Weapon: null,
+    Chest: null,
+    Head: null,
+    Arm: null,
+    Leg: null
+  });
+
+  function deselectItem(slotType: string) {
+    selectedItems.value[slotType] = null;
   }
 
   return {
-    selectItem,
-    selectWeaponType,
+    selectedItems,
     selectedWeaponType,
-    selectedWeapon,
-    selectedChest,
-    selectedHead,
-    selectedArm,
-    selectedLeg
+    deselectItem
   };
 });

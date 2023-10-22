@@ -6,16 +6,18 @@ const selectedStore = useSelectedStore();
 const popupStore = usePopupStore();
 
 const props = defineProps(['weaponType']);
+
+function closePopup() {
+  selectedStore.selectedWeaponType = props.weaponType;
+  if (selectedStore.selectedItems.Weapon?.subType !== props.weaponType) {
+    selectedStore.deselectItem('Weapon');
+  }
+  popupStore.closePopup();
+}
 </script>
 
 <template>
-  <div
-    class="button"
-    @click="
-      selectedStore.selectWeaponType(props.weaponType);
-      popupStore.closePopup();
-    "
-  >
+  <div class="button" @click="closePopup">
     <div class="icon-background">
       <WeaponTypeIcon :weapon-type="props.weaponType" :size="2" />
     </div>
