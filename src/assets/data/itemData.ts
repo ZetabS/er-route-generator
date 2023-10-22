@@ -31,9 +31,10 @@ function getUniqueElementsByKey(key: string): Array<string | number> {
 
   for (const code in itemData) {
     const element = itemData[code][key];
-    if (!uniqueElements.includes(element)) {
-      uniqueElements.push(element);
-    }
+    if (element !== undefined)
+      if (!uniqueElements.includes(element)) {
+        uniqueElements.push(element);
+      }
   }
 
   return uniqueElements;

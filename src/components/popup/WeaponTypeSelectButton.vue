@@ -12,7 +12,7 @@ const { weaponType } = defineProps(['weaponType']);
   <div
     class="button"
     @click="
-      selectedStore.selectedWeaponType = weaponType;
+      selectedStore.selectWeaponType(weaponType);
       popupStore.closePopup();
     "
   >

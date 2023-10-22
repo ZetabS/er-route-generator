@@ -9,9 +9,9 @@ import { allWeaponTypes } from '@/assets/data/itemData';
     <h2>무기 선택</h2>
     <div class="button-container">
       <WeaponTypeSelectButton
-        v-for="weapon in allWeaponTypes"
-        :key="weapon"
-        :weapon-type="weapon"
+        v-for="weaponType in allWeaponTypes"
+        :key="weaponType"
+        :weapon-type="weaponType"
       />
     </div>
   </PopupWrapper>

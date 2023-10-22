@@ -10,6 +10,10 @@ export const useSelectedStore = defineStore('selected', () => {
   const selectedArm: Ref<Item | null> = ref(null);
   const selectedLeg: Ref<Item | null> = ref(null);
 
+  function selectWeaponType(weaponType: string) {
+    selectedWeaponType.value = weaponType;
+  }
+
   function selectItem(item: Item) {
     switch (item.itemType) {
       case 'Weapon':
@@ -32,6 +36,7 @@ export const useSelectedStore = defineStore('selected', () => {
 
   return {
     selectItem,
+    selectWeaponType,
     selectedWeaponType,
     selectedWeapon,
     selectedChest,
