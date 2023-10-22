@@ -10,9 +10,9 @@ const iconStyle = `min-width: ${width}; max-width: ${width}; min-height: ${heigh
 const isImageError = ref(false);
 
 const imgPath = computed(() => {
-  const base = import.meta.env.BASE_URL + 'src/assets/images/item/';
+  const base = import.meta.env.BASE_URL + 'images/item/';
   if (isImageError.value) {
-    return import.meta.env.BASE_URL + 'src/assets/images/image-error.svg';
+    return import.meta.env.BASE_URL + 'images/image-error.svg';
   } else if (item.itemType == item.subType) {
     return base + `${item.itemType}/item-${item.code}.png`;
   } else {

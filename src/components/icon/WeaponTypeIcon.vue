@@ -3,7 +3,7 @@ import { computed } from 'vue';
 const { weaponType, width, height } = defineProps(['weaponType', 'width', 'height']);
 
 const imgPath = computed(() => {
-  return import.meta.env.BASE_URL + `src/assets/images/weapon-type/${weaponType}.png`;
+  return import.meta.env.BASE_URL + `images/weapon-type/${weaponType}.png`;
 });
 </script>
 

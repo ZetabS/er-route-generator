@@ -5,7 +5,7 @@ const popupStore = usePopupStore();
 const { slotType } = defineProps(['slotType']);
 
 const imgPath = computed(() => {
-  return import.meta.env.BASE_URL + `src/assets/images/equipable-type/${slotType}.webp`;
+  return import.meta.env.BASE_URL + `images/equipable-type/${slotType}.webp`;
 });
 </script>
 

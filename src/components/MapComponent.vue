@@ -144,7 +144,7 @@ onUnmounted(() => {
 });
 
 const imgPath = computed(() => {
-  return import.meta.env.BASE_URL + `src/assets/images/map/map.webp`;
+  return import.meta.env.BASE_URL + `images/map/map.webp`;
 });
 </script>
 
