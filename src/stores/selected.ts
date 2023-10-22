@@ -6,7 +6,7 @@ export const useSelectedStore = defineStore('selected', () => {
   const selectedWeaponType: Ref<string> = ref('Rapier');
 
   type SelectedItems = {
-    [slotType: string]: Item;
+    [slotType: string]: Item | null;
     Weapon: Item | null;
     Chest: Item | null;
     Head: Item | null;
