@@ -1,16 +1,21 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import { usePopupStore } from '@/stores/popup';
-const popup = usePopupStore();
-const { itemType } = defineProps(['itemType']);
+const popupStore = usePopupStore();
+const { slotType } = defineProps(['slotType']);
+
+const imgPath = computed(() => {
+  return import.meta.env.BASE_URL + `src/assets/images/equipable-type/${slotType}.webp`;
+});
 </script>
 
 <template>
   <div
     class="item-slot"
-    :id="`item-slot-${itemType.toLowerCase()}`"
-    @click="popup.openItemSelectPopup(itemType)"
+    :id="`item-slot-${slotType.toLowerCase()}`"
+    @click="popupStore.openItemSelectPopup(slotType)"
   >
-    <img :src="`/images/item-icon/${itemType}.webp`" :alt="itemType" />
+    <img :src="imgPath" :alt="slotType" />
   </div>
 </template>
 

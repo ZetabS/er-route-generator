@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WeaponIcon from '@/components/icon/WeaponIcon.vue';
+import WeaponTypeIcon from '@/components/icon/WeaponTypeIcon.vue';
 import { usePopupStore } from '@/stores/popup';
 import { useSelectedStore } from '@/stores/selected';
 
@@ -9,7 +9,7 @@ const selectedStore = useSelectedStore();
 
 <template>
   <div class="slot" @click="popupStore.openWeaponSelectPopup()">
-    <WeaponIcon
+    <WeaponTypeIcon
       :weapon-type="selectedStore.selectedWeaponType"
       :width="`1.5rem`"
       :height="`1.5rem`"

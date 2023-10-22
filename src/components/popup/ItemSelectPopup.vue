@@ -3,17 +3,26 @@ import PopupWrapper from '@/components/popup/PopupWrapper.vue';
 import ItemSelectButton from './ItemSelectButton.vue';
 import { filteredItemData } from '@/assets/data/itemData';
 import type { Item, ItemData } from '@/assets/data/itemData';
-
+import { useSelectedStore } from '@/stores/selected';
 import { usePopupStore } from '@/stores/popup';
+import { computed } from 'vue';
+const selectedStore = useSelectedStore();
 const popupStore = usePopupStore();
 
-const itemType = popupStore.currentItemSlot;
+const itemType = computed(() => {
+  const slotType = popupStore.currentItemSlotType;
+  if (slotType == 'Weapon') {
+    return selectedStore.selectedWeaponType;
+  } else {
+    return slotType;
+  }
+});
 
 function compareItemType(itemType: string) {
-  return (item: Item) => item.itemType == itemType;
+  return (item: Item) => item.subType == itemType;
 }
 
-const itemData: ItemData = filteredItemData(compareItemType(itemType));
+const itemData: ItemData = filteredItemData(compareItemType(itemType.value));
 </script>
 
 <template>
@@ -27,13 +36,15 @@ const itemData: ItemData = filteredItemData(compareItemType(itemType));
 
 <style scoped>
 .item-button-container {
+  width: 100%;
   height: 100%;
+  padding: var(--space-medium);
   overflow-x: hidden;
   overflow-y: scroll;
-  flex: 0 0 30rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+
+  display: grid;
+  gap: var(--space-medium);
+  grid-template-columns: repeat(auto-fill, minmax(5rem, auto));
+  align-content: start;
 }
 </style>

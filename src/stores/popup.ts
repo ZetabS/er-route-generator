@@ -7,18 +7,18 @@ export const usePopupStore = defineStore('popup', () => {
   });
 
   const isItemPopupOpen = ref(false);
-  const currentItemSlot: Ref<string> = ref('');
+  const currentItemSlotType: Ref<string> = ref('');
   const isWeaponSelectPopupOpen = ref(false);
 
   function closePopup() {
     isItemPopupOpen.value = false;
     isWeaponSelectPopupOpen.value = false;
-    currentItemSlot.value = '';
+    currentItemSlotType.value = '';
   }
 
-  function openItemSelectPopup(slot: string) {
+  function openItemSelectPopup(slotType: string) {
     isItemPopupOpen.value = true;
-    currentItemSlot.value = slot;
+    currentItemSlotType.value = slotType;
   }
 
   function openWeaponSelectPopup() {
@@ -29,7 +29,7 @@ export const usePopupStore = defineStore('popup', () => {
     isPopupOpen,
     isItemPopupOpen,
     isWeaponSelectPopupOpen,
-    currentItemSlot,
+    currentItemSlotType,
     openItemSelectPopup,
     openWeaponSelectPopup,
     closePopup

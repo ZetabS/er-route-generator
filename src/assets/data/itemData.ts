@@ -1,5 +1,48 @@
-import itemDatabase from './itemDatabase';
+import { itemDatabase } from './itemDatabase';
 export const itemData: ItemData = itemDatabase;
+
+export type Armor = Item & {
+  armorType: string;
+};
+
+export type Weapon = Item & {
+  weaponType: string;
+};
+
+export type ItemData = {
+  [code: number | string]: Item;
+};
+
+export function filteredItemData(callback: CallableFunction) {
+  const filteredItemData: ItemData = {};
+
+  for (const key in itemData) {
+    const item = itemData[key];
+    if (callback(item)) {
+      filteredItemData[key] = item;
+    }
+  }
+
+  return filteredItemData;
+}
+
+function getUniqueElementsByKey(key: string): Array<string | number> {
+  const uniqueElements: Array<string | number> = [];
+
+  for (const code in itemData) {
+    const element = itemData[code][key];
+    if (!uniqueElements.includes(element)) {
+      uniqueElements.push(element);
+    }
+  }
+
+  return uniqueElements;
+}
+
+export const allItemTypes = getUniqueElementsByKey('itemType');
+export const allWeaponTypes = getUniqueElementsByKey('weaponType');
+
+export const equipableItemTypes = ['Weapon', 'Chest', 'Head', 'Arm', 'Leg'];
 
 export interface Item {
   [key: string]: any;
@@ -9,7 +52,6 @@ export interface Item {
   itemType: string;
   subType: string;
   itemGrade: string;
-  imgPath: string;
   isCompletedItem: boolean;
   alertInSpectator: boolean;
   markingType: string;
@@ -86,38 +128,3 @@ export interface Item {
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;
 }
-
-export type ItemData = {
-  [code: number | string]: Item;
-};
-
-export function filteredItemData(callback: CallableFunction) {
-  const filteredItemData: ItemData = {};
-
-  for (const key in itemData) {
-    const item = itemData[key];
-    if (callback(item)) {
-      filteredItemData[key] = item;
-    }
-  }
-
-  return filteredItemData;
-}
-
-function getUniqueElementsByKey(key: string): Array<string | number> {
-  const uniqueElements: Array<string | number> = [];
-
-  for (const code in itemData) {
-    const element = itemData[code][key];
-    if (!uniqueElements.includes(element)) {
-      uniqueElements.push(element);
-    }
-  }
-
-  return uniqueElements;
-}
-
-export const allItemTypes = getUniqueElementsByKey('itemType');
-export const allWeaponTypes = getUniqueElementsByKey('subType').filter(
-  (element) => !allItemTypes.includes(element)
-);

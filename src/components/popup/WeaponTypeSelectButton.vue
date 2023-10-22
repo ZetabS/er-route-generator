@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import WeaponIcon from '@/components/icon/WeaponIcon.vue';
+import WeaponTypeIcon from '@/components/icon/WeaponTypeIcon.vue';
 import { useSelectedStore } from '@/stores/selected';
 import { usePopupStore } from '@/stores/popup';
 const selectedStore = useSelectedStore();
@@ -17,7 +17,7 @@ const { weaponType } = defineProps(['weaponType']);
     "
   >
     <div class="icon-background">
-      <WeaponIcon :weapon-type="weaponType" :width="`1.5rem`" :height="`1.5rem`" />
+      <WeaponTypeIcon :weapon-type="weaponType" :width="`1.5rem`" :height="`1.5rem`" />
     </div>
     <span>{{ weaponType }}</span>
   </div>

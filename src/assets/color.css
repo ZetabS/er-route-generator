@@ -1,75 +1,128 @@
 :root {
-    --font-color-1: #fff;
-    --font-color-2: #000;
-    --border-color: cyan;
-    --bg: #0F1C2E;
-    --bg-focus: #1f2b3e;
-    --bg-duller: #374357;
-    --bg-duller-highlighted: #3e4a5e;
-    --primary-clear: #1F3A5F;
-    --primary-dull: #4d648d;
-    --primary-visible: #acc2ef;
-    --accent-clear: #3D5A80;
-    --accent-dull: #cee8ff;
-    --text-clear: #FFFFFF;
-    --text-dull: #e0e0e0;
+  --font-color-1: #fff;
+  --font-color-2: #000;
+  --border-color: cyan;
+  --bg: #0f1c2e;
+  --bg-focus: #1f2b3e;
+  --bg-duller: #374357;
+  --bg-duller-highlighted: #3e4a5e;
+  --primary-clear: #1f3a5f;
+  --primary-dull: #4d648d;
+  --primary-visible: #acc2ef;
+  --accent-clear: #3d5a80;
+  --accent-dull: #cee8ff;
+  --text-clear: #ffffff;
+  --text-dull: #e0e0e0;
 }
 
-:root, .dark {
-    --border-item-common: hsl(0, 0%, 70%);
-    --border-item-uncommon: hsl(112, 100%, 25%);
-    --border-item-rare: hsl(216, 50%, 60%);
-    --border-item-epic: hsl(267, 48%, 62%);
-    --border-item-legend: hsl(43, 69%, 52%);
-    --border-item-mythic: hsl(0, 72%, 40%);
-    --gradient-item-common: linear-gradient(180deg, hsl(0, 0%, 25%) 0%, hsl(0, 0%, 50%) 100%);
-    --gradient-item-uncommon: linear-gradient( 180deg, hsl(112, 100%, 10%) 0%, hsl(112, 100%, 20%) 100% );
-    --gradient-item-rare: linear-gradient(180deg, hsl(221, 20%, 19%) 0%, hsl(216, 35%, 31%) 100%);
-    --gradient-item-epic: linear-gradient(180deg, hsl(271, 20%, 21%) 0%, hsl(270, 30%, 40%) 100%);
-    --gradient-item-legend: linear-gradient(180deg, hsl(37, 34%, 21%) 0%, hsl(43, 65%, 46%) 100%);
-    --gradient-item-mythic: linear-gradient(180deg, hsl(358, 35%, 19%) 0%, hsl(0, 49%, 38%) 100%);
-    --color-item-common-dimmed-hsl: 0, 0%, 54%;
-    --color-item-uncommon-dimmed-hsl: 112, 94%, 35%;
-    --color-item-rare-dimmed-hsl: 215, 71%, 38%;
-    --color-item-epic-dimmed-hsl: 270, 94%, 38%;
-    --color-item-legendary-dimmed-hsl: 43, 100%, 46%;
-    --color-item-mythic-dimmed-hsl: 0, 49%, 38%;
-    --gradient-item-common-dimmed: linear-gradient( 330deg, hsl(var(--color-item-common-dimmed-hsl), 0) 0%, hsla(var(--color-item-common-dimmed-hsl), .4) 100% );
-    --gradient-item-uncommon-dimmed: linear-gradient( 330deg, hsl(var(--color-item-uncommon-dimmed-hsl), 0) 0%, hsla(var(--color-item-uncommon-dimmed-hsl), .4) 100% );
-    --gradient-item-rare-dimmed: linear-gradient( 330deg, hsl(var(--color-item-rare-dimmed-hsl), 0) 0%, hsla(var(--color-item-rare-dimmed-hsl), .4) 100% );
-    --gradient-item-epic-dimmed: linear-gradient( 330deg, hsl(var(--color-item-epic-dimmed-hsl), 0) 0%, hsla(var(--color-item-epic-dimmed-hsl), .4) 100% );
-    --gradient-item-legendary-dimmed: linear-gradient( 330deg, hsla(var(--color-item-legendary-dimmed-hsl), 0) 0%, hsla(var(--color-item-legendary-dimmed-hsl), .4) 100% );
-    --gradient-item-mythic-dimmed: linear-gradient( 330deg, hsl(var(--color-item-mythic-dimmed-hsl), 0) 0%, hsl(var(--color-item-mythic-dimmed-hsl), .4) 100% );
-    --gradient-subtle-common: linear-gradient( 330deg, hsl(var(--color-item-common-dimmed-hsl), 0) 50%, hsla(var(--color-item-common-dimmed-hsl), .4) 100% );
-    --gradient-subtle-uncommon: linear-gradient( 330deg, hsl(var(--color-item-uncommon-dimmed-hsl), 0) 50%, hsla(var(--color-item-uncommon-dimmed-hsl), .4) 100% );
-    --gradient-subtle-rare: linear-gradient( 330deg, hsl(var(--color-item-rare-dimmed-hsl), 0) 50%, hsla(var(--color-item-rare-dimmed-hsl), .4) 100% );
-    --gradient-subtle-epic: linear-gradient( 330deg, hsl(var(--color-item-epic-dimmed-hsl), 0) 50%, hsla(var(--color-item-epic-dimmed-hsl), .4) 100% );
-    --gradient-subtle-legendary: linear-gradient( 330deg, hsla(var(--color-item-legendary-dimmed-hsl), 0) 50%, hsla(var(--color-item-legendary-dimmed-hsl), .4) 100% );
-    --gradient-subtle-mythic: linear-gradient( 330deg, hsl(var(--color-item-mythic-dimmed-hsl), 0) 50%, hsl(var(--color-item-mythic-dimmed-hsl), .4) 100% );
-    --text-item-common: #404040;
-    --text-item-uncommon: #0e6600;
-    --text-item-rare: #344a6c;
-    --text-item-epic: #664784;
-    --text-item-legendary: #795825;
-    --text-item-mythic: #8f3131;
-    --color-tier-unranked-rgb: 240, 240, 240;
-    --color-tier-iron-rgb: 229, 239, 255;
-    --color-tier-bronze-rgb: 252, 149, 59;
-    --color-tier-silver-rgb: 96, 127, 161;
-    --color-tier-gold-rgb: 224, 184, 102;
-    --color-tier-platinum-rgb: 122, 225, 175;
-    --color-tier-diamond-rgb: 208, 196, 226;
-    --color-tier-mithril-rgb: 130, 208, 225;
-    --color-tier-demigod-rgb: 255, 255, 222;
-    --color-tier-eternity-rgb: 160, 31, 74;
-    --text-tier-unranked: hsl(0, 0%, 25%);
-    --text-tier-iron: hsl(0, 0%, 20%);
-    --text-tier-bronze: hsl(28, 60%, 15%);
-    --text-tier-silver: hsl(211, 26%, 15%);
-    --text-tier-gold: hsl(40, 66%, 15%);
-    --text-tier-platinum: hsl(151, 63%, 15%);
-    --text-tier-diamond: hsl(263, 25%, 15%);
-    --text-tier-mithril: hsl(191, 61%, 15%);
-    --text-tier-demigod: hsl(60, 100%, 15%);
-    --text-tier-eternity: hsl(340, 65%, 90%);
+:root,
+.dark {
+  --border-item-common: hsl(0, 0%, 70%);
+  --border-item-uncommon: hsl(112, 100%, 25%);
+  --border-item-rare: hsl(216, 50%, 60%);
+  --border-item-epic: hsl(267, 48%, 62%);
+  --border-item-legend: hsl(43, 69%, 52%);
+  --border-item-mythic: hsl(0, 72%, 40%);
+  --gradient-item-common: linear-gradient(180deg, hsl(0, 0%, 25%) 0%, hsl(0, 0%, 50%) 100%);
+  --gradient-item-uncommon: linear-gradient(
+    180deg,
+    hsl(112, 100%, 10%) 0%,
+    hsl(112, 100%, 20%) 100%
+  );
+  --gradient-item-rare: linear-gradient(180deg, hsl(221, 20%, 19%) 0%, hsl(216, 35%, 31%) 100%);
+  --gradient-item-epic: linear-gradient(180deg, hsl(271, 20%, 21%) 0%, hsl(270, 30%, 40%) 100%);
+  --gradient-item-legend: linear-gradient(180deg, hsl(37, 34%, 21%) 0%, hsl(43, 65%, 46%) 100%);
+  --gradient-item-mythic: linear-gradient(180deg, hsl(358, 35%, 19%) 0%, hsl(0, 49%, 38%) 100%);
+  --color-item-common-dimmed-hsl: 0, 0%, 54%;
+  --color-item-uncommon-dimmed-hsl: 112, 94%, 35%;
+  --color-item-rare-dimmed-hsl: 215, 71%, 38%;
+  --color-item-epic-dimmed-hsl: 270, 94%, 38%;
+  --color-item-legendary-dimmed-hsl: 43, 100%, 46%;
+  --color-item-mythic-dimmed-hsl: 0, 49%, 38%;
+  --gradient-item-common-dimmed: linear-gradient(
+    330deg,
+    hsl(var(--color-item-common-dimmed-hsl), 0) 0%,
+    hsla(var(--color-item-common-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-item-uncommon-dimmed: linear-gradient(
+    330deg,
+    hsl(var(--color-item-uncommon-dimmed-hsl), 0) 0%,
+    hsla(var(--color-item-uncommon-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-item-rare-dimmed: linear-gradient(
+    330deg,
+    hsl(var(--color-item-rare-dimmed-hsl), 0) 0%,
+    hsla(var(--color-item-rare-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-item-epic-dimmed: linear-gradient(
+    330deg,
+    hsl(var(--color-item-epic-dimmed-hsl), 0) 0%,
+    hsla(var(--color-item-epic-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-item-legendary-dimmed: linear-gradient(
+    330deg,
+    hsla(var(--color-item-legendary-dimmed-hsl), 0) 0%,
+    hsla(var(--color-item-legendary-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-item-mythic-dimmed: linear-gradient(
+    330deg,
+    hsl(var(--color-item-mythic-dimmed-hsl), 0) 0%,
+    hsl(var(--color-item-mythic-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-subtle-common: linear-gradient(
+    330deg,
+    hsl(var(--color-item-common-dimmed-hsl), 0) 50%,
+    hsla(var(--color-item-common-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-subtle-uncommon: linear-gradient(
+    330deg,
+    hsl(var(--color-item-uncommon-dimmed-hsl), 0) 50%,
+    hsla(var(--color-item-uncommon-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-subtle-rare: linear-gradient(
+    330deg,
+    hsl(var(--color-item-rare-dimmed-hsl), 0) 50%,
+    hsla(var(--color-item-rare-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-subtle-epic: linear-gradient(
+    330deg,
+    hsl(var(--color-item-epic-dimmed-hsl), 0) 50%,
+    hsla(var(--color-item-epic-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-subtle-legendary: linear-gradient(
+    330deg,
+    hsla(var(--color-item-legendary-dimmed-hsl), 0) 50%,
+    hsla(var(--color-item-legendary-dimmed-hsl), 0.4) 100%
+  );
+  --gradient-subtle-mythic: linear-gradient(
+    330deg,
+    hsl(var(--color-item-mythic-dimmed-hsl), 0) 50%,
+    hsl(var(--color-item-mythic-dimmed-hsl), 0.4) 100%
+  );
+  --text-item-common: #404040;
+  --text-item-uncommon: #0e6600;
+  --text-item-rare: #344a6c;
+  --text-item-epic: #664784;
+  --text-item-legendary: #795825;
+  --text-item-mythic: #8f3131;
+  --color-tier-unranked-rgb: 240, 240, 240;
+  --color-tier-iron-rgb: 229, 239, 255;
+  --color-tier-bronze-rgb: 252, 149, 59;
+  --color-tier-silver-rgb: 96, 127, 161;
+  --color-tier-gold-rgb: 224, 184, 102;
+  --color-tier-platinum-rgb: 122, 225, 175;
+  --color-tier-diamond-rgb: 208, 196, 226;
+  --color-tier-mithril-rgb: 130, 208, 225;
+  --color-tier-demigod-rgb: 255, 255, 222;
+  --color-tier-eternity-rgb: 160, 31, 74;
+  --text-tier-unranked: hsl(0, 0%, 25%);
+  --text-tier-iron: hsl(0, 0%, 20%);
+  --text-tier-bronze: hsl(28, 60%, 15%);
+  --text-tier-silver: hsl(211, 26%, 15%);
+  --text-tier-gold: hsl(40, 66%, 15%);
+  --text-tier-platinum: hsl(151, 63%, 15%);
+  --text-tier-diamond: hsl(263, 25%, 15%);
+  --text-tier-mithril: hsl(191, 61%, 15%);
+  --text-tier-demigod: hsl(60, 100%, 15%);
+  --text-tier-eternity: hsl(340, 65%, 90%);
 }

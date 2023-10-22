@@ -1,4 +1,4 @@
-export default {
+export const itemDatabase = {
   '101104': {
     code: 101104,
     name: '식칼',
@@ -6,7 +6,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101104.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -81,7 +80,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101201': {
     code: 101201,
@@ -90,7 +90,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -165,7 +164,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101202': {
     code: 101202,
@@ -174,7 +174,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -249,7 +248,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101301': {
     code: 101301,
@@ -258,7 +258,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -333,7 +332,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101302': {
     code: 101302,
@@ -342,7 +342,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -417,7 +416,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101303': {
     code: 101303,
@@ -426,7 +426,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -501,7 +500,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101401': {
     code: 101401,
@@ -510,7 +510,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -585,7 +584,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101402': {
     code: 101402,
@@ -594,7 +594,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -669,7 +668,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101404': {
     code: 101404,
@@ -678,7 +678,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -753,7 +752,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101405': {
     code: 101405,
@@ -762,7 +762,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -837,7 +836,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'OneHandSword'
   },
   '101406': {
     code: 101406,
@@ -846,7 +846,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -921,7 +920,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101407': {
     code: 101407,
@@ -930,7 +930,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -1005,7 +1004,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101408': {
     code: 101408,
@@ -1014,7 +1014,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -1089,7 +1088,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'OneHandSword'
   },
   '101501': {
     code: 101501,
@@ -1098,7 +1098,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -1173,7 +1172,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'OneHandSword'
   },
   '101502': {
     code: 101502,
@@ -1182,7 +1182,6 @@ export default {
     itemType: 'Weapon',
     subType: 'OneHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/OneHandSword/item-101502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -1257,7 +1256,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'OneHandSword'
   },
   '102101': {
     code: 102101,
@@ -1266,7 +1266,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -1341,7 +1340,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102201': {
     code: 102201,
@@ -1350,7 +1350,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -1425,7 +1424,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102301': {
     code: 102301,
@@ -1434,7 +1434,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -1509,7 +1508,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102402': {
     code: 102402,
@@ -1518,7 +1518,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -1593,7 +1592,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102403': {
     code: 102403,
@@ -1602,7 +1602,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102403.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -1677,7 +1676,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102404': {
     code: 102404,
@@ -1686,7 +1686,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102404.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -1761,7 +1760,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102405': {
     code: 102405,
@@ -1770,7 +1770,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -1845,7 +1844,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102406': {
     code: 102406,
@@ -1854,7 +1854,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -1929,7 +1928,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102407': {
     code: 102407,
@@ -1938,7 +1938,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -2013,7 +2012,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102409': {
     code: 102409,
@@ -2022,7 +2022,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102409.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -2097,7 +2096,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'TwoHandSword'
   },
   '102410': {
     code: 102410,
@@ -2106,7 +2106,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -2181,7 +2180,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102411': {
     code: 102411,
@@ -2190,7 +2190,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102411.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -2265,7 +2264,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102412': {
     code: 102412,
@@ -2274,7 +2274,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102412.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -2349,7 +2348,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'TwoHandSword'
   },
   '102413': {
     code: 102413,
@@ -2358,7 +2358,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102413.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -2433,7 +2432,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'TwoHandSword'
   },
   '102501': {
     code: 102501,
@@ -2442,7 +2442,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -2517,7 +2516,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'TwoHandSword'
   },
   '102502': {
     code: 102502,
@@ -2526,7 +2526,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -2601,7 +2600,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'TwoHandSword'
   },
   '102503': {
     code: 102503,
@@ -2610,7 +2610,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-102503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -2685,7 +2684,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'TwoHandSword'
   },
   '103201': {
     code: 103201,
@@ -2694,7 +2694,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/DualSword/item-103201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -2769,7 +2768,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103202': {
     code: 103202,
@@ -2778,7 +2778,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/DualSword/item-103202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -2853,7 +2852,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103301': {
     code: 103301,
@@ -2862,7 +2862,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DualSword/item-103301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -2937,7 +2936,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103302': {
     code: 103302,
@@ -2946,7 +2946,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DualSword/item-103302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -3021,7 +3020,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103401': {
     code: 103401,
@@ -3030,7 +3030,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DualSword/item-103401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -3105,7 +3104,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103402': {
     code: 103402,
@@ -3114,7 +3114,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DualSword/item-103402.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -3189,7 +3188,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'DualSword'
   },
   '103403': {
     code: 103403,
@@ -3198,7 +3198,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DualSword/item-103403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -3273,7 +3272,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103404': {
     code: 103404,
@@ -3282,7 +3282,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DualSword/item-103404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -3357,7 +3356,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103501': {
     code: 103501,
@@ -3366,7 +3366,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DualSword/item-103501.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -3441,7 +3440,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DualSword'
   },
   '103502': {
     code: 103502,
@@ -3450,7 +3450,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DualSword/item-103502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -3525,7 +3524,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'DualSword'
   },
   '103503': {
     code: 103503,
@@ -3534,7 +3534,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DualSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DualSword/item-103503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -3609,7 +3608,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'DualSword'
   },
   '104101': {
     code: 104101,
@@ -3618,7 +3618,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Hammer/item-104101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -3693,7 +3692,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104201': {
     code: 104201,
@@ -3702,7 +3702,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Hammer/item-104201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -3777,7 +3776,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104301': {
     code: 104301,
@@ -3786,7 +3786,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Hammer/item-104301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -3861,7 +3860,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104302': {
     code: 104302,
@@ -3870,7 +3870,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Hammer/item-104302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -3945,7 +3944,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104303': {
     code: 104303,
@@ -3954,7 +3954,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Hammer/item-104303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -4029,7 +4028,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104401': {
     code: 104401,
@@ -4038,7 +4038,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Hammer/item-104401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4113,7 +4112,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104402': {
     code: 104402,
@@ -4122,7 +4122,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Hammer/item-104402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4197,7 +4196,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104403': {
     code: 104403,
@@ -4206,7 +4206,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Hammer/item-104403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4281,7 +4280,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104404': {
     code: 104404,
@@ -4290,7 +4290,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Hammer/item-104404.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -4365,7 +4364,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Hammer'
   },
   '104405': {
     code: 104405,
@@ -4374,7 +4374,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bat/item-104405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -4449,7 +4448,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Bat'
   },
   '104406': {
     code: 104406,
@@ -4458,7 +4458,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Hammer/item-104406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4533,7 +4532,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104407': {
     code: 104407,
@@ -4542,7 +4542,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bat/item-104407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4617,7 +4616,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '104408': {
     code: 104408,
@@ -4626,7 +4626,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bat/item-104408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4701,7 +4700,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '104409': {
     code: 104409,
@@ -4710,7 +4710,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Hammer/item-104409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -4785,7 +4784,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Hammer'
   },
   '104501': {
     code: 104501,
@@ -4794,7 +4794,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Hammer/item-104501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -4869,7 +4868,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Hammer'
   },
   '104502': {
     code: 104502,
@@ -4878,7 +4878,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Hammer',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Hammer/item-104502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -4953,7 +4952,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Hammer'
   },
   '105103': {
     code: 105103,
@@ -4962,7 +4962,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Axe/item-105103.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -5037,7 +5036,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105201': {
     code: 105201,
@@ -5046,7 +5046,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Axe/item-105201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -5121,7 +5120,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105202': {
     code: 105202,
@@ -5130,7 +5130,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Axe/item-105202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -5205,7 +5204,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105301': {
     code: 105301,
@@ -5214,7 +5214,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Axe/item-105301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -5289,7 +5288,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105302': {
     code: 105302,
@@ -5298,7 +5298,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Axe/item-105302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -5373,7 +5372,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105401': {
     code: 105401,
@@ -5382,7 +5382,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Axe/item-105401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -5457,7 +5456,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105402': {
     code: 105402,
@@ -5466,7 +5466,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Axe/item-105402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -5541,7 +5540,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105403': {
     code: 105403,
@@ -5550,7 +5550,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Axe/item-105403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -5625,7 +5624,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105404': {
     code: 105404,
@@ -5634,7 +5634,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Axe/item-105404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -5709,7 +5708,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105405': {
     code: 105405,
@@ -5718,7 +5718,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Axe/item-105405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -5793,7 +5792,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105406': {
     code: 105406,
@@ -5802,7 +5802,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Axe/item-105406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -5877,7 +5876,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105407': {
     code: 105407,
@@ -5886,7 +5886,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Axe/item-105407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -5961,7 +5960,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Axe'
   },
   '105408': {
     code: 105408,
@@ -5970,7 +5970,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Axe/item-105408.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -6045,7 +6044,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Axe'
   },
   '105501': {
     code: 105501,
@@ -6054,7 +6054,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Axe/item-105501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -6129,7 +6128,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Axe'
   },
   '105502': {
     code: 105502,
@@ -6138,7 +6138,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Axe',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Axe/item-105502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -6213,7 +6212,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Axe'
   },
   '107101': {
     code: 107101,
@@ -6222,7 +6222,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Spear/item-107101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -6297,7 +6296,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107201': {
     code: 107201,
@@ -6306,7 +6306,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Spear/item-107201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -6381,7 +6380,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107301': {
     code: 107301,
@@ -6390,7 +6390,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Spear/item-107301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -6465,7 +6464,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107302': {
     code: 107302,
@@ -6474,7 +6474,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Spear/item-107302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -6549,7 +6548,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107303': {
     code: 107303,
@@ -6558,7 +6558,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Spear/item-107303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -6633,7 +6632,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107401': {
     code: 107401,
@@ -6642,7 +6642,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Spear/item-107401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -6717,7 +6716,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107402': {
     code: 107402,
@@ -6726,7 +6726,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Spear/item-107402.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -6801,7 +6800,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Spear'
   },
   '107403': {
     code: 107403,
@@ -6810,7 +6810,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Spear/item-107403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -6885,7 +6884,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107404': {
     code: 107404,
@@ -6894,7 +6894,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Spear/item-107404.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -6969,7 +6968,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Spear'
   },
   '107405': {
     code: 107405,
@@ -6978,7 +6978,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Spear/item-107405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -7053,7 +7052,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107406': {
     code: 107406,
@@ -7062,7 +7062,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Spear/item-107406.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -7137,7 +7136,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Spear'
   },
   '107407': {
     code: 107407,
@@ -7146,7 +7146,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Spear/item-107407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -7221,7 +7220,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107408': {
     code: 107408,
@@ -7230,7 +7230,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Spear/item-107408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -7305,7 +7304,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Spear'
   },
   '107501': {
     code: 107501,
@@ -7314,7 +7314,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Spear/item-107501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -7389,7 +7388,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Spear'
   },
   '107502': {
     code: 107502,
@@ -7398,7 +7398,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Spear/item-107502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -7473,7 +7472,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Spear'
   },
   '108102': {
     code: 108102,
@@ -7482,7 +7482,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Bat/item-108102.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -7557,7 +7556,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108103': {
     code: 108103,
@@ -7566,7 +7566,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Tonfa/item-108103.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -7641,7 +7640,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '108202': {
     code: 108202,
@@ -7650,7 +7650,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Bat/item-108202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -7725,7 +7724,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108301': {
     code: 108301,
@@ -7734,7 +7734,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bat/item-108301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -7809,7 +7808,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108401': {
     code: 108401,
@@ -7818,7 +7818,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bat/item-108401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -7893,7 +7892,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108402': {
     code: 108402,
@@ -7902,7 +7902,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bat/item-108402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -7977,7 +7976,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108403': {
     code: 108403,
@@ -7986,7 +7986,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bat/item-108403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -8061,7 +8060,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108404': {
     code: 108404,
@@ -8070,7 +8070,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bat/item-108404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -8145,7 +8144,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108405': {
     code: 108405,
@@ -8154,7 +8154,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Bat/item-108405.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -8229,7 +8228,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108501': {
     code: 108501,
@@ -8238,7 +8238,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bat/item-108501.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -8313,7 +8312,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bat'
   },
   '108502': {
     code: 108502,
@@ -8322,7 +8322,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bat/item-108502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -8397,7 +8396,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Bat'
   },
   '108503': {
     code: 108503,
@@ -8406,7 +8406,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bat',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bat/item-108503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -8481,7 +8480,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Bat'
   },
   '109101': {
     code: 109101,
@@ -8490,7 +8490,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Whip/item-109101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -8565,7 +8564,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109201': {
     code: 109201,
@@ -8574,7 +8574,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Whip/item-109201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -8649,7 +8648,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109202': {
     code: 109202,
@@ -8658,7 +8658,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Whip/item-109202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -8733,7 +8732,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109301': {
     code: 109301,
@@ -8742,7 +8742,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Whip/item-109301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -8817,7 +8816,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109401': {
     code: 109401,
@@ -8826,7 +8826,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Whip/item-109401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -8901,7 +8900,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109402': {
     code: 109402,
@@ -8910,7 +8910,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Whip/item-109402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -8985,7 +8984,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109403': {
     code: 109403,
@@ -8994,7 +8994,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Whip/item-109403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -9069,7 +9068,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109404': {
     code: 109404,
@@ -9078,7 +9078,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Whip/item-109404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -9153,7 +9152,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109405': {
     code: 109405,
@@ -9162,7 +9162,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Whip/item-109405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -9237,7 +9236,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Whip'
   },
   '109406': {
     code: 109406,
@@ -9246,7 +9246,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Whip/item-109406.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -9321,7 +9320,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Whip'
   },
   '109501': {
     code: 109501,
@@ -9330,7 +9330,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Whip/item-109501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -9405,7 +9404,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Whip'
   },
   '109502': {
     code: 109502,
@@ -9414,7 +9414,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Whip',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Whip/item-109502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -9489,7 +9488,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Whip'
   },
   '110102': {
     code: 110102,
@@ -9498,7 +9498,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Glove/item-110102.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -9573,7 +9572,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110201': {
     code: 110201,
@@ -9582,7 +9582,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Glove/item-110201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -9657,7 +9656,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110202': {
     code: 110202,
@@ -9666,7 +9666,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Glove/item-110202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -9741,7 +9740,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110301': {
     code: 110301,
@@ -9750,7 +9750,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Glove/item-110301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -9825,7 +9824,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110302': {
     code: 110302,
@@ -9834,7 +9834,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Glove/item-110302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -9909,7 +9908,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110401': {
     code: 110401,
@@ -9918,7 +9918,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Glove/item-110401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -9993,7 +9992,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110402': {
     code: 110402,
@@ -10002,7 +10002,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Glove/item-110402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -10077,7 +10076,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110404': {
     code: 110404,
@@ -10086,7 +10086,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Glove/item-110404.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -10161,7 +10160,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110405': {
     code: 110405,
@@ -10170,7 +10170,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10245,7 +10244,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110406': {
     code: 110406,
@@ -10254,7 +10254,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10329,7 +10328,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110407': {
     code: 110407,
@@ -10338,7 +10338,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10413,7 +10412,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110408': {
     code: 110408,
@@ -10422,7 +10422,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10497,7 +10496,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110409': {
     code: 110409,
@@ -10506,7 +10506,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10581,7 +10580,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110410': {
     code: 110410,
@@ -10590,7 +10590,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10665,7 +10664,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110411': {
     code: 110411,
@@ -10674,7 +10674,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Glove/item-110411.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -10749,7 +10748,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Glove'
   },
   '110412': {
     code: 110412,
@@ -10758,7 +10758,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Glove/item-110412.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -10833,7 +10832,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Glove'
   },
   '110501': {
     code: 110501,
@@ -10842,7 +10842,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Glove/item-110501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -10917,7 +10916,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Glove'
   },
   '110502': {
     code: 110502,
@@ -10926,7 +10926,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Glove/item-110502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -11001,7 +11000,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Glove'
   },
   '110503': {
     code: 110503,
@@ -11010,7 +11010,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Glove/item-110503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -11085,7 +11084,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Glove'
   },
   '111201': {
     code: 111201,
@@ -11094,7 +11094,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Tonfa/item-111201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -11169,7 +11168,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111301': {
     code: 111301,
@@ -11178,7 +11178,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Tonfa/item-111301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -11253,7 +11252,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111401': {
     code: 111401,
@@ -11262,7 +11262,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Tonfa/item-111401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -11337,7 +11336,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111402': {
     code: 111402,
@@ -11346,7 +11346,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Tonfa/item-111402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -11421,7 +11420,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111403': {
     code: 111403,
@@ -11430,7 +11430,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Tonfa/item-111403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -11505,7 +11504,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111404': {
     code: 111404,
@@ -11514,7 +11514,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Tonfa/item-111404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -11589,7 +11588,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111405': {
     code: 111405,
@@ -11598,7 +11598,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Tonfa/item-111405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -11673,7 +11672,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Tonfa'
   },
   '111406': {
     code: 111406,
@@ -11682,7 +11682,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Tonfa/item-111406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -11757,7 +11756,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Tonfa'
   },
   '111501': {
     code: 111501,
@@ -11766,7 +11766,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Tonfa/item-111501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -11841,7 +11840,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Tonfa'
   },
   '111502': {
     code: 111502,
@@ -11850,7 +11850,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Tonfa',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Tonfa/item-111502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -11925,7 +11924,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Tonfa'
   },
   '112105': {
     code: 112105,
@@ -11934,7 +11934,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112105.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12009,7 +12008,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112202': {
     code: 112202,
@@ -12018,7 +12018,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12093,7 +12092,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112204': {
     code: 112204,
@@ -12102,7 +12102,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112204.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12177,7 +12176,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112205': {
     code: 112205,
@@ -12186,7 +12186,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112205.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12261,7 +12260,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112301': {
     code: 112301,
@@ -12270,7 +12270,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12345,7 +12344,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112302': {
     code: 112302,
@@ -12354,7 +12354,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112302.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -12429,7 +12428,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112303': {
     code: 112303,
@@ -12438,7 +12438,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12513,7 +12512,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112304': {
     code: 112304,
@@ -12522,7 +12522,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112304.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12597,7 +12596,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112306': {
     code: 112306,
@@ -12606,7 +12606,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112306.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12681,7 +12680,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112401': {
     code: 112401,
@@ -12690,7 +12690,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -12765,7 +12764,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112402': {
     code: 112402,
@@ -12774,7 +12774,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -12849,7 +12848,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112403': {
     code: 112403,
@@ -12858,7 +12858,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112403.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -12933,7 +12932,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112404': {
     code: 112404,
@@ -12942,7 +12942,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -13017,7 +13016,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'HighAngleFire'
   },
   '112405': {
     code: 112405,
@@ -13026,7 +13026,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -13101,7 +13100,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'HighAngleFire'
   },
   '112406': {
     code: 112406,
@@ -13110,7 +13110,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112406.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -13185,7 +13184,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'HighAngleFire'
   },
   '112407': {
     code: 112407,
@@ -13194,7 +13194,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -13269,7 +13268,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112408': {
     code: 112408,
@@ -13278,7 +13278,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -13353,7 +13352,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112501': {
     code: 112501,
@@ -13362,7 +13362,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112501.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -13437,7 +13436,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'HighAngleFire'
   },
   '112502': {
     code: 112502,
@@ -13446,7 +13446,6 @@ export default {
     itemType: 'Weapon',
     subType: 'HighAngleFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/HighAngleFire/item-112502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -13521,7 +13520,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'HighAngleFire'
   },
   '113101': {
     code: 113101,
@@ -13530,7 +13530,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/DirectFire/item-113101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -13605,7 +13604,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113201': {
     code: 113201,
@@ -13614,7 +13614,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/DirectFire/item-113201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -13689,7 +13688,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113202': {
     code: 113202,
@@ -13698,7 +13698,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DirectFire/item-113202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -13773,7 +13772,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113203': {
     code: 113203,
@@ -13782,7 +13782,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/DirectFire/item-113203.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -13857,7 +13856,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113205': {
     code: 113205,
@@ -13866,7 +13866,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/DirectFire/item-113205.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -13941,7 +13940,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113206': {
     code: 113206,
@@ -13950,7 +13950,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/DirectFire/item-113206.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -14025,7 +14024,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113207': {
     code: 113207,
@@ -14034,7 +14034,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DirectFire/item-113207.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -14109,7 +14108,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113301': {
     code: 113301,
@@ -14118,7 +14118,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DirectFire/item-113301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -14193,7 +14192,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113302': {
     code: 113302,
@@ -14202,7 +14202,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DirectFire/item-113302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -14277,7 +14276,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113401': {
     code: 113401,
@@ -14286,7 +14286,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DirectFire/item-113401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14361,7 +14360,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113404': {
     code: 113404,
@@ -14370,7 +14370,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/DirectFire/item-113404.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -14445,7 +14444,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113405': {
     code: 113405,
@@ -14454,7 +14454,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DirectFire/item-113405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14529,7 +14528,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113406': {
     code: 113406,
@@ -14538,7 +14538,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DirectFire/item-113406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14613,7 +14612,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113408': {
     code: 113408,
@@ -14622,7 +14622,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DirectFire/item-113408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14697,7 +14696,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'DirectFire'
   },
   '113409': {
     code: 113409,
@@ -14706,7 +14706,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DirectFire/item-113409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14781,7 +14780,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113410': {
     code: 113410,
@@ -14790,7 +14790,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DirectFire/item-113410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14865,7 +14864,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113411': {
     code: 113411,
@@ -14874,7 +14874,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/DirectFire/item-113411.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -14949,7 +14948,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'DirectFire'
   },
   '113412': {
     code: 113412,
@@ -14958,7 +14958,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DirectFire/item-113412.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -15033,7 +15032,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'DirectFire'
   },
   '113501': {
     code: 113501,
@@ -15042,7 +15042,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DirectFire/item-113501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -15117,7 +15116,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'DirectFire'
   },
   '113502': {
     code: 113502,
@@ -15126,7 +15126,6 @@ export default {
     itemType: 'Weapon',
     subType: 'DirectFire',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/DirectFire/item-113502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -15201,7 +15200,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'DirectFire'
   },
   '114101': {
     code: 114101,
@@ -15210,7 +15210,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Bow/item-114101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15285,7 +15284,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114201': {
     code: 114201,
@@ -15294,7 +15294,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Bow/item-114201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15369,7 +15368,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114202': {
     code: 114202,
@@ -15378,7 +15378,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Bow/item-114202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15453,7 +15452,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114203': {
     code: 114203,
@@ -15462,7 +15462,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bow/item-114203.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15537,7 +15536,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114301': {
     code: 114301,
@@ -15546,7 +15546,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bow/item-114301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15621,7 +15620,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114302': {
     code: 114302,
@@ -15630,7 +15630,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bow/item-114302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15705,7 +15704,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114303': {
     code: 114303,
@@ -15714,7 +15714,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bow/item-114303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15789,7 +15788,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114401': {
     code: 114401,
@@ -15798,7 +15798,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bow/item-114401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -15873,7 +15872,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114402': {
     code: 114402,
@@ -15882,7 +15882,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Bow/item-114402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -15957,7 +15956,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114403': {
     code: 114403,
@@ -15966,7 +15966,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bow/item-114403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -16041,7 +16040,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114405': {
     code: 114405,
@@ -16050,7 +16050,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bow/item-114405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -16125,7 +16124,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114406': {
     code: 114406,
@@ -16134,7 +16134,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bow/item-114406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -16209,7 +16208,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114407': {
     code: 114407,
@@ -16218,7 +16218,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bow/item-114407.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -16293,7 +16292,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Bow'
   },
   '114501': {
     code: 114501,
@@ -16302,7 +16302,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Bow/item-114501.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -16377,7 +16376,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Bow'
   },
   '114502': {
     code: 114502,
@@ -16386,7 +16386,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bow/item-114502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -16461,7 +16460,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Bow'
   },
   '114503': {
     code: 114503,
@@ -16470,7 +16470,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bow/item-114503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -16545,7 +16544,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Bow'
   },
   '114504': {
     code: 114504,
@@ -16554,7 +16554,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Bow',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Bow/item-114504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -16629,7 +16628,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Bow'
   },
   '115101': {
     code: 115101,
@@ -16638,7 +16638,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/CrossBow/item-115101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -16713,7 +16712,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115201': {
     code: 115201,
@@ -16722,7 +16722,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/CrossBow/item-115201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -16797,7 +16796,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115202': {
     code: 115202,
@@ -16806,7 +16806,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/CrossBow/item-115202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -16881,7 +16880,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115302': {
     code: 115302,
@@ -16890,7 +16890,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/CrossBow/item-115302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -16965,7 +16964,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115303': {
     code: 115303,
@@ -16974,7 +16974,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/CrossBow/item-115303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -17049,7 +17048,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115401': {
     code: 115401,
@@ -17058,7 +17058,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/CrossBow/item-115401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -17133,7 +17132,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115402': {
     code: 115402,
@@ -17142,7 +17142,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/CrossBow/item-115402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -17217,7 +17216,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115403': {
     code: 115403,
@@ -17226,7 +17226,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/CrossBow/item-115403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -17301,7 +17300,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115404': {
     code: 115404,
@@ -17310,7 +17310,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/CrossBow/item-115404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -17385,7 +17384,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115405': {
     code: 115405,
@@ -17394,7 +17394,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/CrossBow/item-115405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -17469,7 +17468,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'CrossBow'
   },
   '115406': {
     code: 115406,
@@ -17478,7 +17478,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/CrossBow/item-115406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -17553,7 +17552,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'CrossBow'
   },
   '115501': {
     code: 115501,
@@ -17562,7 +17562,6 @@ export default {
     itemType: 'Weapon',
     subType: 'CrossBow',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/CrossBow/item-115501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -17637,7 +17636,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'CrossBow'
   },
   '116101': {
     code: 116101,
@@ -17646,7 +17646,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Pistol/item-116101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -17721,7 +17720,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116201': {
     code: 116201,
@@ -17730,7 +17730,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Pistol/item-116201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -17805,7 +17804,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116202': {
     code: 116202,
@@ -17814,7 +17814,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Pistol/item-116202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -17889,7 +17888,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116301': {
     code: 116301,
@@ -17898,7 +17898,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Pistol/item-116301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -17973,7 +17972,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116401': {
     code: 116401,
@@ -17982,7 +17982,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Pistol/item-116401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -18057,7 +18056,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116402': {
     code: 116402,
@@ -18066,7 +18066,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Pistol/item-116402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -18141,7 +18140,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116403': {
     code: 116403,
@@ -18150,7 +18150,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Pistol/item-116403.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -18225,7 +18224,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Pistol'
   },
   '116404': {
     code: 116404,
@@ -18234,7 +18234,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Pistol/item-116404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -18309,7 +18308,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116405': {
     code: 116405,
@@ -18318,7 +18318,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Pistol/item-116405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -18393,7 +18392,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116406': {
     code: 116406,
@@ -18402,7 +18402,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Pistol/item-116406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -18477,7 +18476,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116407': {
     code: 116407,
@@ -18486,7 +18486,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Pistol/item-116407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -18561,7 +18560,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116408': {
     code: 116408,
@@ -18570,7 +18570,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Pistol/item-116408.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -18645,7 +18644,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116409': {
     code: 116409,
@@ -18654,7 +18654,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Pistol/item-116409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -18729,7 +18728,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116410': {
     code: 116410,
@@ -18738,7 +18738,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Pistol/item-116410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -18813,7 +18812,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Pistol'
   },
   '116501': {
     code: 116501,
@@ -18822,7 +18822,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Pistol/item-116501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -18897,7 +18896,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Pistol'
   },
   '116502': {
     code: 116502,
@@ -18906,7 +18906,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Pistol',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Pistol/item-116502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -18981,7 +18980,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Pistol'
   },
   '117101': {
     code: 117101,
@@ -18990,7 +18990,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -19065,7 +19064,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117201': {
     code: 117201,
@@ -19074,7 +19074,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -19149,7 +19148,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117301': {
     code: 117301,
@@ -19158,7 +19158,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -19233,7 +19232,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117401': {
     code: 117401,
@@ -19242,7 +19242,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -19317,7 +19316,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117402': {
     code: 117402,
@@ -19326,7 +19326,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -19401,7 +19400,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117403': {
     code: 117403,
@@ -19410,7 +19410,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -19485,7 +19484,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117404': {
     code: 117404,
@@ -19494,7 +19494,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -19569,7 +19568,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117405': {
     code: 117405,
@@ -19578,7 +19578,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -19653,7 +19652,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117406': {
     code: 117406,
@@ -19662,7 +19662,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117406.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -19737,7 +19736,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'AssaultRifle'
   },
   '117407': {
     code: 117407,
@@ -19746,7 +19746,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -19821,7 +19820,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117501': {
     code: 117501,
@@ -19830,7 +19830,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117501.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -19905,7 +19904,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'AssaultRifle'
   },
   '117502': {
     code: 117502,
@@ -19914,7 +19914,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -19989,7 +19988,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'AssaultRifle'
   },
   '117503': {
     code: 117503,
@@ -19998,7 +19998,6 @@ export default {
     itemType: 'Weapon',
     subType: 'AssaultRifle',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/AssaultRifle/item-117503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -20073,7 +20072,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'AssaultRifle'
   },
   '118101': {
     code: 118101,
@@ -20082,7 +20082,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -20157,7 +20156,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118201': {
     code: 118201,
@@ -20166,7 +20166,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -20241,7 +20240,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118301': {
     code: 118301,
@@ -20250,7 +20250,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -20325,7 +20324,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118401': {
     code: 118401,
@@ -20334,7 +20334,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -20409,7 +20408,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118402': {
     code: 118402,
@@ -20418,7 +20418,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -20493,7 +20492,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118403': {
     code: 118403,
@@ -20502,7 +20502,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -20577,7 +20576,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118404': {
     code: 118404,
@@ -20586,7 +20586,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -20661,7 +20660,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118405': {
     code: 118405,
@@ -20670,7 +20670,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -20745,7 +20744,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118406': {
     code: 118406,
@@ -20754,7 +20754,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -20829,7 +20828,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118407': {
     code: 118407,
@@ -20838,7 +20838,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -20913,7 +20912,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'SniperRifle'
   },
   '118501': {
     code: 118501,
@@ -20922,7 +20922,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -20997,7 +20996,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'SniperRifle'
   },
   '118502': {
     code: 118502,
@@ -21006,7 +21006,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -21081,7 +21080,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'SniperRifle'
   },
   '118503': {
     code: 118503,
@@ -21090,7 +21090,6 @@ export default {
     itemType: 'Weapon',
     subType: 'SniperRifle',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/SniperRifle/item-118503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -21165,7 +21164,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'SniperRifle'
   },
   '119101': {
     code: 119101,
@@ -21174,7 +21174,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -21249,7 +21248,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119201': {
     code: 119201,
@@ -21258,7 +21258,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -21333,7 +21332,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119301': {
     code: 119301,
@@ -21342,7 +21342,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -21417,7 +21416,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119302': {
     code: 119302,
@@ -21426,7 +21426,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -21501,7 +21500,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119401': {
     code: 119401,
@@ -21510,7 +21510,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -21585,7 +21584,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119402': {
     code: 119402,
@@ -21594,7 +21594,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -21669,7 +21668,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119403': {
     code: 119403,
@@ -21678,7 +21678,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119403.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -21753,7 +21752,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Nunchaku'
   },
   '119404': {
     code: 119404,
@@ -21762,7 +21762,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -21837,7 +21836,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Nunchaku'
   },
   '119501': {
     code: 119501,
@@ -21846,7 +21846,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -21921,7 +21920,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Nunchaku'
   },
   '119502': {
     code: 119502,
@@ -21930,7 +21930,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Nunchaku',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Nunchaku/item-119502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -22005,7 +22004,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Nunchaku'
   },
   '120101': {
     code: 120101,
@@ -22014,7 +22014,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Rapier/item-120101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -22089,7 +22088,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120201': {
     code: 120201,
@@ -22098,7 +22098,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Rapier/item-120201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -22173,7 +22172,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120301': {
     code: 120301,
@@ -22182,7 +22182,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Rapier/item-120301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -22257,7 +22256,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120302': {
     code: 120302,
@@ -22266,7 +22266,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Rapier/item-120302.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -22341,7 +22340,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120303': {
     code: 120303,
@@ -22350,7 +22350,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Rapier/item-120303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -22425,7 +22424,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120401': {
     code: 120401,
@@ -22434,7 +22434,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Rapier/item-120401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -22509,7 +22508,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120402': {
     code: 120402,
@@ -22518,7 +22518,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Rapier/item-120402.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -22593,7 +22592,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Rapier'
   },
   '120403': {
     code: 120403,
@@ -22602,7 +22602,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Rapier/item-120403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -22677,7 +22676,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120404': {
     code: 120404,
@@ -22686,7 +22686,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Rapier/item-120404.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -22761,7 +22760,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Rapier'
   },
   '120405': {
     code: 120405,
@@ -22770,7 +22770,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Rapier/item-120405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -22845,7 +22844,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Rapier'
   },
   '120406': {
     code: 120406,
@@ -22854,7 +22854,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Rapier/item-120406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -22929,7 +22928,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120407': {
     code: 120407,
@@ -22938,7 +22938,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Rapier/item-120407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -23013,7 +23012,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Rapier'
   },
   '120501': {
     code: 120501,
@@ -23022,7 +23022,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Rapier',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Rapier/item-120501.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -23097,7 +23096,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Rapier'
   },
   '121101': {
     code: 121101,
@@ -23106,7 +23106,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Guitar/item-121101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23181,7 +23180,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121201': {
     code: 121201,
@@ -23190,7 +23190,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Guitar/item-121201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23265,7 +23264,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121202': {
     code: 121202,
@@ -23274,7 +23274,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Guitar/item-121202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23349,7 +23348,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121301': {
     code: 121301,
@@ -23358,7 +23358,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Guitar/item-121301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23433,7 +23432,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121302': {
     code: 121302,
@@ -23442,7 +23442,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Guitar/item-121302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23517,7 +23516,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121303': {
     code: 121303,
@@ -23526,7 +23526,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Guitar/item-121303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23601,7 +23600,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121304': {
     code: 121304,
@@ -23610,7 +23610,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Guitar/item-121304.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23685,7 +23684,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121305': {
     code: 121305,
@@ -23694,7 +23694,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Guitar/item-121305.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23769,7 +23768,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121306': {
     code: 121306,
@@ -23778,7 +23778,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Guitar/item-121306.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -23853,7 +23852,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121401': {
     code: 121401,
@@ -23862,7 +23862,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Guitar/item-121401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -23937,7 +23936,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121402': {
     code: 121402,
@@ -23946,7 +23946,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Guitar/item-121402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -24021,7 +24020,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121403': {
     code: 121403,
@@ -24030,7 +24030,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Guitar/item-121403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -24105,7 +24104,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121404': {
     code: 121404,
@@ -24114,7 +24114,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Guitar/item-121404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -24189,7 +24188,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121405': {
     code: 121405,
@@ -24198,7 +24198,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Guitar/item-121405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -24273,7 +24272,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Guitar'
   },
   '121406': {
     code: 121406,
@@ -24282,7 +24282,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Guitar/item-121406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -24357,7 +24356,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121407': {
     code: 121407,
@@ -24366,7 +24366,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Guitar/item-121407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -24441,7 +24440,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Guitar'
   },
   '121501': {
     code: 121501,
@@ -24450,7 +24450,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Guitar',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Guitar/item-121501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -24525,7 +24524,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Guitar'
   },
   '122101': {
     code: 122101,
@@ -24534,7 +24534,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Camera/item-122101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -24609,7 +24608,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122201': {
     code: 122201,
@@ -24618,7 +24618,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Camera/item-122201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -24693,7 +24692,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122301': {
     code: 122301,
@@ -24702,7 +24702,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Camera/item-122301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -24777,7 +24776,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122302': {
     code: 122302,
@@ -24786,7 +24786,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Camera/item-122302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -24861,7 +24860,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122303': {
     code: 122303,
@@ -24870,7 +24870,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Camera/item-122303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -24945,7 +24944,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122401': {
     code: 122401,
@@ -24954,7 +24954,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Camera/item-122401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -25029,7 +25028,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122402': {
     code: 122402,
@@ -25038,7 +25038,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Camera/item-122402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -25113,7 +25112,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122403': {
     code: 122403,
@@ -25122,7 +25122,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Camera/item-122403.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -25197,7 +25196,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Camera'
   },
   '122404': {
     code: 122404,
@@ -25206,7 +25206,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Camera/item-122404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -25281,7 +25280,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122405': {
     code: 122405,
@@ -25290,7 +25290,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Camera/item-122405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -25365,7 +25364,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Camera'
   },
   '122501': {
     code: 122501,
@@ -25374,7 +25374,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Camera',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Camera/item-122501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -25449,7 +25448,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Camera'
   },
   '130101': {
     code: 130101,
@@ -25458,7 +25458,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Common',
-    imgPath: '/images/item/Weapon/Arcana/item-130101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -25533,7 +25532,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130201': {
     code: 130201,
@@ -25542,7 +25542,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Arcana/item-130201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -25617,7 +25616,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130202': {
     code: 130202,
@@ -25626,7 +25626,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/Arcana/item-130202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -25701,7 +25700,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130301': {
     code: 130301,
@@ -25710,7 +25710,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Arcana/item-130301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -25785,7 +25784,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130302': {
     code: 130302,
@@ -25794,7 +25794,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Arcana/item-130302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -25869,7 +25868,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130303': {
     code: 130303,
@@ -25878,7 +25878,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Arcana/item-130303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -25953,7 +25952,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130304': {
     code: 130304,
@@ -25962,7 +25962,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/Arcana/item-130304.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -26037,7 +26036,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130401': {
     code: 130401,
@@ -26046,7 +26046,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Arcana/item-130401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -26121,7 +26120,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130402': {
     code: 130402,
@@ -26130,7 +26130,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Arcana/item-130402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -26205,7 +26204,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130403': {
     code: 130403,
@@ -26214,7 +26214,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Arcana/item-130403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -26289,7 +26288,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130404': {
     code: 130404,
@@ -26298,7 +26298,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/Arcana/item-130404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -26373,7 +26372,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'Arcana'
   },
   '130405': {
     code: 130405,
@@ -26382,7 +26382,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Arcana/item-130405.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -26457,7 +26456,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Arcana'
   },
   '130501': {
     code: 130501,
@@ -26466,7 +26466,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Arcana/item-130501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -26541,7 +26540,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'Arcana'
   },
   '130502': {
     code: 130502,
@@ -26550,7 +26550,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Arcana',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Arcana/item-130502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -26625,7 +26624,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'Arcana'
   },
   '131101': {
     code: 131101,
@@ -26634,7 +26634,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/VFArm/item-131101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -26709,7 +26708,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131102': {
     code: 131102,
@@ -26718,7 +26718,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/VFArm/item-131102.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -26793,7 +26792,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131201': {
     code: 131201,
@@ -26802,7 +26802,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Weapon/VFArm/item-131201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -26877,7 +26876,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131301': {
     code: 131301,
@@ -26886,7 +26886,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/VFArm/item-131301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -26961,7 +26960,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131302': {
     code: 131302,
@@ -26970,7 +26970,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/VFArm/item-131302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -27045,7 +27044,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131303': {
     code: 131303,
@@ -27054,7 +27054,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Weapon/VFArm/item-131303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -27129,7 +27128,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131401': {
     code: 131401,
@@ -27138,7 +27138,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/VFArm/item-131401.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -27213,7 +27212,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131402': {
     code: 131402,
@@ -27222,7 +27222,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/VFArm/item-131402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -27297,7 +27296,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131403': {
     code: 131403,
@@ -27306,7 +27306,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Weapon/VFArm/item-131403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -27381,7 +27380,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    weaponType: 'VFArm'
   },
   '131501': {
     code: 131501,
@@ -27390,7 +27390,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27465,7 +27464,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '131502': {
     code: 131502,
@@ -27474,7 +27474,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27549,7 +27548,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'VFArm'
   },
   '131503': {
     code: 131503,
@@ -27558,7 +27558,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27633,7 +27632,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'VFArm'
   },
   '131504': {
     code: 131504,
@@ -27642,7 +27642,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27717,7 +27716,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '131505': {
     code: 131505,
@@ -27726,7 +27726,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131505.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27801,7 +27800,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'VFArm'
   },
   '131506': {
     code: 131506,
@@ -27810,7 +27810,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131506.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27885,7 +27884,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'VFArm'
   },
   '131507': {
     code: 131507,
@@ -27894,7 +27894,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131507.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -27969,7 +27968,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '131508': {
     code: 131508,
@@ -27978,7 +27978,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131508.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -28053,7 +28052,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    weaponType: 'VFArm'
   },
   '131509': {
     code: 131509,
@@ -28062,7 +28062,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-131509.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -28137,16 +28136,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    weaponType: 'VFArm'
   },
   '201101': {
     code: 201101,
     name: '머리띠',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Common',
-    imgPath: '/images/item/Head/item-201101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28221,16 +28220,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201102': {
     code: 201102,
     name: '모자',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Common',
-    imgPath: '/images/item/Head/item-201102.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28305,16 +28304,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201104': {
     code: 201104,
     name: '자전거 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Common',
-    imgPath: '/images/item/Head/item-201104.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28389,16 +28388,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201111': {
     code: 201111,
     name: '자연의 응답 Lv2',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Common',
-    imgPath: '/images/item/Head/item-201111.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28473,16 +28472,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201112': {
     code: 201112,
     name: '자연의 응답 Lv3',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Common',
-    imgPath: '/images/item/Head/item-201112.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28557,16 +28556,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201201': {
     code: 201201,
     name: '가면',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Head/item-201201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28641,16 +28640,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201202': {
     code: 201202,
     name: '머리테',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Head/item-201202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28725,16 +28724,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201203': {
     code: 201203,
     name: '베레모',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Head/item-201203.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28809,16 +28808,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201204': {
     code: 201204,
     name: '사슬 코이프',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Head/item-201204.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28893,16 +28892,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201205': {
     code: 201205,
     name: '안전모',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Head/item-201205.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -28977,16 +28976,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201206': {
     code: 201206,
     name: '피어나는 봉오리',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Head/item-201206.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29061,16 +29060,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201301': {
     code: 201301,
     name: '방탄모',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Head/item-201301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29145,16 +29144,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201302': {
     code: 201302,
     name: '소방 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Head/item-201302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29229,16 +29228,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201303': {
     code: 201303,
     name: '티아라',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Head/item-201303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29313,16 +29312,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201304': {
     code: 201304,
     name: '로빈',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201304.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -29397,16 +29396,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201305': {
     code: 201305,
     name: '싱그러운 꽃잎',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Head/item-201305.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29481,16 +29480,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201401': {
     code: 201401,
     name: '왕관',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Head/item-201401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29565,16 +29564,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201402': {
     code: 201402,
     name: '투구',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Head/item-201402.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -29649,16 +29648,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201403': {
     code: 201403,
     name: '미스릴 투구',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201403.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -29733,16 +29732,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201404': {
     code: 201404,
     name: '수정 티아라',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -29817,16 +29816,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201405': {
     code: 201405,
     name: '오토바이 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -29901,16 +29900,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201406': {
     code: 201406,
     name: '전술-OPS 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -29985,16 +29984,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201407': {
     code: 201407,
     name: '기사단장의 투구',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30069,16 +30068,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201408': {
     code: 201408,
     name: '월계관',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201408.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -30153,16 +30152,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201409': {
     code: 201409,
     name: '제국 왕관',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30237,16 +30236,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201410': {
     code: 201410,
     name: '황실 부르고넷',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30321,16 +30320,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201411': {
     code: 201411,
     name: '변검',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201411.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -30405,16 +30404,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Head'
   },
   '201412': {
     code: 201412,
     name: '모호크 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201412.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30489,16 +30488,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201413': {
     code: 201413,
     name: '비질란테',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201413.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30573,16 +30572,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201414': {
     code: 201414,
     name: '다이아뎀',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201414.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30657,16 +30656,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201415': {
     code: 201415,
     name: '성기사의 투구',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201415.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30741,16 +30740,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201416': {
     code: 201416,
     name: '만개하는 선율',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201416.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30825,16 +30824,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201417': {
     code: 201417,
     name: '카우보이 모자',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201417.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30909,16 +30908,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201418': {
     code: 201418,
     name: '플라즈마 투구',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Head/item-201418.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -30993,16 +30992,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Head'
   },
   '201501': {
     code: 201501,
     name: '천사의 고리',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31077,16 +31076,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Head'
   },
   '201502': {
     code: 201502,
     name: '빛의 증표',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31161,16 +31160,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201503': {
     code: 201503,
     name: '페르소나',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31245,16 +31244,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0.2,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Head'
   },
   '201504': {
     code: 201504,
     name: '예언자의 터번',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31329,16 +31328,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201505': {
     code: 201505,
     name: '레이싱 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201505.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31413,16 +31412,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201506': {
     code: 201506,
     name: '황야의 별',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201506.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31497,16 +31496,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201507': {
     code: 201507,
     name: '우주 비행사의 헬멧',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201507.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31581,16 +31580,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201508': {
     code: 201508,
     name: '드워프의 투구',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201508.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31665,16 +31664,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '201509': {
     code: 201509,
     name: '트와일라잇',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-201509.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -31749,16 +31748,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '202101': {
     code: 202101,
     name: '바람막이',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Common',
-    imgPath: '/images/item/Chest/item-202101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -31833,16 +31832,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202103': {
     code: 202103,
     name: '승복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Common',
-    imgPath: '/images/item/Chest/item-202103.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -31917,16 +31916,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202105': {
     code: 202105,
     name: '전신 수영복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Common',
-    imgPath: '/images/item/Chest/item-202105.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32001,16 +32000,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202106': {
     code: 202106,
     name: '천 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Common',
-    imgPath: '/images/item/Chest/item-202106.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32085,16 +32084,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202201': {
     code: 202201,
     name: '가죽 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32169,16 +32168,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202202': {
     code: 202202,
     name: '가죽 자켓',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32253,16 +32252,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202205': {
     code: 202205,
     name: '군복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202205.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32337,16 +32336,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202206': {
     code: 202206,
     name: '덧댄 로브',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202206.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32421,16 +32420,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202207': {
     code: 202207,
     name: '드레스',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202207.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32505,16 +32504,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202209': {
     code: 202209,
     name: '비키니',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202209.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32589,16 +32588,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202210': {
     code: 202210,
     name: '잠수복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202210.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32673,16 +32672,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202211': {
     code: 202211,
     name: '사제복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Chest/item-202211.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32757,16 +32756,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202301': {
     code: 202301,
     name: '라이더 자켓',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32841,16 +32840,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202302': {
     code: 202302,
     name: '사슬 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -32925,16 +32924,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202303': {
     code: 202303,
     name: '정장',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -33009,16 +33008,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202304': {
     code: 202304,
     name: '치파오',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202304.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -33093,16 +33092,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202305': {
     code: 202305,
     name: '판금 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202305.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -33177,16 +33176,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202306': {
     code: 202306,
     name: '한복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202306.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -33261,16 +33260,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202307': {
     code: 202307,
     name: '고위 사제복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202307.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -33345,16 +33344,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202401': {
     code: 202401,
     name: '방탄조끼',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Chest/item-202401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -33429,16 +33428,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202402': {
     code: 202402,
     name: '석양의 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -33513,16 +33512,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202404': {
     code: 202404,
     name: '어사의',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202404.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -33597,16 +33596,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202405': {
     code: 202405,
     name: '광학미채 슈트',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -33681,16 +33680,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202406': {
     code: 202406,
     name: '락커의 자켓',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -33765,16 +33764,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202407': {
     code: 202407,
     name: '미스릴 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202407.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -33849,16 +33848,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202408': {
     code: 202408,
     name: '성기사의 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -33933,16 +33932,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202410': {
     code: 202410,
     name: '아마조네스 아머',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34017,16 +34016,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202411': {
     code: 202411,
     name: '용의 도복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202411.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34101,16 +34100,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202412': {
     code: 202412,
     name: '지휘관의 갑옷',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202412.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34185,16 +34184,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202413': {
     code: 202413,
     name: '집사복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202413.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34269,16 +34268,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202415': {
     code: 202415,
     name: '배틀 슈트',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202415.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34353,16 +34352,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202416': {
     code: 202416,
     name: '불꽃 드레스',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202416.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -34437,16 +34436,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202417': {
     code: 202417,
     name: 'EOD 슈트',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202417.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34521,16 +34520,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202418': {
     code: 202418,
     name: '턱시도',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202418.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34605,16 +34604,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202419': {
     code: 202419,
     name: '제사장의 예복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202419.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34689,16 +34688,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202420': {
     code: 202420,
     name: '창파오',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202420.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34773,16 +34772,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202421': {
     code: 202421,
     name: '미스릴 크롭',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202421.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -34857,16 +34856,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202422': {
     code: 202422,
     name: '방화복',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Chest/item-202422.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -34941,16 +34940,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   },
   '202501': {
     code: 202501,
     name: '카바나',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35025,16 +35024,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202502': {
     code: 202502,
     name: '퀸 오브 하트',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35109,16 +35108,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Chest'
   },
   '202503': {
     code: 202503,
     name: '성법의',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35193,16 +35192,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0.2,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Chest'
   },
   '202504': {
     code: 202504,
     name: '버건디 47',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35277,16 +35276,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Chest'
   },
   '202505': {
     code: 202505,
     name: '아오자이',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202505.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35361,16 +35360,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Chest'
   },
   '202506': {
     code: 202506,
     name: '팬텀 자켓',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202506.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35445,16 +35444,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202507': {
     code: 202507,
     name: '가디언 슈트',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202507.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35529,16 +35528,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Chest'
   },
   '202508': {
     code: 202508,
     name: '진은 드레스',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202508.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35613,16 +35612,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202509': {
     code: 202509,
     name: '선녀강림',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202509.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35697,16 +35696,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202510': {
     code: 202510,
     name: '고스트',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202510.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35781,16 +35780,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202511': {
     code: 202511,
     name: '핏빛 망토',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202511.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35865,16 +35864,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202512': {
     code: 202512,
     name: '오메르타',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202512.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -35949,16 +35948,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Chest'
   },
   '202513': {
     code: 202513,
     name: '슈팅스타 자켓',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202513.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -36033,16 +36032,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '202514': {
     code: 202514,
     name: '쿠튀리에',
     modeType: 0,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Chest/item-202514.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -36117,16 +36116,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0.2,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Chest'
   },
   '203101': {
     code: 203101,
     name: '손목시계',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Common',
-    imgPath: '/images/item/Arm/item-203101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36201,16 +36200,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203102': {
     code: 203102,
     name: '붕대',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Common',
-    imgPath: '/images/item/Arm/item-203102.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36285,16 +36284,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203104': {
     code: 203104,
     name: '팔찌',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Common',
-    imgPath: '/images/item/Arm/item-203104.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36369,16 +36368,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203201': {
     code: 203201,
     name: '가죽 방패',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Arm/item-203201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36453,16 +36452,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203202': {
     code: 203202,
     name: '분대장 완장',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Arm/item-203202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36537,16 +36536,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203203': {
     code: 203203,
     name: '브레이서',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Arm/item-203203.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36621,16 +36620,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203204': {
     code: 203204,
     name: '고장난 시계',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Arm/item-203204.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36705,16 +36704,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203301': {
     code: 203301,
     name: '검집',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Arm/item-203301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36789,16 +36788,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203302': {
     code: 203302,
     name: '금팔찌',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Arm/item-203302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36873,16 +36872,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203303': {
     code: 203303,
     name: '바주반드',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Arm/item-203303.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -36957,16 +36956,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203304': {
     code: 203304,
     name: '진홍 팔찌',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Arm/item-203304.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -37041,16 +37040,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203305': {
     code: 203305,
     name: '바브드 블로섬',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Arm/item-203305.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -37125,16 +37124,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203306': {
     code: 203306,
     name: '포이즌드',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203306.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37209,16 +37208,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203401': {
     code: 203401,
     name: '강철 방패',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Arm/item-203401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -37293,16 +37292,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203402': {
     code: 203402,
     name: '소드 스토퍼',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37377,16 +37376,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203403': {
     code: 203403,
     name: '드라우프니르',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37461,16 +37460,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203404': {
     code: 203404,
     name: '미스릴 방패',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203404.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -37545,16 +37544,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203405': {
     code: 203405,
     name: '바이탈 센서',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203405.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37629,16 +37628,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203406': {
     code: 203406,
     name: '기사의 신조',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37713,16 +37712,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203407': {
     code: 203407,
     name: '샤자한의 검집',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203407.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37797,16 +37796,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203408': {
     code: 203408,
     name: '큐브 워치',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203408.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -37881,16 +37880,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203409': {
     code: 203409,
     name: '아이기스',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -37965,16 +37964,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203410': {
     code: 203410,
     name: '틴달로스의 팔찌',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203410.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38049,16 +38048,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203411': {
     code: 203411,
     name: '나이팅게일',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203411.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38133,16 +38132,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203412': {
     code: 203412,
     name: '플라즈마 아크',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203412.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38217,16 +38216,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203413': {
     code: 203413,
     name: '텔루리안 타임피스',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203413.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -38301,16 +38300,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Arm'
   },
   '203414': {
     code: 203414,
     name: '스마트 밴드',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203414.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38385,16 +38384,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203415': {
     code: 203415,
     name: '미닛맨의 표식',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203415.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38469,16 +38468,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203501': {
     code: 203501,
     name: '스카디의 팔찌',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -38553,16 +38552,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203502': {
     code: 203502,
     name: '레이더',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203502.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38637,16 +38636,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203503': {
     code: 203503,
     name: '오토-암즈',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -38721,16 +38720,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Arm'
   },
   '203504': {
     code: 203504,
     name: '프로미넌스',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -38805,16 +38804,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Arm'
   },
   '203505': {
     code: 203505,
     name: '가시지네 견갑',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203505.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -38889,16 +38888,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203506': {
     code: 203506,
     name: '스포츠 시계',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Arm/item-203506.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -38973,16 +38972,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Arm'
   },
   '203507': {
     code: 203507,
     name: '틴달로스의 군주',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203507.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -39057,16 +39056,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203508': {
     code: 203508,
     name: '샤를마뉴의 방패',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203508.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -39141,16 +39140,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '203509': {
     code: 203509,
     name: '혈사조',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203509.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -39225,16 +39224,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Arm'
   },
   '203510': {
     code: 203510,
     name: '용의 비늘',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203510.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -39309,16 +39308,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Arm'
   },
   '203511': {
     code: 203511,
     name: '서슬가시 체인',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203511.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -39393,16 +39392,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Arm'
   },
   '203512': {
     code: 203512,
     name: '아흐라만의 손길',
     modeType: 0,
-    itemType: 'Arm',
+    itemType: 'Armor',
     subType: 'Arm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Arm/item-203512.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -39477,16 +39476,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Arm'
   },
   '204101': {
     code: 204101,
     name: '슬리퍼',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Common',
-    imgPath: '/images/item/Leg/item-204101.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -39561,16 +39560,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204102': {
     code: 204102,
     name: '운동화',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Common',
-    imgPath: '/images/item/Leg/item-204102.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -39645,16 +39644,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204103': {
     code: 204103,
     name: '타이즈',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Common',
-    imgPath: '/images/item/Leg/item-204103.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -39729,16 +39728,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204201': {
     code: 204201,
     name: '무릎 보호대',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204201.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -39813,16 +39812,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204202': {
     code: 204202,
     name: '체인 레깅스',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204202.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -39897,16 +39896,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204203': {
     code: 204203,
     name: '하이힐',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204203.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -39981,16 +39980,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204204': {
     code: 204204,
     name: '힐리스',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204204.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -40065,16 +40064,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204205': {
     code: 204205,
     name: '나막신',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204205.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -40149,16 +40148,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204301': {
     code: 204301,
     name: '덧댄 슬리퍼',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204301.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -40233,16 +40232,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204302': {
     code: 204302,
     name: '부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Uncommon',
-    imgPath: '/images/item/Leg/item-204302.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -40317,16 +40316,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204303': {
     code: 204303,
     name: '등산화',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204303.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -40401,16 +40400,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204304': {
     code: 204304,
     name: '아이젠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204304.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -40485,16 +40484,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204401': {
     code: 204401,
     name: '강철 무릎 보호대',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Leg/item-204401.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -40569,16 +40568,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204402': {
     code: 204402,
     name: '경량화 부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204402.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -40653,16 +40652,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204403': {
     code: 204403,
     name: '매버릭 러너',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204403.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -40737,16 +40736,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204404': {
     code: 204404,
     name: '전투화',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Rare',
-    imgPath: '/images/item/Leg/item-204404.png',
     isCompletedItem: false,
     alertInSpectator: false,
     markingType: 'None',
@@ -40821,16 +40820,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204406': {
     code: 204406,
     name: '풍화륜',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204406.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -40905,16 +40904,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204407': {
     code: 204407,
     name: '미스릴 부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204407.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -40989,16 +40988,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Leg'
   },
   '204408': {
     code: 204408,
     name: '부케팔로스',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204408.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -41073,16 +41072,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204409': {
     code: 204409,
     name: 'EOD 부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204409.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -41157,16 +41156,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204410': {
     code: 204410,
     name: '글레이셜 슈즈',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204410.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41241,16 +41240,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Leg'
   },
   '204411': {
     code: 204411,
     name: '클링온 부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204411.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -41325,16 +41324,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204412': {
     code: 204412,
     name: '타키온 브레이스',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204412.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -41409,16 +41408,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204413': {
     code: 204413,
     name: '탭루트',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204413.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41493,16 +41492,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Leg'
   },
   '204414': {
     code: 204414,
     name: '아이언 메이든',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204414.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41577,16 +41576,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Leg'
   },
   '204415': {
     code: 204415,
     name: 'SCV',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Epic',
-    imgPath: '/images/item/Leg/item-204415.png',
     isCompletedItem: true,
     alertInSpectator: false,
     markingType: 'None',
@@ -41661,16 +41660,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Leg'
   },
   '204501': {
     code: 204501,
     name: '헤르메스의 부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41745,16 +41744,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 40
+    creditValueWhenConvertedToBounty: 40,
+    armorType: 'Leg'
   },
   '204502': {
     code: 204502,
     name: '분홍신',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41829,16 +41828,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 55
+    creditValueWhenConvertedToBounty: 55,
+    armorType: 'Leg'
   },
   '204503': {
     code: 204503,
     name: '블레이드 부츠',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41913,16 +41912,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Leg'
   },
   '204504': {
     code: 204504,
     name: '알렉산드로스',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -41997,16 +41996,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Leg'
   },
   '204505': {
     code: 204505,
     name: '칼날 다리',
     modeType: 0,
-    itemType: 'Leg',
+    itemType: 'Armor',
     subType: 'Leg',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Leg/item-204505.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42081,7 +42080,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Leg'
   },
   '601501': {
     code: 601501,
@@ -42090,7 +42090,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42165,7 +42164,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601502': {
     code: 601502,
@@ -42174,7 +42174,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601502.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42249,7 +42248,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601503': {
     code: 601503,
@@ -42258,7 +42258,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601503.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42333,7 +42332,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601504': {
     code: 601504,
@@ -42342,7 +42342,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601504.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42417,7 +42416,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 45
+    creditValueWhenConvertedToBounty: 45,
+    weaponType: 'VFArm'
   },
   '601505': {
     code: 601505,
@@ -42426,7 +42426,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601505.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42501,7 +42500,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601506': {
     code: 601506,
@@ -42510,7 +42510,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601506.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42585,7 +42584,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601507': {
     code: 601507,
@@ -42594,7 +42594,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601507.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42669,7 +42668,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601508': {
     code: 601508,
@@ -42678,7 +42678,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601508.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42753,7 +42752,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '601509': {
     code: 601509,
@@ -42762,7 +42762,6 @@ export default {
     itemType: 'Weapon',
     subType: 'VFArm',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/VFArm/item-601509.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42837,7 +42836,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'VFArm'
   },
   '602409': {
     code: 602409,
@@ -42846,7 +42846,6 @@ export default {
     itemType: 'Weapon',
     subType: 'TwoHandSword',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/TwoHandSword/item-602409.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -42921,7 +42920,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'TwoHandSword'
   },
   '607406': {
     code: 607406,
@@ -42930,7 +42930,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Spear',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Spear/item-607406.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -43005,7 +43004,8 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Spear'
   },
   '610501': {
     code: 610501,
@@ -43014,7 +43014,6 @@ export default {
     itemType: 'Weapon',
     subType: 'Glove',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Weapon/Glove/item-610501.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -43089,16 +43088,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    weaponType: 'Glove'
   },
   '701451': {
     code: 701451,
     name: '택티컬 바이저',
     modeType: 0,
-    itemType: 'Head',
+    itemType: 'Armor',
     subType: 'Head',
     itemGrade: 'Legend',
-    imgPath: '/images/item/Head/item-701451.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -43173,16 +43172,16 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 25
+    creditValueWhenConvertedToBounty: 25,
+    armorType: 'Head'
   },
   '702601': {
     code: 702601,
     name: '이단심판관',
     modeType: 8,
-    itemType: 'Chest',
+    itemType: 'Armor',
     subType: 'Chest',
     itemGrade: 'Mythic',
-    imgPath: '/images/item/Chest/item-702601.png',
     isCompletedItem: true,
     alertInSpectator: true,
     markingType: 'None',
@@ -43257,6 +43256,7 @@ export default {
     uniqueLifeSteal: 0,
     uniqueSkillAmpRatio: 0,
     restoreItemWhenResurrected: true,
-    creditValueWhenConvertedToBounty: 0
+    creditValueWhenConvertedToBounty: 0,
+    armorType: 'Chest'
   }
 };

@@ -2,9 +2,7 @@
 import SidebarWrapper from './SidebarWrapper.vue';
 import WeaponTypeSlotComponent from './WeaponTypeSlotComponent.vue';
 import ItemSlotComponent from './ItemSlotComponent.vue';
-import { allItemTypes } from '@/assets/data/itemData';
-import { usePopupStore } from '@/stores/popup';
-const popup = usePopupStore();
+import { equipableItemTypes as slotTypes } from '@/assets/data/itemData';
 </script>
 
 <template>
@@ -12,7 +10,7 @@ const popup = usePopupStore();
     <div class="slots">
       <WeaponTypeSlotComponent />
       <div class="item-slot-container">
-        <ItemSlotComponent v-for="itemType in allItemTypes" :key="itemType" :itemType="itemType" />
+        <ItemSlotComponent v-for="slotType in slotTypes" :key="slotType" :slotType="slotType" />
       </div>
     </div>
   </SidebarWrapper>

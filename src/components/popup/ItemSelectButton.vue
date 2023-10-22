@@ -18,7 +18,7 @@ const { item } = defineProps(['item']);
       popupStore.closePopup();
     "
   >
-    <ItemIcon :item="item" />
+    <ItemIcon :item="item" :size="4" />
     <span>{{ item.name }}</span>
   </div>
 </template>
@@ -27,7 +27,6 @@ const { item } = defineProps(['item']);
 .item-button {
   width: 5rem;
   height: 4.5rem;
-  margin: 10px;
   padding: 5px;
   border-radius: 0.4rem;
   cursor: pointer;

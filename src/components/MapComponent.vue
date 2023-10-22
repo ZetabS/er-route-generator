@@ -142,11 +142,15 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('resize', resizeElements);
 });
+
+const imgPath = computed(() => {
+  return import.meta.env.BASE_URL + `src/assets/images/map/map.webp`;
+});
 </script>
 
 <template>
   <div class="component">
-    <img ref="imgElement" @load="resizeElements()" src="/images/map/map.webp" alt="Lumia Map" />
+    <img ref="imgElement" @load="resizeElements()" :src="imgPath" alt="Lumia Map" />
     <div class="area-container" :style="elementSize">
       <div class="area-name" v-for="(area, index) in areas" :key="index" :style="area.style">
         {{ area.name }}
