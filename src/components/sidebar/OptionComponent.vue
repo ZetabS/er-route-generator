@@ -3,7 +3,7 @@ import SidebarWrapper from './SidebarWrapper.vue';
 </script>
 
 <template>
-  <SidebarWrapper>
+  <SidebarWrapper :size="10">
     <div class="route-select-container">
       <label for="route-dropdown-1"></label>
       <select class="route-dropdown" id="route-dropdown-1" name="dropdown">

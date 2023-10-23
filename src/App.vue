@@ -6,12 +6,14 @@ import ItemSelectComponent from './components/sidebar/ItemSelectComponent.vue';
 import TestComponent from './components/sidebar/TestComponent.vue';
 import OptionComponent from './components/sidebar/OptionComponent.vue';
 import PopupContainer from './components/popup/PopupContainer.vue';
+import ButtonContainer from './components/sidebar/ButtonContainer.vue';
 </script>
 
 <template>
   <HeaderComponent />
   <div class="sidebar left">
     <ItemSelectComponent />
+    <ButtonContainer />
     <OptionComponent />
   </div>
 
@@ -20,8 +22,6 @@ import PopupContainer from './components/popup/PopupContainer.vue';
   </div>
 
   <div class="sidebar right">
-    <TestComponent />
-    <TestComponent />
     <TestComponent />
   </div>
   <PopupContainer />

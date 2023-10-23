@@ -6,7 +6,7 @@ import { equipableItemTypes as slotTypes } from '@/assets/data/itemData';
 </script>
 
 <template>
-  <SidebarWrapper>
+  <SidebarWrapper :size="10">
     <div class="slots">
       <WeaponTypeSlotComponent />
       <div class="item-slot-container">

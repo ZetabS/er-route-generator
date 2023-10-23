@@ -48,6 +48,6 @@ span {
 }
 
 .item-button:hover {
-  background-color: var(--bg-duller-highlighted);
+  background-color: var(--button-bg-hover);
 }
 </style>

@@ -8,8 +8,8 @@ const size = 18;
 
 <template>
   <div
-    class="close-button"
-    @click="selectedStore.deselectItem(slotType)"
+    class="remove-button"
+    @click="selectedStore.deselectItem(props.slotType)"
     :style="`
     width: ${size}px;
     height: ${size}px;
@@ -22,7 +22,7 @@ const size = 18;
 </template>
 
 <style scoped>
-.close-button {
+.remove-button {
   background-color: var(--bg-duller);
   border: none;
   border-radius: 50px;
@@ -34,7 +34,7 @@ const size = 18;
   align-items: center;
 }
 
-.close-button:hover {
+.remove-button:hover {
   background-color: var(--bg-duller-highlighted);
 }
 </style>

@@ -39,10 +39,6 @@ body {
   place-items: center;
 }
 
-*:hover {
-  outline: 1px blue solid;
-}
-
 * {
   color: var(--font-color-1);
   margin: 0;

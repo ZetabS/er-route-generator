@@ -1,15 +1,16 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const props = defineProps(['size']);
+</script>
 
 <template>
-  <div class="side-component">
+  <div class="side-component" :style="`height: ${props.size}rem`">
     <slot></slot>
   </div>
 </template>
 
 <style scoped>
 .side-component {
-  background-color: var(--bg-focus);
-  height: 10rem;
+  background-color: var(--sidebar-bg);
   padding: var(--space-medium);
   border-style: hidden;
   border-radius: var(--space-2);

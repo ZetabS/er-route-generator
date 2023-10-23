@@ -6,7 +6,7 @@ const num = ref(0);
 </script>
 
 <template>
-  <SidebarWrapper>
+  <SidebarWrapper :size="10">
     {{ num }}
     <br />
     <TestText :num="num" />
