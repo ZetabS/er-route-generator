@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import PopupWrapper from '@/components/popup/PopupWrapper.vue';
-import WeaponTypeSelectButton from './WeaponTypeSelectButton.vue';
+import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
+import SelectWeaponTypeButtonVue from './SelectWeaponTypeButton.vue';
 import { allWeaponTypes } from '@/assets/data/itemData';
+const props = defineProps(['closePopup']);
 </script>
 
 <template>
-  <PopupWrapper>
+  <PopupWrapper :closePopup="closePopup">
     <h2>무기 선택</h2>
     <div class="button-container">
-      <WeaponTypeSelectButton
+      <SelectWeaponTypeButtonVue
         v-for="weaponType in allWeaponTypes"
         :key="weaponType"
         :weapon-type="weaponType"
+        :closePopup="closePopup"
       />
     </div>
   </PopupWrapper>

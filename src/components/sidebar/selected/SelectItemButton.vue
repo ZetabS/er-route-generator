@@ -2,29 +2,26 @@
 import ItemIcon from '@/components/icon/ItemIcon.vue';
 
 import { useSelectedStore } from '@/stores/selected';
-const selectedItemStore = useSelectedStore();
+const selectedStore = useSelectedStore();
 
-import { usePopupStore } from '@/stores/popup';
-const popupStore = usePopupStore();
-
-const props = defineProps(['item', 'slotType']);
+defineProps(['item', 'slotType', 'closePopup']);
 </script>
 
 <template>
   <div
-    class="item-button"
+    class="button"
     @click="
-      selectedItemStore.selectedItems[props.slotType] = props.item;
-      popupStore.closePopup();
+      selectedStore.selectedItems[slotType] = item;
+      closePopup();
     "
   >
-    <ItemIcon :item="props.item" :size="4" />
-    <span>{{ props.item.name }}</span>
+    <ItemIcon :item="item" :size="4" />
+    <span>{{ item.name }}</span>
   </div>
 </template>
 
 <style scoped>
-.item-button {
+.button {
   width: 5rem;
   height: 4.5rem;
   padding: 5px;
@@ -47,7 +44,7 @@ span {
   place-items: center;
 }
 
-.item-button:hover {
+.button:hover {
   background-color: var(--button-bg-hover);
 }
 </style>

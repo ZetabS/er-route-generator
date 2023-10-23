@@ -4,8 +4,9 @@
   --border-color: cyan;
   --bg: #0f1c2e;
   --bg-focus: #1f2b3e;
+  --bg-focus-hover: #354051;
   --bg-duller: #374357;
-  --bg-duller-hover: #4b5567;
+  --bg-duller-hover: #495466;
   --primary-clear: #1f3a5f;
   --primary-dull: #4d648d;
   --primary-visible: #acc2ef;

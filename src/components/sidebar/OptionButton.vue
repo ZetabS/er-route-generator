@@ -23,6 +23,6 @@ import SettingIcon from '../icon/SettingIcon.vue';
   align-items: center;
 }
 .button:hover {
-  background-color: var(--bg-duller-highlighted);
+  background-color: var(--bg-focus-hover);
 }
 </style>

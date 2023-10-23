@@ -4,7 +4,6 @@ import AppFooter from './components/AppFooter.vue';
 import CenterMap from './components/CenterMap.vue';
 import SelectedItemSidebar from './components/sidebar/selected/SelectedItemSidebar.vue';
 import TestComponent from './components/sidebar/test/TestComponent.vue';
-import PopupContainer from './components/popup/PopupContainer.vue';
 import GenerateButton from './components/sidebar/GenerateButton.vue';
 import OptionButton from './components/sidebar/OptionButton.vue';
 </script>
@@ -27,7 +26,6 @@ import OptionButton from './components/sidebar/OptionButton.vue';
   <div class="sidebar right">
     <TestComponent />
   </div>
-  <PopupContainer />
   <AppFooter />
 </template>
 

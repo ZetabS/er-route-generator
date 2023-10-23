@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import SidebarWrapper from '../SidebarWrapper.vue';
-import WeaponTypeSlotComponent from './WeaponTypeSlotComponent.vue';
-import ItemSlotComponent from './ItemSlotComponent.vue';
+import SidebarWrapper from '@/components/wrapper/SidebarWrapper.vue';
+import SelectedWeaponTypeSlot from './SelectedWeaponTypeSlot.vue';
+import SelectedItemSlot from './SelectedItemSlot.vue';
 import { equipableItemTypes as slotTypes } from '@/assets/data/itemData';
 </script>
 
 <template>
   <SidebarWrapper :size="10">
     <div class="slots">
-      <WeaponTypeSlotComponent />
+      <SelectedWeaponTypeSlot />
       <div class="item-slot-container">
-        <ItemSlotComponent v-for="slotType in slotTypes" :key="slotType" :slotType="slotType" />
+        <SelectedItemSlot v-for="slotType in slotTypes" :key="slotType" :slotType="slotType" />
       </div>
     </div>
   </SidebarWrapper>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import SidebarWrapper from './SidebarWrapper.vue';
+import SidebarWrapper from '@/components/wrapper/SidebarWrapper.vue';
 import TestText from './TestText.vue';
 const num = ref(0);
 </script>

@@ -1,28 +1,31 @@
 <script setup lang="ts">
 import ItemIcon from '@/components/icon/ItemIcon.vue';
-import ItemRemoveButton from './ItemRemoveButton.vue';
-import { computed } from 'vue';
-import { usePopupStore } from '@/stores/popup';
+import DeselectItemButton from './DeselectItemButton.vue';
+import SelectItemPopup from './SelectItemPopup.vue';
+import { computed, ref } from 'vue';
 import { useSelectedStore } from '@/stores/selected';
-const selectedStore = useSelectedStore();
-const popupStore = usePopupStore();
 const props = defineProps(['slotType']);
+const selectedStore = useSelectedStore();
 
-const imgPath = computed(() => {
-  return import.meta.env.BASE_URL + `images/equipable-type/${props.slotType}.webp`;
-});
-
+const imgPath = import.meta.env.BASE_URL + `images/equipable-type/${props.slotType}.webp`;
 const isItemSelected = computed(() => selectedStore.selectedItems[props.slotType]);
+const isPopupOpen = ref(false);
+
+function closePopup() {
+  isPopupOpen.value = false;
+}
 </script>
 
 <template>
-  <div class="item-slot" :id="`item-slot-${props.slotType.toLowerCase()}`">
-    <div class="background" @click="popupStore.openItemSelectPopup(props.slotType)">
-      <img :src="imgPath" :alt="props.slotType" v-if="!isItemSelected" />
-      <ItemIcon :item="selectedStore.selectedItems[props.slotType]" :size="3" v-else />
+  <div class="item-slot" :id="`item-slot-${slotType.toLowerCase()}`">
+    <div class="background" @click="isPopupOpen = true">
+      <img v-if="!isItemSelected" :src="imgPath" :alt="slotType" />
+      <ItemIcon v-if="isItemSelected" :item="selectedStore.selectedItems[slotType]" :size="3" />
+      <div class="overlay"></div>
     </div>
-    <ItemRemoveButton :slot-type="props.slotType" v-if="isItemSelected" />
+    <DeselectItemButton v-if="isItemSelected" :slotType="slotType" :size="18" />
   </div>
+  <SelectItemPopup v-if="isPopupOpen" :slotType="slotType" :closePopup="closePopup" />
 </template>
 
 <style scoped>
@@ -36,7 +39,7 @@ const isItemSelected = computed(() => selectedStore.selectedItems[props.slotType
 }
 
 .background {
-  background-color: var(--bg-duller);
+  background-color: var(--button-bg);
   width: 3rem;
   height: 1.8rem;
   border-style: hidden;
@@ -47,8 +50,19 @@ const isItemSelected = computed(() => selectedStore.selectedItems[props.slotType
   align-items: center;
 }
 
-.background:hover {
-  background-color: var(--bg-duller-highlighted);
+.overlay {
+  background-color: white;
+  opacity: 0;
+  width: 3rem;
+  height: 1.8rem;
+  position: absolute;
+  border-style: hidden;
+  border-radius: 0.5rem;
+  transition: 0.2s ease;
+}
+
+.overlay:hover {
+  opacity: 0.1;
 }
 
 img {
