@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PopupWrapper from '@/components/popup/PopupWrapper.vue';
-import ItemSelectButton from './ItemSelectButton.vue';
+import SelectItemButton from './SelectItemButton.vue';
 import { filteredItemData } from '@/assets/data/itemData';
 import type { Item, ItemData } from '@/assets/data/itemData';
 import { useSelectedStore } from '@/stores/selected';
@@ -29,7 +29,7 @@ const itemData: ItemData = filteredItemData(compareItemType(itemType.value));
   <PopupWrapper>
     <h2>목표 아이템</h2>
     <div class="item-button-container">
-      <ItemSelectButton
+      <SelectItemButton
         v-for="item in itemData"
         :key="item.code"
         :item="item"

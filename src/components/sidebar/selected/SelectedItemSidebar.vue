@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import SidebarWrapper from './SidebarWrapper.vue';
+import SidebarWrapper from '../SidebarWrapper.vue';
 import WeaponTypeSlotComponent from './WeaponTypeSlotComponent.vue';
 import ItemSlotComponent from './ItemSlotComponent.vue';
 import { equipableItemTypes as slotTypes } from '@/assets/data/itemData';

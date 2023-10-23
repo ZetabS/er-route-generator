@@ -1,15 +1,13 @@
 <script setup lang="ts">
-import ItemSelectPopup from './ItemSelectPopup.vue';
-import WeaponTypeSelectPopup from './WeaponTypeSelectPopup.vue';
 import { usePopupStore } from '@/stores/popup';
 const popup = usePopupStore();
+const props = defineProps(['isPopupOpen']);
 </script>
 
 <template>
-  <div class="popup-container" v-if="popup.isPopupOpen">
+  <div class="popup-container" v-if="props.isPopupOpen">
     <div class="popup-background" @click="popup.closePopup()"></div>
-    <ItemSelectPopup v-if="popup.isItemPopupOpen" />
-    <WeaponTypeSelectPopup v-if="popup.isWeaponSelectPopupOpen" />
+    <slot></slot>
   </div>
 </template>
 

@@ -1,31 +1,34 @@
 <script setup lang="ts">
-import HeaderComponent from './components/HeaderComponent.vue';
-import FooterComponent from './components/FooterComponent.vue';
-import MapComponent from './components/MapComponent.vue';
-import ItemSelectComponent from './components/sidebar/ItemSelectComponent.vue';
-import TestComponent from './components/sidebar/TestComponent.vue';
-import OptionComponent from './components/sidebar/OptionComponent.vue';
+import AppHeader from './components/AppHeader.vue';
+import AppFooter from './components/AppFooter.vue';
+import CenterMap from './components/CenterMap.vue';
+import SelectedItemSidebar from './components/sidebar/selected/SelectedItemSidebar.vue';
+import TestComponent from './components/sidebar/test/TestComponent.vue';
 import PopupContainer from './components/popup/PopupContainer.vue';
-import ButtonContainer from './components/sidebar/ButtonContainer.vue';
+import GenerateButton from './components/sidebar/GenerateButton.vue';
+import OptionButton from './components/sidebar/OptionButton.vue';
 </script>
 
 <template>
-  <HeaderComponent />
+  <AppHeader />
   <div class="sidebar left">
-    <ItemSelectComponent />
-    <ButtonContainer />
-    <OptionComponent />
+    <SelectedItemSidebar />
+    <div class="sidebar-button-container">
+      <GenerateButton />
+      <OptionButton />
+    </div>
+    <TestComponent />
   </div>
 
   <div class="center">
-    <MapComponent />
+    <CenterMap />
   </div>
 
   <div class="sidebar right">
     <TestComponent />
   </div>
   <PopupContainer />
-  <FooterComponent />
+  <AppFooter />
 </template>
 
 <style>
@@ -93,6 +96,13 @@ import ButtonContainer from './components/sidebar/ButtonContainer.vue';
 .sidebar.right {
   grid-area: right;
   margin-right: var(--space-medium);
+}
+
+.sidebar-button-container {
+  height: 3rem;
+  display: flex;
+  gap: var(--space-medium);
+  min-width: min-content;
 }
 
 @media (max-width: 1024px) {
