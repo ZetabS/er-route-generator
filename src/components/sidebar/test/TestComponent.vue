@@ -2,7 +2,9 @@
 import { ref } from 'vue';
 import SidebarWrapper from '@/components/wrapper/SidebarWrapper.vue';
 import TestText from './TestText.vue';
+import { koreanData } from '@/assets/data/languageData';
 const num = ref(0);
+console.log(koreanData['ArmorType/Head/Desc']);
 </script>
 
 <template>
@@ -10,6 +12,7 @@ const num = ref(0);
     {{ num }}
     <br />
     <TestText :num="num" />
+    {{ koreanData['ArmorType/Head']['Desc'] }}
     <button @click="num += 1">+1</button>
   </SidebarWrapper>
 </template>
