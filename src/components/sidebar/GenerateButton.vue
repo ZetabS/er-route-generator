@@ -1,7 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { useRouteStore } from '@/stores/route';
+const route = useRouteStore();
+</script>
 
 <template>
-  <div class="button">루트 생성</div>
+  <div class="button" @click="route.calculateRoute">루트 생성</div>
 </template>
 
 <style scoped>
