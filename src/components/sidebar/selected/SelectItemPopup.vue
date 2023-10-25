@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectItemButton from './SelectItemButton.vue';
-import type { Item, ItemData } from '@/assets/data/itemData';
-import { filteredItemData } from '@/assets/data/itemData';
+import type { Item } from '@/assets/data/itemData';
+import { itemDataFilter } from '@/assets/data/itemData';
 import { useSelectedStore } from '@/stores/selected';
 import { computed } from 'vue';
 const selectedStore = useSelectedStore();
@@ -17,11 +17,11 @@ const itemType = computed(() => {
   }
 });
 
-function compareItemType(itemType: string) {
-  return (item: Item) => item.subType == itemType;
+function compareItemType(itemType: string | number) {
+  return (item: Item) => item.subType === itemType;
 }
 
-const itemData: ItemData = filteredItemData(compareItemType(itemType.value));
+const itemData: Array<Item> = itemDataFilter(compareItemType(itemType.value));
 </script>
 
 <template>
@@ -29,7 +29,7 @@ const itemData: ItemData = filteredItemData(compareItemType(itemType.value));
     <h2>목표 아이템</h2>
     <div class="item-button-container">
       <SelectItemButton
-        v-for="item in itemData"
+        v-for="item of itemData"
         :key="item.code"
         :item="item"
         :slotType="slotType"

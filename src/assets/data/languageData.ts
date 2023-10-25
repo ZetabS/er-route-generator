@@ -1,8 +1,12 @@
 import { rawKoreanData } from './rawKoreanData';
 
-function createWrappedData(data) {
+interface WrappedData {
+  [key: string]: WrappedData | any;
+}
+
+function createWrappedData(data: WrappedData): WrappedData {
   return new Proxy(data, {
-    get(target, keyStr) {
+    get(target, keyStr: string) {
       if (typeof keyStr === 'string') {
         const keys = keyStr.split('/');
         let currentObject = target;
@@ -31,9 +35,9 @@ function createWrappedData(data) {
   });
 }
 
-export function parseLanguageData(text: string) {
+export function parseLanguageData(text: string): WrappedData {
   const lines = text.split('\n');
-  const data = {};
+  const data: WrappedData = {};
 
   for (const line of lines) {
     const [keyStr, value] = line.split('┃');

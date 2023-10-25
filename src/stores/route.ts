@@ -1,7 +1,9 @@
-import { ref, type Ref } from 'vue';
+import { ref, type Ref, reactive } from 'vue';
 import { defineStore } from 'pinia';
 import { itemData, type Item } from '../assets/data/itemData';
 import { useSelectedStore } from './selected';
+
+class Route {}
 
 export const useRouteStore = defineStore('route', () => {
   const selected = useSelectedStore();
@@ -21,14 +23,15 @@ export const useRouteStore = defineStore('route', () => {
       ];
     }
   }
-  const routeList = ref([]);
+
+  const routeList: Route[] = reactive([]);
   function calculateRoute() {
     const materials = [];
 
     for (const slotType in selected.selectedItems) {
       const item = selected.selectedItems[slotType]!;
       if (item) {
-        console.log(getAllMaterials(item));
+        materials.push(...getAllMaterials(item));
       }
     }
   }

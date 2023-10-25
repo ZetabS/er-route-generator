@@ -9,25 +9,25 @@ export type Weapon = Item & {
   weaponType: string;
 };
 
-export type ItemData = {
-  [code: number | string]: Item;
-};
+export interface ItemData {
+  [code: string]: Item;
+}
 
-export function filteredItemData(callback: CallableFunction) {
-  const filteredItemData: ItemData = {};
+export function itemDataFilter(condition: CallableFunction): Array<Item> {
+  const filteredItemData: Array<Item> = [];
 
   for (const key in itemData) {
     const item = itemData[key];
-    if (callback(item)) {
-      filteredItemData[key] = item;
+    if (condition(item)) {
+      filteredItemData.push(item);
     }
   }
 
   return filteredItemData;
 }
 
-function getUniqueElementsByKey(key: string): Array<string | number> {
-  const uniqueElements: Array<string | number> = [];
+function getUniqueElementsByKey(key: string): Array<any> {
+  const uniqueElements: Array<any> = [];
 
   for (const code in itemData) {
     const element = itemData[code][key];
@@ -43,14 +43,21 @@ function getUniqueElementsByKey(key: string): Array<string | number> {
 export const allItemTypes = getUniqueElementsByKey('itemType');
 export const allWeaponTypes = getUniqueElementsByKey('weaponType');
 
-export const equipableItemTypes = ['Weapon', 'Chest', 'Head', 'Arm', 'Leg'];
+export enum equipableItemTypes {
+  Weapon = 'Weapon',
+  Chest = 'Chest',
+  Head = 'Head',
+  Arm = 'Arm',
+  Leg = 'Leg'
+}
 
 export interface Item {
+  [key: string]: any;
   code: number;
   name: string;
   modeType: number;
   itemType: string;
-  subType: string;
+  subType: string | number;
   itemGrade: string;
   isCompletedItem: boolean;
   alertInSpectator: boolean;
@@ -60,7 +67,7 @@ export interface Item {
   initialCount: number;
   itemUsableType: string;
   itemUsableValueList: number;
-  exclusiveProducer: number;
+  exclusiveProducer: number | string;
   makeMaterial1: number;
   makeMaterial2: number;
   manufacturableType: number;
@@ -129,7 +136,6 @@ export interface Item {
   uniqueSkillAmpRatio?: number;
   weaponType?: string;
   consumable?: boolean;
-  maxSP?: number;
   consumableType?: string;
   consumableTag?: string;
   canNotBeTakeItemFromCorpse?: boolean;
