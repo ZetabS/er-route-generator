@@ -1,21 +1,20 @@
 <script setup lang="ts">
 import WeaponTypeIcon from '@/components/icon/WeaponTypeIcon.vue';
 import { useSelectedStore } from '@/stores/selected';
-const selectedStore = useSelectedStore();
-defineProps(['weaponType', 'closePopup']);
+const props = defineProps(['weaponType', 'closePopup']);
+const selected = useSelectedStore();
+
+function onClick() {
+  selected.weaponType = props.weaponType;
+  if (selected.items.Weapon?.subType !== props.weaponType) {
+    selected.deselectItem('Weapon');
+  }
+  props.closePopup();
+}
 </script>
 
 <template>
-  <div
-    class="button"
-    @click="
-      selectedStore.selectedWeaponType = weaponType;
-      if (selectedStore.items.Weapon?.subType !== weaponType) {
-        selectedStore.deselectItem('Weapon');
-      }
-      closePopup();
-    "
-  >
+  <div class="button" @click="onClick">
     <div class="icon-background">
       <WeaponTypeIcon :weapon-type="weaponType" :size="2" />
     </div>

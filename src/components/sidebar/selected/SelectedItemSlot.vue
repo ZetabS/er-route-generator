@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import ItemIcon from '@/components/icon/ItemIcon.vue';
 import DeselectItemButton from './DeselectItemButton.vue';
-import SelectItemPopup from './SelectItemPopup.vue';
+import SelectItemPopup from './popup/SelectItemPopup.vue';
 import { computed, ref } from 'vue';
 import { useSelectedStore } from '@/stores/selected';
 const props = defineProps(['slotType']);

@@ -13,8 +13,13 @@ export const useSelectedStore = defineStore('selected', () => {
     Leg: undefined
   });
 
+  function deselectItem(slotType: string) {
+    items.value[slotType] = undefined;
+  }
+
   return {
     items,
-    weaponType
+    weaponType,
+    deselectItem
   };
 });

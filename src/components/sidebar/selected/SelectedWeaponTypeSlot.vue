@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import WeaponTypeIcon from '@/components/icon/WeaponTypeIcon.vue';
-import SelectWeaponTypePopup from './SelectWeaponTypePopup.vue';
+import SelectWeaponTypePopup from './popup/SelectWeaponTypePopup.vue';
 import { useSelectedStore } from '@/stores/selected';
 import { ref } from 'vue';
 
