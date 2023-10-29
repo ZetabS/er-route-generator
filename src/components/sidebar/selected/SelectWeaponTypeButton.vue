@@ -10,7 +10,7 @@ defineProps(['weaponType', 'closePopup']);
     class="button"
     @click="
       selectedStore.selectedWeaponType = weaponType;
-      if (selectedStore.selectedItems.Weapon?.subType !== weaponType) {
+      if (selectedStore.items.Weapon?.subType !== weaponType) {
         selectedStore.deselectItem('Weapon');
       }
       closePopup();

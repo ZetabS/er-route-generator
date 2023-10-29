@@ -8,7 +8,7 @@ const props = defineProps(['slotType']);
 const selectedStore = useSelectedStore();
 
 const imgPath = import.meta.env.BASE_URL + `images/equipable-type/${props.slotType}.webp`;
-const isItemSelected = computed(() => selectedStore.selectedItems[props.slotType]);
+const isItemSelected = computed(() => selectedStore.items[props.slotType]);
 const isPopupOpen = ref(false);
 
 function closePopup() {
@@ -20,7 +20,7 @@ function closePopup() {
   <div class="item-slot" :id="`item-slot-${slotType.toLowerCase()}`">
     <div class="background" @click="isPopupOpen = true">
       <img v-if="!isItemSelected" :src="imgPath" :alt="slotType" />
-      <ItemIcon v-if="isItemSelected" :item="selectedStore.selectedItems[slotType]" :size="3" />
+      <ItemIcon v-if="isItemSelected" :item="selectedStore.items[slotType]" :size="3" />
       <div class="overlay"></div>
     </div>
     <DeselectItemButton v-if="isItemSelected" :slotType="slotType" :size="18" />

@@ -11,7 +11,7 @@ defineProps(['item', 'slotType', 'closePopup']);
   <div
     class="button"
     @click="
-      selectedStore.selectedItems[slotType] = item;
+      selectedStore.items[slotType] = item;
       closePopup();
     "
   >

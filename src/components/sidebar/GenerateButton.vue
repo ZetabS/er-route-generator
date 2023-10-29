@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useRouteStore } from '@/stores/route';
-const route = useRouteStore();
+import { usePlanStore } from '@/stores/plan';
+const route = usePlanStore();
 </script>
 
 <template>

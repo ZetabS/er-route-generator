@@ -1,17 +1,17 @@
 <script setup lang="ts">
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectItemButton from './SelectItemButton.vue';
-import type { Item } from '@/assets/data/itemData';
-import { itemDataFilter } from '@/assets/data/itemData';
+import type { Item } from '@/common/typing';
+import itemData from '@/modules/api/data/itemData';
 import { useSelectedStore } from '@/stores/selected';
 import { computed } from 'vue';
-const selectedStore = useSelectedStore();
+const selected = useSelectedStore();
 
 const props = defineProps(['slotType', 'closePopup']);
 
 const itemType = computed(() => {
   if (props.slotType == 'Weapon') {
-    return selectedStore.selectedWeaponType;
+    return selected.weaponType;
   } else {
     return props.slotType;
   }
@@ -21,7 +21,7 @@ function compareItemType(itemType: string | number) {
   return (item: Item) => item.subType === itemType;
 }
 
-const itemData: Array<Item> = itemDataFilter(compareItemType(itemType.value));
+const filteredItemData: Item[] = itemData.filter(compareItemType(itemType.value));
 </script>
 
 <template>
@@ -29,7 +29,7 @@ const itemData: Array<Item> = itemDataFilter(compareItemType(itemType.value));
     <h2>목표 아이템</h2>
     <div class="item-button-container">
       <SelectItemButton
-        v-for="item of itemData"
+        v-for="item of filteredItemData"
         :key="item.code"
         :item="item"
         :slotType="slotType"

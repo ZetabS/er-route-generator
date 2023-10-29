@@ -15,7 +15,7 @@ function closePopup() {
 
 <template>
   <div class="slot" @click="isPopupOpen = true">
-    <WeaponTypeIcon :weapon-type="selectedStore.selectedWeaponType" :size="2" />
+    <WeaponTypeIcon :weapon-type="selectedStore.weaponType" :size="2" />
     <div class="overlay"></div>
   </div>
   <SelectWeaponTypePopup v-if="isPopupOpen" :closePopup="closePopup" />

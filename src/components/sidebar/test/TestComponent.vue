@@ -2,18 +2,12 @@
 import { ref } from 'vue';
 import SidebarWrapper from '@/components/wrapper/SidebarWrapper.vue';
 import TestText from './TestText.vue';
-import { koreanData } from '@/assets/data/languageData';
+import { koreanData } from '@/modules/api/languageData';
 const num = ref(0);
 </script>
 
 <template>
-  <SidebarWrapper :size="10">
-    {{ num }}
-    <br />
-    <TestText :num="num" />
-    {{ koreanData['ArmorType/Head/Desc'] }}
-    <button @click="num += 1">+1</button>
-  </SidebarWrapper>
+  <SidebarWrapper :size="10"> </SidebarWrapper>
 </template>
 
 <style scoped>

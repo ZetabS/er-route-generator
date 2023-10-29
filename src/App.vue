@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import AppHeader from './components/AppHeader.vue';
-import AppFooter from './components/AppFooter.vue';
-import CenterMap from './components/CenterMap.vue';
+import AppHeader from './components/TheHeader.vue';
+import AppFooter from './components/TheFooter.vue';
+import CenterMap from './components/TheLumiaMap.vue';
 import SelectedItemSidebar from './components/sidebar/selected/SelectedItemSidebar.vue';
 import TestComponent from './components/sidebar/test/TestComponent.vue';
 import GenerateButton from './components/sidebar/GenerateButton.vue';
