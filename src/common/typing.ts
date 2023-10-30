@@ -30,9 +30,14 @@ export interface Area {
   itemSpawns: ItemSpawn[];
 }
 
+export interface Slot {
+  item: Item | undefined;
+  quantity: number;
+}
+
 export interface Inventory {
-  slots: { itemId: number; quantity: number }[];
-  equippedSlots: { itemId: number; slot: string }[];
+  slots: Slot[];
+  equippedSlots: Slot[];
 }
 
 export interface Plan {
