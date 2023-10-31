@@ -3,6 +3,7 @@ import type { Area } from '@/common/typing';
 const areaData: Area[] = [
   {
     code: 1,
+    name: '항구',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       2,
@@ -85,6 +86,7 @@ const areaData: Area[] = [
   },
   {
     code: 2,
+    name: '창고',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       1,
@@ -164,6 +166,7 @@ const areaData: Area[] = [
   },
   {
     code: 3,
+    name: '연못',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       4,
@@ -244,6 +247,7 @@ const areaData: Area[] = [
   },
   {
     code: 4,
+    name: '개울',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       3,
@@ -320,6 +324,7 @@ const areaData: Area[] = [
   },
   {
     code: 5,
+    name: '모래사장',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       6,
@@ -407,6 +412,7 @@ const areaData: Area[] = [
   },
   {
     code: 6,
+    name: '고급 주택가',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       2,
@@ -499,6 +505,7 @@ const areaData: Area[] = [
   },
   {
     code: 7,
+    name: '골목길',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       8,
@@ -578,6 +585,7 @@ const areaData: Area[] = [
   },
   {
     code: 8,
+    name: '주유소',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       7,
@@ -662,6 +670,7 @@ const areaData: Area[] = [
   },
   {
     code: 9,
+    name: '호텔',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       5,
@@ -754,6 +763,7 @@ const areaData: Area[] = [
   },
   {
     code: 10,
+    name: '경찰서',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       4,
@@ -834,6 +844,7 @@ const areaData: Area[] = [
   },
   {
     code: 11,
+    name: '소방서',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       3,
@@ -923,6 +934,7 @@ const areaData: Area[] = [
   },
   {
     code: 12,
+    name: '병원',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       3,
@@ -1003,6 +1015,7 @@ const areaData: Area[] = [
   },
   {
     code: 13,
+    name: '절',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       4,
@@ -1094,6 +1107,7 @@ const areaData: Area[] = [
   },
   {
     code: 14,
+    name: '양궁장',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       8,
@@ -1173,6 +1187,7 @@ const areaData: Area[] = [
   },
   {
     code: 15,
+    name: '묘지',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       3,
@@ -1250,6 +1265,7 @@ const areaData: Area[] = [
   },
   {
     code: 16,
+    name: '숲',
     isHyperLoopInstalled: false,
     nearByAreaCodes: [
       5,
@@ -1340,6 +1356,7 @@ const areaData: Area[] = [
   },
   {
     code: 17,
+    name: '공장',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       1,
@@ -1432,6 +1449,7 @@ const areaData: Area[] = [
   },
   {
     code: 18,
+    name: '성당',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       2,
@@ -1529,6 +1547,7 @@ const areaData: Area[] = [
   },
   {
     code: 19,
+    name: '학교',
     isHyperLoopInstalled: true,
     nearByAreaCodes: [
       8,
