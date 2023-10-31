@@ -1,3 +1,5 @@
+import itemData from '@/modules/api/data/itemData';
+import ItemData from '@/modules/api/data/itemData';
 export type AreaCode = number;
 export type ItemCode = number;
 export type Name = string;
@@ -29,15 +31,226 @@ export interface Area {
   nearByAreaCodes: AreaCode[];
   itemSpawns: ItemSpawn[];
 }
+export abstract class AbstractSlot {
+  abstract add(item: Item): boolean;
 
-export interface Slot {
-  item: Item | undefined;
-  quantity: number;
+  abstract remove(): boolean;
+
+  abstract clear(): boolean;
+
+  abstract has(item: Item): boolean;
+
+  abstract get isFull(): boolean;
+
+  abstract get isEmpty(): boolean;
+
+  abstract get item(): Item | undefined;
 }
 
-export interface Inventory {
-  slots: Slot[];
-  equippedSlots: Slot[];
+export class Slot extends AbstractSlot {
+  _item: Item | undefined = undefined;
+  _quantity: number = 0;
+
+  add(item: Item): boolean {
+    if (this.canAdd(item)) {
+      this._item = item;
+      this._quantity++;
+      return true;
+    }
+    return false;
+  }
+
+  remove(): boolean {
+    if (!this.isEmpty) {
+      this._quantity--;
+      if (this._quantity === 0) {
+        this._item = undefined;
+      }
+    } else {
+      return false;
+    }
+  }
+
+  clear(): boolean {
+    this._item = undefined;
+    this._quantity = 0;
+    return true;
+  }
+
+  has(item: Item): boolean {
+    if (!this._item) {
+      return false;
+    }
+    return this._item.code === item.code;
+  }
+
+  canAdd(item: Item): boolean {
+    return this._quantity < item.stackable;
+  }
+
+  get isFull(): boolean {
+    if (!this._item) {
+      return false;
+    }
+    return this._quantity >= this._item.stackable;
+  }
+
+  get isEmpty(): boolean {
+    return !this._item;
+  }
+
+  get item() {
+    return this._item;
+  }
+
+  get quantity() {
+    return this._quantity;
+  }
+}
+
+export class EquipmentSlot extends AbstractSlot {
+  _item: Item | undefined = undefined;
+
+  add(item: Item): boolean {
+    if (this.isEmpty) {
+      this._item = item;
+      return true;
+    }
+    return false;
+  }
+
+  remove(): boolean {
+    if (this.isFull) {
+      this._item = undefined;
+      return true;
+    }
+    return false;
+  }
+
+  clear(): boolean {
+    this._item = undefined;
+    return true;
+  }
+
+  has(item: Item): boolean {
+    return this._item === item;
+  }
+
+  get isFull(): boolean {
+    return !!this._item;
+  }
+
+  get isEmpty(): boolean {
+    return !this._item;
+  }
+
+  get item() {
+    return this._item;
+  }
+}
+
+export class Inventory {
+  public slots: Slot[];
+  public equipmentSlots: Record<string, EquipmentSlot>;
+
+  constructor() {
+    this.slots = [];
+
+    for (let i = 0; i < 10; i++) {
+      this.slots.push(new Slot());
+    }
+
+    this.equipmentSlots = {
+      Weapon: new EquipmentSlot(),
+      Chest: new EquipmentSlot(),
+      Head: new EquipmentSlot(),
+      Arm: new EquipmentSlot(),
+      Leg: new EquipmentSlot()
+    };
+  }
+
+  add(item: Item): boolean {
+    if (item.equipType) {
+      const equipmentSlot = this.equipmentSlots[item.equipType];
+      if (equipmentSlot.isEmpty) {
+        equipmentSlot.add(item);
+        return true;
+      }
+    } else {
+      for (const slot of this.slots) {
+        if (slot.canAdd(item)) {
+          slot.add(item);
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  remove(item: Item): boolean {
+    if (item.equipType) {
+      const equipmentSlot = this.equipmentSlots[item.equipType];
+      if (equipmentSlot.has(item)) {
+        equipmentSlot.remove();
+        return true;
+      }
+    } else {
+      for (const slot of this.slots) {
+        if (slot.has(item)) {
+          slot.remove();
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  craft(item: Item) {
+    const material1 = itemData[item.makeMaterial1];
+    const material2 = itemData[item.makeMaterial2];
+
+    if (material1 && !this.has(material1) && !this.craft(material1)) {
+      return false;
+    }
+
+    if (material2 && !this.has(material2) && !this.craft(material2)) {
+      return false;
+    }
+
+    this.remove(material1);
+    this.remove(material2);
+    this.add(item);
+
+    return true;
+  }
+
+  canAdd(item: Item): boolean {
+    return (
+      (item.equipType && this.equipmentSlots[item.equipType].isEmpty) ||
+      this.slots.every((slot) => slot.canAdd(item))
+    );
+  }
+
+  has(item: Item): boolean {
+    return (
+      this.slots.some((slot) => slot.has(item)) ||
+      Object.values(this.equipmentSlots).some((slot) => slot.has(item))
+    );
+  }
+
+  isFull(): boolean {
+    return (
+      this.slots.every((slot) => slot.isFull) &&
+      Object.values(this.equipmentSlots).every((slot) => slot.isFull)
+    );
+  }
+
+  isEmpty(): boolean {
+    return (
+      this.slots.every((slot) => slot.isEmpty) &&
+      Object.values(this.equipmentSlots).every((slot) => slot.isEmpty)
+    );
+  }
 }
 
 export interface Plan {
@@ -65,6 +278,7 @@ export interface Item {
   manufacturableType: number;
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;
+  equipType?: string;
   isRemovedFromPlayerCorpseInventoryWhenPlayerKilled?: boolean;
   notDisarm?: boolean;
   attackPower?: number;
@@ -163,7 +377,8 @@ interface BaseItem {
   creditValueWhenConvertedToBounty: number;
 }
 
-export type EquippableItem = BaseItem & {
+export type EquipItem = BaseItem & {
+  equipType: string;
   isRemovedFromPlayerCorpseInventoryWhenPlayerKilled: boolean;
   notDisarm: boolean;
   attackPower: number;

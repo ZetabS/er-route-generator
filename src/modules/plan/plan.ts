@@ -1,17 +1,18 @@
 import { useSelectedStore } from '@/stores/selected';
 import type { Item } from '@/common/typing';
 import itemData from '@/modules/api/data/itemData';
+import { Inventory } from '@/common/typing';
 
 const selected = useSelectedStore();
 
-function getAllMaterials(item: Item): Array<Item> {
+function getAllMaterials(item: Item): Item[] {
   if (!item) {
-    console.log('그거 아이템목록에 안넣음 ㅅㄱ');
+    // throw Error(`이건 왜 없냐?`)
     return [];
   }
-  console.log(item.name);
-  if (item.manufacturableType == 1) {
-    // 만들 수 없음
+
+  const canManufacture = item.manufacturableType === 1;
+  if (canManufacture) {
     return [item];
   } else {
     return [
