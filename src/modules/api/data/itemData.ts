@@ -167,7 +167,7 @@ const itemData: Item[] = [
   },
   {
     code: 201104,
-    name: '자전거헬멧',
+    name: '자전거 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -495,7 +495,7 @@ const itemData: Item[] = [
   },
   {
     code: 201204,
-    name: '사슬코이프',
+    name: '사슬 코이프',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -741,7 +741,7 @@ const itemData: Item[] = [
   },
   {
     code: 201302,
-    name: '소방헬멧',
+    name: '소방 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1151,7 +1151,7 @@ const itemData: Item[] = [
   },
   {
     code: 201404,
-    name: '수정티아라',
+    name: '수정 티아라',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1233,7 +1233,7 @@ const itemData: Item[] = [
   },
   {
     code: 201405,
-    name: '오토바이헬멧',
+    name: '오토바이 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1315,7 +1315,7 @@ const itemData: Item[] = [
   },
   {
     code: 201406,
-    name: '전술OPS헬멧',
+    name: '전술-OPS 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1397,7 +1397,7 @@ const itemData: Item[] = [
   },
   {
     code: 201407,
-    name: '기사단장의투구',
+    name: '기사단장의 투구',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1479,7 +1479,7 @@ const itemData: Item[] = [
   },
   {
     code: 201409,
-    name: '제국왕관',
+    name: '제국 왕관',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1561,7 +1561,7 @@ const itemData: Item[] = [
   },
   {
     code: 201410,
-    name: '황실부르고넷',
+    name: '황실 부르고넷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1643,7 +1643,7 @@ const itemData: Item[] = [
   },
   {
     code: 201412,
-    name: '모호크헬멧',
+    name: '모호크 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1889,7 +1889,7 @@ const itemData: Item[] = [
   },
   {
     code: 201415,
-    name: '성기사의투구',
+    name: '성기사의 투구',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -1971,7 +1971,7 @@ const itemData: Item[] = [
   },
   {
     code: 201417,
-    name: '카우보이모자',
+    name: '카우보이 모자',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2053,7 +2053,7 @@ const itemData: Item[] = [
   },
   {
     code: 201418,
-    name: '플라즈마투구',
+    name: '플라즈마 투구',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2135,7 +2135,7 @@ const itemData: Item[] = [
   },
   {
     code: 201403,
-    name: '미스릴투구',
+    name: '미스릴 투구',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2381,7 +2381,7 @@ const itemData: Item[] = [
   },
   {
     code: 201501,
-    name: '천사의고리',
+    name: '천사의 고리',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2463,7 +2463,7 @@ const itemData: Item[] = [
   },
   {
     code: 201502,
-    name: '빛의증표',
+    name: '빛의 증표',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2627,7 +2627,7 @@ const itemData: Item[] = [
   },
   {
     code: 201504,
-    name: '예언자의터번',
+    name: '예언자의 터번',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2709,7 +2709,7 @@ const itemData: Item[] = [
   },
   {
     code: 201505,
-    name: '레이싱헬멧',
+    name: '레이싱 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2791,7 +2791,7 @@ const itemData: Item[] = [
   },
   {
     code: 201506,
-    name: '황야의별',
+    name: '황야의 별',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2873,7 +2873,7 @@ const itemData: Item[] = [
   },
   {
     code: 201507,
-    name: '우주비행사의헬멧',
+    name: '우주 비행사의 헬멧',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -2955,7 +2955,7 @@ const itemData: Item[] = [
   },
   {
     code: 201508,
-    name: '드워프의투구',
+    name: '드워프의 투구',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3119,7 +3119,7 @@ const itemData: Item[] = [
   },
   {
     code: 701451,
-    name: '택티컬바이저',
+    name: '택티컬 바이저',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3201,7 +3201,7 @@ const itemData: Item[] = [
   },
   {
     code: 201111,
-    name: '프리야패시브Lv2',
+    name: '자연의 응답 Lv2',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3283,7 +3283,7 @@ const itemData: Item[] = [
   },
   {
     code: 201112,
-    name: '프리야패시브Lv3',
+    name: '자연의 응답 Lv3',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3365,7 +3365,7 @@ const itemData: Item[] = [
   },
   {
     code: 201206,
-    name: '피어나는봉오리',
+    name: '피어나는 봉오리',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3447,7 +3447,7 @@ const itemData: Item[] = [
   },
   {
     code: 201305,
-    name: '싱그러운꽃잎',
+    name: '싱그러운 꽃잎',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3529,7 +3529,7 @@ const itemData: Item[] = [
   },
   {
     code: 201416,
-    name: '만개하는선율',
+    name: '만개하는 선율',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Head',
@@ -3775,7 +3775,7 @@ const itemData: Item[] = [
   },
   {
     code: 202105,
-    name: '전신수영복',
+    name: '전신 수영복',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -3857,7 +3857,7 @@ const itemData: Item[] = [
   },
   {
     code: 202106,
-    name: '천갑옷',
+    name: '천 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -3939,7 +3939,7 @@ const itemData: Item[] = [
   },
   {
     code: 202201,
-    name: '가죽갑옷',
+    name: '가죽 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -4021,7 +4021,7 @@ const itemData: Item[] = [
   },
   {
     code: 202202,
-    name: '가죽자켓',
+    name: '가죽 자켓',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -4185,7 +4185,7 @@ const itemData: Item[] = [
   },
   {
     code: 202206,
-    name: '덧댄로브',
+    name: '덧댄 로브',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -4595,7 +4595,7 @@ const itemData: Item[] = [
   },
   {
     code: 202301,
-    name: '라이더자켓',
+    name: '라이더 자켓',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -4677,7 +4677,7 @@ const itemData: Item[] = [
   },
   {
     code: 202302,
-    name: '사슬갑옷',
+    name: '사슬 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -4923,7 +4923,7 @@ const itemData: Item[] = [
   },
   {
     code: 202305,
-    name: '판금갑옷',
+    name: '판금 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5169,7 +5169,7 @@ const itemData: Item[] = [
   },
   {
     code: 202307,
-    name: '고위사제복',
+    name: '고위 사제복',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5251,7 +5251,7 @@ const itemData: Item[] = [
   },
   {
     code: 202402,
-    name: '석양의갑옷',
+    name: '석양의 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5415,7 +5415,7 @@ const itemData: Item[] = [
   },
   {
     code: 202405,
-    name: '광학미채수트',
+    name: '광학미채 슈트',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5497,7 +5497,7 @@ const itemData: Item[] = [
   },
   {
     code: 202406,
-    name: '락커의자켓',
+    name: '락커의 자켓',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5579,7 +5579,7 @@ const itemData: Item[] = [
   },
   {
     code: 202408,
-    name: '성기사의갑옷',
+    name: '성기사의 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5661,7 +5661,7 @@ const itemData: Item[] = [
   },
   {
     code: 202410,
-    name: '아마조네스아머',
+    name: '아마조네스 아머',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5743,7 +5743,7 @@ const itemData: Item[] = [
   },
   {
     code: 202411,
-    name: '용의도복',
+    name: '용의 도복',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5825,7 +5825,7 @@ const itemData: Item[] = [
   },
   {
     code: 202412,
-    name: '지휘관의갑옷',
+    name: '지휘관의 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -5989,7 +5989,7 @@ const itemData: Item[] = [
   },
   {
     code: 202415,
-    name: '배틀수트',
+    name: '배틀 슈트',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6071,7 +6071,7 @@ const itemData: Item[] = [
   },
   {
     code: 202417,
-    name: 'EOD수트',
+    name: 'EOD 슈트',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6235,7 +6235,7 @@ const itemData: Item[] = [
   },
   {
     code: 202419,
-    name: '제사장의예복',
+    name: '제사장의 예복',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6481,7 +6481,7 @@ const itemData: Item[] = [
   },
   {
     code: 202407,
-    name: '미스릴갑옷',
+    name: '미스릴 갑옷',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6563,7 +6563,7 @@ const itemData: Item[] = [
   },
   {
     code: 202416,
-    name: '불꽃드레스',
+    name: '불꽃 드레스',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6645,7 +6645,7 @@ const itemData: Item[] = [
   },
   {
     code: 202421,
-    name: '미스릴크롭',
+    name: '미스릴 크롭',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6809,7 +6809,7 @@ const itemData: Item[] = [
   },
   {
     code: 202502,
-    name: '퀸오브하트',
+    name: '퀸 오브 하트',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -6973,7 +6973,7 @@ const itemData: Item[] = [
   },
   {
     code: 202504,
-    name: '버건디47',
+    name: '버건디 47',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -7137,7 +7137,7 @@ const itemData: Item[] = [
   },
   {
     code: 202506,
-    name: '팬텀자켓',
+    name: '팬텀 자켓',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -7219,7 +7219,7 @@ const itemData: Item[] = [
   },
   {
     code: 202507,
-    name: '가디언슈트',
+    name: '가디언 슈트',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -7301,7 +7301,7 @@ const itemData: Item[] = [
   },
   {
     code: 202508,
-    name: '진은드레스',
+    name: '진은 드레스',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -7547,7 +7547,7 @@ const itemData: Item[] = [
   },
   {
     code: 202511,
-    name: '핏빛망토',
+    name: '핏빛 망토',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -7711,7 +7711,7 @@ const itemData: Item[] = [
   },
   {
     code: 202513,
-    name: '슈팅스타자켓',
+    name: '슈팅스타 자켓',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -7875,7 +7875,7 @@ const itemData: Item[] = [
   },
   {
     code: 202515,
-    name: '택티컬아머',
+    name: '택티컬 아머',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Chest',
@@ -8203,7 +8203,7 @@ const itemData: Item[] = [
   },
   {
     code: 203201,
-    name: '가죽방패',
+    name: '가죽 방패',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -8285,7 +8285,7 @@ const itemData: Item[] = [
   },
   {
     code: 203202,
-    name: '분대장완장',
+    name: '분대장 완장',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -8449,7 +8449,7 @@ const itemData: Item[] = [
   },
   {
     code: 203204,
-    name: '고장난시계',
+    name: '고장난 시계',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -8777,7 +8777,7 @@ const itemData: Item[] = [
   },
   {
     code: 203304,
-    name: '진홍팔찌',
+    name: '진홍 팔찌',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -8859,7 +8859,7 @@ const itemData: Item[] = [
   },
   {
     code: 203305,
-    name: '바브드블로섬',
+    name: '바브드 블로섬',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -8941,7 +8941,7 @@ const itemData: Item[] = [
   },
   {
     code: 203401,
-    name: '강철방패',
+    name: '강철 방패',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9105,7 +9105,7 @@ const itemData: Item[] = [
   },
   {
     code: 203402,
-    name: '소드스토퍼',
+    name: '소드 스토퍼',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9269,7 +9269,7 @@ const itemData: Item[] = [
   },
   {
     code: 203405,
-    name: '바이탈센서',
+    name: '바이탈 센서',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9351,7 +9351,7 @@ const itemData: Item[] = [
   },
   {
     code: 203406,
-    name: '기사의신조',
+    name: '기사의 신조',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9433,7 +9433,7 @@ const itemData: Item[] = [
   },
   {
     code: 203407,
-    name: '샤자한의검집',
+    name: '샤자한의 검집',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9597,7 +9597,7 @@ const itemData: Item[] = [
   },
   {
     code: 203410,
-    name: '틴달로스의팔찌',
+    name: '틴달로스의 팔찌',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9761,7 +9761,7 @@ const itemData: Item[] = [
   },
   {
     code: 203412,
-    name: '플라즈마아크',
+    name: '플라즈마 아크',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9843,7 +9843,7 @@ const itemData: Item[] = [
   },
   {
     code: 203414,
-    name: '스마트밴드',
+    name: '스마트 밴드',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -9925,7 +9925,7 @@ const itemData: Item[] = [
   },
   {
     code: 203415,
-    name: '미닛맨의표식',
+    name: '미닛맨의 표식',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10007,7 +10007,7 @@ const itemData: Item[] = [
   },
   {
     code: 203506,
-    name: '스포츠시계',
+    name: '스포츠 시계',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10089,7 +10089,7 @@ const itemData: Item[] = [
   },
   {
     code: 203404,
-    name: '미스릴방패',
+    name: '미스릴 방패',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10171,7 +10171,7 @@ const itemData: Item[] = [
   },
   {
     code: 203408,
-    name: '큐브워치',
+    name: '큐브 워치',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10253,7 +10253,7 @@ const itemData: Item[] = [
   },
   {
     code: 203413,
-    name: '텔루리안타임피스',
+    name: '텔루리안 타임피스',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10335,7 +10335,7 @@ const itemData: Item[] = [
   },
   {
     code: 203501,
-    name: '스카디의팔찌',
+    name: '스카디의 팔찌',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10499,7 +10499,7 @@ const itemData: Item[] = [
   },
   {
     code: 203503,
-    name: '오토암즈',
+    name: '오토-암즈',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10663,7 +10663,7 @@ const itemData: Item[] = [
   },
   {
     code: 203505,
-    name: '가시지네견갑',
+    name: '가시지네 견갑',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10745,7 +10745,7 @@ const itemData: Item[] = [
   },
   {
     code: 203507,
-    name: '틴달로스의군주',
+    name: '틴달로스의 군주',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10827,7 +10827,7 @@ const itemData: Item[] = [
   },
   {
     code: 203508,
-    name: '샤를마뉴의방패',
+    name: '샤를마뉴의 방패',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -10991,7 +10991,7 @@ const itemData: Item[] = [
   },
   {
     code: 203510,
-    name: '용의비늘',
+    name: '용의 비늘',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -11073,7 +11073,7 @@ const itemData: Item[] = [
   },
   {
     code: 203511,
-    name: '서슬가시체인',
+    name: '서슬가시 체인',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -11155,7 +11155,7 @@ const itemData: Item[] = [
   },
   {
     code: 203512,
-    name: '아흐라만의손길',
+    name: '아흐라만의 손길',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Arm',
@@ -11565,7 +11565,7 @@ const itemData: Item[] = [
   },
   {
     code: 204201,
-    name: '무릎보호대',
+    name: '무릎 보호대',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -11647,7 +11647,7 @@ const itemData: Item[] = [
   },
   {
     code: 204202,
-    name: '체인레깅스',
+    name: '체인 레깅스',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -11975,7 +11975,7 @@ const itemData: Item[] = [
   },
   {
     code: 204301,
-    name: '덧댄슬리퍼',
+    name: '덧댄 슬리퍼',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -12221,7 +12221,7 @@ const itemData: Item[] = [
   },
   {
     code: 204401,
-    name: '강철무릎보호대',
+    name: '강철 무릎 보호대',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -12467,7 +12467,7 @@ const itemData: Item[] = [
   },
   {
     code: 204402,
-    name: '경량화부츠',
+    name: '경량화 부츠',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -12549,7 +12549,7 @@ const itemData: Item[] = [
   },
   {
     code: 204403,
-    name: '매버릭러너',
+    name: '매버릭 러너',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -12795,7 +12795,7 @@ const itemData: Item[] = [
   },
   {
     code: 204409,
-    name: 'EOD부츠',
+    name: 'EOD 부츠',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -12877,7 +12877,7 @@ const itemData: Item[] = [
   },
   {
     code: 204411,
-    name: '클링온부츠',
+    name: '클링온 부츠',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -12959,7 +12959,7 @@ const itemData: Item[] = [
   },
   {
     code: 204412,
-    name: '타키온브레이스',
+    name: '타키온 브레이스',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -13123,7 +13123,7 @@ const itemData: Item[] = [
   },
   {
     code: 204407,
-    name: '미스릴부츠',
+    name: '미스릴 부츠',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -13205,7 +13205,7 @@ const itemData: Item[] = [
   },
   {
     code: 204410,
-    name: '글레이셜슈즈',
+    name: '글레이셜 슈즈',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -13369,7 +13369,7 @@ const itemData: Item[] = [
   },
   {
     code: 204414,
-    name: '아이언메이든',
+    name: '아이언 메이든',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -13451,7 +13451,7 @@ const itemData: Item[] = [
   },
   {
     code: 204501,
-    name: '헤르메스의부츠',
+    name: '헤르메스의 부츠',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -13615,7 +13615,7 @@ const itemData: Item[] = [
   },
   {
     code: 204503,
-    name: '블레이드부츠',
+    name: '블레이드 부츠',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -13779,7 +13779,7 @@ const itemData: Item[] = [
   },
   {
     code: 204505,
-    name: '칼날다리',
+    name: '칼날 다리',
     modeType: 0,
     itemType: 'Armor',
     subType: 'Leg',
@@ -14025,7 +14025,7 @@ const itemData: Item[] = [
   },
   {
     code: 101201,
-    name: '군용나이프',
+    name: '군용 나이프',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'OneHandSword',
@@ -14271,7 +14271,7 @@ const itemData: Item[] = [
   },
   {
     code: 101302,
-    name: '스위스아미나이프',
+    name: '스위스 아미 나이프',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'OneHandSword',
@@ -14353,7 +14353,7 @@ const itemData: Item[] = [
   },
   {
     code: 101303,
-    name: '카라페이스카타르',
+    name: '카라페이스 카타르',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'OneHandSword',
@@ -14681,7 +14681,7 @@ const itemData: Item[] = [
   },
   {
     code: 101406,
-    name: '다마스커스가시',
+    name: '다마스커스 가시',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'OneHandSword',
@@ -14845,7 +14845,7 @@ const itemData: Item[] = [
   },
   {
     code: 101408,
-    name: '하이랜더더크',
+    name: '하이랜더 더크',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'OneHandSword',
@@ -15091,7 +15091,7 @@ const itemData: Item[] = [
   },
   {
     code: 101502,
-    name: '소울리퍼',
+    name: '소울 리퍼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'OneHandSword',
@@ -15173,7 +15173,7 @@ const itemData: Item[] = [
   },
   {
     code: 102101,
-    name: '녹슨검',
+    name: '녹슨 검',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -15501,7 +15501,7 @@ const itemData: Item[] = [
   },
   {
     code: 102403,
-    name: '바스타드소드',
+    name: '바스타드 소드',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -15665,7 +15665,7 @@ const itemData: Item[] = [
   },
   {
     code: 102405,
-    name: '뚜언띠엔',
+    name: '뚜언 띠엔',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -16157,7 +16157,7 @@ const itemData: Item[] = [
   },
   {
     code: 102412,
-    name: '빛의검',
+    name: '빛의 검',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -16239,7 +16239,7 @@ const itemData: Item[] = [
   },
   {
     code: 102413,
-    name: '아케인엣지',
+    name: '아케인 엣지',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -16485,7 +16485,7 @@ const itemData: Item[] = [
   },
   {
     code: 102503,
-    name: '하데스엣지',
+    name: '하데스 엣지',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -16649,7 +16649,7 @@ const itemData: Item[] = [
   },
   {
     code: 103202,
-    name: '조잡한쌍검',
+    name: '조잡한 쌍검',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DualSword',
@@ -16731,7 +16731,7 @@ const itemData: Item[] = [
   },
   {
     code: 103302,
-    name: '쌍둥이검',
+    name: '쌍둥이 검',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DualSword',
@@ -17141,7 +17141,7 @@ const itemData: Item[] = [
   },
   {
     code: 103404,
-    name: '검은나비',
+    name: '검은 나비',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DualSword',
@@ -17387,7 +17387,7 @@ const itemData: Item[] = [
   },
   {
     code: 103503,
-    name: '간장과막야',
+    name: '간장과 막야',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DualSword',
@@ -17633,7 +17633,7 @@ const itemData: Item[] = [
   },
   {
     code: 104301,
-    name: '모닝스타',
+    name: '모닝 스타',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Hammer',
@@ -17715,7 +17715,7 @@ const itemData: Item[] = [
   },
   {
     code: 104302,
-    name: '사슴망치',
+    name: '사슴 망치',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Hammer',
@@ -17797,7 +17797,7 @@ const itemData: Item[] = [
   },
   {
     code: 104303,
-    name: '운명의망치',
+    name: '운명의 망치',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Hammer',
@@ -17961,7 +17961,7 @@ const itemData: Item[] = [
   },
   {
     code: 104402,
-    name: '다그다의망치',
+    name: '다그다의 망치',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Hammer',
@@ -18043,7 +18043,7 @@ const itemData: Item[] = [
   },
   {
     code: 104403,
-    name: '토르의망치',
+    name: '토르의 망치',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Hammer',
@@ -18289,7 +18289,7 @@ const itemData: Item[] = [
   },
   {
     code: 104409,
-    name: '아는것이힘',
+    name: '아는 것이 힘',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Hammer',
@@ -18617,7 +18617,7 @@ const itemData: Item[] = [
   },
   {
     code: 105201,
-    name: '사슬낫',
+    name: '사슬 낫',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -18699,7 +18699,7 @@ const itemData: Item[] = [
   },
   {
     code: 105202,
-    name: '전투도끼',
+    name: '전투 도끼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -18781,7 +18781,7 @@ const itemData: Item[] = [
   },
   {
     code: 105301,
-    name: '경량화도끼',
+    name: '경량화 도끼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -18863,7 +18863,7 @@ const itemData: Item[] = [
   },
   {
     code: 105302,
-    name: '사신의낫',
+    name: '사신의 낫',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -19027,7 +19027,7 @@ const itemData: Item[] = [
   },
   {
     code: 105402,
-    name: '빔엑스',
+    name: '빔 엑스',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -19052,7 +19052,7 @@ const itemData: Item[] = [
     attackPowerByLv: 0,
     defense: 0,
     defenseByLv: 0,
-    skillAmp: 79,
+    skillAmp: 73,
     skillAmpByLevel: 0,
     skillAmpRatio: 0,
     skillAmpRatioByLevel: 0,
@@ -19109,7 +19109,7 @@ const itemData: Item[] = [
   },
   {
     code: 105403,
-    name: '산타���에르떼',
+    name: '산타 무에르테',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -19601,7 +19601,7 @@ const itemData: Item[] = [
   },
   {
     code: 105501,
-    name: '낙원의낫',
+    name: '낙원의 낫',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -19683,7 +19683,7 @@ const itemData: Item[] = [
   },
   {
     code: 105502,
-    name: '진홍빛낫',
+    name: '진홍빛 낫',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Axe',
@@ -20421,7 +20421,7 @@ const itemData: Item[] = [
   },
   {
     code: 107404,
-    name: '코스믹바이던트',
+    name: '코스믹 바이던트',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Spear',
@@ -20831,7 +20831,7 @@ const itemData: Item[] = [
   },
   {
     code: 107501,
-    name: '롱기누스의창',
+    name: '롱기누스의 창',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Spear',
@@ -20913,7 +20913,7 @@ const itemData: Item[] = [
   },
   {
     code: 107502,
-    name: '별사냥꾼',
+    name: '별 사냥꾼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Spear',
@@ -21159,7 +21159,7 @@ const itemData: Item[] = [
   },
   {
     code: 108301,
-    name: '도깨비방망이',
+    name: '도깨비 방망이',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bat',
@@ -21487,7 +21487,7 @@ const itemData: Item[] = [
   },
   {
     code: 108403,
-    name: '구원의여신상',
+    name: '구원의 여신상',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bat',
@@ -21651,7 +21651,7 @@ const itemData: Item[] = [
   },
   {
     code: 108501,
-    name: '스파이의우산',
+    name: '스파이의 우산',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bat',
@@ -22061,7 +22061,7 @@ const itemData: Item[] = [
   },
   {
     code: 108503,
-    name: '터럭손방망이',
+    name: '터럭손 방망이',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bat',
@@ -22389,7 +22389,7 @@ const itemData: Item[] = [
   },
   {
     code: 109301,
-    name: '바람채찍',
+    name: '바람 채찍',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Whip',
@@ -22717,7 +22717,7 @@ const itemData: Item[] = [
   },
   {
     code: 109404,
-    name: '플라즈마윕',
+    name: '플라즈마 윕',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Whip',
@@ -23291,7 +23291,7 @@ const itemData: Item[] = [
   },
   {
     code: 110202,
-    name: '아이언너클',
+    name: '아이언 너클',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -23455,7 +23455,7 @@ const itemData: Item[] = [
   },
   {
     code: 110302,
-    name: '윙너클',
+    name: '윙 너클',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -23537,7 +23537,7 @@ const itemData: Item[] = [
   },
   {
     code: 110401,
-    name: '귀골장갑',
+    name: '귀골 장갑',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -23701,7 +23701,7 @@ const itemData: Item[] = [
   },
   {
     code: 110404,
-    name: '회단장갑',
+    name: '회단 장갑',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -23865,7 +23865,7 @@ const itemData: Item[] = [
   },
   {
     code: 110406,
-    name: '디바인피스트',
+    name: '디바인 피스트',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -23947,7 +23947,7 @@ const itemData: Item[] = [
   },
   {
     code: 110407,
-    name: '블러드윙너클',
+    name: '블러드윙 너클',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -24193,7 +24193,7 @@ const itemData: Item[] = [
   },
   {
     code: 110410,
-    name: '브레이질건틀릿',
+    name: '브레이질 건틀릿',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -24546,7 +24546,7 @@ const itemData: Item[] = [
     attackPowerByLv: 0,
     defense: 0,
     defenseByLv: 0,
-    skillAmp: 86,
+    skillAmp: 83,
     skillAmpByLevel: 0,
     skillAmpRatio: 0,
     skillAmpRatioByLevel: 0,
@@ -24563,7 +24563,7 @@ const itemData: Item[] = [
     attackSpeedRatioByLv: 0,
     criticalStrikeChance: 0,
     criticalStrikeDamage: 0,
-    cooldownReduction: 0.1,
+    cooldownReduction: 0.15,
     preventCriticalStrikeDamaged: 0,
     cooldownLimit: 0,
     lifeSteal: 0,
@@ -24603,7 +24603,7 @@ const itemData: Item[] = [
   },
   {
     code: 110503,
-    name: '블러디핸즈',
+    name: '블러디 핸즈',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -25013,7 +25013,7 @@ const itemData: Item[] = [
   },
   {
     code: 111402,
-    name: '택티컬톤파',
+    name: '택티컬 톤파',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Tonfa',
@@ -25177,7 +25177,7 @@ const itemData: Item[] = [
   },
   {
     code: 111404,
-    name: '플라즈마톤파',
+    name: '플라즈마 톤파',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Tonfa',
@@ -25341,7 +25341,7 @@ const itemData: Item[] = [
   },
   {
     code: 111406,
-    name: '홀스터톤파',
+    name: '홀스터 톤파',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Tonfa',
@@ -25423,7 +25423,7 @@ const itemData: Item[] = [
   },
   {
     code: 111501,
-    name: '흑요석짓테',
+    name: '흑요석 짓테',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Tonfa',
@@ -25915,7 +25915,7 @@ const itemData: Item[] = [
   },
   {
     code: 112301,
-    name: '밀가루폭탄',
+    name: '밀가루 폭탄',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -26079,7 +26079,7 @@ const itemData: Item[] = [
   },
   {
     code: 112303,
-    name: '볼라이트닝',
+    name: '볼 라이트닝',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -26325,7 +26325,7 @@ const itemData: Item[] = [
   },
   {
     code: 112404,
-    name: '안티오크의수류탄',
+    name: '안티오크의 수류탄',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -26571,7 +26571,7 @@ const itemData: Item[] = [
   },
   {
     code: 112403,
-    name: '가시탱탱볼',
+    name: '가시 탱탱볼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -26653,7 +26653,7 @@ const itemData: Item[] = [
   },
   {
     code: 112501,
-    name: '루테늄구슬',
+    name: '루테늄 구슬',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -26735,7 +26735,7 @@ const itemData: Item[] = [
   },
   {
     code: 112405,
-    name: '파이어볼',
+    name: '파이어 볼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -26817,7 +26817,7 @@ const itemData: Item[] = [
   },
   {
     code: 112406,
-    name: '프리즘볼',
+    name: '프리즘 볼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'HighAngleFire',
@@ -27391,7 +27391,7 @@ const itemData: Item[] = [
   },
   {
     code: 113203,
-    name: '빈티지카드',
+    name: '빈티지 카드',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DirectFire',
@@ -27801,7 +27801,7 @@ const itemData: Item[] = [
   },
   {
     code: 113401,
-    name: '미치광이왕의카드',
+    name: '미치광이왕의 카드',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DirectFire',
@@ -28047,7 +28047,7 @@ const itemData: Item[] = [
   },
   {
     code: 113406,
-    name: '풍마수리검',
+    name: '풍마 수리검',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DirectFire',
@@ -28211,7 +28211,7 @@ const itemData: Item[] = [
   },
   {
     code: 113409,
-    name: '푸른색단도',
+    name: '푸른색 단도',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'DirectFire',
@@ -28949,7 +28949,7 @@ const itemData: Item[] = [
   },
   {
     code: 114203,
-    name: '컴포지트보우',
+    name: '컴포지트 보우',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bow',
@@ -29441,7 +29441,7 @@ const itemData: Item[] = [
   },
   {
     code: 114403,
-    name: '골든래쇼보우',
+    name: '골든래쇼 보우',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bow',
@@ -29605,7 +29605,7 @@ const itemData: Item[] = [
   },
   {
     code: 114501,
-    name: '엘리멘탈보우',
+    name: '엘리멘탈 보우',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bow',
@@ -29687,7 +29687,7 @@ const itemData: Item[] = [
   },
   {
     code: 114406,
-    name: '제베의활',
+    name: '제베의 활',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Bow',
@@ -30040,7 +30040,7 @@ const itemData: Item[] = [
     attackPowerByLv: 0,
     defense: 0,
     defenseByLv: 0,
-    skillAmp: 80,
+    skillAmp: 77,
     skillAmpByLevel: 0,
     skillAmpRatio: 0,
     skillAmpRatioByLevel: 0,
@@ -30425,7 +30425,7 @@ const itemData: Item[] = [
   },
   {
     code: 115303,
-    name: '헤비크로스보우',
+    name: '헤비 크로스보우',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'CrossBow',
@@ -30753,7 +30753,7 @@ const itemData: Item[] = [
   },
   {
     code: 115404,
-    name: '저격크로스보우',
+    name: '저격 크로스보우',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'CrossBow',
@@ -30917,7 +30917,7 @@ const itemData: Item[] = [
   },
   {
     code: 115406,
-    name: '포이즌드크로스보우',
+    name: '포이즌드 크로스보우',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'CrossBow',
@@ -31081,7 +31081,7 @@ const itemData: Item[] = [
   },
   {
     code: 116101,
-    name: '발터PPK',
+    name: '발터 PPK',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Pistol',
@@ -31245,7 +31245,7 @@ const itemData: Item[] = [
   },
   {
     code: 116202,
-    name: '베레타M92F',
+    name: '베레타 M92F',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Pistol',
@@ -31573,7 +31573,7 @@ const itemData: Item[] = [
   },
   {
     code: 116403,
-    name: '마탄의사수',
+    name: '마탄의 사수',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Pistol',
@@ -31737,7 +31737,7 @@ const itemData: Item[] = [
   },
   {
     code: 116405,
-    name: '일렉트론블라스터',
+    name: '일렉트론 블라스터',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Pistol',
@@ -31901,7 +31901,7 @@ const itemData: Item[] = [
   },
   {
     code: 116407,
-    name: '글록48',
+    name: '글록 48',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Pistol',
@@ -32065,7 +32065,7 @@ const itemData: Item[] = [
   },
   {
     code: 116410,
-    name: '플라즈마건',
+    name: '플라즈마 건',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Pistol',
@@ -32311,7 +32311,7 @@ const itemData: Item[] = [
   },
   {
     code: 117101,
-    name: '페도로프자동소총',
+    name: '페도로프 자동소총',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'AssaultRifle',
@@ -32393,7 +32393,7 @@ const itemData: Item[] = [
   },
   {
     code: 117201,
-    name: 'STG44',
+    name: 'STG-44',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'AssaultRifle',
@@ -32639,7 +32639,7 @@ const itemData: Item[] = [
   },
   {
     code: 117402,
-    name: '개틀링건',
+    name: '개틀링 건',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'AssaultRifle',
@@ -32721,7 +32721,7 @@ const itemData: Item[] = [
   },
   {
     code: 117403,
-    name: '95식자동소총',
+    name: '95식 자동 소총',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'AssaultRifle',
@@ -33131,7 +33131,7 @@ const itemData: Item[] = [
   },
   {
     code: 117407,
-    name: '골드러시',
+    name: '골드 러시',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'AssaultRifle',
@@ -34115,7 +34115,7 @@ const itemData: Item[] = [
   },
   {
     code: 118407,
-    name: '가우스라이플',
+    name: '가우스 라이플',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'SniperRifle',
@@ -35673,7 +35673,7 @@ const itemData: Item[] = [
   },
   {
     code: 120401,
-    name: '듀랜달Mk2',
+    name: '듀랜달 Mk2',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Rapier',
@@ -36083,7 +36083,7 @@ const itemData: Item[] = [
   },
   {
     code: 120406,
-    name: '레드팬서',
+    name: '레드 팬서',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Rapier',
@@ -36247,7 +36247,7 @@ const itemData: Item[] = [
   },
   {
     code: 120501,
-    name: '아르고스의눈',
+    name: '아르고스의 눈',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Rapier',
@@ -36329,7 +36329,7 @@ const itemData: Item[] = [
   },
   {
     code: 121101,
-    name: '보급형기타',
+    name: '보급형 기타',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -36411,7 +36411,7 @@ const itemData: Item[] = [
   },
   {
     code: 121201,
-    name: '골든브릿지',
+    name: '골든 브릿지',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -36493,7 +36493,7 @@ const itemData: Item[] = [
   },
   {
     code: 121202,
-    name: '싱글픽업',
+    name: '싱글 픽업',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -36575,7 +36575,7 @@ const itemData: Item[] = [
   },
   {
     code: 121301,
-    name: '루비스페셜',
+    name: '루비 스페셜',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -36657,7 +36657,7 @@ const itemData: Item[] = [
   },
   {
     code: 121302,
-    name: '험버커픽업',
+    name: '험버커 픽업',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37149,7 +37149,7 @@ const itemData: Item[] = [
   },
   {
     code: 121402,
-    name: '천국의계단',
+    name: '천국의 계단',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37231,7 +37231,7 @@ const itemData: Item[] = [
   },
   {
     code: 121403,
-    name: '퍼플헤이즈',
+    name: '퍼플 헤이즈',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37395,7 +37395,7 @@ const itemData: Item[] = [
   },
   {
     code: 121405,
-    name: '원더풀투나잇',
+    name: '원더풀 투나잇',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37477,7 +37477,7 @@ const itemData: Item[] = [
   },
   {
     code: 121406,
-    name: '더월',
+    name: '더 월',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37559,7 +37559,7 @@ const itemData: Item[] = [
   },
   {
     code: 121407,
-    name: '틴스피릿',
+    name: '틴 스피릿',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37641,7 +37641,7 @@ const itemData: Item[] = [
   },
   {
     code: 121501,
-    name: '캡틴페퍼',
+    name: '캡틴 페퍼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Guitar',
@@ -37805,7 +37805,7 @@ const itemData: Item[] = [
   },
   {
     code: 122201,
-    name: '카메라건',
+    name: '카메라 건',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -37887,7 +37887,7 @@ const itemData: Item[] = [
   },
   {
     code: 122301,
-    name: '컴팩트카메라',
+    name: '컴팩트 카메라 ',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -37969,7 +37969,7 @@ const itemData: Item[] = [
   },
   {
     code: 122302,
-    name: '레인지파인더',
+    name: '레인지파인더 ',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -38051,7 +38051,7 @@ const itemData: Item[] = [
   },
   {
     code: 122303,
-    name: '카메라라이플',
+    name: '카메라 라이플 ',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -38215,7 +38215,7 @@ const itemData: Item[] = [
   },
   {
     code: 122402,
-    name: '컴파운드사이트',
+    name: '컴파운드 사이트',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -38297,7 +38297,7 @@ const itemData: Item[] = [
   },
   {
     code: 122403,
-    name: '카메라캐논',
+    name: '카메라 캐논',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -38379,7 +38379,7 @@ const itemData: Item[] = [
   },
   {
     code: 122404,
-    name: 'VICG',
+    name: 'V.I.C.G ',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -38461,7 +38461,7 @@ const itemData: Item[] = [
   },
   {
     code: 122405,
-    name: '폴라로이드카메라',
+    name: '폴라로이드 카메라',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Camera',
@@ -38871,7 +38871,7 @@ const itemData: Item[] = [
   },
   {
     code: 130301,
-    name: '의지의지팡이',
+    name: '의지의 지팡이',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -38953,7 +38953,7 @@ const itemData: Item[] = [
   },
   {
     code: 130302,
-    name: '감정의컵',
+    name: '감정의 컵',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39035,7 +39035,7 @@ const itemData: Item[] = [
   },
   {
     code: 130303,
-    name: '이성의칼',
+    name: '이성의 칼',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39117,7 +39117,7 @@ const itemData: Item[] = [
   },
   {
     code: 130304,
-    name: '소유의펜타클',
+    name: '소유의 펜타클',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39281,7 +39281,7 @@ const itemData: Item[] = [
   },
   {
     code: 130402,
-    name: '운명의수레바퀴',
+    name: '운명의 수레바퀴',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39445,7 +39445,7 @@ const itemData: Item[] = [
   },
   {
     code: 130404,
-    name: '더스타',
+    name: '더 스타',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39527,7 +39527,7 @@ const itemData: Item[] = [
   },
   {
     code: 130405,
-    name: '더문',
+    name: '더 문',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39691,7 +39691,7 @@ const itemData: Item[] = [
   },
   {
     code: 130502,
-    name: '더데스',
+    name: '더 데스',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'Arcana',
@@ -39773,7 +39773,7 @@ const itemData: Item[] = [
   },
   {
     code: 131101,
-    name: '에키온 패시브 Lv2',
+    name: '카드모스의 부름 Lv2',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -39855,7 +39855,7 @@ const itemData: Item[] = [
   },
   {
     code: 131102,
-    name: '에키온 패시브 Lv3',
+    name: '카드모스의 부름 Lv3',
     modeType: 0,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41249,7 +41249,7 @@ const itemData: Item[] = [
   },
   {
     code: 601501,
-    name: '데스애더퀸-MT2',
+    name: '데스애더퀸-MT',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41331,7 +41331,7 @@ const itemData: Item[] = [
   },
   {
     code: 601502,
-    name: '데스애더퀸-FC2',
+    name: '데스애더퀸-FC',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41413,7 +41413,7 @@ const itemData: Item[] = [
   },
   {
     code: 601503,
-    name: '데스애더퀸-VBS2',
+    name: '데스애더퀸-VBS',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41495,7 +41495,7 @@ const itemData: Item[] = [
   },
   {
     code: 601504,
-    name: '블랙맘바킹-TL2',
+    name: '블랙맘바킹-TL',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41577,7 +41577,7 @@ const itemData: Item[] = [
   },
   {
     code: 601505,
-    name: '블랙맘바킹-FC2',
+    name: '블랙맘바킹-FC',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41659,7 +41659,7 @@ const itemData: Item[] = [
   },
   {
     code: 601506,
-    name: '블랙맘바킹-VBS2',
+    name: '블랙맘바킹-VBS',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41741,7 +41741,7 @@ const itemData: Item[] = [
   },
   {
     code: 601507,
-    name: '슈퍼사이드와인더-ML2',
+    name: '슈퍼사이드와인더-ML',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41823,7 +41823,7 @@ const itemData: Item[] = [
   },
   {
     code: 601508,
-    name: '슈퍼사이드와인더-FC2',
+    name: '슈퍼사이드와인더-FC',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41905,7 +41905,7 @@ const itemData: Item[] = [
   },
   {
     code: 601509,
-    name: '슈퍼사이드와인더-VBS2',
+    name: '슈퍼사이드와인더-VBS',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'VFArm',
@@ -41987,7 +41987,7 @@ const itemData: Item[] = [
   },
   {
     code: 610501,
-    name: '주작자문MK2',
+    name: '주작자문 Mk2',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'Glove',
@@ -42069,7 +42069,7 @@ const itemData: Item[] = [
   },
   {
     code: 602409,
-    name: '레바테인MK2',
+    name: '레바테인 Mk2',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'TwoHandSword',
@@ -42151,7 +42151,7 @@ const itemData: Item[] = [
   },
   {
     code: 607406,
-    name: '화첨창MK2',
+    name: '화첨창 Mk2',
     modeType: 8,
     itemType: 'Weapon',
     subType: 'Spear',
@@ -42413,7 +42413,7 @@ const itemData: Item[] = [
   },
   {
     code: 302201,
-    name: '뜨거운물',
+    name: '뜨거운 물',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -42533,7 +42533,7 @@ const itemData: Item[] = [
   },
   {
     code: 302211,
-    name: '꿀탄우유',
+    name: '꿀탄 우유',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -42653,7 +42653,7 @@ const itemData: Item[] = [
   },
   {
     code: 302214,
-    name: '초코우유',
+    name: '초코 우유',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -42683,7 +42683,7 @@ const itemData: Item[] = [
   },
   {
     code: 302219,
-    name: '제로탄산수',
+    name: '제로 탄산수',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -42833,7 +42833,7 @@ const itemData: Item[] = [
   },
   {
     code: 302314,
-    name: '위스키핫토디',
+    name: '위스키 핫토디',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -42953,7 +42953,7 @@ const itemData: Item[] = [
   },
   {
     code: 302307,
-    name: '위스키콕',
+    name: '위스키 콕',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -43043,7 +43043,7 @@ const itemData: Item[] = [
   },
   {
     code: 302302,
-    name: '뜨거운꿀물',
+    name: '뜨거운 꿀물',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Beverage',
@@ -43073,7 +43073,7 @@ const itemData: Item[] = [
   },
   {
     code: 302312,
-    name: '셀레네의눈물',
+    name: '셀레네의 눈물',
     modeType: 0,
     itemType: 'Consume',
     subType: 'SpecialBeverage',
@@ -43373,7 +43373,7 @@ const itemData: Item[] = [
   },
   {
     code: 301119,
-    name: '초콜렛',
+    name: '초콜릿',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43463,7 +43463,7 @@ const itemData: Item[] = [
   },
   {
     code: 301237,
-    name: '초코아이스크림',
+    name: '초코 아이스크림',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43523,7 +43523,7 @@ const itemData: Item[] = [
   },
   {
     code: 301224,
-    name: '마늘베이컨말이',
+    name: '마늘 베이컨 말이',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43583,7 +43583,7 @@ const itemData: Item[] = [
   },
   {
     code: 301243,
-    name: '레어스테이크',
+    name: '레어 스테이크',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43643,7 +43643,7 @@ const itemData: Item[] = [
   },
   {
     code: 301245,
-    name: '구운감자',
+    name: '덜 구운 감자',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43673,7 +43673,7 @@ const itemData: Item[] = [
   },
   {
     code: 301239,
-    name: '눈물젖은빵',
+    name: '눈물젖은 빵',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43733,7 +43733,7 @@ const itemData: Item[] = [
   },
   {
     code: 301317,
-    name: '힐링포션',
+    name: '힐링 포션',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43763,7 +43763,7 @@ const itemData: Item[] = [
   },
   {
     code: 301311,
-    name: '초코칩쿠키',
+    name: '초코칩 쿠키',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43823,7 +43823,7 @@ const itemData: Item[] = [
   },
   {
     code: 301325,
-    name: '버터감자구이',
+    name: '버터 감자구이',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43853,7 +43853,7 @@ const itemData: Item[] = [
   },
   {
     code: 301337,
-    name: '따끈따끈한토스트',
+    name: '따끈따끈한 토스트',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43883,7 +43883,7 @@ const itemData: Item[] = [
   },
   {
     code: 301340,
-    name: '베이컨토스트',
+    name: '베이컨 토스트',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43913,7 +43913,7 @@ const itemData: Item[] = [
   },
   {
     code: 301346,
-    name: '웰던스테이크',
+    name: '웰던 스테이크',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -43943,7 +43943,7 @@ const itemData: Item[] = [
   },
   {
     code: 301327,
-    name: '볶음라면',
+    name: '볶음 라면',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44063,7 +44063,7 @@ const itemData: Item[] = [
   },
   {
     code: 301339,
-    name: '구운마늘',
+    name: '구운 마늘',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44153,7 +44153,7 @@ const itemData: Item[] = [
   },
   {
     code: 301401,
-    name: '피시앤칩스',
+    name: '피쉬 앤 칩스',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44183,7 +44183,7 @@ const itemData: Item[] = [
   },
   {
     code: 301408,
-    name: '민트초코',
+    name: '민트 초코',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44243,7 +44243,7 @@ const itemData: Item[] = [
   },
   {
     code: 301406,
-    name: '호박고구마',
+    name: '호박 고구마',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44273,7 +44273,7 @@ const itemData: Item[] = [
   },
   {
     code: 301407,
-    name: '냉동피자',
+    name: '냉동 피자',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44303,7 +44303,7 @@ const itemData: Item[] = [
   },
   {
     code: 301501,
-    name: '연어스테이크',
+    name: '연어 스테이크',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44333,7 +44333,7 @@ const itemData: Item[] = [
   },
   {
     code: 301502,
-    name: '하와이안피자',
+    name: '하와이안 피자',
     modeType: 0,
     itemType: 'Consume',
     subType: 'Food',
@@ -44558,7 +44558,7 @@ const itemData: Item[] = [
   },
   {
     code: 113102,
-    name: '트럼프카드',
+    name: '트럼프 카드',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -44642,7 +44642,7 @@ const itemData: Item[] = [
   },
   {
     code: 401104,
-    name: '거북이등딱지',
+    name: '거북이 등딱지',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -44726,7 +44726,7 @@ const itemData: Item[] = [
   },
   {
     code: 401108,
-    name: '레이저포인트',
+    name: '레이저 포인터',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -44999,7 +44999,7 @@ const itemData: Item[] = [
   },
   {
     code: 401202,
-    name: '기름먹인천',
+    name: '기름먹인 천',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45041,7 +45041,7 @@ const itemData: Item[] = [
   },
   {
     code: 401206,
-    name: '분필가루',
+    name: '분필 가루',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45083,7 +45083,7 @@ const itemData: Item[] = [
   },
   {
     code: 401211,
-    name: '전자부품',
+    name: '전자 부품',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45104,7 +45104,7 @@ const itemData: Item[] = [
   },
   {
     code: 401212,
-    name: '정교한도면',
+    name: '정교한 도면',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45167,7 +45167,7 @@ const itemData: Item[] = [
   },
   {
     code: 401215,
-    name: '달궈진돌멩이',
+    name: '달궈진 돌멩이',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45230,7 +45230,7 @@ const itemData: Item[] = [
   },
   {
     code: 401306,
-    name: '이온전지',
+    name: '이온 전지',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45251,7 +45251,7 @@ const itemData: Item[] = [
   },
   {
     code: 401307,
-    name: '덧댄가죽',
+    name: '덧댄 가죽',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45314,7 +45314,7 @@ const itemData: Item[] = [
   },
   {
     code: 401208,
-    name: '생명의나무',
+    name: '생명의 나무',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45440,7 +45440,7 @@ const itemData: Item[] = [
   },
   {
     code: 401401,
-    name: 'VF혈액샘플',
+    name: 'VF 혈액 샘플',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45482,7 +45482,7 @@ const itemData: Item[] = [
   },
   {
     code: 401403,
-    name: '포스코어',
+    name: '포스 코어',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45503,7 +45503,7 @@ const itemData: Item[] = [
   },
   {
     code: 501101,
-    name: 'DNA 팔찌',
+    name: '{0}의 재생 팔찌',
     modeType: 0,
     itemType: 'DnaBracelet',
     subType: 'None',
@@ -45524,7 +45524,7 @@ const itemData: Item[] = [
   },
   {
     code: 409401,
-    name: 'DNA 팔찌(탈출)',
+    name: '재생 팔찌',
     modeType: 0,
     itemType: 'EscapeMaterial',
     subType: 'Material',
@@ -45566,7 +45566,7 @@ const itemData: Item[] = [
   },
   {
     code: 409403,
-    name: '루트 킷',
+    name: '루트킷',
     modeType: 0,
     itemType: 'EscapeQualification',
     subType: 'Material',
@@ -45734,7 +45734,7 @@ const itemData: Item[] = [
   },
   {
     code: 205202,
-    name: '성자의유산',
+    name: '성자의 유산',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45755,7 +45755,7 @@ const itemData: Item[] = [
   },
   {
     code: 205203,
-    name: '운명의꽃',
+    name: '운명의 꽃',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45776,7 +45776,7 @@ const itemData: Item[] = [
   },
   {
     code: 205204,
-    name: '유리조각',
+    name: '유리 조각',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45797,7 +45797,7 @@ const itemData: Item[] = [
   },
   {
     code: 205206,
-    name: '저격스코프',
+    name: '저격 스코프',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45902,7 +45902,7 @@ const itemData: Item[] = [
   },
   {
     code: 205213,
-    name: '사격교본',
+    name: '사격 교본',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45923,7 +45923,7 @@ const itemData: Item[] = [
   },
   {
     code: 205312,
-    name: '아이테르깃털',
+    name: '아이테르 깃털',
     modeType: 0,
     itemType: 'Misc',
     subType: 'Material',
@@ -45965,7 +45965,7 @@ const itemData: Item[] = [
   },
   {
     code: 502101,
-    name: '감시카메라',
+    name: '감시 카메라',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46043,7 +46043,7 @@ const itemData: Item[] = [
   },
   {
     code: 502105,
-    name: '캠프파이어키트',
+    name: '간이 모닥불 키트',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46069,7 +46069,7 @@ const itemData: Item[] = [
   },
   {
     code: 502202,
-    name: '개량형쥐덫',
+    name: '개량형 쥐덫',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46121,7 +46121,7 @@ const itemData: Item[] = [
   },
   {
     code: 502207,
-    name: '망원카메라',
+    name: '망원 카메라',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46147,7 +46147,7 @@ const itemData: Item[] = [
   },
   {
     code: 502208,
-    name: '정찰드론',
+    name: '정찰 드론',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46173,7 +46173,7 @@ const itemData: Item[] = [
   },
   {
     code: 502209,
-    name: '위장카메라',
+    name: '위장 카메라',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46225,7 +46225,7 @@ const itemData: Item[] = [
   },
   {
     code: 502212,
-    name: '망원카메라',
+    name: '망원 카메라',
     modeType: 8,
     itemType: 'Special',
     subType: 'Summon',
@@ -46251,7 +46251,7 @@ const itemData: Item[] = [
   },
   {
     code: 502308,
-    name: 'EMP드론',
+    name: 'EMP 드론',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46277,7 +46277,7 @@ const itemData: Item[] = [
   },
   {
     code: 502310,
-    name: '지압판트랩',
+    name: '지압판 트랩',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46303,7 +46303,7 @@ const itemData: Item[] = [
   },
   {
     code: 502405,
-    name: '더블기요틴',
+    name: '더블 기요틴',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46355,7 +46355,7 @@ const itemData: Item[] = [
   },
   {
     code: 502501,
-    name: '리모트마인',
+    name: '리모트 마인',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46381,7 +46381,7 @@ const itemData: Item[] = [
   },
   {
     code: 502204,
-    name: '대나무트랩',
+    name: '대나무 트랩',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
@@ -46407,7 +46407,7 @@ const itemData: Item[] = [
   },
   {
     code: 502404,
-    name: 'C4',
+    name: 'C-4',
     modeType: 0,
     itemType: 'Special',
     subType: 'Summon',
