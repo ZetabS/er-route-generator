@@ -1,14 +1,14 @@
 import { useSelectedStore } from '@/stores/selected';
 import type { Item } from '@/common/typing';
 import itemData from '@/modules/api/data/itemData';
-import { Inventory } from '@/common/typing';
+import { Inventory } from '@/modules/plan/Inventory';
 
 const selected = useSelectedStore();
 
 function getAllMaterials(item: Item): Item[] {
   if (!item) {
-    // throw Error(`이건 왜 없냐?`)
-    return [];
+    throw Error(`이건 왜 없냐?`);
+    // return [];
   }
 
   const canManufacture = item.manufacturableType === 1;

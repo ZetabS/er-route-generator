@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import SidebarWrapper from '@/components/wrapper/SidebarWrapper.vue';
 import TestText from './TestText.vue';
-import { koreanData } from '@/modules/api/languageData';
+import { koreanData } from '@/modules/api/apiService';
 const num = ref(0);
 </script>
 
