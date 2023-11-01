@@ -1,14 +1,22 @@
 import { itemData } from '@/modules/api/data/itemData';
 import { recipeData } from '@/modules/api/data/recipeData';
 import { koreanRawData } from '@/modules/api/data/koreanRawData';
-import type { Item, LanguageData, QueriedLanguageData, RawData, Recipe } from '@/common/typing';
+import type {
+  Area,
+  Item,
+  LanguageData,
+  QueriedLanguageData,
+  RawData,
+  Recipe
+} from '@/common/typing';
+import { areaData } from '@/modules/api/data/areaData';
 
 export function getItemByCode(code: number): Item {
   const item = itemData.find((item: Item) => item.code === code);
   if (item) {
     return item;
   } else {
-    throw Error(`Item: ${code} not found.`);
+    throw Error(`Item ${code} not found.`);
   }
 }
 
@@ -17,7 +25,7 @@ export function getRecipeByCode(code: number): Recipe {
   if (recipe) {
     return recipe;
   } else {
-    throw Error(`Item: ${code} not found.`);
+    throw Error(`Recipe for ${code} not found.`);
   }
 }
 
@@ -28,7 +36,16 @@ export function getRecipeByMaterial(code: number): Recipe {
   if (recipe) {
     return recipe;
   } else {
-    throw Error(`Item: ${code} not found.`);
+    throw Error(`Recipe by ${code} not found.`);
+  }
+}
+
+export function getAreaByCode(code: number): Area {
+  const area = areaData.find((area: Area) => area.code === code);
+  if (area) {
+    return area;
+  } else {
+    throw Error(`Area ${code} not found.`);
   }
 }
 
