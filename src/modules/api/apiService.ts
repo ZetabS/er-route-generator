@@ -2,8 +2,13 @@ import itemData from '@/modules/api/data/itemData';
 import { koreanRawData } from '@/modules/api/data/koreanRawData';
 import type { Item, LanguageData, QueriedLanguageData, RawData } from '@/common/typing';
 
-export function getItemByCode(code: number) {
-  return itemData.find((item: Item) => item.code === code);
+export function getItemByCode(code: number): Item {
+  const item = itemData.find((item: Item) => item.code === code);
+  if (item) {
+    return item;
+  } else {
+    throw Error(`Item: ${code} not found.`);
+  }
 }
 
 export const koreanData: LanguageData = parseLanguageData(koreanRawData);

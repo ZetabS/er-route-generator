@@ -17,23 +17,32 @@ export class Plan {
     this.route.push(area);
   }
 
-  calculateInventory() {
-    const materials = [];
-    this.targetItems.forEach((targetItem: Item) => materials.push(...getAllMaterials(targetItem)));
-    for (const area of this.route) {
-      for (const itemSpawn of area.itemSpawns) {
-        if (getItemByCode(itemSpawn.code) === )
-      }
-    }
+
+}
+
+function calculateInventory(inventory: Inventory, area: Area) {
+  const materials = [];
+  this.targetItems.forEach((targetItem: Item) => materials.push(...getAllMaterials(targetItem)));
+
+    for (const itemSpawn of area.itemSpawns) {
+      if (getItemByCode(itemSpawn.code) === )
+
+  }
+}
+
+function getRemainMaterials(inventory: Inventory, item: Item): Item[] {
+  const canManufacture = item.manufacturableType === 0;
+  if (canManufacture) {
+    return [
+      ...getAllMaterials(itemData[item.makeMaterial1]),
+      ...getAllMaterials(itemData[item.makeMaterial2])
+    ];
+  } else {
+    return [item];
   }
 }
 
 function getAllMaterials(item: Item): Item[] {
-  if (!item) {
-    throw Error(`이건 왜 없냐?`);
-    // return [];
-  }
-
   const canManufacture = item.manufacturableType === 0;
   if (canManufacture) {
     return [
