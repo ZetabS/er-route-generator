@@ -10,13 +10,11 @@ const iconStyle = `min-width: ${width}; max-width: ${width}; min-height: ${heigh
 const isImageError = ref(false);
 
 const imgPath = computed(() => {
-  const base = import.meta.env.BASE_URL + 'images/item/';
+  const base = import.meta.env.BASE_URL + 'images/';
   if (isImageError.value) {
-    return import.meta.env.BASE_URL + 'images/image-error.svg';
-  } else if (props.item.itemType == props.item.subType) {
-    return base + `${props.item.itemType}/item-${props.item.code}.png`;
+    return base + 'image-error.svg';
   } else {
-    return base + `${props.item.itemType}/${props.item.subType}/item-${props.item.code}.png`;
+    return base + `item/${props.item.itemType}/${props.item.subType}/item-${props.item.code}.png`;
   }
 });
 </script>
