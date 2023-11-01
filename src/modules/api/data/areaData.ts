@@ -1,6 +1,6 @@
 import type { Area } from '@/common/typing';
 
-const areaData: Area[] = [
+export const areaData: Area[] = [
   {
     code: 1,
     name: '항구',
@@ -11,75 +11,75 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101104,
+        itemCode: 101104,
         dropCount: 1
       },
       {
-        code: 102101,
+        itemCode: 102101,
         dropCount: 1
       },
       {
-        code: 103201,
+        itemCode: 103201,
         dropCount: 1
       },
       {
-        code: 108102,
+        itemCode: 108102,
         dropCount: 2
       },
       {
-        code: 110102,
+        itemCode: 110102,
         dropCount: 1
       },
       {
-        code: 112104,
+        itemCode: 112104,
         dropCount: 3
       },
       {
-        code: 118101,
+        itemCode: 118101,
         dropCount: 1
       },
       {
-        code: 202105,
+        itemCode: 202105,
         dropCount: 2
       },
       {
-        code: 203102,
+        itemCode: 203102,
         dropCount: 2
       },
       {
-        code: 204102,
+        itemCode: 204102,
         dropCount: 2
       },
       {
-        code: 301113,
+        itemCode: 301113,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 401104,
+        itemCode: 401104,
         dropCount: 2
       },
       {
-        code: 401106,
-        dropCount: 3
+        itemCode: 401106,
+        dropCount: 6
       },
       {
-        code: 401107,
+        itemCode: 401107,
         dropCount: 2
       },
       {
-        code: 401110,
+        itemCode: 401110,
         dropCount: 2
       },
       {
-        code: 401113,
+        itemCode: 401113,
         dropCount: 2
       },
       {
-        code: 502104,
+        itemCode: 502104,
         dropCount: 2
       }
     ]
@@ -95,71 +95,71 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101102,
+        itemCode: 101102,
         dropCount: 2
       },
       {
-        code: 112104,
+        itemCode: 112104,
         dropCount: 3
       },
       {
-        code: 113101,
+        itemCode: 113101,
         dropCount: 1
       },
       {
-        code: 113102,
+        itemCode: 113102,
         dropCount: 2
       },
       {
-        code: 202106,
+        itemCode: 202106,
         dropCount: 2
       },
       {
-        code: 204101,
+        itemCode: 204101,
         dropCount: 2
       },
       {
-        code: 301113,
+        itemCode: 301113,
         dropCount: 1
       },
       {
-        code: 301119,
+        itemCode: 301119,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302103,
-        dropCount: 1
-      },
-      {
-        code: 302104,
-        dropCount: 1
-      },
-      {
-        code: 401105,
+        itemCode: 302103,
         dropCount: 2
       },
       {
-        code: 401106,
-        dropCount: 3
-      },
-      {
-        code: 401109,
+        itemCode: 302104,
         dropCount: 2
       },
       {
-        code: 401110,
+        itemCode: 401105,
         dropCount: 2
       },
       {
-        code: 401113,
+        itemCode: 401106,
+        dropCount: 6
+      },
+      {
+        itemCode: 401109,
         dropCount: 2
       },
       {
-        code: 401121,
+        itemCode: 401110,
+        dropCount: 2
+      },
+      {
+        itemCode: 401113,
+        dropCount: 2
+      },
+      {
+        itemCode: 401121,
         dropCount: 2
       }
     ]
@@ -176,71 +176,71 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 104101,
+        itemCode: 104101,
         dropCount: 2
       },
       {
-        code: 105102,
+        itemCode: 105102,
         dropCount: 3
       },
       {
-        code: 105103,
+        itemCode: 105103,
         dropCount: 1
       },
       {
-        code: 107101,
+        itemCode: 107101,
         dropCount: 1
       },
       {
-        code: 108102,
+        itemCode: 108102,
         dropCount: 2
       },
       {
-        code: 108103,
+        itemCode: 108103,
         dropCount: 2
       },
       {
-        code: 118101,
+        itemCode: 118101,
         dropCount: 1
       },
       {
-        code: 201102,
+        itemCode: 201102,
         dropCount: 2
       },
       {
-        code: 201104,
+        itemCode: 201104,
         dropCount: 2
       },
       {
-        code: 203104,
+        itemCode: 203104,
         dropCount: 2
       },
       {
-        code: 205103,
+        itemCode: 205103,
         dropCount: 2
       },
       {
-        code: 301116,
+        itemCode: 301116,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 401104,
+        itemCode: 401104,
         dropCount: 2
       },
       {
-        code: 401114,
+        itemCode: 401114,
         dropCount: 3
       },
       {
-        code: 401117,
+        itemCode: 401117,
         dropCount: 2
       },
       {
-        code: 502102,
+        itemCode: 502102,
         dropCount: 1
       }
     ]
@@ -257,67 +257,67 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 104101,
+        itemCode: 104101,
         dropCount: 2
       },
       {
-        code: 105102,
+        itemCode: 105102,
         dropCount: 3
       },
       {
-        code: 114101,
+        itemCode: 114101,
         dropCount: 1
       },
       {
-        code: 120101,
+        itemCode: 120101,
         dropCount: 1
       },
       {
-        code: 202101,
+        itemCode: 202101,
         dropCount: 2
       },
       {
-        code: 202103,
+        itemCode: 202103,
         dropCount: 2
       },
       {
-        code: 202105,
+        itemCode: 202105,
         dropCount: 2
       },
       {
-        code: 205101,
+        itemCode: 205101,
         dropCount: 2
       },
       {
-        code: 205103,
+        itemCode: 205103,
         dropCount: 2
       },
       {
-        code: 205109,
+        itemCode: 205109,
         dropCount: 2
       },
       {
-        code: 301106,
+        itemCode: 301106,
         dropCount: 1
       },
       {
-        code: 301116,
+        itemCode: 301116,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302107,
+        itemCode: 302107,
         dropCount: 1
       },
       {
-        code: 401114,
+        itemCode: 401114,
         dropCount: 3
       },
       {
-        code: 502103,
+        itemCode: 502103,
         dropCount: 1
       }
     ]
@@ -333,79 +333,79 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 103201,
+        itemCode: 103201,
         dropCount: 1
       },
       {
-        code: 104101,
+        itemCode: 104101,
         dropCount: 2
       },
       {
-        code: 105102,
+        itemCode: 105102,
         dropCount: 3
       },
       {
-        code: 105103,
+        itemCode: 105103,
         dropCount: 1
       },
       {
-        code: 107101,
+        itemCode: 107101,
         dropCount: 1
       },
       {
-        code: 109101,
+        itemCode: 109101,
         dropCount: 1
       },
       {
-        code: 112104,
+        itemCode: 112104,
         dropCount: 3
       },
       {
-        code: 116101,
+        itemCode: 116101,
         dropCount: 1
       },
       {
-        code: 119101,
+        itemCode: 119101,
         dropCount: 2
       },
       {
-        code: 130101,
+        itemCode: 130101,
         dropCount: 1
       },
       {
-        code: 202105,
+        itemCode: 202105,
         dropCount: 2
       },
       {
-        code: 205110,
+        itemCode: 205110,
         dropCount: 2
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302107,
+        itemCode: 302107,
         dropCount: 1
       },
       {
-        code: 401104,
+        itemCode: 401104,
         dropCount: 2
       },
       {
-        code: 401109,
+        itemCode: 401109,
         dropCount: 2
       },
       {
-        code: 401114,
+        itemCode: 401114,
         dropCount: 3
       },
       {
-        code: 502103,
+        itemCode: 502103,
         dropCount: 1
       },
       {
-        code: 502104,
+        itemCode: 502104,
         dropCount: 2
       }
     ]
@@ -422,83 +422,83 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101102,
+        itemCode: 101102,
         dropCount: 2
       },
       {
-        code: 112105,
+        itemCode: 112105,
         dropCount: 1
       },
       {
-        code: 117101,
+        itemCode: 117101,
         dropCount: 1
       },
       {
-        code: 122101,
+        itemCode: 122101,
         dropCount: 1
       },
       {
-        code: 130101,
+        itemCode: 130101,
         dropCount: 1
       },
       {
-        code: 201101,
+        itemCode: 201101,
         dropCount: 2
       },
       {
-        code: 201102,
+        itemCode: 201102,
         dropCount: 2
       },
       {
-        code: 202101,
+        itemCode: 202101,
         dropCount: 2
       },
       {
-        code: 203101,
+        itemCode: 203101,
         dropCount: 2
       },
       {
-        code: 203104,
+        itemCode: 203104,
         dropCount: 2
       },
       {
-        code: 204102,
+        itemCode: 204102,
         dropCount: 2
       },
       {
-        code: 205103,
+        itemCode: 205103,
         dropCount: 2
       },
       {
-        code: 301119,
+        itemCode: 301119,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302104,
-        dropCount: 1
-      },
-      {
-        code: 302107,
-        dropCount: 1
-      },
-      {
-        code: 401108,
+        itemCode: 302104,
         dropCount: 2
       },
       {
-        code: 401112,
-        dropCount: 2
-      },
-      {
-        code: 502102,
+        itemCode: 302107,
         dropCount: 1
       },
       {
-        code: 502104,
+        itemCode: 401108,
+        dropCount: 2
+      },
+      {
+        itemCode: 401112,
+        dropCount: 2
+      },
+      {
+        itemCode: 502102,
+        dropCount: 1
+      },
+      {
+        itemCode: 502104,
         dropCount: 2
       }
     ]
@@ -514,71 +514,71 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101101,
+        itemCode: 101101,
         dropCount: 2
       },
       {
-        code: 101104,
+        itemCode: 101104,
         dropCount: 1
       },
       {
-        code: 120101,
+        itemCode: 120101,
         dropCount: 1
       },
       {
-        code: 201102,
+        itemCode: 201102,
         dropCount: 2
       },
       {
-        code: 202105,
+        itemCode: 202105,
         dropCount: 2
       },
       {
-        code: 203104,
+        itemCode: 203104,
         dropCount: 2
       },
       {
-        code: 204102,
+        itemCode: 204102,
         dropCount: 2
       },
       {
-        code: 205109,
+        itemCode: 205109,
         dropCount: 2
       },
       {
-        code: 301106,
+        itemCode: 301106,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302101,
-        dropCount: 1
-      },
-      {
-        code: 302104,
-        dropCount: 1
-      },
-      {
-        code: 401105,
+        itemCode: 302101,
         dropCount: 2
       },
       {
-        code: 401107,
+        itemCode: 302104,
         dropCount: 2
       },
       {
-        code: 401109,
+        itemCode: 401105,
         dropCount: 2
       },
       {
-        code: 401116,
+        itemCode: 401107,
         dropCount: 2
       },
       {
-        code: 502104,
+        itemCode: 401109,
+        dropCount: 2
+      },
+      {
+        itemCode: 401116,
+        dropCount: 2
+      },
+      {
+        itemCode: 502104,
         dropCount: 2
       }
     ]
@@ -595,75 +595,75 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101101,
+        itemCode: 101101,
         dropCount: 2
       },
       {
-        code: 101102,
+        itemCode: 101102,
         dropCount: 2
       },
       {
-        code: 104101,
+        itemCode: 104101,
         dropCount: 2
       },
       {
-        code: 108102,
+        itemCode: 108102,
         dropCount: 2
       },
       {
-        code: 109101,
+        itemCode: 109101,
         dropCount: 1
       },
       {
-        code: 113104,
+        itemCode: 113104,
         dropCount: 2
       },
       {
-        code: 115101,
+        itemCode: 115101,
         dropCount: 1
       },
       {
-        code: 117101,
+        itemCode: 117101,
         dropCount: 1
       },
       {
-        code: 203102,
+        itemCode: 203102,
         dropCount: 2
       },
       {
-        code: 204103,
+        itemCode: 204103,
         dropCount: 2
       },
       {
-        code: 205101,
+        itemCode: 205101,
         dropCount: 2
       },
       {
-        code: 301110,
+        itemCode: 301110,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302108,
-        dropCount: 1
-      },
-      {
-        code: 401101,
+        itemCode: 302108,
         dropCount: 2
       },
       {
-        code: 401107,
+        itemCode: 401101,
         dropCount: 2
       },
       {
-        code: 401112,
+        itemCode: 401107,
         dropCount: 2
       },
       {
-        code: 502103,
+        itemCode: 401112,
+        dropCount: 2
+      },
+      {
+        itemCode: 502103,
         dropCount: 1
       }
     ]
@@ -680,83 +680,83 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101104,
+        itemCode: 101104,
         dropCount: 1
       },
       {
-        code: 110102,
+        itemCode: 110102,
         dropCount: 1
       },
       {
-        code: 113102,
+        itemCode: 113102,
         dropCount: 2
       },
       {
-        code: 116101,
+        itemCode: 116101,
         dropCount: 1
       },
       {
-        code: 117101,
+        itemCode: 117101,
         dropCount: 1
       },
       {
-        code: 120101,
+        itemCode: 120101,
         dropCount: 1
       },
       {
-        code: 121101,
+        itemCode: 121101,
         dropCount: 1
       },
       {
-        code: 202101,
+        itemCode: 202101,
         dropCount: 2
       },
       {
-        code: 203101,
+        itemCode: 203101,
         dropCount: 2
       },
       {
-        code: 205110,
+        itemCode: 205110,
         dropCount: 2
       },
       {
-        code: 301110,
+        itemCode: 301110,
         dropCount: 1
       },
       {
-        code: 301119,
+        itemCode: 301119,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302103,
-        dropCount: 1
-      },
-      {
-        code: 302104,
-        dropCount: 1
-      },
-      {
-        code: 302107,
-        dropCount: 1
-      },
-      {
-        code: 401106,
-        dropCount: 3
-      },
-      {
-        code: 401110,
+        itemCode: 302103,
         dropCount: 2
       },
       {
-        code: 401113,
+        itemCode: 302104,
         dropCount: 2
       },
       {
-        code: 502104,
+        itemCode: 302107,
+        dropCount: 1
+      },
+      {
+        itemCode: 401106,
+        dropCount: 6
+      },
+      {
+        itemCode: 401110,
+        dropCount: 2
+      },
+      {
+        itemCode: 401113,
+        dropCount: 2
+      },
+      {
+        itemCode: 502104,
         dropCount: 2
       }
     ]
@@ -773,71 +773,71 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 102101,
+        itemCode: 102101,
         dropCount: 1
       },
       {
-        code: 104101,
+        itemCode: 104101,
         dropCount: 2
       },
       {
-        code: 108102,
+        itemCode: 108102,
         dropCount: 2
       },
       {
-        code: 112103,
+        itemCode: 112103,
         dropCount: 2
       },
       {
-        code: 112104,
+        itemCode: 112104,
         dropCount: 2
       },
       {
-        code: 113104,
+        itemCode: 113104,
         dropCount: 2
       },
       {
-        code: 114101,
+        itemCode: 114101,
         dropCount: 1
       },
       {
-        code: 116101,
+        itemCode: 116101,
         dropCount: 1
       },
       {
-        code: 119101,
+        itemCode: 119101,
         dropCount: 2
       },
       {
-        code: 201101,
+        itemCode: 201101,
         dropCount: 2
       },
       {
-        code: 301110,
+        itemCode: 301110,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302101,
-        dropCount: 1
-      },
-      {
-        code: 302108,
-        dropCount: 1
-      },
-      {
-        code: 401108,
+        itemCode: 302101,
         dropCount: 2
       },
       {
-        code: 401116,
+        itemCode: 302108,
         dropCount: 2
       },
       {
-        code: 502102,
+        itemCode: 401108,
+        dropCount: 2
+      },
+      {
+        itemCode: 401116,
+        dropCount: 2
+      },
+      {
+        itemCode: 502102,
         dropCount: 1
       }
     ]
@@ -855,79 +855,79 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101102,
+        itemCode: 101102,
         dropCount: 2
       },
       {
-        code: 112104,
+        itemCode: 112104,
         dropCount: 2
       },
       {
-        code: 113102,
+        itemCode: 113102,
         dropCount: 2
       },
       {
-        code: 118101,
+        itemCode: 118101,
         dropCount: 1
       },
       {
-        code: 119101,
+        itemCode: 119101,
         dropCount: 2
       },
       {
-        code: 121101,
+        itemCode: 121101,
         dropCount: 1
       },
       {
-        code: 122101,
+        itemCode: 122101,
         dropCount: 1
       },
       {
-        code: 201101,
+        itemCode: 201101,
         dropCount: 2
       },
       {
-        code: 203101,
+        itemCode: 203101,
         dropCount: 2
       },
       {
-        code: 204101,
+        itemCode: 204101,
         dropCount: 2
       },
       {
-        code: 204103,
+        itemCode: 204103,
         dropCount: 2
       },
       {
-        code: 301119,
+        itemCode: 301119,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302101,
-        dropCount: 1
-      },
-      {
-        code: 401101,
+        itemCode: 302101,
         dropCount: 2
       },
       {
-        code: 401106,
+        itemCode: 401101,
         dropCount: 2
       },
       {
-        code: 401110,
+        itemCode: 401106,
+        dropCount: 4
+      },
+      {
+        itemCode: 401110,
         dropCount: 2
       },
       {
-        code: 401112,
+        itemCode: 401112,
         dropCount: 2
       },
       {
-        code: 401113,
+        itemCode: 401113,
         dropCount: 2
       }
     ]
@@ -944,71 +944,71 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101101,
+        itemCode: 101101,
         dropCount: 2
       },
       {
-        code: 103201,
+        itemCode: 103201,
         dropCount: 1
       },
       {
-        code: 110102,
+        itemCode: 110102,
         dropCount: 1
       },
       {
-        code: 113101,
+        itemCode: 113101,
         dropCount: 1
       },
       {
-        code: 120101,
+        itemCode: 120101,
         dropCount: 1
       },
       {
-        code: 122101,
+        itemCode: 122101,
         dropCount: 1
       },
       {
-        code: 203102,
+        itemCode: 203102,
         dropCount: 2
       },
       {
-        code: 204101,
+        itemCode: 204101,
         dropCount: 2
       },
       {
-        code: 204103,
+        itemCode: 204103,
         dropCount: 2
       },
       {
-        code: 301110,
+        itemCode: 301110,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302103,
-        dropCount: 1
-      },
-      {
-        code: 302108,
-        dropCount: 1
-      },
-      {
-        code: 401106,
-        dropCount: 3
-      },
-      {
-        code: 401108,
+        itemCode: 302103,
         dropCount: 2
       },
       {
-        code: 401110,
+        itemCode: 302108,
         dropCount: 2
       },
       {
-        code: 401116,
+        itemCode: 401106,
+        dropCount: 6
+      },
+      {
+        itemCode: 401108,
+        dropCount: 2
+      },
+      {
+        itemCode: 401110,
+        dropCount: 2
+      },
+      {
+        itemCode: 401116,
         dropCount: 2
       }
     ]
@@ -1024,83 +1024,83 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101104,
+        itemCode: 101104,
         dropCount: 1
       },
       {
-        code: 102101,
+        itemCode: 102101,
         dropCount: 1
       },
       {
-        code: 103201,
+        itemCode: 103201,
         dropCount: 1
       },
       {
-        code: 107101,
+        itemCode: 107101,
         dropCount: 1
       },
       {
-        code: 108103,
+        itemCode: 108103,
         dropCount: 2
       },
       {
-        code: 130101,
+        itemCode: 130101,
         dropCount: 1
       },
       {
-        code: 201101,
+        itemCode: 201101,
         dropCount: 2
       },
       {
-        code: 202103,
+        itemCode: 202103,
         dropCount: 2
       },
       {
-        code: 202106,
+        itemCode: 202106,
         dropCount: 2
       },
       {
-        code: 205101,
+        itemCode: 205101,
         dropCount: 2
       },
       {
-        code: 205106,
+        itemCode: 205106,
         dropCount: 2
       },
       {
-        code: 301106,
+        itemCode: 301106,
         dropCount: 1
       },
       {
-        code: 301113,
+        itemCode: 301113,
         dropCount: 1
       },
       {
-        code: 301116,
+        itemCode: 301116,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 401109,
+        itemCode: 401109,
         dropCount: 2
       },
       {
-        code: 401113,
+        itemCode: 401113,
         dropCount: 2
       },
       {
-        code: 401114,
+        itemCode: 401114,
         dropCount: 3
       },
       {
-        code: 401117,
+        itemCode: 401117,
         dropCount: 2
       },
       {
-        code: 401121,
+        itemCode: 401121,
         dropCount: 2
       }
     ]
@@ -1116,71 +1116,71 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 102101,
+        itemCode: 102101,
         dropCount: 1
       },
       {
-        code: 108103,
+        itemCode: 108103,
         dropCount: 2
       },
       {
-        code: 112103,
+        itemCode: 112103,
         dropCount: 2
       },
       {
-        code: 112105,
+        itemCode: 112105,
         dropCount: 1
       },
       {
-        code: 114101,
+        itemCode: 114101,
         dropCount: 1
       },
       {
-        code: 115101,
+        itemCode: 115101,
         dropCount: 1
       },
       {
-        code: 201102,
+        itemCode: 201102,
         dropCount: 2
       },
       {
-        code: 202103,
+        itemCode: 202103,
         dropCount: 2
       },
       {
-        code: 202106,
+        itemCode: 202106,
         dropCount: 2
       },
       {
-        code: 204102,
+        itemCode: 204102,
         dropCount: 2
       },
       {
-        code: 301119,
+        itemCode: 301119,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 401101,
+        itemCode: 401101,
         dropCount: 2
       },
       {
-        code: 401105,
+        itemCode: 401105,
         dropCount: 2
       },
       {
-        code: 401112,
+        itemCode: 401112,
         dropCount: 2
       },
       {
-        code: 401117,
+        itemCode: 401117,
         dropCount: 2
       },
       {
-        code: 401121,
+        itemCode: 401121,
         dropCount: 2
       }
     ]
@@ -1198,67 +1198,67 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 105102,
+        itemCode: 105102,
         dropCount: 3
       },
       {
-        code: 108103,
+        itemCode: 108103,
         dropCount: 2
       },
       {
-        code: 112105,
+        itemCode: 112105,
         dropCount: 1
       },
       {
-        code: 119101,
+        itemCode: 119101,
         dropCount: 2
       },
       {
-        code: 122101,
+        itemCode: 122101,
         dropCount: 1
       },
       {
-        code: 201101,
+        itemCode: 201101,
         dropCount: 2
       },
       {
-        code: 202106,
+        itemCode: 202106,
         dropCount: 2
       },
       {
-        code: 203101,
+        itemCode: 203101,
         dropCount: 2
       },
       {
-        code: 205101,
+        itemCode: 205101,
         dropCount: 2
       },
       {
-        code: 205110,
+        itemCode: 205110,
         dropCount: 2
       },
       {
-        code: 301106,
+        itemCode: 301106,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302103,
-        dropCount: 1
-      },
-      {
-        code: 401105,
+        itemCode: 302103,
         dropCount: 2
       },
       {
-        code: 401109,
+        itemCode: 401105,
         dropCount: 2
       },
       {
-        code: 401121,
+        itemCode: 401109,
+        dropCount: 2
+      },
+      {
+        itemCode: 401121,
         dropCount: 2
       }
     ]
@@ -1277,79 +1277,79 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 105102,
+        itemCode: 105102,
         dropCount: 3
       },
       {
-        code: 107101,
+        itemCode: 107101,
         dropCount: 1
       },
       {
-        code: 108103,
+        itemCode: 108103,
         dropCount: 2
       },
       {
-        code: 110102,
+        itemCode: 110102,
         dropCount: 1
       },
       {
-        code: 112103,
+        itemCode: 112103,
         dropCount: 2
       },
       {
-        code: 115101,
+        itemCode: 115101,
         dropCount: 1
       },
       {
-        code: 118101,
+        itemCode: 118101,
         dropCount: 1
       },
       {
-        code: 119101,
+        itemCode: 119101,
         dropCount: 2
       },
       {
-        code: 202103,
+        itemCode: 202103,
         dropCount: 2
       },
       {
-        code: 202106,
+        itemCode: 202106,
         dropCount: 2
       },
       {
-        code: 204103,
+        itemCode: 204103,
         dropCount: 2
       },
       {
-        code: 205101,
+        itemCode: 205101,
         dropCount: 2
       },
       {
-        code: 301116,
+        itemCode: 301116,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302101,
-        dropCount: 1
-      },
-      {
-        code: 401104,
+        itemCode: 302101,
         dropCount: 2
       },
       {
-        code: 401108,
+        itemCode: 401104,
         dropCount: 2
       },
       {
-        code: 401114,
+        itemCode: 401108,
+        dropCount: 2
+      },
+      {
+        itemCode: 401114,
         dropCount: 3
       },
       {
-        code: 502102,
+        itemCode: 502102,
         dropCount: 1
       }
     ]
@@ -1366,83 +1366,83 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 105103,
+        itemCode: 105103,
         dropCount: 1
       },
       {
-        code: 109101,
+        itemCode: 109101,
         dropCount: 1
       },
       {
-        code: 112103,
+        itemCode: 112103,
         dropCount: 2
       },
       {
-        code: 112105,
+        itemCode: 112105,
         dropCount: 1
       },
       {
-        code: 113102,
+        itemCode: 113102,
         dropCount: 2
       },
       {
-        code: 113104,
+        itemCode: 113104,
         dropCount: 2
       },
       {
-        code: 116101,
+        itemCode: 116101,
         dropCount: 1
       },
       {
-        code: 117101,
+        itemCode: 117101,
         dropCount: 1
       },
       {
-        code: 130101,
+        itemCode: 130101,
         dropCount: 1
       },
       {
-        code: 201104,
+        itemCode: 201104,
         dropCount: 2
       },
       {
-        code: 205110,
+        itemCode: 205110,
         dropCount: 2
       },
       {
-        code: 301113,
+        itemCode: 301113,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 401101,
+        itemCode: 401101,
         dropCount: 2
       },
       {
-        code: 401106,
-        dropCount: 3
+        itemCode: 401106,
+        dropCount: 6
       },
       {
-        code: 401107,
+        itemCode: 401107,
         dropCount: 2
       },
       {
-        code: 401110,
+        itemCode: 401110,
         dropCount: 2
       },
       {
-        code: 401112,
+        itemCode: 401112,
         dropCount: 2
       },
       {
-        code: 401116,
+        itemCode: 401116,
         dropCount: 2
       },
       {
-        code: 502102,
+        itemCode: 502102,
         dropCount: 1
       }
     ]
@@ -1460,87 +1460,87 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101101,
+        itemCode: 101101,
         dropCount: 2
       },
       {
-        code: 102101,
+        itemCode: 102101,
         dropCount: 1
       },
       {
-        code: 104101,
+        itemCode: 104101,
         dropCount: 2
       },
       {
-        code: 108102,
+        itemCode: 108102,
         dropCount: 2
       },
       {
-        code: 109101,
+        itemCode: 109101,
         dropCount: 1
       },
       {
-        code: 112104,
+        itemCode: 112104,
         dropCount: 3
       },
       {
-        code: 113101,
+        itemCode: 113101,
         dropCount: 1
       },
       {
-        code: 113104,
+        itemCode: 113104,
         dropCount: 2
       },
       {
-        code: 114101,
+        itemCode: 114101,
         dropCount: 1
       },
       {
-        code: 115101,
+        itemCode: 115101,
         dropCount: 1
       },
       {
-        code: 121101,
+        itemCode: 121101,
         dropCount: 1
       },
       {
-        code: 201104,
+        itemCode: 201104,
         dropCount: 2
       },
       {
-        code: 203104,
+        itemCode: 203104,
         dropCount: 2
       },
       {
-        code: 205108,
+        itemCode: 205108,
         dropCount: 2
       },
       {
-        code: 205109,
+        itemCode: 205109,
         dropCount: 2
       },
       {
-        code: 301110,
+        itemCode: 301110,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302104,
-        dropCount: 1
-      },
-      {
-        code: 302108,
-        dropCount: 1
-      },
-      {
-        code: 401117,
+        itemCode: 302104,
         dropCount: 2
       },
       {
-        code: 502103,
+        itemCode: 302108,
+        dropCount: 2
+      },
+      {
+        itemCode: 401117,
+        dropCount: 2
+      },
+      {
+        itemCode: 502103,
         dropCount: 1
       }
     ]
@@ -1559,87 +1559,85 @@ const areaData: Area[] = [
     ],
     itemSpawns: [
       {
-        code: 101101,
+        itemCode: 101101,
         dropCount: 2
       },
       {
-        code: 101102,
+        itemCode: 101102,
         dropCount: 2
       },
       {
-        code: 105103,
+        itemCode: 105103,
         dropCount: 1
       },
       {
-        code: 113101,
+        itemCode: 113101,
         dropCount: 1
       },
       {
-        code: 113104,
+        itemCode: 113104,
         dropCount: 2
       },
       {
-        code: 121101,
+        itemCode: 121101,
         dropCount: 1
       },
       {
-        code: 201102,
+        itemCode: 201102,
         dropCount: 2
       },
       {
-        code: 201104,
+        itemCode: 201104,
         dropCount: 2
       },
       {
-        code: 202101,
+        itemCode: 202101,
         dropCount: 2
       },
       {
-        code: 203102,
+        itemCode: 203102,
         dropCount: 2
       },
       {
-        code: 204101,
+        itemCode: 204101,
         dropCount: 2
       },
       {
-        code: 205103,
+        itemCode: 205103,
         dropCount: 2
       },
       {
-        code: 301110,
+        itemCode: 301110,
         dropCount: 1
       },
       {
-        code: 301113,
+        itemCode: 301113,
         dropCount: 1
       },
       {
-        code: 301407,
+        itemCode: 301407,
         dropCount: 1
       },
       {
-        code: 302108,
-        dropCount: 1
-      },
-      {
-        code: 401107,
+        itemCode: 302108,
         dropCount: 2
       },
       {
-        code: 401108,
+        itemCode: 401107,
         dropCount: 2
       },
       {
-        code: 502102,
+        itemCode: 401108,
+        dropCount: 2
+      },
+      {
+        itemCode: 502102,
         dropCount: 1
       },
       {
-        code: 502103,
+        itemCode: 502103,
         dropCount: 1
       }
     ]
   }
 ]
-
-export default areaData;

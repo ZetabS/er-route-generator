@@ -2,7 +2,7 @@
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectItemButton from './SelectItemButton.vue';
 import type { Item } from '@/common/typing';
-import itemData from '@/modules/api/data/itemData';
+import { itemData } from '@/modules/api/data/itemData';
 import { useSelectedStore } from '@/stores/selected';
 import { computed } from 'vue';
 const selected = useSelectedStore();

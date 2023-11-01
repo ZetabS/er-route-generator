@@ -1,5 +1,3 @@
-import itemData from '@/modules/api/data/itemData';
-import ItemData from '@/modules/api/data/itemData';
 export type AreaCode = number;
 export type ItemCode = number;
 export type Name = string;
@@ -19,8 +17,15 @@ export type LanguageData = {
 
 export type QueriedLanguageData = ProcessedData<string>;
 
+export interface Recipe {
+  itemCode: ItemCode;
+  material1: number;
+  material2: number;
+  craftCount: number;
+}
+
 export interface ItemSpawn {
-  code: ItemCode;
+  itemCode: ItemCode;
   dropCount: number;
 }
 
@@ -44,11 +49,8 @@ export interface Item {
   markingType: string;
   craftAnimTrigger: string;
   stackable: number;
-  initialCount: number;
   itemUsableType: string;
   itemUsableValueList: number;
-  makeMaterial1: number;
-  makeMaterial2: number;
   manufacturableType: number;
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;
@@ -141,11 +143,8 @@ interface BaseItem {
   markingType: string;
   craftAnimTrigger: string;
   stackable: number;
-  initialCount: number;
   itemUsableType: string;
   itemUsableValueList: number;
-  makeMaterial1: number;
-  makeMaterial2: number;
   manufacturableType: number;
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;

@@ -1,11 +1,32 @@
-import itemData from '@/modules/api/data/itemData';
+import { itemData } from '@/modules/api/data/itemData';
+import { recipeData } from '@/modules/api/data/recipeData';
 import { koreanRawData } from '@/modules/api/data/koreanRawData';
-import type { Item, LanguageData, QueriedLanguageData, RawData } from '@/common/typing';
+import type { Item, LanguageData, QueriedLanguageData, RawData, Recipe } from '@/common/typing';
 
 export function getItemByCode(code: number): Item {
   const item = itemData.find((item: Item) => item.code === code);
   if (item) {
     return item;
+  } else {
+    throw Error(`Item: ${code} not found.`);
+  }
+}
+
+export function getRecipeByCode(code: number): Recipe {
+  const recipe = recipeData.find((recipe: Recipe) => recipe.itemCode === code);
+  if (recipe) {
+    return recipe;
+  } else {
+    throw Error(`Item: ${code} not found.`);
+  }
+}
+
+export function getRecipeByMaterial(code: number): Recipe {
+  const recipe = recipeData.find(
+    (recipe: Recipe) => recipe.material1 === code || recipe.material2 === code
+  );
+  if (recipe) {
+    return recipe;
   } else {
     throw Error(`Item: ${code} not found.`);
   }
