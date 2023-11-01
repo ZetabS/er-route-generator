@@ -1,9 +1,32 @@
-import { useSelectedStore } from '@/stores/selected';
-import type { Item } from '@/common/typing';
+import type { Area } from '@/common/typing';
+import type { Inventory } from '@/modules/plan/Inventory';
+import { Item } from '@/common/typing';
 import itemData from '@/modules/api/data/itemData';
-import { Inventory } from '@/modules/plan/Inventory';
+import {getItemByCode} from "@/modules/api/apiService";
 
-const selected = useSelectedStore();
+export class Plan {
+  private readonly targetItems: Item[];
+  private route: Area[] = [];
+  private inventory: Inventory[] = [];
+
+  constructor(...targetItems: []) {
+    this.targetItems = [...targetItems];
+  }
+
+  appendPath(area: Area) {
+    this.route.push(area);
+  }
+
+  calculateInventory() {
+    const materials = [];
+    this.targetItems.forEach((targetItem: Item) => materials.push(...getAllMaterials(targetItem)));
+    for (const area of this.route) {
+      for (const itemSpawn of area.itemSpawns) {
+        if (getItemByCode(itemSpawn.code) === )
+      }
+    }
+  }
+}
 
 function getAllMaterials(item: Item): Item[] {
   if (!item) {
@@ -11,24 +34,13 @@ function getAllMaterials(item: Item): Item[] {
     // return [];
   }
 
-  const canManufacture = item.manufacturableType === 1;
+  const canManufacture = item.manufacturableType === 0;
   if (canManufacture) {
-    return [item];
-  } else {
     return [
       ...getAllMaterials(itemData[item.makeMaterial1]),
       ...getAllMaterials(itemData[item.makeMaterial2])
     ];
-  }
-}
-
-function calculateRoute() {
-  const materials = [];
-
-  for (const slotType in selected.items) {
-    const item = selected.items[slotType]!;
-    if (item) {
-      materials.push(...getAllMaterials(item));
-    }
+  } else {
+    return [item];
   }
 }
