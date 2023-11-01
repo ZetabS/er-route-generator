@@ -1,8 +1,7 @@
-import type { Area, Item } from '@/common/typing';
+import type { Area, Item, ItemSpawn } from '@/common/typing';
 import type { Inventory } from '@/modules/plan/Inventory';
 import { itemData } from '@/modules/api/data/itemData';
-import { getItemByCode } from '@/modules/api/apiService';
-import { getRecipeByCode } from '@/modules/api/apiService';
+import { getItemByCode, getRecipeByCode } from '@/modules/api/apiService';
 
 export class Plan {
   private readonly targetItems: Item[];
@@ -23,11 +22,22 @@ export function calculateInventory(targetItems: Item[], inventory: Inventory, ar
   targetItems.forEach((targetItem: Item) => materials.push(...getMaterials(targetItem)));
 }
 
-export function findMaterialsInArea(targetItems: Item[], area: Area) {
-  return getAllMaterials(targetItems).reduce((result: Item[], material: Item) => {
-    area.itemSpawns;
-    return result;
-  }, []);
+export function findMaterialsInArea(area: Area, targetItems: Item[]) {
+  const materials: Item[] = getAllMaterials(targetItems);
+  const result: Item[] = [];
+
+  for (const itemSpawn of area.itemSpawns) {
+    const areaItem: Item = getItemByCode(itemSpawn.itemCode);
+    let dropCount: number = itemSpawn.dropCount;
+
+    for (const material of materials) {
+      if (areaItem === material && dropCount) {
+        dropCount--;
+        result.push(areaItem);
+      }
+    }
+  }
+  return result;
 }
 
 // function addMaterialsToInventory(inventory: Inventory, area: Area): boolean {
