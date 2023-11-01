@@ -29,12 +29,13 @@ export function getRecipeByCode(code: number): Recipe {
   }
 }
 
-export function getRecipeByMaterial(code: number): Recipe {
-  const recipe = recipeData.find(
+export function getRecipeByMaterial(code: number): Recipe[] {
+  const recipes = recipeData.filter(
     (recipe: Recipe) => recipe.material1 === code || recipe.material2 === code
   );
-  if (recipe) {
-    return recipe;
+
+  if (recipes) {
+    return recipes;
   } else {
     throw Error(`Recipe by ${code} not found.`);
   }
