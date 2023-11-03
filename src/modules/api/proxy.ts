@@ -1,7 +1,6 @@
 import type { LanguageData } from './typing';
 import { itemData, recipeData, areaData, koreanRawData } from './data';
 import { Item } from './Item';
-import { Recipe } from './Recipe';
 import { Area } from './Area';
 
 export const ITEM: Item[] = new Proxy(
@@ -9,17 +8,6 @@ export const ITEM: Item[] = new Proxy(
   {
     get(target: Item[], prop: string) {
       return target.find((item) => item.code.toString() === prop || item.name === prop);
-    }
-  }
-);
-
-export const RECIPE: Recipe[] = new Proxy(
-  recipeData.map((recipe) => new Recipe(recipe.itemCode)),
-  {
-    get(target: Recipe[], prop: string) {
-      return target.find(
-        (recipe) => recipe.item.code.toString() === prop || recipe.item.name === prop
-      );
     }
   }
 );

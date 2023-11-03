@@ -1,7 +1,8 @@
 import type { ItemData } from './typing';
-import { itemData } from './data';
-import { Recipe } from './Recipe';
-import { ITEM, RECIPE } from './proxy';
+import { itemData, recipeData } from './data';
+import { ITEM } from './proxy';
+import { ItemStack } from '@/modules/api/ItemStack';
+import { RecipeData } from './typing';
 
 export class Item {
   private readonly index: number;
@@ -26,6 +27,13 @@ export class Item {
 
   private get data(): ItemData {
     return itemData[this.index];
+  }
+
+  private get recipeData(): RecipeData {
+    if (!this.recipeIndex) {
+      throw Error(`Recipe for '${this.name}' not found.`);
+    }
+    return recipeData[this.recipeIndex];
   }
 
   get code(): number {
@@ -56,11 +64,23 @@ export class Item {
     return this.data.manufacturableType;
   }
 
-  get recipe(): Recipe {
-    return RECIPE[this.code];
+  get craftResult(): ItemStack {
+    return new ItemStack(this, this.recipeData.craftCount);
+  }
+
+  get materials(): Item[] {
+    return [ITEM[this.recipeData.material1], ITEM[this.recipeData.material2]];
+  }
+
+  get material1(): Item {
+    return ITEM[this.recipeData.material1];
+  }
+
+  get material2(): Item {
+    return ITEM[this.recipeData.material2];
   }
 
   get craftableItems(): Item[] {
-    return ITEM.filter((item: Item) => item.recipe.materials.includes(this));
+    return ITEM.filter((item: Item) => item.materials.includes(this));
   }
 }
