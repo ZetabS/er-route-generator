@@ -1,20 +1,15 @@
 import type { AreaData, ItemSpawnData } from './typing';
 import { areaData } from './data';
-import { Item } from './Item';
 import { ItemStack } from './ItemStack';
 import { AREA, ITEM } from '@/modules/api/proxy';
 
 export class Area {
   private readonly index: number;
 
-  constructor(identifier: string | number) {
-    if (typeof identifier === 'number') {
-      this.index = areaData.findIndex((area: AreaData): boolean => area.code === identifier);
-    } else {
-      this.index = areaData.findIndex((area: AreaData): boolean => area.name === identifier);
-    }
+  constructor(identifier: number) {
+    this.index = areaData.findIndex((area: AreaData): boolean => area.code === identifier);
 
-    if (!this.index) {
+    if (this.index === -1) {
       throw Error(`Area ${identifier} not found.`);
     }
   }

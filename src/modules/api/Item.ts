@@ -5,15 +5,13 @@ import { ITEM, RECIPE } from './proxy';
 
 export class Item {
   private readonly index: number;
+  private readonly recipeIndex: number;
 
-  constructor(identifier: string | number) {
-    if (typeof identifier === 'number') {
-      this.index = itemData.findIndex((item: ItemData): boolean => item.code === identifier);
-    } else {
-      this.index = itemData.findIndex((item: ItemData): boolean => item.name === identifier);
-    }
+  constructor(identifier: number) {
+    this.index = itemData.findIndex((item: ItemData): boolean => item.code === identifier);
+    this.recipeIndex = recipeData.findIndex((recipe: RecipeData) => recipe.itemCode === identifier);
 
-    if (!this.index) {
+    if (this.index === -1) {
       throw Error(`Item for ${identifier} not found.`);
     }
   }
