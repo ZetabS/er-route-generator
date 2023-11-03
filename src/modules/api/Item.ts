@@ -84,9 +84,19 @@ export class Item {
   }
 
   get allMaterials(): Item[] {
-    if (!this.materials) {
-      return [this];
+    const stack: Item[] = [this];
+    const result: Item[] = [];
+
+    while (stack.length > 0) {
+      const currentItem: Item = stack.pop();
+
+      if (currentItem.materials) {
+        stack.push(...currentItem.materials);
+      } else {
+        result.push(currentItem);
+      }
     }
-    return [...this.materials[0].allMaterials, ...this.materials[1].allMaterials];
+
+    return result;
   }
 }
