@@ -30,9 +30,6 @@ export class Item {
   }
 
   private get recipeData(): RecipeData {
-    if (!this.recipeIndex) {
-      throw Error(`Recipe for '${this.name}' not found.`);
-    }
     return recipeData[this.recipeIndex];
   }
 
@@ -64,23 +61,46 @@ export class Item {
     return this.data.manufacturableType;
   }
 
-  get craftResult(): ItemStack {
+  get craftResult(): ItemStack | undefined {
+    if (this.recipeIndex === -1) {
+      return undefined;
+    }
     return new ItemStack(this, this.recipeData.craftCount);
   }
 
-  get materials(): Item[] {
+  get materials(): Item[] | undefined {
+    if (this.recipeIndex === -1) {
+      return undefined;
+    }
     return [ITEM[this.recipeData.material1], ITEM[this.recipeData.material2]];
   }
 
-  get material1(): Item {
+  get material1(): Item | undefined {
+    if (this.recipeIndex === -1) {
+      return undefined;
+    }
     return ITEM[this.recipeData.material1];
   }
 
-  get material2(): Item {
+  get material2(): Item | undefined {
+    if (this.recipeIndex === -1) {
+      return undefined;
+    }
     return ITEM[this.recipeData.material2];
   }
 
-  get craftableItems(): Item[] {
-    return ITEM.filter((item: Item) => item.materials.includes(this));
+  get craftableItems(): Item[] | undefined {
+    const craftableItems = ITEM.filter((item: Item) => item.materials?.includes(this));
+    if (craftableItems.length === 0) {
+      return undefined;
+    }
+    return craftableItems;
+  }
+
+  get allMaterials(): Item[] {
+    if (!this.materials) {
+      return [this];
+    }
+    return [...this.materials[0].allMaterials, ...this.materials[1].allMaterials];
   }
 }
