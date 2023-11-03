@@ -61,6 +61,10 @@ export class Item {
     return this.data.manufacturableType;
   }
 
+  get equipType(): string | undefined {
+    return this.data.equipType;
+  }
+
   get craftResult(): ItemStack | undefined {
     if (this.recipeIndex === -1) {
       return undefined;
