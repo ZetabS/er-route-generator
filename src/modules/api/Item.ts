@@ -1,7 +1,7 @@
 import type { ItemData } from './typing';
 import { itemData } from './data';
 import { Recipe } from './Recipe';
-import { RECIPE } from './proxy';
+import { ITEM, RECIPE } from './proxy';
 
 export class Item {
   private readonly index: number;
@@ -60,5 +60,9 @@ export class Item {
 
   get recipe(): Recipe {
     return RECIPE[this.code];
+  }
+
+  get craftableItems(): Item[] {
+    return ITEM.filter((item: Item) => item.recipe.materials.includes(this));
   }
 }
