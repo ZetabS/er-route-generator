@@ -72,7 +72,7 @@ export class Item {
     return new ItemStack(this, this.recipeData.craftCount);
   }
 
-  get materials(): Item[] | undefined {
+  get materials(): [Item, Item] | undefined {
     if (this.recipeIndex === -1) {
       return undefined;
     }
