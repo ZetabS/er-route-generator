@@ -1,5 +1,5 @@
 import { useSelectedStore } from '@/stores/selected';
-import type { Item } from '@/common/typing';
+import type { Item } from '@/modules/api/typing';
 import itemData from '@/modules/api/data/itemData';
 import { Inventory } from '@/modules/plan/Inventory';
 

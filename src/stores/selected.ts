@@ -1,6 +1,6 @@
 import { computed, ComputedRef, ref, type Ref, UnwrapRef } from 'vue';
 import { defineStore } from 'pinia';
-import { type Item } from '@/common/typing';
+import { type Item } from '@/modules/api/typing';
 
 interface Items {
   Weapon?: Item;

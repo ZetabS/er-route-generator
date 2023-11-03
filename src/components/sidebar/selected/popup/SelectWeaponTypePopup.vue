@@ -2,7 +2,7 @@
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectWeaponTypeButtonVue from './SelectWeaponTypeButton.vue';
 import { itemData } from '@/modules/api/data/itemData';
-import type { Item } from '@/common/typing';
+import type { Item } from '@/modules/api/typing';
 
 const allWeaponTypes = [
   ...new Set(

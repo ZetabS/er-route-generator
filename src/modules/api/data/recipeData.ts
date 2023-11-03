@@ -1,6 +1,6 @@
-import type { Recipe } from '@/common/typing';
+import type { RecipeData } from '@/modules/api/typing';
 
-export const recipeData: Recipe[] = [
+export const recipeData: RecipeData[] = [
   {
     itemCode: 201201,
     material1: 201101,
@@ -3385,4 +3385,4 @@ export const recipeData: Recipe[] = [
     material2: 401211,
     craftCount: 2
   }
-]
+];
