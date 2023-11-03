@@ -1,6 +1,8 @@
 import type { AreaData, ItemSpawnData } from './typing';
 import { areaData } from './data';
-import { Item, ItemStack } from '.';
+import { Item } from './Item';
+import { ItemStack } from './ItemStack';
+import { AREA, ITEM } from '@/modules/api/proxy';
 
 export class Area {
   private readonly index: number;
@@ -42,12 +44,12 @@ export class Area {
   }
 
   get nearByArea(): Area[] {
-    return this.data.nearByAreaCodes.map((areaCode) => new Area(areaCode));
+    return this.data.nearByAreaCodes.map((areaCode) => AREA[areaCode]);
   }
 
   get gettableItems(): ItemStack[] {
     return this.data.itemSpawns.map(
-      (itemSpawn: ItemSpawnData) => new ItemStack(new Item(itemSpawn.itemCode), itemSpawn.dropCount)
+      (itemSpawn: ItemSpawnData) => new ItemStack(ITEM[itemSpawn.itemCode], itemSpawn.dropCount)
     );
   }
 }

@@ -1,6 +1,7 @@
 import type { ItemData } from './typing';
 import { itemData } from './data';
-import { Recipe } from '.';
+import { Recipe } from './Recipe';
+import { RECIPE } from './proxy';
 
 export class Item {
   private readonly index: number;
@@ -58,6 +59,6 @@ export class Item {
   }
 
   get recipe(): Recipe {
-    return new Recipe(this);
+    return RECIPE[this.code];
   }
 }

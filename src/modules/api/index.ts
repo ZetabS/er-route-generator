@@ -2,7 +2,7 @@ import { Item } from './Item';
 import { Recipe } from './Recipe';
 import { Area } from './Area';
 import { ItemStack } from './ItemStack';
-import { koreanData } from './Language';
+import { ITEM, AREA, koreanData } from './proxy';
 import { getAllSubRecipes } from './utils';
 
-export { Item, Recipe, Area, ItemStack, koreanData, getAllSubRecipes };
+export { Item, Recipe, Area, ItemStack, ITEM, AREA, koreanData, getAllSubRecipes };

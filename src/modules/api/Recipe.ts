@@ -1,6 +1,8 @@
 import type { RecipeData } from './typing';
 import { recipeData } from './data';
-import { Item, ItemStack } from '.';
+import { Item } from './Item';
+import { ItemStack } from './ItemStack';
+import { ITEM } from '@/modules/api/proxy';
 
 export class Recipe {
   private readonly index: number;
@@ -32,22 +34,22 @@ export class Recipe {
   }
 
   get item(): Item {
-    return new Item(this.data.itemCode);
+    return ITEM[this.data.itemCode];
   }
 
   get result(): ItemStack {
-    return new ItemStack(new Item(this.data.itemCode), this.data.craftCount);
+    return new ItemStack(ITEM[this.data.itemCode], this.data.craftCount);
   }
 
   get materials(): Item[] {
-    return [new Item(this.data.material1), new Item(this.data.material2)];
+    return [ITEM[this.data.material1], ITEM[this.data.material2]];
   }
 
   get material1(): Item {
-    return new Item(this.data.material1);
+    return ITEM[this.data.material1];
   }
 
   get material2(): Item {
-    return new Item(this.data.material2);
+    return ITEM[this.data.material2];
   }
 }

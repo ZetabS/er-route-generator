@@ -7,10 +7,6 @@ export type ProcessedData<DataType> = {
   [key in Key]: DataType;
 };
 
-export type RawData<DataType> = {
-  [key in Key]: DataType;
-};
-
 export type LanguageData = {
   [key in Key]: QueriedLanguageData | string;
 };

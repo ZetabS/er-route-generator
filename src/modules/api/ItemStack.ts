@@ -1,4 +1,4 @@
-import type { Item } from '.';
+import type { Item } from './Item';
 
 export class ItemStack {
   item: Item;
