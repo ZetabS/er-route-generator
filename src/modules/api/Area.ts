@@ -42,7 +42,7 @@ export class Area {
     return this.data.nearByAreaCodes.map((areaCode) => AREA[areaCode]);
   }
 
-  get gettableItems(): ItemStack[] {
+  get areaItems(): ItemStack[] {
     return this.data.itemSpawns.map(
       (itemSpawn: ItemSpawnData) => new ItemStack(ITEM[itemSpawn.itemCode], itemSpawn.dropCount)
     );
