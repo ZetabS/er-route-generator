@@ -1,10 +1,10 @@
 import type { LanguageData } from './typing';
-import { itemData, recipeData, areaData, koreanRawData } from './data';
+import { itemData, areaData, koreanRawData } from './data';
 import { Item } from './Item';
 import { Area } from './Area';
 
 export const ITEM: Item[] = new Proxy(
-  itemData.map((item) => new Item(item.code)),
+  itemData.map((rawItem) => new Item(rawItem.code)),
   {
     get(target: Item[], prop: string) {
       return target.find((item) => item.code.toString() === prop || item.name === prop);
