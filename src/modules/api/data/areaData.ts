@@ -5,7 +5,10 @@ export const areaData: AreaData[] = [
     code: 1,
     name: '항구',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [2, 17],
+    nearByAreaCodes: [
+      2,
+      17
+    ],
     itemSpawns: [
       {
         itemCode: 101104,
@@ -113,7 +116,11 @@ export const areaData: AreaData[] = [
     code: 2,
     name: '창고',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [1, 6, 18],
+    nearByAreaCodes: [
+      1,
+      6,
+      18
+    ],
     itemSpawns: [
       {
         itemCode: 101102,
@@ -209,7 +216,12 @@ export const areaData: AreaData[] = [
     code: 3,
     name: '연못',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [4, 11, 12, 15],
+    nearByAreaCodes: [
+      4,
+      11,
+      12,
+      15
+    ],
     itemSpawns: [
       {
         itemCode: 104101,
@@ -321,7 +333,12 @@ export const areaData: AreaData[] = [
     code: 4,
     name: '개울',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [3, 10, 12, 13],
+    nearByAreaCodes: [
+      3,
+      10,
+      12,
+      13
+    ],
     itemSpawns: [
       {
         itemCode: 104101,
@@ -437,7 +454,11 @@ export const areaData: AreaData[] = [
     code: 5,
     name: '모래사장',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [6, 9, 16],
+    nearByAreaCodes: [
+      6,
+      9,
+      16
+    ],
     itemSpawns: [
       {
         itemCode: 103201,
@@ -549,7 +570,12 @@ export const areaData: AreaData[] = [
     code: 6,
     name: '고급 주택가',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [2, 5, 16, 18],
+    nearByAreaCodes: [
+      2,
+      5,
+      16,
+      18
+    ],
     itemSpawns: [
       {
         itemCode: 101102,
@@ -669,7 +695,11 @@ export const areaData: AreaData[] = [
     code: 7,
     name: '골목길',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [8, 10, 13],
+    nearByAreaCodes: [
+      8,
+      10,
+      13
+    ],
     itemSpawns: [
       {
         itemCode: 101101,
@@ -765,7 +795,12 @@ export const areaData: AreaData[] = [
     code: 8,
     name: '주유소',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [7, 11, 19, 14],
+    nearByAreaCodes: [
+      7,
+      11,
+      19,
+      14
+    ],
     itemSpawns: [
       {
         itemCode: 101101,
@@ -873,7 +908,12 @@ export const areaData: AreaData[] = [
     code: 9,
     name: '호텔',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [5, 14, 16, 19],
+    nearByAreaCodes: [
+      5,
+      14,
+      16,
+      19
+    ],
     itemSpawns: [
       {
         itemCode: 101104,
@@ -985,7 +1025,12 @@ export const areaData: AreaData[] = [
     code: 10,
     name: '경찰서',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [4, 7, 11, 13],
+    nearByAreaCodes: [
+      4,
+      7,
+      11,
+      13
+    ],
     itemSpawns: [
       {
         itemCode: 102101,
@@ -1081,7 +1126,13 @@ export const areaData: AreaData[] = [
     code: 11,
     name: '소방서',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [3, 8, 10, 19, 100],
+    nearByAreaCodes: [
+      3,
+      8,
+      10,
+      19,
+      100
+    ],
     itemSpawns: [
       {
         itemCode: 101102,
@@ -1185,7 +1236,12 @@ export const areaData: AreaData[] = [
     code: 12,
     name: '병원',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [3, 4, 15, 17],
+    nearByAreaCodes: [
+      3,
+      4,
+      15,
+      17
+    ],
     itemSpawns: [
       {
         itemCode: 101101,
@@ -1281,7 +1337,11 @@ export const areaData: AreaData[] = [
     code: 13,
     name: '절',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [4, 7, 10],
+    nearByAreaCodes: [
+      4,
+      7,
+      10
+    ],
     itemSpawns: [
       {
         itemCode: 101104,
@@ -1401,7 +1461,11 @@ export const areaData: AreaData[] = [
     code: 14,
     name: '양궁장',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [8, 9, 19],
+    nearByAreaCodes: [
+      8,
+      9,
+      19
+    ],
     itemSpawns: [
       {
         itemCode: 102101,
@@ -1497,7 +1561,13 @@ export const areaData: AreaData[] = [
     code: 15,
     name: '묘지',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [3, 12, 17, 18, 100],
+    nearByAreaCodes: [
+      3,
+      12,
+      17,
+      18,
+      100
+    ],
     itemSpawns: [
       {
         itemCode: 105102,
@@ -1613,7 +1683,14 @@ export const areaData: AreaData[] = [
     code: 16,
     name: '숲',
     isHyperLoopInstalled: false,
-    nearByAreaCodes: [5, 6, 9, 18, 19, 100],
+    nearByAreaCodes: [
+      5,
+      6,
+      9,
+      18,
+      19,
+      100
+    ],
     itemSpawns: [
       {
         itemCode: 105102,
@@ -1741,7 +1818,12 @@ export const areaData: AreaData[] = [
     code: 17,
     name: '공장',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [1, 12, 15, 18],
+    nearByAreaCodes: [
+      1,
+      12,
+      15,
+      18
+    ],
     itemSpawns: [
       {
         itemCode: 105103,
@@ -1857,7 +1939,13 @@ export const areaData: AreaData[] = [
     code: 18,
     name: '성당',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [2, 6, 15, 16, 17],
+    nearByAreaCodes: [
+      2,
+      6,
+      15,
+      16,
+      17
+    ],
     itemSpawns: [
       {
         itemCode: 101101,
@@ -1973,7 +2061,14 @@ export const areaData: AreaData[] = [
     code: 19,
     name: '학교',
     isHyperLoopInstalled: true,
-    nearByAreaCodes: [8, 9, 11, 14, 16, 100],
+    nearByAreaCodes: [
+      8,
+      9,
+      11,
+      14,
+      16,
+      100
+    ],
     itemSpawns: [
       {
         itemCode: 101101,
@@ -2081,4 +2176,4 @@ export const areaData: AreaData[] = [
       }
     ]
   }
-];
+]

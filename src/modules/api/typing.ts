@@ -45,8 +45,11 @@ export interface ItemData {
   markingType: string;
   craftAnimTrigger: string;
   stackable: number;
+  initialCount: number;
   itemUsableType: string;
   itemUsableValueList: number;
+  makeMaterial1: number;
+  makeMaterial2: number;
   manufacturableType: number;
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;
