@@ -1,6 +1,6 @@
 import { computed, ComputedRef, ref, type Ref, UnwrapRef } from 'vue';
 import { defineStore } from 'pinia';
-import { type Item } from '@/modules/api/typing';
+import { ITEM, Item } from '@/modules/api';
 
 interface Items {
   Weapon?: Item;
@@ -13,12 +13,12 @@ interface Items {
 export const useSelectedStore = defineStore('selected', () => {
   const weaponType: Ref<string> = ref('Rapier');
 
-  const items: Ref<Items> = ref({
-    Weapon: undefined,
-    Chest: undefined,
-    Head: undefined,
-    Arm: undefined,
-    Leg: undefined
+  const items: Ref<UnwrapRef<Record<string, Item>>> = ref({
+    Weapon: ITEM['활빈검'],
+    Chest: ITEM['지휘관의 갑옷'],
+    Head: ITEM['황실 부르고넷'],
+    Arm: ITEM['드라우프니르'],
+    Leg: ITEM['SCV']
   });
 
   const itemsArray: ComputedRef<Item[]> = computed(
