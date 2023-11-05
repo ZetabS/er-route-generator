@@ -1,8 +1,7 @@
 import type { ItemData } from './typing';
-import { itemData, recipeData } from './data';
-import { ITEM } from './proxy';
-import { ItemStack } from '@/modules/api/ItemStack';
-import { RecipeData } from './typing';
+import { itemData } from './data';
+import { Recipe } from './Recipe';
+import { ITEM, RECIPE } from './proxy';
 
 export class Item {
   private readonly index: number;
@@ -27,10 +26,6 @@ export class Item {
 
   private get data(): ItemData {
     return itemData[this.index];
-  }
-
-  private get recipeData(): RecipeData {
-    return recipeData[this.recipeIndex];
   }
 
   get code(): number {
@@ -79,12 +74,8 @@ export class Item {
     return [ITEM[this.recipeData.material1], ITEM[this.recipeData.material2]];
   }
 
-  get craftableItems(): Item[] | undefined {
-    const craftableItems = ITEM.filter((item: Item) => item.materials?.includes(this));
-    if (craftableItems.length === 0) {
-      return undefined;
-    }
-    return craftableItems;
+  get craftableItems(): Item[] {
+    return ITEM.filter((item: Item) => item.recipe.materials.includes(this));
   }
 
   get allMaterials(): Item[] {
@@ -102,5 +93,9 @@ export class Item {
     }
 
     return result;
+  }
+
+  get recipe(): Recipe {
+    return RECIPE[this.code];
   }
 }
