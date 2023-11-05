@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { Item, ITEM } from '@/modules/api';
+import { Item, ITEM, RECIPE } from '@/modules/api';
 
 const swordOfJustice: Item = ITEM[120302];
 const material1 = swordOfJustice.material1 as Item;

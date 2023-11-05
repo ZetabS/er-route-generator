@@ -65,8 +65,12 @@ export class Item {
     return RECIPE[this.code];
   }
 
-  get materials(): [Item, Item] | undefined {
-    return this.recipe?.materials;
+  get materials(): [Item, Item] {
+    if (this.recipe) {
+      return this.recipe.materials;
+    } else {
+      return [];
+    }
   }
 
   get material1(): Item | undefined {
@@ -75,6 +79,10 @@ export class Item {
 
   get material2(): Item | undefined {
     return this.recipe?.material2;
+  }
+
+  get parentItems(): Item[] {
+    return this.data.parentItem.map((code) => ITEM[code]);
   }
 }
 

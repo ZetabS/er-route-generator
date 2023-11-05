@@ -50,6 +50,7 @@ export interface ItemData {
   itemUsableValueList: number;
   makeMaterial1: number;
   makeMaterial2: number;
+  parentItem: number[];
   manufacturableType: number;
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;

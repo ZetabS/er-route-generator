@@ -1,5 +1,4 @@
-import type { Item } from './Item';
-import { Recipe } from './Recipe';
+import type { Item, Recipe } from './Item';
 
 export function getAllSubRecipes(item: Item) {
   const recipe = new Recipe(item);

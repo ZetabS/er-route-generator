@@ -1,7 +1,15 @@
 import { expect, test } from 'vitest';
-import { RECIPE } from '@/modules/api/Recipe';
-import { ITEM, Item } from '@/modules/api/Item';
+import { ITEM, Item, RECIPE } from '@/modules/api/Item';
+
 const swordOfJustice: Item = ITEM[120302];
+const material1 = swordOfJustice.material1 as Item;
+const material2 = swordOfJustice.material2 as Item;
+const rapier = material1.material1 as Item;
+const flower = material1.material2 as Item;
+const robe = material2.material1 as Item;
+const bandage = material2.material2 as Item;
+const needle = rapier.material1 as Item;
+const scrap = rapier.material2 as Item;
 
 test('new Recipe', () => {
   const recipe1 = RECIPE['활빈검'];
