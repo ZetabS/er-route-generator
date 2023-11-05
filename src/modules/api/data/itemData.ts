@@ -18,6 +18,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201201,
+      201202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -100,6 +104,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201203,
+      201204
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -182,6 +190,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201205,
+      201301
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -264,6 +276,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201101,
     makeMaterial2: 205101,
+    parentItem: [
+      201402,
+      201411,
+      201503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -346,6 +363,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201101,
     makeMaterial2: 108101,
+    parentItem: [
+      201303,
+      201414,
+      201501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -428,6 +450,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201102,
     makeMaterial2: 101101,
+    parentItem: [
+      201301,
+      201401,
+      201417,
+      201509
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -510,6 +538,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201102,
     makeMaterial2: 119101,
+    parentItem: [
+      201402,
+      201418,
+      201403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -592,6 +625,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201104,
     makeMaterial2: 112101,
+    parentItem: [
+      201302,
+      201405,
+      201507,
+      201508
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -674,6 +713,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201203,
     makeMaterial2: 201104,
+    parentItem: [
+      201406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -756,6 +798,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201205,
     makeMaterial2: 401107,
+    parentItem: [
+      201412,
+      201413
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -838,6 +884,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201202,
     makeMaterial2: 401109,
+    parentItem: [
+      201404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -920,6 +969,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201203,
     makeMaterial2: 401214,
+    parentItem: [
+      201409,
+      201415
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1002,6 +1055,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201204,
     makeMaterial2: 201201,
+    parentItem: [
+      201407,
+      201410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1084,6 +1141,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 401113,
     makeMaterial2: 205312,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1166,6 +1224,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201303,
     makeMaterial2: 205204,
+    parentItem: [
+      201502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1248,6 +1309,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201205,
     makeMaterial2: 401303,
+    parentItem: [
+      201505
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1330,6 +1394,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201301,
     makeMaterial2: 401211,
+    parentItem: [
+      701451
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1412,6 +1479,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201402,
     makeMaterial2: 401105,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1494,6 +1562,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201401,
     makeMaterial2: 205103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1576,6 +1645,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201402,
     makeMaterial2: 401106,
+    parentItem: [
+      201504
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1658,6 +1730,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201302,
     makeMaterial2: 401101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1740,6 +1813,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201302,
     makeMaterial2: 401106,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1822,6 +1896,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 203305,
     makeMaterial2: 201202,
+    parentItem: [
+      201408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1904,6 +1981,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201401,
     makeMaterial2: 205109,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -1986,6 +2064,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201203,
     makeMaterial2: 205213,
+    parentItem: [
+      201506
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -2068,6 +2149,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201204,
     makeMaterial2: 401306,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -2150,6 +2232,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201204,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2232,6 +2315,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201414,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2314,6 +2398,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201201,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -2396,6 +2481,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201202,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -2478,6 +2564,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201404,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2560,6 +2647,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201201,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -2642,6 +2730,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201410,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2724,6 +2813,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201405,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2806,6 +2896,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201417,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2888,6 +2979,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201205,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -2970,6 +3062,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201205,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -3052,6 +3145,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201203,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -3134,6 +3228,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201406,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -3216,6 +3311,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201305
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3298,6 +3396,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201206,
     makeMaterial2: 201111,
+    parentItem: [
+      201416
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3380,6 +3481,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 51,
     makeMaterial1: 201305,
     makeMaterial2: 201112,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3462,6 +3564,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202202,
+      202205
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3544,6 +3650,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202206,
+      202411,
+      202511,
+      205207
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3626,6 +3738,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202209,
+      202210,
+      202422
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3708,6 +3825,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202201,
+      202305
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3790,6 +3911,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202106,
     makeMaterial2: 401103,
+    parentItem: [
+      202302,
+      202407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3872,6 +3997,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202101,
     makeMaterial2: 401103,
+    parentItem: [
+      202301,
+      202303,
+      202506,
+      202512
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -3954,6 +4085,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202101,
     makeMaterial2: 108101,
+    parentItem: [
+      202401,
+      202515
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4036,6 +4171,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202103,
     makeMaterial2: 203102,
+    parentItem: [
+      202306,
+      202417,
+      202502,
+      202514,
+      102405,
+      120302
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4118,6 +4261,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401113,
     makeMaterial2: 101101,
+    parentItem: [
+      202304,
+      202416,
+      202505,
+      202508
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4200,6 +4349,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202105,
     makeMaterial2: 101101,
+    parentItem: [
+      202410,
+      202421
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4282,6 +4435,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202105,
     makeMaterial2: 401105,
+    parentItem: [
+      202405,
+      202415,
+      202507
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4364,6 +4522,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205109,
     makeMaterial2: 401113,
+    parentItem: [
+      202307,
+      202419,
+      202503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4446,6 +4609,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202202,
     makeMaterial2: 119101,
+    parentItem: [
+      202406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4528,6 +4694,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202201,
     makeMaterial2: 119101,
+    parentItem: [
+      202402,
+      202412
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4610,6 +4780,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202202,
     makeMaterial2: 205103,
+    parentItem: [
+      202413,
+      202418,
+      202422,
+      202504
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4692,6 +4868,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202207,
     makeMaterial2: 113101,
+    parentItem: [
+      202411,
+      202420
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4774,6 +4954,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202106,
     makeMaterial2: 401213,
+    parentItem: [
+      202408,
+      202410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4856,6 +5040,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202206,
     makeMaterial2: 205102,
+    parentItem: [
+      202404,
+      104408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -4938,6 +5126,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202205,
     makeMaterial2: 401106,
+    parentItem: [
+      202415,
+      202417
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5020,6 +5212,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202211,
     makeMaterial2: 401202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5102,6 +5295,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202302,
     makeMaterial2: 401217,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5184,6 +5378,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202306,
     makeMaterial2: 401109,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5266,6 +5461,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202210,
     makeMaterial2: 401305,
+    parentItem: [
+      202510
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5348,6 +5546,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202301,
     makeMaterial2: 112103,
+    parentItem: [
+      202513
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5430,6 +5631,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202305,
     makeMaterial2: 205202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5512,6 +5714,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202305,
     makeMaterial2: 202209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5594,6 +5797,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202304,
     makeMaterial2: 202103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5676,6 +5880,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202302,
     makeMaterial2: 401214,
+    parentItem: [
+      202501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5758,6 +5965,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202303,
     makeMaterial2: 205209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5840,6 +6048,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202401,
     makeMaterial2: 202210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -5922,6 +6131,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202401,
     makeMaterial2: 202206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -6004,6 +6214,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202303,
     makeMaterial2: 401113,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -6086,6 +6297,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202211,
     makeMaterial2: 205211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -6168,6 +6380,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202304,
     makeMaterial2: 205208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -6250,6 +6463,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202303,
     makeMaterial2: 202105,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -6332,6 +6546,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -6414,6 +6629,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202207,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -6496,6 +6712,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202209,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -6578,6 +6795,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202412,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -6660,6 +6878,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202206,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -6742,6 +6961,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202211,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -6824,6 +7044,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202303,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -6906,6 +7127,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202207,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -6988,6 +7210,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202202,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7070,6 +7293,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202210,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -7152,6 +7376,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202207,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7234,6 +7459,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401113,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7316,6 +7542,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202405,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7398,6 +7625,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202103,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7480,6 +7708,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202202,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -7562,6 +7791,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202406,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7644,6 +7874,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202206,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7726,6 +7957,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 202205,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -7808,6 +8040,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      203204,
+      203408
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -7890,6 +8126,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202206,
+      203202,
+      203203,
+      203411,
+      203509,
+      401202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -7972,6 +8216,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      203302,
+      203304,
+      203501,
+      203504
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8054,6 +8304,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401104,
     makeMaterial2: 401103,
+    parentItem: [
+      203401,
+      203409,
+      203404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8136,6 +8391,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203102,
     makeMaterial2: 120101,
+    parentItem: [
+      203406,
+      203415,
+      203510
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8218,6 +8478,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203102,
     makeMaterial2: 401103,
+    parentItem: [
+      203303,
+      203403,
+      203503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8300,6 +8565,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203101,
     makeMaterial2: 401116,
+    parentItem: [
+      203405,
+      203410,
+      203506,
+      203413,
+      111406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8382,6 +8654,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401213,
     makeMaterial2: 401307,
+    parentItem: [
+      203407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8464,6 +8739,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203104,
     makeMaterial2: 401214,
+    parentItem: [
+      203403,
+      203410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8546,6 +8825,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203203,
     makeMaterial2: 401213,
+    parentItem: [
+      203402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8628,6 +8910,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203104,
     makeMaterial2: 401217,
+    parentItem: [
+      203409
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8710,6 +8995,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205102,
     makeMaterial2: 401216,
+    parentItem: [
+      201414,
+      203414
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8792,6 +9081,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203201,
     makeMaterial2: 401213,
+    parentItem: [
+      203406,
+      203412
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8874,6 +9167,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401202,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -8956,6 +9250,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203303,
     makeMaterial2: 401101,
+    parentItem: [
+      203505
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9038,6 +9335,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203302,
     makeMaterial2: 203203,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9120,6 +9418,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203204,
     makeMaterial2: 401211,
+    parentItem: [
+      203502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9202,6 +9503,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203401,
     makeMaterial2: 203202,
+    parentItem: [
+      203508
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9284,6 +9588,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203301,
     makeMaterial2: 401114,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9366,6 +9671,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203304,
     makeMaterial2: 203201,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9448,6 +9754,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203302,
     makeMaterial2: 203204,
+    parentItem: [
+      203507
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9530,6 +9839,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203102,
     makeMaterial2: 301317,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9612,6 +9922,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203401,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9694,6 +10005,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203305,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9776,6 +10088,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203202,
     makeMaterial2: 205203,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9858,6 +10171,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401216,
     makeMaterial2: 203204,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -9940,6 +10254,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10022,6 +10337,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203101,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10104,6 +10420,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203204,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -10186,6 +10503,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203104,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10268,6 +10586,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203405,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10350,6 +10669,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203203,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -10432,6 +10752,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203104,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -10514,6 +10835,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203402,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10596,6 +10918,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203410,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10678,6 +11001,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203406,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -10760,6 +11084,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203102,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -10842,6 +11167,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 203202,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -10924,6 +11250,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401216,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -11006,6 +11333,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401202,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -11088,6 +11416,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401307,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -11170,6 +11499,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      204203,
+      204301,
+      204502
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11252,6 +11586,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      204204,
+      204302
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11334,6 +11672,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      204201,
+      204202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11416,6 +11758,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204103,
     makeMaterial2: 401116,
+    parentItem: [
+      204401,
+      204412,
+      204505
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11498,6 +11845,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204103,
     makeMaterial2: 119101,
+    parentItem: [
+      204408,
+      204407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11580,6 +11931,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204101,
     makeMaterial2: 401106,
+    parentItem: [
+      204304,
+      204408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11662,6 +12017,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204102,
     makeMaterial2: 112103,
+    parentItem: [
+      204403,
+      204415,
+      204501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11744,6 +12104,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108101,
     makeMaterial2: 105102,
+    parentItem: [
+      204303,
+      204413
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11826,6 +12190,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204101,
     makeMaterial2: 401113,
+    parentItem: [
+      204406,
+      204410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11908,6 +12276,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204102,
     makeMaterial2: 401103,
+    parentItem: [
+      204404,
+      204409,
+      204503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -11990,6 +12363,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204205,
     makeMaterial2: 401307,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12072,6 +12446,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204201,
     makeMaterial2: 401106,
+    parentItem: [
+      204409
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12154,6 +12531,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204302,
     makeMaterial2: 401202,
+    parentItem: [
+      204402,
+      204411
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12236,6 +12617,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204203,
     makeMaterial2: 205211,
+    parentItem: [
+      204414
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12318,6 +12702,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204404,
     makeMaterial2: 205101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12400,6 +12785,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204204,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12482,6 +12868,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204301,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12564,6 +12951,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204203,
     makeMaterial2: 204202,
+    parentItem: [
+      204504
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12646,6 +13036,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204302,
     makeMaterial2: 204401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12728,6 +13119,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204404,
     makeMaterial2: 401101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12810,6 +13202,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204201,
     makeMaterial2: 401303,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12892,6 +13285,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204204,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -12974,6 +13368,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204202,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -13056,6 +13451,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204301,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -13138,6 +13534,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204205,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -13220,6 +13617,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204304,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -13302,6 +13700,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204204,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -13384,6 +13783,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -13466,6 +13866,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204302,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -13548,6 +13949,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204408,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -13630,6 +14032,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 204201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -13712,6 +14115,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      101201,
+      101202,
+      101501,
+      130303
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -13794,6 +14203,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101104,
     makeMaterial2: 108101,
+    parentItem: [
+      101301,
+      101303,
+      101405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -13876,6 +14290,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101104,
     makeMaterial2: 101102,
+    parentItem: [
+      101302,
+      101404,
+      101502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -13958,6 +14377,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101201,
     makeMaterial2: 205102,
+    parentItem: [
+      101401,
+      101402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14040,6 +14463,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101202,
     makeMaterial2: 101101,
+    parentItem: [
+      101406,
+      101408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14122,6 +14549,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101201,
     makeMaterial2: 401105,
+    parentItem: [
+      101407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14204,6 +14634,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101301,
     makeMaterial2: 205208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14286,6 +14717,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101301,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14368,6 +14800,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101202,
     makeMaterial2: 401303,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14450,6 +14883,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101302,
     makeMaterial2: 401216,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14532,6 +14966,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101303,
     makeMaterial2: 401306,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14614,6 +15049,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101302,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -14696,6 +15132,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -14778,6 +15215,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101104,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -14860,6 +15298,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101202,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -14942,6 +15381,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      102201,
+      102301,
+      102501,
+      102503,
+      205211
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15024,6 +15470,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102101,
     makeMaterial2: 401112,
+    parentItem: [
+      102403,
+      102404,
+      102409,
+      102412,
+      102502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15106,6 +15559,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102101,
     makeMaterial2: 401213,
+    parentItem: [
+      102402,
+      102411
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15188,6 +15645,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102301,
     makeMaterial2: 401114,
+    parentItem: [
+      102410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15270,6 +15730,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102201,
     makeMaterial2: 401106,
+    parentItem: [
+      102405,
+      102413
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15352,6 +15816,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102201,
     makeMaterial2: 401217,
+    parentItem: [
+      102406,
+      102407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15434,6 +15902,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102403,
     makeMaterial2: 202206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15516,6 +15985,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102404,
     makeMaterial2: 205109,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15598,6 +16068,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102404,
     makeMaterial2: 205108,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15680,6 +16151,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102201,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -15762,6 +16234,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102402,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15844,6 +16317,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102301,
     makeMaterial2: 205204,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -15926,6 +16400,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102201,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -16008,6 +16483,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102403,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16090,6 +16566,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -16172,6 +16649,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102201,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -16254,6 +16732,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102101,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -16336,6 +16815,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      103202,
+      103301,
+      103503
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16418,6 +16902,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103201,
     makeMaterial2: 105102,
+    parentItem: [
+      103302,
+      103402,
+      103502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16500,6 +16989,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103202,
     makeMaterial2: 401106,
+    parentItem: [
+      103404,
+      103501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16582,6 +17075,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103201,
     makeMaterial2: 401212,
+    parentItem: [
+      103401,
+      103403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16664,6 +17161,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103301,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16746,6 +17244,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103202,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -16828,6 +17327,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103301,
     makeMaterial2: 205207,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16910,6 +17410,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103302,
     makeMaterial2: 401218,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -16992,6 +17493,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103302,
     makeMaterial2: 401306,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17074,6 +17576,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103202,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -17156,6 +17659,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 103201,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -17238,6 +17742,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      104201,
+      104302,
+      104501,
+      401217,
+      401213,
+      401216
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17320,6 +17832,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104101,
     makeMaterial2: 401101,
+    parentItem: [
+      104301,
+      104404,
+      104406,
+      104502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17402,6 +17920,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104201,
     makeMaterial2: 112103,
+    parentItem: [
+      104401,
+      104402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17484,6 +18006,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104101,
     makeMaterial2: 401105,
+    parentItem: [
+      104303
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17566,6 +18091,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104302,
     makeMaterial2: 113102,
+    parentItem: [
+      104403,
+      104409
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17648,6 +18177,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104301,
     makeMaterial2: 205211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17730,6 +18260,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104301,
     makeMaterial2: 205202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17812,6 +18343,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104303,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -17894,6 +18426,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104201,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -17976,6 +18509,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104201,
     makeMaterial2: 401305,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18058,6 +18592,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104303,
     makeMaterial2: 401218,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18140,6 +18675,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -18222,6 +18758,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104201,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -18304,6 +18841,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      105201,
+      105202,
+      105408,
+      107303
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18386,6 +18929,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105103,
     makeMaterial2: 119101,
+    parentItem: [
+      105302,
+      105501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18468,6 +19015,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105103,
     makeMaterial2: 108103,
+    parentItem: [
+      105301,
+      105401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18550,6 +19101,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105202,
     makeMaterial2: 205101,
+    parentItem: [
+      105405,
+      105407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18632,6 +19187,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105201,
     makeMaterial2: 108102,
+    parentItem: [
+      105403,
+      105404,
+      105406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18714,6 +19274,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105202,
     makeMaterial2: 401106,
+    parentItem: [
+      105402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18796,6 +19359,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105401,
     makeMaterial2: 401108,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18878,6 +19442,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105302,
     makeMaterial2: 401217,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -18960,6 +19525,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105302,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19042,6 +19608,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105301,
     makeMaterial2: 205203,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19124,6 +19691,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105302,
     makeMaterial2: 401202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19206,6 +19774,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105301,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19288,6 +19857,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105103,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -19370,6 +19940,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105201,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -19452,6 +20023,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105102,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -19534,6 +20106,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      107201,
+      107302,
+      107501,
+      115403
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19616,6 +20194,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107101,
     makeMaterial2: 108103,
+    parentItem: [
+      107301,
+      107401,
+      107402,
+      107406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19698,6 +20282,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107201,
     makeMaterial2: 401101,
+    parentItem: [
+      107405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19780,6 +20367,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107101,
     makeMaterial2: 401106,
+    parentItem: [
+      107303,
+      107403,
+      107404,
+      107502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19862,6 +20455,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107302,
     makeMaterial2: 105103,
+    parentItem: [
+      107408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -19944,6 +20540,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107201,
     makeMaterial2: 205101,
+    parentItem: [
+      107407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20026,6 +20625,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -20108,6 +20708,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107302,
     makeMaterial2: 205312,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20190,6 +20791,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107302,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -20272,6 +20874,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107301,
     makeMaterial2: 401202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20354,6 +20957,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107201,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -20436,6 +21040,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107401,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20518,6 +21123,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107303,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20600,6 +21206,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -20682,6 +21289,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 107302,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -20764,6 +21372,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      105302,
+      108202,
+      108405,
+      108502,
+      130301,
+      205209
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20846,6 +21462,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108102,
     makeMaterial2: 108103,
+    parentItem: [
+      108301,
+      108401,
+      104405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -20928,6 +21549,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108202,
     makeMaterial2: 401101,
+    parentItem: [
+      108404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21010,6 +21634,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108202,
     makeMaterial2: 401113,
+    parentItem: [
+      108501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21092,6 +21719,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108405,
     makeMaterial2: 401107,
+    parentItem: [
+      108403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21174,6 +21804,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108102,
     makeMaterial2: 401106,
+    parentItem: [
+      108402,
+      104407,
+      104408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21256,6 +21891,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108402,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21338,6 +21974,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108301,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21420,6 +22057,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108401,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21502,6 +22140,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108202,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -21584,6 +22223,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108405,
     makeMaterial2: 401305,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21666,6 +22306,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108405,
     makeMaterial2: 202306,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21748,6 +22389,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108102,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -21830,6 +22472,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108101,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -21912,6 +22555,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      109201,
+      109202,
+      109501
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -21994,6 +22642,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109101,
     makeMaterial2: 401109,
+    parentItem: [
+      109301,
+      109403,
+      109406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22076,6 +22729,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109101,
     makeMaterial2: 401101,
+    parentItem: [
+      109402,
+      109405,
+      109502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22158,6 +22816,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109201,
     makeMaterial2: 205101,
+    parentItem: [
+      109401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22240,6 +22901,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109301,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22322,6 +22984,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109202,
     makeMaterial2: 401110,
+    parentItem: [
+      109404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22404,6 +23069,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109201,
     makeMaterial2: 205312,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22486,6 +23152,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109402,
     makeMaterial2: 101102,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22568,6 +23235,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109202,
     makeMaterial2: 205312,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22650,6 +23318,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109201,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -22732,6 +23401,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -22814,6 +23484,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 109202,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -22896,6 +23567,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      110201,
+      110202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -22978,6 +23653,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110102,
     makeMaterial2: 401103,
+    parentItem: [
+      110401,
+      110404,
+      110412,
+      110501,
+      110503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23060,6 +23742,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110102,
     makeMaterial2: 401106,
+    parentItem: [
+      110301,
+      110302,
+      110502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23142,6 +23829,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110202,
     makeMaterial2: 401113,
+    parentItem: [
+      110402,
+      110410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23224,6 +23915,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110202,
     makeMaterial2: 205101,
+    parentItem: [
+      110407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23306,6 +24000,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110201,
     makeMaterial2: 401104,
+    parentItem: [
+      110405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23388,6 +24085,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110301,
     makeMaterial2: 401121,
+    parentItem: [
+      110406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23470,6 +24170,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110201,
     makeMaterial2: 401210,
+    parentItem: [
+      110408,
+      110409,
+      110411
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23552,6 +24257,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110401,
     makeMaterial2: 205209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23634,6 +24340,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110402,
     makeMaterial2: 205109,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23716,6 +24423,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110302,
     makeMaterial2: 401217,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23798,6 +24506,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110404,
     makeMaterial2: 302103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23880,6 +24589,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110404,
     makeMaterial2: 205106,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -23962,6 +24672,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110301,
     makeMaterial2: 401202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24044,6 +24755,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110404,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24126,6 +24838,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -24208,6 +24921,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110201,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -24290,6 +25004,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110202,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -24372,6 +25087,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 110201,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -24454,6 +25170,18 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      105202,
+      107201,
+      108202,
+      111201,
+      111501,
+      114401,
+      115202,
+      121305,
+      205208,
+      502204
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24536,6 +25264,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108103,
     makeMaterial2: 108101,
+    parentItem: [
+      111301,
+      111401,
+      111405,
+      111502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24618,6 +25352,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111201,
     makeMaterial2: 401109,
+    parentItem: [
+      111402,
+      111406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24700,6 +25438,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111201,
     makeMaterial2: 401206,
+    parentItem: [
+      111403,
+      111404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24782,6 +25524,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111301,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24864,6 +25607,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111401,
     makeMaterial2: 401104,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -24946,6 +25690,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111401,
     makeMaterial2: 401306,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25028,6 +25773,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -25110,6 +25856,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111301,
     makeMaterial2: 203204,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25192,6 +25939,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108103,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -25274,6 +26022,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 111201,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -25356,6 +26105,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      112202,
+      112205
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25438,6 +26191,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112105,
     makeMaterial2: 401121,
+    parentItem: [
+      112301,
+      112303,
+      112404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25520,6 +26278,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112205,
     makeMaterial2: 401105,
+    parentItem: [
+      112401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25602,6 +26363,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112105,
     makeMaterial2: 101102,
+    parentItem: [
+      112204,
+      112304,
+      112306,
+      112405,
+      112406,
+      112502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25684,6 +26453,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112202,
     makeMaterial2: 401206,
+    parentItem: [
+      112402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25766,6 +26538,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112303,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25848,6 +26621,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112202,
     makeMaterial2: 401110,
+    parentItem: [
+      112302,
+      112408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -25930,6 +26707,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112205,
     makeMaterial2: 401107,
+    parentItem: [
+      112403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26012,6 +26792,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112205,
     makeMaterial2: 108101,
+    parentItem: [
+      112407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26094,6 +26877,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112202,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -26176,6 +26960,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112204,
     makeMaterial2: 205202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26258,6 +27043,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112301,
     makeMaterial2: 205208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26340,6 +27126,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112304,
     makeMaterial2: 401101,
+    parentItem: [
+      112501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26422,6 +27211,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112403,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26504,6 +27294,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112205,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -26586,6 +27377,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112205,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -26668,6 +27460,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112306,
     makeMaterial2: 401305,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26750,6 +27543,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112303,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26832,6 +27626,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112205,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -26914,6 +27709,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202304,
+      113201,
+      113203,
+      113205,
+      113206,
+      119302
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -26996,6 +27799,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113101,
     makeMaterial2: 108101,
+    parentItem: [
+      113302,
+      113404,
+      113408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27078,6 +27886,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113203,
     makeMaterial2: 113104,
+    parentItem: [
+      113401,
+      113405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27160,6 +27972,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113101,
     makeMaterial2: 113102,
+    parentItem: [
+      113202,
+      113412
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27242,6 +28058,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113101,
     makeMaterial2: 502104,
+    parentItem: [
+      113301,
+      113501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27324,6 +28144,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113101,
     makeMaterial2: 205109,
+    parentItem: [
+      113502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27406,6 +28229,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113205,
     makeMaterial2: 401109,
+    parentItem: [
+      113406,
+      113411
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27488,6 +28315,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113201,
     makeMaterial2: 113104,
+    parentItem: [
+      113409
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27570,6 +28400,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113202,
     makeMaterial2: 401218,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27652,6 +28483,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113201,
     makeMaterial2: 401106,
+    parentItem: [
+      113410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27734,6 +28568,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113202,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27816,6 +28651,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113301,
     makeMaterial2: 205207,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -27898,6 +28734,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113201,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -27980,6 +28817,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113302,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28062,6 +28900,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113404,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28144,6 +28983,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113301,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28226,6 +29066,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113203,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -28308,6 +29149,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113205,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -28390,6 +29232,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113206,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -28472,6 +29315,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      114201,
+      114202,
+      114502,
+      114503
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28554,6 +29403,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114101,
     makeMaterial2: 502104,
+    parentItem: [
+      114203,
+      114301,
+      114407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28636,6 +29490,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114101,
     makeMaterial2: 401105,
+    parentItem: [
+      114303,
+      114402,
+      114405,
+      114504
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28718,6 +29578,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114201,
     makeMaterial2: 401101,
+    parentItem: [
+      114403,
+      114405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28800,6 +29664,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114201,
     makeMaterial2: 401112,
+    parentItem: [
+      114302
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28882,6 +29749,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114301,
     makeMaterial2: 401109,
+    parentItem: [
+      114401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -28964,6 +29834,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114202,
     makeMaterial2: 401121,
+    parentItem: [
+      114406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29046,6 +29919,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114302,
     makeMaterial2: 108103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29128,6 +30002,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114202,
     makeMaterial2: 401107,
+    parentItem: [
+      114501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29210,6 +30087,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114203,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29292,6 +30170,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114203,
     makeMaterial2: 114202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29374,6 +30253,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114402,
     makeMaterial2: 205211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29456,6 +30336,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114303,
     makeMaterial2: 205209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29538,6 +30419,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -29620,6 +30502,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114101,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -29702,6 +30585,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114202,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -29784,6 +30668,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 114201,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -29866,6 +30751,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      115201,
+      115202,
+      115501,
+      205213
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -29948,6 +30839,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115101,
     makeMaterial2: 502104,
+    parentItem: [
+      115303,
+      115405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30030,6 +30925,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115101,
     makeMaterial2: 108103,
+    parentItem: [
+      115302,
+      115401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30112,6 +31011,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115202,
     makeMaterial2: 401108,
+    parentItem: [
+      115404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30194,6 +31096,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115201,
     makeMaterial2: 401106,
+    parentItem: [
+      115402,
+      115403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30276,6 +31182,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115202,
     makeMaterial2: 401213,
+    parentItem: [
+      115406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30358,6 +31267,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115303,
     makeMaterial2: 401202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30440,6 +31350,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115303,
     makeMaterial2: 107101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30522,6 +31433,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115302,
     makeMaterial2: 205206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30604,6 +31516,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115201,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -30686,6 +31599,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115401,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30768,6 +31682,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115101,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -30850,6 +31765,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      116201,
+      116202,
+      116408,
+      116501,
+      122201
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -30932,6 +31854,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116101,
     makeMaterial2: 401112,
+    parentItem: [
+      116402,
+      116403,
+      116502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31014,6 +31941,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116101,
     makeMaterial2: 401103,
+    parentItem: [
+      116301,
+      116410
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31096,6 +32027,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116202,
     makeMaterial2: 401108,
+    parentItem: [
+      116404,
+      116407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31178,6 +32113,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116201,
     makeMaterial2: 401212,
+    parentItem: [
+      116405,
+      116406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31260,6 +32199,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116101,
     makeMaterial2: 401216,
+    parentItem: [
+      116409
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31342,6 +32284,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116201,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -31424,6 +32367,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116301,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31506,6 +32450,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116402,
     makeMaterial2: 401110,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31588,6 +32533,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116402,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31670,6 +32616,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116301,
     makeMaterial2: 205209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31752,6 +32699,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116408,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -31834,6 +32782,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116202,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -31916,6 +32865,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116101,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -31998,6 +32948,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 116201,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -32080,6 +33031,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      117201,
+      117401,
+      117503,
+      122303,
+      205213
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32162,6 +33120,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117101,
     makeMaterial2: 401121,
+    parentItem: [
+      117301,
+      117406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32244,6 +33206,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117201,
     makeMaterial2: 502104,
+    parentItem: [
+      117403,
+      117404,
+      117405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32326,6 +33293,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117101,
     makeMaterial2: 401105,
+    parentItem: [
+      117402,
+      117502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32408,6 +33379,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117401,
     makeMaterial2: 401211,
+    parentItem: [
+      117501,
+      117407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32490,6 +33465,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117301,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32572,6 +33548,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117402,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32654,6 +33631,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117301,
     makeMaterial2: 401305,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32736,6 +33714,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117301,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32818,6 +33797,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117201,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -32900,6 +33880,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117402,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -32982,6 +33963,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117401,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -33064,6 +34046,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 117101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -33146,6 +34129,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      118201,
+      118401
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33228,6 +34215,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118101,
     makeMaterial2: 401108,
+    parentItem: [
+      118402,
+      118501,
+      118503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33310,6 +34302,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118401,
     makeMaterial2: 401101,
+    parentItem: [
+      118403,
+      118404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33392,6 +34388,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118101,
     makeMaterial2: 401114,
+    parentItem: [
+      118301,
+      118405,
+      118502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33474,6 +34475,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118201,
     makeMaterial2: 401211,
+    parentItem: [
+      118406,
+      118407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33556,6 +34561,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118301,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33638,6 +34644,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118301,
     makeMaterial2: 401202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33720,6 +34727,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118401,
     makeMaterial2: 401305,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33802,6 +34810,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118402,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33884,6 +34893,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118402,
     makeMaterial2: 401218,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -33966,6 +34976,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118201,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -34048,6 +35059,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118401,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -34130,6 +35142,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 118201,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -34212,6 +35225,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201204,
+      202301,
+      202302,
+      204202,
+      105201,
+      119201,
+      119501
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34294,6 +35316,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119101,
     makeMaterial2: 401106,
+    parentItem: [
+      119301,
+      119302,
+      119403,
+      119502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34376,6 +35404,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119201,
     makeMaterial2: 401101,
+    parentItem: [
+      119401,
+      119404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34458,6 +35490,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119201,
     makeMaterial2: 113101,
+    parentItem: [
+      119402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34540,6 +35575,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119301,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34622,6 +35658,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119302,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34704,6 +35741,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119201,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -34786,6 +35824,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119301,
     makeMaterial2: 205203,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -34868,6 +35907,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -34950,6 +35990,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 119201,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -35032,6 +36073,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      203202,
+      120201,
+      120501
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35114,6 +36160,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120101,
     makeMaterial2: 401106,
+    parentItem: [
+      120301,
+      120303,
+      120404,
+      120405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35196,6 +36248,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120201,
     makeMaterial2: 205102,
+    parentItem: [
+      120302,
+      120403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35278,6 +36334,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120201,
     makeMaterial2: 401112,
+    parentItem: [
+      120406,
+      120407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35360,6 +36420,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120301,
     makeMaterial2: 202206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35442,6 +36503,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108101,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -35524,6 +36586,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120301,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35606,6 +36669,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120201,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -35688,6 +36752,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120201,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -35770,6 +36835,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120303,
     makeMaterial2: 401217,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35852,6 +36918,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120303,
     makeMaterial2: 205213,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -35934,6 +37001,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 120101,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -36016,6 +37084,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      121201,
+      121202,
+      121501
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36098,6 +37171,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121101,
     makeMaterial2: 401114,
+    parentItem: [
+      121302,
+      121303
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36180,6 +37257,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121101,
     makeMaterial2: 401110,
+    parentItem: [
+      121301,
+      121304,
+      121305,
+      121306,
+      121405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36262,6 +37346,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121202,
     makeMaterial2: 401217,
+    parentItem: [
+      121401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36344,6 +37431,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121201,
     makeMaterial2: 205206,
+    parentItem: [
+      121402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36426,6 +37516,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121201,
     makeMaterial2: 101101,
+    parentItem: [
+      121403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36508,6 +37601,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121202,
     makeMaterial2: 401212,
+    parentItem: [
+      121404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36590,6 +37686,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121202,
     makeMaterial2: 108103,
+    parentItem: [
+      121406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36672,6 +37771,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121202,
     makeMaterial2: 401112,
+    parentItem: [
+      121407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36754,6 +37856,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121301,
     makeMaterial2: 113102,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36836,6 +37939,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121302,
     makeMaterial2: 205109,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -36918,6 +38022,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121303,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37000,6 +38105,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121304,
     makeMaterial2: 401109,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37082,6 +38188,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121202,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -37164,6 +38271,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121305,
     makeMaterial2: 401206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37246,6 +38354,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121306,
     makeMaterial2: 205207,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37328,6 +38437,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 121101,
     makeMaterial2: 205403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -37410,6 +38520,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      122301,
+      122302,
+      122303
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37492,6 +38607,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122302,
     makeMaterial2: 116101,
+    parentItem: [
+      122404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37574,6 +38692,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401306,
     makeMaterial2: 122101,
+    parentItem: [
+      122401,
+      122405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37656,6 +38778,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122101,
     makeMaterial2: 401108,
+    parentItem: [
+      122201,
+      122402,
+      122501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37738,6 +38865,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122101,
     makeMaterial2: 117101,
+    parentItem: [
+      122403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37820,6 +38950,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122301,
     makeMaterial2: 401214,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37902,6 +39033,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122302,
     makeMaterial2: 401212,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -37984,6 +39116,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122303,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -38066,6 +39199,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122201,
     makeMaterial2: 401303,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38148,6 +39282,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122301,
     makeMaterial2: 401218,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38230,6 +39365,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 122302,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -38312,6 +39448,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      130201,
+      130202,
+      130502
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38394,6 +39535,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130101,
     makeMaterial2: 401112,
+    parentItem: [
+      130301,
+      130302,
+      130405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38476,6 +39622,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130101,
     makeMaterial2: 302103,
+    parentItem: [
+      130303,
+      130304,
+      130501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38558,6 +39709,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130201,
     makeMaterial2: 108102,
+    parentItem: [
+      130401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38640,6 +39794,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130201,
     makeMaterial2: 205108,
+    parentItem: [
+      130403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38722,6 +39879,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130202,
     makeMaterial2: 101104,
+    parentItem: [
+      130402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38804,6 +39964,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130202,
     makeMaterial2: 401109,
+    parentItem: [
+      130404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38886,6 +40049,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130301,
     makeMaterial2: 205202,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -38968,6 +40132,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130303,
     makeMaterial2: 401210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39050,6 +40215,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130302,
     makeMaterial2: 401218,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39132,6 +40298,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130304,
     makeMaterial2: 401216,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39214,6 +40381,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130201,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -39296,6 +40464,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130202,
     makeMaterial2: 205402,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 40,
@@ -39378,6 +40547,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 130101,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -39460,6 +40630,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      131301,
+      131302,
+      131303
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39542,6 +40717,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131201,
     makeMaterial2: 131101,
+    parentItem: [
+      131401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39624,6 +40802,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131201,
     makeMaterial2: 131101,
+    parentItem: [
+      131402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39706,6 +40887,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131201,
     makeMaterial2: 131101,
+    parentItem: [
+      131403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39788,6 +40972,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131301,
     makeMaterial2: 131102,
+    parentItem: [
+      131501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39870,6 +41057,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131302,
     makeMaterial2: 131102,
+    parentItem: [
+      131504
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -39952,6 +41142,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131303,
     makeMaterial2: 131102,
+    parentItem: [
+      131507
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40034,6 +41227,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131401,
     makeMaterial2: 401209,
+    parentItem: [
+      131502,
+      131503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -40116,6 +41313,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131501,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -40198,6 +41396,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131501,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 65,
@@ -40280,6 +41479,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131402,
     makeMaterial2: 401208,
+    parentItem: [
+      131505,
+      131506
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -40362,6 +41565,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131504,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -40444,6 +41648,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131504,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 65,
@@ -40526,6 +41731,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131403,
     makeMaterial2: 401304,
+    parentItem: [
+      131508,
+      131509
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 25,
@@ -40608,6 +41817,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131507,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 55,
@@ -40690,6 +41900,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 44,
     makeMaterial1: 131507,
     makeMaterial2: 401401,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 65,
@@ -40772,6 +41983,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302201,
+      302215,
+      302216,
+      302219,
+      302220,
+      302305,
+      302312,
+      301305,
+      301239
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40802,6 +42024,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302215,
+      302209,
+      302211,
+      302221,
+      302222,
+      302302,
+      301315
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40832,6 +42063,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      110408,
+      130202,
+      302216,
+      302217,
+      302222,
+      302223,
+      302308,
+      301237,
+      205402
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40862,6 +42104,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302213,
+      302217,
+      302218,
+      302220,
+      302221,
+      302314,
+      302307
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40892,6 +42143,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302209,
+      302213,
+      302219,
+      302223,
+      401306
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40922,6 +42180,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302211,
+      302218,
+      302214,
+      301206
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40952,6 +42216,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 401107,
+    parentItem: [
+      302314,
+      302310,
+      302308,
+      302302
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -40982,6 +42252,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 302101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41012,6 +42283,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 302103,
+    parentItem: [
+      301328
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41042,6 +42316,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302101,
     makeMaterial2: 302107,
+    parentItem: [
+      302307,
+      301403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41072,6 +42350,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302101,
     makeMaterial2: 302108,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41102,6 +42381,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302107,
     makeMaterial2: 302104,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41132,6 +42412,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302104,
     makeMaterial2: 302103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41162,6 +42443,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302104,
     makeMaterial2: 302108,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41192,6 +42474,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302108,
     makeMaterial2: 301119,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41222,6 +42505,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 302107,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41252,6 +42536,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 302104,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41282,6 +42567,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302101,
     makeMaterial2: 302104,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41312,6 +42598,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302101,
     makeMaterial2: 302103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41342,6 +42629,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302107,
     makeMaterial2: 302103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41372,6 +42660,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302201,
     makeMaterial2: 302104,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41402,6 +42691,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302305,
     makeMaterial2: 401107,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41432,6 +42722,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302305,
     makeMaterial2: 205102,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41462,6 +42753,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 301116,
+    parentItem: [
+      302301,
+      302303
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41492,6 +42787,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302209,
     makeMaterial2: 302104,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41522,6 +42818,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302201,
     makeMaterial2: 301119,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41552,6 +42849,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302201,
     makeMaterial2: 302103,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41582,6 +42880,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302201,
     makeMaterial2: 302101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41612,6 +42911,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 401301,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41642,6 +42942,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302102,
     makeMaterial2: 401304,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41672,6 +42973,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205106,
     makeMaterial2: 401208,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41702,6 +43004,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301239,
+      301337
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41732,6 +43038,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301245,
+      301325,
+      301302
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41762,6 +43073,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301244,
+      301326
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41792,6 +43107,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301224,
+      301339
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41822,6 +43141,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301224,
+      301243,
+      301340,
+      301346
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41852,6 +43177,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301328,
+      301327
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41882,6 +43211,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302305,
+      301218,
+      301314
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41912,6 +43246,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      302214,
+      302310,
+      301237,
+      301311,
+      301338
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41942,6 +43283,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301116,
     makeMaterial2: 205102,
+    parentItem: [
+      301317,
+      301408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -41972,6 +43317,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302108,
     makeMaterial2: 108101,
+    parentItem: [
+      301311,
+      301315,
+      301325
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42002,6 +43352,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302103,
     makeMaterial2: 301119,
+    parentItem: [
+      301408
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42032,6 +43385,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42062,6 +43416,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301106,
     makeMaterial2: 301111,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42092,6 +43447,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42122,6 +43478,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301111,
     makeMaterial2: 401215,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42152,6 +43509,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301104,
     makeMaterial2: 401215,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42182,6 +43540,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301102,
     makeMaterial2: 401215,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42212,6 +43571,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301110,
     makeMaterial2: 302102,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42242,6 +43602,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301113,
     makeMaterial2: 302216,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42272,6 +43633,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301218,
     makeMaterial2: 112104,
+    parentItem: [
+      203411
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42302,6 +43666,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301119,
     makeMaterial2: 301206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42332,6 +43697,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301206,
     makeMaterial2: 302101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42362,6 +43728,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301102,
     makeMaterial2: 301206,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42392,6 +43759,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301110,
     makeMaterial2: 502210,
+    parentItem: [
+      301340
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42422,6 +43792,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301337,
     makeMaterial2: 301111,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42452,6 +43823,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301111,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42482,6 +43854,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301113,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42512,6 +43885,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301104,
     makeMaterial2: 502210,
+    parentItem: [
+      301401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42542,6 +43918,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301102,
     makeMaterial2: 502210,
+    parentItem: [
+      301403,
+      301401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42572,6 +43952,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301119,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42602,6 +43983,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301106,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42632,6 +44014,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301116,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42662,6 +44045,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301302,
     makeMaterial2: 302209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42692,6 +44076,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301326,
     makeMaterial2: 301302,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42722,6 +44107,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301218,
     makeMaterial2: 301237,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42752,6 +44138,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42782,6 +44171,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42812,6 +44204,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301502
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42842,6 +44237,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301405,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42872,6 +44268,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301407,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42902,6 +44299,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 301406,
     makeMaterial2: 502210,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42932,6 +44330,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -42962,6 +44361,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201203,
+      202207,
+      202209,
+      101302,
+      121303
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -42983,6 +44389,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      101202,
+      109404,
+      112205,
+      401212
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43004,6 +44416,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      204205,
+      103202,
+      105502,
+      401214
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43025,6 +44443,19 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201202,
+      202205,
+      204205,
+      101201,
+      108503,
+      111201,
+      112306,
+      113201,
+      120402,
+      301206,
+      502209
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43046,6 +44477,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202406,
+      204204,
+      104301
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43067,6 +44503,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      104303,
+      113203,
+      121401,
+      205203
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43088,6 +44530,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      113202,
+      113302,
+      401206
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43109,6 +44556,19 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201412,
+      203402,
+      204411,
+      104201,
+      107301,
+      108301,
+      109202,
+      112403,
+      114203,
+      118301,
+      119301
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43130,6 +44590,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202201,
+      202202,
+      203201,
+      203203,
+      204302,
+      110201,
+      116202,
+      401218,
+      401307
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43151,6 +44622,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      203201,
+      110401,
+      111403
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43172,6 +44648,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201407,
+      202210,
+      101303,
+      104302,
+      112204,
+      114202,
+      117401
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43193,6 +44678,25 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201410,
+      201413,
+      202401,
+      204203,
+      204401,
+      102403,
+      103302,
+      105401,
+      107302,
+      108405,
+      110202,
+      113404,
+      115303,
+      119201,
+      120201,
+      401213,
+      401303
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43214,6 +44718,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201302,
+      108402,
+      112304,
+      114402,
+      302201,
+      302301,
+      401210,
+      401215,
+      205403
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43235,6 +44750,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      105402,
+      115302,
+      116301,
+      118201,
+      122302,
+      205206
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43256,6 +44779,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201303,
+      202404,
+      109201,
+      111301,
+      113301,
+      114302,
+      121404,
+      130304,
+      205211
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43277,6 +44811,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      109402,
+      112303,
+      116405,
+      121202,
+      401211,
+      401306,
+      502308
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43298,6 +44841,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      102201,
+      114301,
+      116201,
+      120303,
+      121306,
+      130201,
+      401202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43319,6 +44871,16 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201304,
+      202207,
+      202211,
+      202418,
+      202509,
+      204301,
+      108401,
+      110301
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43340,6 +44902,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      203407,
+      102402,
+      118401,
+      121201,
+      401217,
+      401214
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43361,6 +44931,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      203204,
+      204201,
+      401307,
+      401305
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43382,6 +44958,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      401210,
+      401212,
+      401218
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43403,6 +44984,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      110402,
+      112202,
+      114303,
+      117201,
+      502203,
+      502208
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43424,6 +45013,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201205,
+      401206,
+      401215,
+      401301,
+      205204
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43445,6 +45041,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301317,
+      205204
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43466,6 +45066,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      113205,
+      114201,
+      115201,
+      117301,
+      401211,
+      401216
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43487,6 +45095,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      202306,
+      203305,
+      101301,
+      120301,
+      302303,
+      301218,
+      205203
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43508,6 +45125,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401112,
     makeMaterial2: 203102,
+    parentItem: [
+      202307,
+      203306,
+      203512,
+      204404,
+      105406,
+      107405,
+      110410,
+      115402,
+      118404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43529,6 +45157,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 104101,
     makeMaterial2: 401114,
+    parentItem: [
+      202402,
+      203304,
+      102404,
+      105403,
+      110407,
+      120406,
+      121301
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43550,6 +45187,18 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 113104,
     makeMaterial2: 112101,
+    parentItem: [
+      103401,
+      107408,
+      110411,
+      111401,
+      112301,
+      113410,
+      113411,
+      117403,
+      118406,
+      121406
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43571,6 +45220,22 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401117,
     makeMaterial2: 401107,
+    parentItem: [
+      203306,
+      204406,
+      101402,
+      107407,
+      108501,
+      110404,
+      112302,
+      113409,
+      115406,
+      116404,
+      117405,
+      119401,
+      121403,
+      130402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43592,6 +45257,21 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401110,
     makeMaterial2: 502104,
+    parentItem: [
+      201406,
+      203405,
+      203412,
+      204415,
+      104403,
+      105407,
+      108404,
+      117402,
+      118402,
+      119402,
+      120403,
+      401303,
+      502404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43613,6 +45293,21 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 101102,
     makeMaterial2: 401117,
+    parentItem: [
+      203414,
+      204403,
+      102410,
+      102413,
+      103301,
+      108403,
+      111402,
+      112408,
+      116402,
+      117501,
+      118403,
+      121304,
+      122402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43634,6 +45329,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401106,
     makeMaterial2: 104101,
+    parentItem: [
+      202305,
+      203301,
+      203303,
+      203401,
+      102301,
+      115401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43655,6 +45358,21 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 105102,
     makeMaterial2: 401114,
+    parentItem: [
+      201401,
+      202412,
+      203302,
+      101408,
+      105404,
+      109401,
+      112501,
+      113405,
+      114403,
+      116406,
+      116409,
+      117407,
+      122401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43676,6 +45394,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112101,
     makeMaterial2: 401107,
+    parentItem: [
+      301243,
+      301244,
+      301245
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43697,6 +45420,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502104,
     makeMaterial2: 104101,
+    parentItem: [
+      203305,
+      203506,
+      203511,
+      101406,
+      116408,
+      130404,
+      502405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43718,6 +45450,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401117,
     makeMaterial2: 401103,
+    parentItem: [
+      103404,
+      104409,
+      113401,
+      118407,
+      122405,
+      130403
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43739,6 +45479,13 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401110,
     makeMaterial2: 302107,
+    parentItem: [
+      201418,
+      101407,
+      103501,
+      111404,
+      122301
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43760,6 +45507,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401103,
     makeMaterial2: 401116,
+    parentItem: [
+      203301,
+      203513,
+      204303,
+      502310
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43781,6 +45534,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401211,
     makeMaterial2: 401106,
+    parentItem: [
+      201405,
+      204412,
+      101404,
+      122404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43802,6 +45561,14 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205204,
     makeMaterial2: 401116,
+    parentItem: [
+      202405,
+      104406,
+      104407,
+      112407,
+      117404,
+      118405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -43823,6 +45590,27 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201408,
+      201504,
+      201508,
+      701451,
+      203502,
+      204504,
+      101502,
+      103502,
+      104502,
+      112404,
+      113502,
+      116410,
+      120402,
+      122403,
+      131504,
+      301329,
+      205402,
+      205403,
+      401403
+    ],
     manufacturableType: 2,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43844,6 +45632,16 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 302103,
     makeMaterial2: 401208,
+    parentItem: [
+      203501,
+      204410,
+      102502,
+      105501,
+      110502,
+      111502,
+      113408,
+      130501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43865,6 +45663,20 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401107,
     makeMaterial2: 401208,
+    parentItem: [
+      202416,
+      202506,
+      202511,
+      102409,
+      107406,
+      110501,
+      112405,
+      114504,
+      117502,
+      118502,
+      119502,
+      121501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43886,6 +45698,28 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201502,
+      201506,
+      202501,
+      202513,
+      203505,
+      203508,
+      203512,
+      204414,
+      204503,
+      102412,
+      109502,
+      113412,
+      116403,
+      118503,
+      120404,
+      121405,
+      131501,
+      401301,
+      401403,
+      502406
+    ],
     manufacturableType: 2,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43907,6 +45741,23 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112101,
     makeMaterial2: 401209,
+    parentItem: [
+      201507,
+      202509,
+      202510,
+      203408,
+      103402,
+      104404,
+      107404,
+      104405,
+      109406,
+      112502,
+      114407,
+      115405,
+      118501,
+      130405,
+      302312
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43928,6 +45779,26 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201403,
+      201505,
+      201509,
+      202407,
+      202421,
+      202508,
+      203404,
+      203507,
+      204407,
+      204505,
+      101405,
+      107402,
+      107502,
+      110412,
+      111405,
+      120405,
+      131507,
+      301305
+    ],
     manufacturableType: 2,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43949,6 +45820,28 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201411,
+      202502,
+      202504,
+      203504,
+      203509,
+      204413,
+      204502,
+      102501,
+      104501,
+      105502,
+      107501,
+      109501,
+      110503,
+      114502,
+      117503,
+      119501,
+      130502,
+      131503,
+      131506,
+      131509
+    ],
     manufacturableType: 2,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43970,6 +45863,43 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401209,
     makeMaterial2: 401208,
+    parentItem: [
+      201501,
+      201503,
+      202503,
+      202505,
+      202507,
+      202512,
+      202514,
+      202515,
+      203413,
+      203503,
+      203510,
+      203511,
+      203513,
+      204501,
+      101501,
+      102503,
+      103503,
+      105408,
+      108502,
+      108503,
+      111501,
+      112406,
+      113501,
+      114503,
+      115501,
+      116501,
+      116502,
+      117406,
+      119403,
+      120501,
+      122501,
+      131502,
+      131505,
+      131508,
+      502501
+    ],
     manufacturableType: 2,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -43991,6 +45921,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44012,6 +45943,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44033,6 +45965,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44054,6 +45987,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 2,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44075,6 +46009,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 2,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44096,6 +46031,17 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201201,
+      204402,
+      105301,
+      107401,
+      109301,
+      110302,
+      205208,
+      205209,
+      205312
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44117,6 +46063,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201409,
+      202303
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44138,6 +46088,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      110409,
+      301329,
+      205207
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44159,6 +46114,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      102407,
+      130302,
+      205202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44180,6 +46140,15 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      201415,
+      202211,
+      102406,
+      110406,
+      113206,
+      121402,
+      205202
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44201,6 +46170,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      205206,
+      502207
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44222,6 +46195,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205109,
     makeMaterial2: 205108,
+    parentItem: [
+      202408,
+      104402,
+      112401,
+      130401
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44243,6 +46222,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205102,
     makeMaterial2: 113102,
+    parentItem: [
+      203415,
+      105405,
+      119404,
+      205312
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44264,6 +46249,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 112104,
     makeMaterial2: 112101,
+    parentItem: [
+      201404,
+      102411,
+      401305
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44285,6 +46275,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 401108,
     makeMaterial2: 205110,
+    parentItem: [
+      115404,
+      121302
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44306,6 +46300,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205106,
     makeMaterial2: 202103,
+    parentItem: [
+      103403,
+      113406,
+      121407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44327,6 +46326,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205101,
     makeMaterial2: 108103,
+    parentItem: [
+      202420,
+      101401,
+      112402
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44348,6 +46352,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 108102,
     makeMaterial2: 205101,
+    parentItem: [
+      202413,
+      110405,
+      114406,
+      116407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44369,6 +46379,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 102101,
     makeMaterial2: 401109,
+    parentItem: [
+      202419,
+      204304,
+      104401,
+      114501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44390,6 +46406,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 115101,
     makeMaterial2: 117101,
+    parentItem: [
+      201417,
+      120407
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44411,6 +46431,12 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 205101,
     makeMaterial2: 205203,
+    parentItem: [
+      201304,
+      107403,
+      109403,
+      109405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0
@@ -44432,6 +46458,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 2,
     restoreItemWhenResurrected: false,
     creditValueWhenConvertedToBounty: 0
@@ -44453,6 +46480,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      502207,
+      502208,
+      502209
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44479,6 +46511,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      502202,
+      502204
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44505,6 +46541,10 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      502202,
+      502203
+    ],
     manufacturableType: 1,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44531,6 +46571,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44557,6 +46598,11 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502102,
     makeMaterial2: 502103,
+    parentItem: [
+      502310,
+      502406,
+      502501
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44583,6 +46629,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502103,
     makeMaterial2: 401121,
+    parentItem: [
+      502404
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44609,6 +46658,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502101,
     makeMaterial2: 205110,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44635,6 +46685,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502101,
     makeMaterial2: 401121,
+    parentItem: [
+      502308
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44661,6 +46714,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502101,
     makeMaterial2: 108101,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44687,6 +46741,19 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 0,
     makeMaterial2: 0,
+    parentItem: [
+      301337,
+      301346,
+      301327,
+      301326,
+      301302,
+      301338,
+      301339,
+      301314,
+      301501,
+      301502,
+      301503
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44713,6 +46780,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502208,
     makeMaterial2: 401110,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44739,6 +46807,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502202,
     makeMaterial2: 401307,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44765,6 +46834,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502204,
     makeMaterial2: 401216,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44791,6 +46861,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502202,
     makeMaterial2: 401209,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44817,6 +46888,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502202,
     makeMaterial2: 401403,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44843,6 +46915,9 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502102,
     makeMaterial2: 108103,
+    parentItem: [
+      502405
+    ],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
@@ -44869,6 +46944,7 @@ export const itemData: ItemData[] = [
     itemUsableValueList: 0,
     makeMaterial1: 502203,
     makeMaterial2: 401211,
+    parentItem: [],
     manufacturableType: 0,
     restoreItemWhenResurrected: true,
     creditValueWhenConvertedToBounty: 0,
