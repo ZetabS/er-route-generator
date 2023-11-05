@@ -1,4 +1,4 @@
-import { Item } from '@/common/typing';
+import { Item } from '@/modules/api';
 
 export abstract class AbstractSlot {
   abstract add(item: Item): boolean;
@@ -9,9 +9,11 @@ export abstract class AbstractSlot {
 
   abstract has(item: Item): boolean;
 
-  abstract get isFull(): boolean;
+  abstract canAdd(item: Item): boolean;
 
-  abstract get isEmpty(): boolean;
+  abstract isFull(): boolean;
+
+  abstract isEmpty(): boolean;
 
   abstract get item(): Item | undefined;
 }
@@ -30,11 +32,12 @@ export class Slot extends AbstractSlot {
   }
 
   remove(): boolean {
-    if (!this.isEmpty) {
+    if (!this.isEmpty()) {
       this._quantity--;
       if (this._quantity === 0) {
         this._item = undefined;
       }
+      return true;
     } else {
       return false;
     }
@@ -54,17 +57,17 @@ export class Slot extends AbstractSlot {
   }
 
   canAdd(item: Item): boolean {
-    return this._quantity < item.stackable;
+    return this.isEmpty() || (this.item === item && this._quantity < item.stackable);
   }
 
-  get isFull(): boolean {
+  isFull(): boolean {
     if (!this._item) {
       return false;
     }
     return this._quantity >= this._item.stackable;
   }
 
-  get isEmpty(): boolean {
+  isEmpty(): boolean {
     return !this._item;
   }
 
@@ -78,10 +81,16 @@ export class Slot extends AbstractSlot {
 }
 
 export class EquipmentSlot extends AbstractSlot {
+  _equipType: string;
   _item: Item | undefined = undefined;
 
+  constructor(equipType: string) {
+    super();
+    this._equipType = equipType;
+  }
+
   add(item: Item): boolean {
-    if (this.isEmpty) {
+    if (this.canAdd(item)) {
       this._item = item;
       return true;
     }
@@ -89,7 +98,7 @@ export class EquipmentSlot extends AbstractSlot {
   }
 
   remove(): boolean {
-    if (this.isFull) {
+    if (this.isFull()) {
       this._item = undefined;
       return true;
     }
@@ -105,11 +114,15 @@ export class EquipmentSlot extends AbstractSlot {
     return this._item === item;
   }
 
-  get isFull(): boolean {
+  canAdd(item: Item): boolean {
+    return this.isEmpty() && !!item.equipType && item.equipType === this._equipType;
+  }
+
+  isFull(): boolean {
     return !!this._item;
   }
 
-  get isEmpty(): boolean {
+  isEmpty(): boolean {
     return !this._item;
   }
 

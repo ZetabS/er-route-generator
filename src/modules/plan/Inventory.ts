@@ -1,12 +1,30 @@
-import itemData from '@/modules/api/data/itemData';
-import type { Item } from '@/common/typing';
 import { Slot, EquipmentSlot } from '@/modules/plan/Slot';
+import { Item } from '@/modules/api';
+
+function equipmentIterator() {
+  const keys = ['Weapon', 'Chest', 'Head', 'Arm', 'Leg'];
+  let index = 0;
+
+  return {
+    next: () => {
+      if (index < keys.length) {
+        const key = keys[index++];
+        return {
+          value: this[key],
+          done: false
+        };
+      } else {
+        return { value: undefined, done: true };
+      }
+    }
+  };
+}
 
 export class Inventory {
-  public slots: Slot[];
-  public equipmentSlots: Record<string, EquipmentSlot>;
+  private readonly slots: Slot[];
+  private readonly equipmentSlots: Record<String, EquipmentSlot>;
 
-  constructor() {
+  constructor(...items: Item[]) {
     this.slots = [];
 
     for (let i = 0; i < 10; i++) {
@@ -14,73 +32,72 @@ export class Inventory {
     }
 
     this.equipmentSlots = {
-      Weapon: new EquipmentSlot(),
-      Chest: new EquipmentSlot(),
-      Head: new EquipmentSlot(),
-      Arm: new EquipmentSlot(),
-      Leg: new EquipmentSlot()
+      Weapon: new EquipmentSlot('Weapon'),
+      Chest: new EquipmentSlot('Chest'),
+      Head: new EquipmentSlot('Head'),
+      Arm: new EquipmentSlot('Arm'),
+      Leg: new EquipmentSlot('Leg')
     };
+
+    items.forEach((item: Item) => this.add(item));
+  }
+
+  toString(): string {
+    return (
+      '[' +
+      this.slots.reduce((str, slot) => {
+        return str + slot.item;
+      }, '') +
+      Object.values(this.equipmentSlots).reduce((str, slot) => {
+        return str + slot.item;
+      }, '') +
+      ']'
+    );
   }
 
   add(item: Item): boolean {
     if (item.equipType) {
-      const equipmentSlot = this.equipmentSlots[item.equipType];
-      if (equipmentSlot.isEmpty) {
-        equipmentSlot.add(item);
-        return true;
-      }
-    } else {
-      for (const slot of this.slots) {
+      for (const slot of Object.values(this.equipmentSlots)) {
         if (slot.canAdd(item)) {
           slot.add(item);
           return true;
         }
       }
     }
+
+    for (const slot of this.slots) {
+      if (slot.canAdd(item)) {
+        slot.add(item);
+        return true;
+      }
+    }
+
     return false;
   }
 
   remove(item: Item): boolean {
     if (item.equipType) {
-      const equipmentSlot = this.equipmentSlots[item.equipType];
-      if (equipmentSlot.has(item)) {
-        equipmentSlot.remove();
-        return true;
-      }
-    } else {
-      for (const slot of this.slots) {
+      for (const slot of Object.values(this.equipmentSlots)) {
         if (slot.has(item)) {
           slot.remove();
           return true;
         }
       }
     }
+    for (const slot of this.slots) {
+      if (slot.has(item)) {
+        slot.remove();
+        return true;
+      }
+    }
+
     return false;
-  }
-
-  craft(item: Item) {
-    const material1 = itemData[item.makeMaterial1];
-    const material2 = itemData[item.makeMaterial2];
-
-    if (material1 && !this.has(material1) && !this.craft(material1)) {
-      return false;
-    }
-
-    if (material2 && !this.has(material2) && !this.craft(material2)) {
-      return false;
-    }
-
-    this.remove(material1);
-    this.remove(material2);
-    this.add(item);
-
-    return true;
   }
 
   canAdd(item: Item): boolean {
     return (
-      (item.equipType && this.equipmentSlots[item.equipType].isEmpty) ||
-      this.slots.every((slot) => slot.canAdd(item))
+      (item.equipType && this.equipmentSlots[item.equipType].isEmpty()) ||
+      this.slots.some((slot) => slot.canAdd(item))
     );
   }
 
@@ -89,6 +106,19 @@ export class Inventory {
       this.slots.some((slot) => slot.has(item)) ||
       Object.values(this.equipmentSlots).some((slot) => slot.has(item))
     );
+  }
+
+  clear(): boolean {
+    this.slots.splice(0, this.slots.length);
+    for (let i = 0; i < 10; i++) {
+      this.slots.push(new Slot());
+    }
+    this.equipmentSlots['Weapon'] = new EquipmentSlot('Weapon');
+    this.equipmentSlots['Chest'] = new EquipmentSlot('Chest');
+    this.equipmentSlots['Head'] = new EquipmentSlot('Head');
+    this.equipmentSlots['Arm'] = new EquipmentSlot('Arm');
+    this.equipmentSlots['Leg'] = new EquipmentSlot('Leg');
+    return true;
   }
 
   isFull(): boolean {
@@ -100,8 +130,45 @@ export class Inventory {
 
   isEmpty(): boolean {
     return (
-      this.slots.every((slot) => slot.isEmpty) &&
-      Object.values(this.equipmentSlots).every((slot) => slot.isEmpty)
+      this.slots.every((slot) => slot.isEmpty()) &&
+      Object.values(this.equipmentSlots).every((slot) => slot.isEmpty())
     );
+  }
+
+  get items(): Item[] {
+    const items: Item[] = [];
+    this.slots.forEach((slot: Slot) => {
+      if (slot.item) {
+        for (let i = 0; i < slot.quantity; i++) {
+          items.push(slot.item);
+        }
+      }
+    });
+
+    for (const slotName in this.equipmentSlots) {
+      const slot = this.equipmentSlots[slotName];
+      if (slot.item) {
+        items.push(slot.item);
+      }
+    }
+    return items;
+  }
+
+  clone() {
+    const inventory = new Inventory();
+    this.slots.forEach((slot) => {
+      if (slot.item) {
+        for (let i = 0; i < slot.quantity; i++) {
+          inventory.add(slot.item);
+        }
+      }
+    });
+
+    Object.values(this.equipmentSlots).forEach((slot) => {
+      if (slot.item) {
+        inventory.add(slot.item);
+      }
+    });
+    return inventory;
   }
 }
