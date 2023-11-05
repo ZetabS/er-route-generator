@@ -23,9 +23,7 @@ import OptionButton from './components/sidebar/OptionButton.vue';
     <CenterMap />
   </div>
 
-  <div class="sidebar right">
-    <TestComponent />
-  </div>
+  <div class="sidebar right"></div>
   <AppFooter />
 </template>
 
