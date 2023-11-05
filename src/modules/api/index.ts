@@ -1,7 +1,6 @@
-import { Item } from './Item';
-import { Recipe } from './Recipe';
-import { Area } from './Area';
-import { ItemStack } from './ItemStack';
-import { ITEM, AREA, koreanData } from './proxy';
+import { Item, ITEM } from './Item';
+import { Recipe, RECIPE } from './Recipe';
+import { Area, AREA } from './Area';
+import { koreanData } from './proxy';
 
-export { Item, Area, ItemStack, ITEM, AREA, koreanData };
+export { Item, Area, Recipe, ITEM, AREA, RECIPE, koreanData };

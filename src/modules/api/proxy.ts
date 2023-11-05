@@ -1,37 +1,5 @@
 import type { LanguageData } from './typing';
-import { itemData, areaData, koreanRawData } from './data';
-import { Item } from './Item';
-import { Recipe } from './Recipe';
-import { Area } from './Area';
-
-export const ITEM: Item[] = new Proxy(
-  itemData.map((rawItem) => new Item(rawItem.code)),
-  {
-    get(target: Item[], prop: string) {
-      return target.find((item) => item.code.toString() === prop || item.name === prop);
-    }
-  }
-);
-
-export const RECIPE: Recipe[] = new Proxy(
-  recipeData.map((recipe) => new Recipe(recipe.itemCode)),
-  {
-    get(target: Recipe[], prop: string) {
-      return target.find(
-        (recipe) => recipe.item.code.toString() === prop || recipe.item.name === prop
-      );
-    }
-  }
-);
-
-export const AREA: Area[] = new Proxy(
-  areaData.map((area) => new Area(area.code)),
-  {
-    get(target: Area[], prop: string) {
-      return target.find((area) => area.code.toString() === prop || area.name === prop);
-    }
-  }
-);
+import { koreanRawData } from './data';
 
 export const koreanData: LanguageData = parseLanguageData(koreanRawData);
 

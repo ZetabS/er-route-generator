@@ -1,17 +1,17 @@
 import type { AreaData, ItemSpawnData } from './typing';
 import { areaData } from './data';
-import { ItemStack } from './ItemStack';
-import { AREA, ITEM } from '@/modules/api/proxy';
+import { Item, ITEM } from '@/modules/api/Item';
 
 export class Area {
   private readonly index: number;
+  private readonly _name: string;
 
-  constructor(identifier: number) {
-    this.index = areaData.findIndex((area: AreaData): boolean => area.code === identifier);
-
-    if (this.index === -1) {
-      throw Error(`Area ${identifier} not found.`);
+  constructor(index: number) {
+    if (index === -1) {
+      throw Error(`Area not found.`);
     }
+    this.index = index;
+    this._name = this.data.name;
   }
 
   equals(other: Area): boolean {
@@ -31,7 +31,7 @@ export class Area {
   }
 
   get name(): string {
-    return this.data.name;
+    return this._name;
   }
 
   get isHyperLoopInstalled(): boolean {
@@ -42,9 +42,20 @@ export class Area {
     return this.data.nearByAreaCodes.map((areaCode) => AREA[areaCode]);
   }
 
-  get areaItems(): ItemStack[] {
-    return this.data.itemSpawns.map(
-      (itemSpawn: ItemSpawnData) => new ItemStack(ITEM[itemSpawn.itemCode], itemSpawn.dropCount)
-    );
+  get areaItems(): Item[] {
+    return this.data.itemSpawns.reduce((result: Item[], itemSpawn: ItemSpawnData) => {
+      for (let i = 0; i < itemSpawn.dropCount; i++) {
+        result.push(ITEM[itemSpawn.itemCode]);
+      }
+      return result;
+    }, []);
   }
 }
+
+export const AREA: Record<string | number, Area> = {};
+
+areaData.forEach((rawArea, index) => {
+  const item = new Area(index);
+  AREA[rawArea.code] = item;
+  AREA[rawArea.name] = item;
+});
