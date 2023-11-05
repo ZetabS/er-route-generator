@@ -8,5 +8,8 @@
     {
       "path": "./tsconfig.app.json"
     }
-  ]
+  ],
+  "compilerOptions": {
+    "types": ["vitest/globals"]
+  }
 }
