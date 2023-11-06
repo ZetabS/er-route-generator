@@ -59,10 +59,10 @@ export class ItemPile {
     const unionData: Record<number, number> = { ...this.data };
 
     for (const [itemCode, quantity] of Object.entries(otherPile.data)) {
-      if (unionData[itemCode]) {
-        unionData[itemCode] = Math.max(unionData[itemCode], quantity);
+      if (unionData[parseInt(itemCode)]) {
+        unionData[parseInt(itemCode)] = Math.max(unionData[parseInt(itemCode)], quantity);
       } else {
-        unionData[itemCode] = quantity;
+        unionData[parseInt(itemCode)] = quantity;
       }
     }
 
@@ -76,8 +76,11 @@ export class ItemPile {
     const intersectionData: Record<number, number> = {};
 
     for (const [itemCode, quantity] of Object.entries(this.data)) {
-      if (otherPile.data[itemCode]) {
-        intersectionData[itemCode] = Math.min(quantity, otherPile.data[itemCode]);
+      if (otherPile.data[parseInt(itemCode)]) {
+        intersectionData[parseInt(itemCode)] = Math.min(
+          quantity,
+          otherPile.data[parseInt(itemCode)]
+        );
       }
     }
 
@@ -91,10 +94,10 @@ export class ItemPile {
     const differenceData: Record<number, number> = { ...this.data };
 
     for (const [itemCode, quantity] of Object.entries(otherPile.data)) {
-      if (differenceData[itemCode]) {
-        differenceData[itemCode] -= quantity;
-        if (differenceData[itemCode] <= 0) {
-          delete differenceData[itemCode];
+      if (differenceData[parseInt(itemCode)]) {
+        differenceData[parseInt(itemCode)] -= quantity;
+        if (differenceData[parseInt(itemCode)] <= 0) {
+          delete differenceData[parseInt(itemCode)];
         }
       }
     }

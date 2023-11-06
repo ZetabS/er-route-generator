@@ -2,12 +2,7 @@ import { expect, test } from 'vitest';
 import { AREA, Item, ITEM } from '@/modules/api';
 import { Plan } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan/Inventory';
-import {
-  exploreAllPath,
-  findMaterialsInArea,
-  findNecessaryMaterials,
-  getSubRecipes
-} from '@/modules/plan/utils';
+import { exploreAllPath, findMaterialsInArea, findNecessaryMaterials } from '@/modules/plan/utils';
 
 const swordOfJustice: Item = ITEM[120302];
 const blooming = swordOfJustice.material1 as Item;
