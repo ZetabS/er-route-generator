@@ -1,28 +1,9 @@
 import { Slot, EquipmentSlot } from '@/modules/plan/Slot';
 import { Item } from '@/modules/api';
 
-function equipmentIterator() {
-  const keys = ['Weapon', 'Chest', 'Head', 'Arm', 'Leg'];
-  let index = 0;
-
-  return {
-    next: () => {
-      if (index < keys.length) {
-        const key = keys[index++];
-        return {
-          value: this[key],
-          done: false
-        };
-      } else {
-        return { value: undefined, done: true };
-      }
-    }
-  };
-}
-
 export class Inventory {
   private readonly slots: Slot[];
-  private readonly equipmentSlots: Record<String, EquipmentSlot>;
+  private readonly equipmentSlots: Record<string, EquipmentSlot>;
 
   constructor(...items: Item[]) {
     this.slots = [];

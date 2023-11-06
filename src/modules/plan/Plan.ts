@@ -1,12 +1,6 @@
 import { Inventory } from './Inventory';
 import { Area, Item } from '@/modules/api';
-import {
-  exploreAllPath,
-  findMaterialsInArea,
-  findNecessaryMaterials,
-  getSubRecipes,
-  State
-} from './utils';
+import { exploreAllPath, findMaterialsInArea, findNecessaryMaterials, State } from './utils';
 
 export class RouteState {
   public inventory: Inventory;
@@ -48,7 +42,9 @@ export class Plan {
     let necessaryMaterials;
     let unnecessaryMaterials;
     let remainMaterials: Item[] = this.targetItems.map((item: Item) => item.allMaterials).flat();
-    let craftableItems: Item[] = this.targetItems.map((item: Item) => getSubRecipes(item)).flat();
+    let craftableItems: Item[] = this.targetItems
+      .map((item: Item) => item.recipe?.getSubRecipes())
+      .flat();
 
     for (let routeNumber = 0; routeNumber < this.route.length; routeNumber++) {
       if (!inventory) {
