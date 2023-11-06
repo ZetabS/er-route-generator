@@ -22,7 +22,7 @@ export class Item {
   }
 
   toString(): string {
-    return this.name;
+    return `${this.name}(${this.data.code})`;
   }
 
   private get data(): ItemData {
@@ -65,11 +65,11 @@ export class Item {
     return RECIPE[this.code];
   }
 
-  get materials(): [Item, Item] {
+  get materials(): [Item, Item] | undefined {
     if (this.recipe) {
       return this.recipe.materials;
     } else {
-      return [];
+      return undefined;
     }
   }
 
@@ -155,15 +155,13 @@ export class Recipe {
     stack.push(this.material2);
 
     while (stack.length > 0) {
-      const item = stack.pop();
+      const item: Item = stack.pop() as Item;
 
-      if (!item.recipe || result.includes(item)) {
-        continue;
+      if (item.recipe && !result.includes(item)) {
+        result.push(item);
+        stack.push(item.recipe.material1);
+        stack.push(item.recipe.material2);
       }
-
-      result.push(item);
-      stack.push(item.material1);
-      stack.push(item.material2);
     }
 
     return result;
