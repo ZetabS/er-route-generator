@@ -1,5 +1,6 @@
 import { Slot, EquipmentSlot } from '@/modules/plan/Slot';
-import { Item } from '@/modules/api';
+import { ITEM, Item } from '@/modules/api';
+import { ItemPile } from '@/modules/plan/ItemPile';
 
 export class Inventory {
   private readonly slots: Slot[];
@@ -23,17 +24,44 @@ export class Inventory {
     items.forEach((item: Item) => this.add(item));
   }
 
-  toString(): string {
-    return (
-      '[' +
-      this.slots.reduce((str, slot) => {
-        return str + slot.item;
-      }, '') +
-      Object.values(this.equipmentSlots).reduce((str, slot) => {
-        return str + slot.item;
-      }, '') +
-      ']'
-    );
+  public toString(): string {
+    const slotStrings = this.slots
+      .sort((a, b) => {
+        if (!a.item && !b.item) {
+          return 0;
+        }
+        if (!a.item) {
+          return -1;
+        }
+        if (!b.item) {
+          return 1;
+        }
+
+        if (a.item.equals(b.item)) {
+          return a.quantity - b.quantity;
+        }
+
+        return a.item.code - b.item.code;
+      })
+      .map((slot, index) => {
+        const item = slot.item;
+        if (item) {
+          return `Slot ${index + 1}: ${item}: ${slot.quantity}`;
+        } else {
+          return `Slot ${index + 1}: Empty`;
+        }
+      });
+
+    const equipmentStrings = ['Weapon', 'Chest', 'Head', 'Arm', 'Leg'].map((slotName: string) => {
+      const item = this.equipmentSlots[slotName];
+      if (item) {
+        return `${slotName}: ${item}`;
+      } else {
+        return `${slotName}: Empty`;
+      }
+    });
+
+    return `Inventory:${slotStrings.join(', ')} Equipment: ${equipmentStrings.join(', ')}`;
   }
 
   add(item: Item): boolean {

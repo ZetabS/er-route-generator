@@ -11,8 +11,8 @@ export class ItemPile {
 
   public toString(): string {
     const itemsString = Object.entries(this.data)
-      .sort((a, b) => a[0] - b[0])
-      .map(([itemCode, quantity]) => `${ITEM[itemCode].name}(${itemCode}): ${quantity}`)
+      .sort(([a], [b]) => parseInt(a) - parseInt(b))
+      .map(([itemCode, quantity]) => `${ITEM[itemCode]}: ${quantity}`)
       .join(', ');
 
     return `[${itemsString}]`;

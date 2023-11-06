@@ -1,21 +1,18 @@
 import { Inventory } from '@/modules/plan/Inventory';
 import { Area, Item } from '@/modules/api';
 import { removeAt } from '@/common/utils';
-
-export class ItemState {
-  public item: Item;
-}
+import type { ItemPile } from '@/modules/plan/ItemPile';
 
 export class State {
   public _inventory: Inventory;
-  public _materials: Item[];
+  public _materials: ItemPile;
 
-  constructor(inventory: Inventory, materials: Item[]) {
+  constructor(inventory: Inventory, materials: ItemPile) {
     this._inventory = inventory;
     this._materials = materials;
   }
 
-  destruct(): [Inventory, Item[]] {
+  destruct(): [Inventory, ItemPile] {
     return [this.inventory, this.materials];
   }
 
@@ -23,8 +20,8 @@ export class State {
     return this._inventory.clone();
   }
 
-  get materials(): Item[] {
-    return [...this._materials];
+  get materials(): ItemPile {
+    return this._materials.clone();
   }
 
   hashCode(): string {
@@ -32,7 +29,7 @@ export class State {
       .map((item) => item.code)
       .sort()
       .join(',');
-    const materialsString = this._materials.map((item) => item.code).join(',');
+    const materialsString = this._materials.toString();
     return `State[inventory: ${inventoryItemsString}, materials: ${materialsString}]`;
   }
 
