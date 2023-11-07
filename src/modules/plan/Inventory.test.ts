@@ -14,25 +14,25 @@ const scrap = rapier.material2 as Item;
 
 test('new Inventory', () => {
   const inventory = new Inventory();
-  expect(inventory.items).toStrictEqual([]);
+  expect(inventory.toArray).toStrictEqual([]);
 
   const inventory2 = new Inventory(flower);
-  expect(inventory2.items).toStrictEqual([flower]);
+  expect(inventory2.toArray).toStrictEqual([flower]);
 
   const inventory3 = new Inventory(flower, needle);
-  expect(inventory3.items).toStrictEqual([flower, needle]);
+  expect(inventory3.toArray).toStrictEqual([flower, needle]);
 });
 
 test('Inventory add', () => {
   const inventory = new Inventory();
   expect(inventory.add(scrap)).toBe(true);
-  expect(inventory.items.sort()).toStrictEqual([scrap].sort());
+  expect(inventory.toArray.sort()).toStrictEqual([scrap].sort());
   expect(inventory.add(needle)).toBe(true);
-  expect(inventory.items.sort()).toStrictEqual([scrap, needle].sort());
+  expect(inventory.toArray.sort()).toStrictEqual([scrap, needle].sort());
   expect(inventory.add(bandage)).toBe(true);
-  expect(inventory.items.sort()).toStrictEqual([scrap, needle, bandage].sort());
+  expect(inventory.toArray.sort()).toStrictEqual([scrap, needle, bandage].sort());
   expect(inventory.add(flower)).toBe(true);
-  expect(inventory.items.sort()).toStrictEqual([scrap, needle, bandage, flower].sort());
+  expect(inventory.toArray.sort()).toStrictEqual([scrap, needle, bandage, flower].sort());
 });
 
 test('Inventory canAdd', () => {
@@ -47,7 +47,7 @@ test('Inventory canAdd', () => {
 test('Inventory remove', () => {
   const inventory = new Inventory(flower, needle);
   inventory.remove(flower);
-  expect(inventory.items).toStrictEqual([needle]);
+  expect(inventory.toArray).toStrictEqual([needle]);
   inventory.remove(needle);
-  expect(inventory.items).toStrictEqual([]);
+  expect(inventory.toArray).toStrictEqual([]);
 });

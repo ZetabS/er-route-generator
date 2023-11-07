@@ -18,7 +18,7 @@ const plan = computed(() => {
     <div class="container" v-for="num of [1, 2, 3]" :key="num">
       {{ plan.inventoryAt(num).toString()[0] }}
       {{ plan.inventoryAt(num).toString()[1] }}
-      <item-icon v-for="item of plan.inventoryAt(num).items" :key="item" :item="item" :size="3" />
+      <item-icon v-for="item of plan.inventoryAt(num).toArray" :key="item" :item="item" :size="3" />
     </div>
   </SidebarWrapper>
 </template>

@@ -1,48 +1,66 @@
 import { Inventory } from './Inventory';
 import { Area, Item } from '@/modules/api';
-import { exploreAllPath, findInArea, findNecessary, State } from './utils';
+import { calculateInventory, CalculateResult, State } from './utils';
 import { ItemPile } from '@/modules/plan/ItemPile';
 
-export class RouteState {
-  public inventory: Inventory;
-  public materials: Item[];
+interface SeparatedMaterials {
+  requiredMaterials: ItemPile;
+  optionalMaterials: ItemPile;
+}
 
-  constructor(nextInventory: Inventory, nextMaterials: Item[]) {
-    this.inventory = nextInventory.clone();
-    this.materials = [...nextMaterials];
+export class PlanState {
+  public inventory: Inventory;
+  public remainMaterials: ItemPile;
+  public craftingItems: ItemPile;
+
+  constructor(inventory: Inventory, remainMaterials: ItemPile, craftingItems: ItemPile) {
+    this.inventory = inventory.clone();
+    this.remainMaterials = remainMaterials.clone();
+    this.craftingItems = craftingItems.clone();
   }
 
-  destruct(): [Inventory, Item[]] {
-    return [this.inventory, this.materials];
+  destruct(): [Inventory, ItemPile] {
+    return [this.inventory, this.remainMaterials];
   }
 
   toString(): string {
-    return `State[inventory: ${this.inventory.items + ''}, materials: ${this.materials + ''}]`;
+    return `State[inventory: ${this.inventory}, ` + `commonMaterials: ${this.remainMaterials}]`;
+  }
+
+  getMaterialsInArea(area: Area): ItemPile {
+    return this.remainMaterials.intersection(area.areaItems);
+  }
+
+  getSeparatedMaterialsByRequirement(area: Area, plannedAreas: Area[]): SeparatedMaterials {
+    const materialsInArea: ItemPile = this.getMaterialsInArea(area);
+    const plannedAreasItems: ItemPile = new ItemPile();
+    plannedAreas.forEach((area: Area) => {
+      area.areaItems.forEach((item: Item) => {
+        plannedAreasItems.add(item);
+      });
+    });
+    const requiredMaterials: ItemPile = materialsInArea.difference(plannedAreasItems);
+    const optionalMaterials: ItemPile = materialsInArea.intersection(plannedAreasItems);
+    return { requiredMaterials, optionalMaterials };
   }
 }
 
 export class Plan {
   private readonly _targetItems: Item[];
   private readonly route: Area[] = [];
-  private inventories: Inventory[] = [];
-  private invalidStates: State[] = [];
-  private necessaryMaterials: Item[][] = [];
-  private unnecessaryMaterials: Item[][] = [];
+  private state: PlanState[] = [];
   private _isValid: boolean = true;
 
   constructor(route: Area[], targetItems: Item[]) {
     this.route = [...route];
     this._targetItems = [...targetItems];
-    this.calculateRoute();
   }
 
-  calculateRoute() {
-    let inventory: Inventory = new Inventory();
+  validate() {
+    let validState;
     let invalidState;
-    let foundMaterials;
-    let materialsMustCollectAtCurrentArea;
-    let unnecessaryMaterials;
-    let remainCollectableMaterials: ItemPile = this.targetItems.reduce(
+    const initialRemainMaterials: ItemPile = this.targetItems.reduce(
+      // 수집해야 하는 남은 아이템
       (pile, item: Item): ItemPile => {
         if (item.recipe) {
           return pile.union(item.recipe.getCommonMaterials());
@@ -52,46 +70,41 @@ export class Plan {
       new ItemPile()
     );
 
-    let craftableItems: ItemPile = this.targetItems
+    const initialCraftingItems: ItemPile = this.targetItems // 만들어야 하는 아이템
       .reduce((pile, item: Item): ItemPile => {
         if (item.recipe) {
           return pile.union(item.recipe.getSubMaterials());
         }
         return pile;
       }, new ItemPile())
-      .difference(remainCollectableMaterials);
+      .difference(initialRemainMaterials);
+
+    const planState = new PlanState(new Inventory(), initialRemainMaterials, initialCraftingItems);
 
     for (let routeNumber = 0; routeNumber < this.route.length; routeNumber++) {
-      if (!inventory) {
+      const currentArea: Area = this.route[routeNumber];
+      const plannedAreas: Area[] = [...this.route.slice(routeNumber + 1, this.length)];
+      const materialsInArea = planState.getMaterialsInArea(currentArea);
+      const separatedMaterials: SeparatedMaterials = planState.getSeparatedMaterialsByRequirement(
+        currentArea,
+        plannedAreas
+      );
+      const initialState = new State(
+        planState.inventory,
+        separatedMaterials.requiredMaterials,
+        planState.craftingItems
+      );
+      const result: CalculateResult = calculateInventory(initialState, true);
+      if (!result.inventory) {
         this._isValid = false;
-        break;
+        return;
       }
-      console.log('-----------------------------------------------------------------------');
-      const area: Area = this.route[routeNumber];
-      const areaAfter: Area[] = [...this.route.slice(routeNumber + 1, this.length)];
-      [foundMaterials, remainCollectableMaterials] = findInArea(remainCollectableMaterials, area);
-      [materialsMustCollectAtCurrentArea, unnecessaryMaterials] = findNecessary(
-        foundMaterials,
-        areaAfter
-      );
-      [inventory, invalidState, craftableItems] = exploreAllPath(
-        this._targetItems,
-        inventory,
-        materialsMustCollectAtCurrentArea,
-        craftableItems
-      );
-
-      this.inventories.push(inventory);
-      this.invalidStates.push(invalidState);
-      this.necessaryMaterials.push(materialsMustCollectAtCurrentArea);
-      this.unnecessaryMaterials.push(unnecessaryMaterials);
-      console.log(`completeInventory: ${inventory.items + ''}`);
-      console.log(`invalidState: ${invalidState?.toString()}`);
+      planState.inventory = result.inventory;
     }
   }
 
-  inventoryAt(routeNumber: number): Inventory {
-    return this.inventories[routeNumber];
+  inventoryAt(n: number): Inventory {
+    return this.state[n].inventory;
   }
 
   get targetItems(): Item[] {
@@ -100,14 +113,6 @@ export class Plan {
 
   get length(): number {
     return this.route.length;
-  }
-
-  get inventory(): Inventory {
-    if (this.inventories.length > 0) {
-      return this.inventories[this.inventories.length - 1][0].clone();
-    } else {
-      return new Inventory();
-    }
   }
 
   get isValid(): boolean {
