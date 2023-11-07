@@ -28,6 +28,47 @@ export class ItemPile {
     return array;
   }
 
+  public forEach(callback: (item: Item) => void) {
+    for (const [itemCode, quantity] of Object.entries(this.data)) {
+      for (let i = 0; i < quantity; i++) {
+        callback(ITEM[itemCode]);
+      }
+    }
+  }
+
+  public every(callback: (item: Item) => boolean): boolean {
+    for (const [itemCode, quantity] of Object.entries(this.data)) {
+      for (let i = 0; i < quantity; i++) {
+        if (!callback(ITEM[itemCode])) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  public some(callback: (item: Item) => boolean): boolean {
+    for (const [itemCode, quantity] of Object.entries(this.data)) {
+      for (let i = 0; i < quantity; i++) {
+        if (callback(ITEM[itemCode])) {
+          return true;
+        }
+      }
+    }
+    return false;
+  }
+
+  public filter(callback: (item: Item) => boolean) {
+    const filteredPile = new ItemPile();
+    for (const [itemCode, quantity] of Object.entries(this.data)) {
+      const item = ITEM[itemCode];
+      if (callback(item)) {
+        filteredPile.add(item);
+      }
+    }
+    return filteredPile;
+  }
+
   public clone(): ItemPile {
     const clonedPile = new ItemPile([]);
     clonedPile.data = { ...this.data };
@@ -112,5 +153,9 @@ export class ItemPile {
     const unionResult = this.union(otherPile);
     const intersectionResult = this.intersection(otherPile);
     return unionResult.difference(intersectionResult);
+  }
+
+  isEmpty() {
+    return Object.keys(this.data).length === 0;
   }
 }

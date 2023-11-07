@@ -2,7 +2,8 @@ import { expect, test } from 'vitest';
 import { AREA, Item, ITEM } from '@/modules/api';
 import { Plan } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan/Inventory';
-import { exploreAllPath, findMaterialsInArea, findNecessaryMaterials } from '@/modules/plan/utils';
+import { exploreAllPath, findInArea, findNecessary } from '@/modules/plan/utils';
+import type { ItemPile } from '@/modules/plan/ItemPile';
 
 const swordOfJustice: Item = ITEM[120302];
 const blooming = swordOfJustice.material1 as Item;
@@ -60,30 +61,22 @@ test('exploreAllPath', () => {
   }
 });
 
-test('getCraftableItems', () => {
-  expect(getSubRecipes(swordOfJustice).sort()).toStrictEqual(
-    [rapier, blooming, robePlus, swordOfJustice].sort()
-  );
-});
-
-test('findNecessaryMaterials', () => {
-  const [foundMaterials, remainMaterials] = findMaterialsInArea(
-    swordOfJustice.allMaterials,
+test('findNecessary', () => {
+  const [foundMaterials, remainMaterials] = findInArea(
+    swordOfJustice.recipe?.getCommonMaterials() as ItemPile,
     AREA['병원']
   );
-  const [necessaryMaterials, unnecessaryMaterials] = findNecessaryMaterials(foundMaterials, [
-    AREA['호텔']
-  ]);
-  expect(necessaryMaterials.sort()).toStrictEqual([bandage].sort());
-  expect(unnecessaryMaterials.sort()).toStrictEqual([scrap, needle].sort());
+  const [necessaryMaterials, unnecessaryMaterials] = findNecessary(foundMaterials, [AREA['호텔']]);
+  expect(necessaryMaterials.toArray().sort()).toStrictEqual([bandage].sort());
+  expect(unnecessaryMaterials.toArray().sort()).toStrictEqual([scrap, needle].sort());
 });
 
-test('findMaterialsInArea', () => {
-  const [foundMaterials, remainMaterials] = findMaterialsInArea(
-    swordOfJustice.allMaterials,
+test('findInArea', () => {
+  const [foundMaterials, remainMaterials] = findInArea(
+    swordOfJustice.recipe?.getCommonMaterials() as ItemPile,
     AREA['병원']
   );
 
-  expect(foundMaterials.sort()).toStrictEqual([bandage, scrap, needle].sort());
-  expect(remainMaterials.sort()).toStrictEqual([robe, flower].sort());
+  expect(foundMaterials.toArray().sort()).toStrictEqual([bandage, scrap, needle].sort());
+  expect(remainMaterials.toArray().sort()).toStrictEqual([robe, flower].sort());
 });

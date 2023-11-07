@@ -1,6 +1,7 @@
 import { Inventory } from './Inventory';
 import { Area, Item } from '@/modules/api';
-import { exploreAllPath, findMaterialsInArea, findNecessaryMaterials, State } from './utils';
+import { exploreAllPath, findInArea, findNecessary, State } from './utils';
+import { ItemPile } from '@/modules/plan/ItemPile';
 
 export class RouteState {
   public inventory: Inventory;
@@ -30,8 +31,8 @@ export class Plan {
   private _isValid: boolean = true;
 
   constructor(route: Area[], targetItems: Item[]) {
-    this.route = route;
-    this._targetItems = targetItems;
+    this.route = [...route];
+    this._targetItems = [...targetItems];
     this.calculateRoute();
   }
 
@@ -39,12 +40,26 @@ export class Plan {
     let inventory: Inventory = new Inventory();
     let invalidState;
     let foundMaterials;
-    let necessaryMaterials;
+    let materialsMustCollectAtCurrentArea;
     let unnecessaryMaterials;
-    let remainMaterials: Item[] = this.targetItems.map((item: Item) => item.allMaterials).flat();
-    let craftableItems: Item[] = this.targetItems
-      .map((item: Item) => item.recipe?.getSubRecipes())
-      .flat();
+    let remainCollectableMaterials: ItemPile = this.targetItems.reduce(
+      (pile, item: Item): ItemPile => {
+        if (item.recipe) {
+          return pile.union(item.recipe.getCommonMaterials());
+        }
+        return pile;
+      },
+      new ItemPile()
+    );
+
+    let craftableItems: ItemPile = this.targetItems
+      .reduce((pile, item: Item): ItemPile => {
+        if (item.recipe) {
+          return pile.union(item.recipe.getSubMaterials());
+        }
+        return pile;
+      }, new ItemPile())
+      .difference(remainCollectableMaterials);
 
     for (let routeNumber = 0; routeNumber < this.route.length; routeNumber++) {
       if (!inventory) {
@@ -52,23 +67,23 @@ export class Plan {
         break;
       }
       console.log('-----------------------------------------------------------------------');
-      const area = this.route[routeNumber];
-      const areaAfter = [...this.route.slice(routeNumber + 1, this.length)];
-      [foundMaterials, remainMaterials] = findMaterialsInArea(remainMaterials, area);
-      [necessaryMaterials, unnecessaryMaterials] = findNecessaryMaterials(
+      const area: Area = this.route[routeNumber];
+      const areaAfter: Area[] = [...this.route.slice(routeNumber + 1, this.length)];
+      [foundMaterials, remainCollectableMaterials] = findInArea(remainCollectableMaterials, area);
+      [materialsMustCollectAtCurrentArea, unnecessaryMaterials] = findNecessary(
         foundMaterials,
         areaAfter
       );
       [inventory, invalidState, craftableItems] = exploreAllPath(
         this._targetItems,
         inventory,
-        necessaryMaterials,
+        materialsMustCollectAtCurrentArea,
         craftableItems
       );
 
       this.inventories.push(inventory);
       this.invalidStates.push(invalidState);
-      this.necessaryMaterials.push(necessaryMaterials);
+      this.necessaryMaterials.push(materialsMustCollectAtCurrentArea);
       this.unnecessaryMaterials.push(unnecessaryMaterials);
       console.log(`completeInventory: ${inventory.items + ''}`);
       console.log(`invalidState: ${invalidState?.toString()}`);

@@ -1,6 +1,7 @@
 import type { AreaData, ItemSpawnData } from './typing';
 import { areaData } from './data';
 import { Item, ITEM } from '@/modules/api/Item';
+import { ItemPile } from '@/modules/plan/ItemPile';
 
 export class Area {
   private readonly index: number;
@@ -42,13 +43,14 @@ export class Area {
     return this.data.nearByAreaCodes.map((areaCode) => AREA[areaCode]);
   }
 
-  get areaItems(): Item[] {
-    return this.data.itemSpawns.reduce((result: Item[], itemSpawn: ItemSpawnData) => {
-      for (let i = 0; i < itemSpawn.dropCount; i++) {
-        result.push(ITEM[itemSpawn.itemCode]);
-      }
-      return result;
-    }, []);
+  get areaItems(): ItemPile {
+    const itemPile = new ItemPile();
+
+    this.data.itemSpawns.forEach((itemSpawn: ItemSpawnData) => {
+      itemPile.add(ITEM[itemSpawn.itemCode], itemSpawn.dropCount);
+    });
+
+    return itemPile;
   }
 }
 

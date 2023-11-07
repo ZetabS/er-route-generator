@@ -1,5 +1,6 @@
 import type { ItemData } from './typing';
 import { itemData } from './data';
+import { ItemPile } from '@/modules/plan/ItemPile';
 
 export class Item {
   private readonly index: number;
@@ -148,8 +149,8 @@ export class Recipe {
     return ITEM[this.data.makeMaterial2];
   }
 
-  getSubMaterials(): Item[] {
-    const result: Item[] = [];
+  getCommonMaterials(): ItemPile {
+    const result: ItemPile = new ItemPile();
     const stack: Item[] = [];
     stack.push(this.material1);
     stack.push(this.material2);
@@ -157,32 +158,34 @@ export class Recipe {
     while (stack.length > 0) {
       const item: Item = stack.pop() as Item;
 
-      if (item.recipe && !result.includes(item)) {
-        result.push(item);
-        stack.push(item.recipe.material1);
-        stack.push(item.recipe.material2);
+      if (!item.recipe) {
+        result.add(item);
+        continue;
       }
+
+      stack.push(...item.recipe.materials);
     }
 
     return result;
   }
 
-  getSubRecipes(): Recipe[] {
-    const result: Recipe[] = [];
+  getSubMaterials(): ItemPile {
+    const result: ItemPile = new ItemPile();
     const stack: Item[] = [];
-    result.push(this);
+    result.add(this.item);
     stack.push(this.material1);
     stack.push(this.material2);
 
     while (stack.length > 0) {
-      const item = stack.pop();
+      const item = stack.pop() as Item;
 
-      if (!item.materials || result.includes(item.recipe)) {
+      result.add(item);
+
+      if (!item.recipe) {
         continue;
       }
-
-      result.push(item.recipe);
-      stack.push(...item.materials);
+      
+      stack.push(...item.recipe.materials);
     }
 
     return result;
