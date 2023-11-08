@@ -92,6 +92,20 @@ export class ItemPile {
     }
   }
 
+  public set(item: Item, quantity: number) {
+    while (quantity === this.data[item.code]) {
+      if (this.data[item.code] < quantity) {
+        this.data[item.code]++;
+      } else if (this.data[item.code] > quantity) {
+        this.data[item.code]--;
+      }
+    }
+  }
+
+  public get(item: Item): number {
+    return this.data[item.code];
+  }
+
   public includes(item: Item): boolean {
     return !!this.data[item.code];
   }
