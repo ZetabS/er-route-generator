@@ -90,6 +90,46 @@ describe('Plan', () => {
     }
   });
 
+  test('item', () => {
+    const targetItems = [ITEM['왕관'], ITEM['왕관'], ITEM['금팔찌']];
+
+    function calculateCraftCounts(targetItems: Item[]): ItemPile {
+      const craftCounts: ItemPile = new ItemPile();
+
+      // 재귀적으로 아이템을 계산하고 필요한 개수를 저장합니다.
+      function calculate(item: Item): void {
+        if (craftCounts.includes(item)) {
+          return;
+        }
+
+        craftCounts.add(item, item.initialCount);
+        if (item.materials) {
+          for (const material of item.materials) {
+            calculate(material);
+          }
+
+          for (const material of item.materials) {
+            craftCounts.set(
+              item,
+              Math.max(craftCounts.get(item), Math.floor(craftCounts.get(item) / 2))
+            );
+          }
+        }
+      }
+
+      for (const targetItem of targetItems) {
+        calculate(targetItem);
+      }
+
+      return craftCounts;
+    }
+
+    const craftCounts = calculateCraftCounts(targetItems);
+
+    console.log(`제작해야 하는 아이템 목록:`);
+    console.log(craftCounts.toString());
+  });
+
   test('getSeparatedMaterialsByRequirement', () => {
     const planState = new PlanState(
       new Inventory(),
