@@ -62,6 +62,10 @@ export class Item {
     return this.data.equipType;
   }
 
+  get initialCount(): number {
+    return this.data.initialCount;
+  }
+
   get recipe(): Recipe | undefined {
     return RECIPE[this.code];
   }
