@@ -144,7 +144,7 @@ export class Inventory {
     );
   }
 
-  get toArray(): Item[] {
+  toArray(): Item[] {
     const items: Item[] = [];
     this.slots.forEach((slot: Slot) => {
       if (slot.item) {

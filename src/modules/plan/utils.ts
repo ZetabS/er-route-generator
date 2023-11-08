@@ -27,11 +27,8 @@ export class State {
 }
 
 export interface CalculateResult {
-  inventory: Inventory;
-  materials: ItemPile;
-  craftingItems: ItemPile;
-  validState: State;
-  invalidState: State;
+  validState: State | undefined;
+  invalidState: State | undefined;
 }
 
 export function calculateInventory(initialState: State, craftFirst: boolean): CalculateResult {
@@ -57,33 +54,30 @@ export function calculateInventory(initialState: State, craftFirst: boolean): Ca
     }
 
     if (craftFirst) {
-      if (addItem(stack, state)) {
+      if (craftItem(stack, state)) {
         continue;
       }
 
-      if (craftItem(stack, state)) {
+      if (addItem(stack, state)) {
         continue;
       }
     } else {
-      if (craftItem(stack, state)) {
-        continue;
-      }
-
       if (addItem(stack, state)) {
         continue;
       }
-    }
 
+      if (craftItem(stack, state)) {
+        continue;
+      }
+    }
+    console.log('실패');
     invalidState = state;
     break;
   }
 
   return {
-    inventory: undefined,
-    materials: undefined,
-    craftingItems: undefined,
-    validState: undefined,
-    invalidState: undefined
+    validState: validState,
+    invalidState: invalidState
   };
 }
 
@@ -124,9 +118,21 @@ function craftItem(stack: State[], state: State) {
       return false;
     }
 
+    nextState.craftingItems.remove(craftingItem);
     nextState.inventory.add(craftingItem);
 
     stack.push(nextState);
     return true;
   });
+}
+
+function getInitialCraftingItems(targetItems: Item[]) {
+  return targetItems // 만들어야 하는 아이템
+    .reduce((pile, item: Item): ItemPile => {
+      if (item.recipe) {
+        return pile.union(item.recipe.getSubMaterials());
+      }
+      return pile;
+    }, new ItemPile())
+    .difference(initialRemainMaterials);
 }

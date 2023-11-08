@@ -1,9 +1,9 @@
 import { Inventory } from './Inventory';
 import { Area, Item } from '@/modules/api';
-import { calculateInventory, CalculateResult, State } from './utils';
+import { calculateInventory, type CalculateResult, State } from './utils';
 import { ItemPile } from '@/modules/plan/ItemPile';
 
-interface SeparatedMaterials {
+export interface SeparatedMaterials {
   requiredMaterials: ItemPile;
   optionalMaterials: ItemPile;
 }
@@ -17,10 +17,6 @@ export class PlanState {
     this.inventory = inventory.clone();
     this.remainMaterials = remainMaterials.clone();
     this.craftingItems = craftingItems.clone();
-  }
-
-  destruct(): [Inventory, ItemPile] {
-    return [this.inventory, this.remainMaterials];
   }
 
   toString(): string {
@@ -43,17 +39,22 @@ export class PlanState {
     const optionalMaterials: ItemPile = materialsInArea.intersection(plannedAreasItems);
     return { requiredMaterials, optionalMaterials };
   }
+
+  clone(): PlanState {
+    return new PlanState(this.inventory, this.remainMaterials, this.craftingItems);
+  }
 }
 
 export class Plan {
   private readonly _targetItems: Item[];
   private readonly route: Area[] = [];
-  private state: PlanState[] = [];
+  private planStates: PlanState[] = [];
   private _isValid: boolean = true;
 
   constructor(route: Area[], targetItems: Item[]) {
     this.route = [...route];
     this._targetItems = [...targetItems];
+    this.validate();
   }
 
   validate() {
@@ -95,16 +96,19 @@ export class Plan {
         planState.craftingItems
       );
       const result: CalculateResult = calculateInventory(initialState, true);
-      if (!result.inventory) {
+
+      if (!result.validState) {
         this._isValid = false;
         return;
       }
-      planState.inventory = result.inventory;
+
+      planState.inventory = result.validState.inventory;
+      this.planStates.push(planState.clone());
     }
   }
 
   inventoryAt(n: number): Inventory {
-    return this.state[n].inventory;
+    return this.planStates[n].inventory;
   }
 
   get targetItems(): Item[] {
