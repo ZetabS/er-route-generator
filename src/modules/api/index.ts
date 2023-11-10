@@ -1,5 +1,9 @@
-import { Item, ITEM, Recipe, RECIPE } from './Item';
-import { Area, AREA } from './Area';
+import { Item, ITEM, ITEM_BY_NAME } from './Item';
+import { Recipe, RECIPE, RECIPE_BY_NAME } from './Item';
+import { Area, AREA, AREA_BY_NAME } from './Area';
 import { koreanData } from './Language';
 
-export { Item, Area, Recipe, ITEM, AREA, RECIPE, koreanData };
+export { Item, ITEM, ITEM_BY_NAME };
+export { Recipe, RECIPE, RECIPE_BY_NAME };
+export { Area, AREA, AREA_BY_NAME };
+export { koreanData };

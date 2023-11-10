@@ -59,9 +59,10 @@ export class Area {
 }
 
 export const AREA: Record<string | number, Area> = {};
+export const AREA_BY_NAME: Record<string | number, Area> = {};
 
 areaData.forEach((rawArea, index) => {
   const item = new Area(index);
   AREA[rawArea.code] = item;
-  AREA[rawArea.name] = item;
+  AREA_BY_NAME[rawArea.name] = item;
 });

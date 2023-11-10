@@ -92,11 +92,12 @@ export class Item {
 }
 
 export const ITEM: Record<string | number, Item> = {};
+export const ITEM_BY_NAME: Record<string | number, Item> = {};
 
 itemData.forEach((rawItem, index) => {
   const item = new Item(index);
   ITEM[rawItem.code] = item;
-  ITEM[rawItem.name] = item;
+  ITEM_BY_NAME[rawItem.name] = item;
 });
 
 export class Recipe {
@@ -174,12 +175,12 @@ export class Recipe {
 }
 
 export const RECIPE: Record<string | number, Recipe> = {};
+export const RECIPE_BY_NAME: Record<string | number, Recipe> = {};
 
 itemData.forEach((rawItem, index) => {
   if (rawItem.makeMaterial1) {
     const recipe = new Recipe(index);
     RECIPE[rawItem.code] = recipe;
-    RECIPE[ITEM[rawItem.code].name] = recipe;
-    RECIPE[ITEM[rawItem.code].toString()] = recipe;
+    RECIPE_BY_NAME[ITEM[rawItem.code].name] = recipe;
   }
 });
