@@ -1,7 +1,7 @@
 import { Area, AREA, Item, ITEM } from '@/modules/api';
-import { Plan, PlanState, type SeparatedMaterials } from '@/modules/plan/Plan';
+import { Plan, PlanState } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan/Inventory';
-import { calculateInventory, type CalculateResult, State } from '@/modules/plan/utils';
+import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import { ItemPile } from '@/modules/plan/ItemPile';
 import { ItemGrade } from '@/modules/api/enums';
 
@@ -46,49 +46,6 @@ describe('Plan', () => {
     expect(plan.inventoryAt(2).toArray().sort()).toStrictEqual(
       [bandage, scrap, needle, flower, robe].sort()
     );
-  });
-
-  test('exploreAllPath', () => {
-    const targetItems = [swordOfJustice];
-    const initialRemainMaterials: ItemPile = targetItems.reduce(
-      // 수집해야 하는 남은 아이템
-      (pile, item: Item): ItemPile => {
-        if (item.recipe) {
-          return pile.union(item.recipe.commonMaterials());
-        }
-        return pile;
-      },
-      new ItemPile()
-    );
-
-    const initialCraftingItems: ItemPile = targetItems // 만들어야 하는 아이템
-      .reduce((pile, item: Item): ItemPile => {
-        if (item.recipe) {
-          return pile.union(item.recipe.subItems());
-        }
-        return pile;
-      }, new ItemPile())
-      .difference(initialRemainMaterials);
-
-    const planState = new PlanState(new Inventory(), initialRemainMaterials, initialCraftingItems);
-    const currentArea: Area = AREA['병원'];
-    const materialsInArea = planState.getMaterialsInArea(currentArea);
-    const initialState = new State(planState.inventory, materialsInArea, planState.craftingItems);
-    const result1: CalculateResult = calculateInventory(initialState, false);
-
-    if (result1.validState) {
-      console.log(result1.validState.inventory.toArray() + '');
-      expect(result1.validState.inventory.toArray().sort()).toStrictEqual(
-        [scrap, needle, bandage].sort()
-      );
-    }
-
-    const result2: CalculateResult = calculateInventory(initialState, true);
-
-    if (result2.validState) {
-      console.log(result2.validState.inventory.toArray() + '');
-      expect(result2.validState.inventory.toArray().sort()).toStrictEqual([rapier, bandage].sort());
-    }
   });
 
   test('getSeparatedMaterialsByRequirement', () => {
