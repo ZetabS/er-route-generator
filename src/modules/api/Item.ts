@@ -180,5 +180,6 @@ itemData.forEach((rawItem, index) => {
     const recipe = new Recipe(index);
     RECIPE[rawItem.code] = recipe;
     RECIPE[ITEM[rawItem.code].name] = recipe;
+    RECIPE[ITEM[rawItem.code].toString()] = recipe;
   }
 });

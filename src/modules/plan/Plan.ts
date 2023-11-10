@@ -1,13 +1,9 @@
 import { Inventory } from './Inventory';
 import { Area, Item } from '@/modules/api';
-import { calculateInventory, getSubItems, separateMaterialsByRequirement, State } from './utils';
+import { getSubItems, type SeparatedMaterials, separateMaterialsByRequirement } from './utils';
 import { ItemPile } from '@/modules/plan/ItemPile';
 import { ItemGrade } from '@/modules/api/enums';
-
-export interface SeparatedMaterials {
-  requiredMaterials: ItemPile;
-  optionalMaterials: ItemPile;
-}
+import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 
 export class PlanState {
   public inventory: Inventory;

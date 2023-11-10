@@ -1,5 +1,5 @@
 import { ITEM, Item } from '@/modules/api';
-import { ItemPile } from './ItemPile';
+import { ItemPile } from '@/modules/plan/ItemPile';
 
 describe('ItemPile', () => {
   const swordOfJustice: Item = ITEM[120302];
