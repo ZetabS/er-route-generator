@@ -1,4 +1,4 @@
-import type { ItemData } from './typing';
+import type { EquipType, ItemData, ItemGrade, ItemType, SubType } from './typing';
 import { itemData } from './data';
 import { ItemPile } from '@/modules/plan/ItemPile';
 
@@ -38,15 +38,15 @@ export class Item {
     return this._name;
   }
 
-  get itemType(): string {
+  get itemType(): ItemType {
     return this.data.itemType;
   }
 
-  get subType(): string {
+  get subType(): SubType {
     return this.data.subType;
   }
 
-  get itemGrade(): string {
+  get itemGrade(): ItemGrade {
     return this.data.itemGrade;
   }
 
@@ -58,7 +58,7 @@ export class Item {
     return this.data.manufacturableType;
   }
 
-  get equipType(): string | undefined {
+  get equipType(): EquipType | undefined {
     return this.data.equipType;
   }
 
@@ -115,10 +115,6 @@ export class Recipe {
     return this.index === other.index;
   }
 
-  hashCode(): number {
-    return this.index * 7;
-  }
-
   toString(): string {
     return 'R' + this._name;
   }
@@ -153,43 +149,24 @@ export class Recipe {
     return ITEM[this.data.makeMaterial2];
   }
 
-  getCommonMaterials(): ItemPile {
+  get subItems(): ItemPile {
     const result: ItemPile = new ItemPile();
-    const stack: Item[] = [];
-    stack.push(this.material1);
-    stack.push(this.material2);
-
-    while (stack.length > 0) {
-      const item: Item = stack.pop() as Item;
-
-      if (!item.recipe) {
-        result.add(item);
-        continue;
-      }
-
-      stack.push(...item.recipe.materials);
-    }
-
-    return result;
-  }
-
-  getSubMaterials(): ItemPile {
-    const result: ItemPile = new ItemPile();
-    const stack: Item[] = [];
+    const stack: [Item, number][] = [];
     result.add(this.item);
-    stack.push(this.material1);
-    stack.push(this.material2);
+    stack.push([this.material1, 1 / this.item.initialCount]);
+    stack.push([this.material2, 1 / this.item.initialCount]);
 
     while (stack.length > 0) {
-      const item = stack.pop() as Item;
-
-      result.add(item);
+      const [item, quantity] = stack.pop() as [Item, number];
+      result.add(item, quantity);
 
       if (!item.recipe) {
         continue;
       }
-      
-      stack.push(...item.recipe.materials);
+
+      const materialQuantity = quantity / item.initialCount;
+      stack.push([item.recipe.material1, materialQuantity]);
+      stack.push([item.recipe.material2, materialQuantity]);
     }
 
     return result;

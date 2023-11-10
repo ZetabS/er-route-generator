@@ -52,6 +52,10 @@ export class Area {
 
     return itemPile;
   }
+
+  get collectableItems(): Item[] {
+    return this.data.collectableItems.map((itemCode: number) => ITEM[itemCode]);
+  }
 }
 
 export const AREA: Record<string | number, Area> = {};

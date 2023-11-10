@@ -2,28 +2,30 @@ import { ITEM, Item } from '@/modules/api';
 import { ItemPile } from './ItemPile';
 
 describe('ItemPile', () => {
-  let flower: Item;
-  let scrap: Item;
-
-  beforeEach(() => {
-    flower = ITEM['꽃'];
-    scrap = ITEM['고철'];
-  });
+  const swordOfJustice: Item = ITEM[120302];
+  const blooming = swordOfJustice.material1 as Item;
+  const robePlus = swordOfJustice.material2 as Item;
+  const rapier = blooming.material1 as Item;
+  const flower = blooming.material2 as Item;
+  const robe = robePlus.material1 as Item;
+  const bandage = robePlus.material2 as Item;
+  const needle = rapier.material1 as Item;
+  const scrap = rapier.material2 as Item;
 
   test('constructor', () => {
     const pile1 = new ItemPile();
     expect(pile1.toString()).toBe('[]');
-    const pile2 = new ItemPile([flower]);
+    const pile2 = new ItemPile(flower);
     expect(pile2.toString()).toBe('[꽃(205102): 1]');
   });
 
   test('add', () => {
     const pile = new ItemPile();
-    pile.add(flower, 3);
+    pile.add(flower, 2.5);
     pile.add(scrap);
     pile.add(scrap);
     expect(pile.toArray().sort()).toStrictEqual([flower, flower, flower, scrap, scrap].sort());
-    expect(pile.toString()).toBe('[꽃(205102): 3, 고철(401106): 2]');
+    expect(pile.toString()).toBe('[꽃(205102): 2.5, 고철(401106): 2]');
   });
 
   test('remove', () => {
@@ -49,6 +51,27 @@ describe('ItemPile', () => {
     pile.add(scrap, 2);
     expect(pile.includes(flower)).toBe(true);
     expect(pile.includes(scrap)).toBe(true);
+  });
+
+  test('merge', () => {
+    const pile1 = new ItemPile(scrap);
+    pile1.add(flower, 0.5);
+    const pile2 = new ItemPile();
+    pile2.add(bandage, 1.5);
+    expect(pile1.merge(pile2).toString()).toBe(
+      '[붕대(203102): 1.5, 꽃(205102): 0.5, 고철(401106): 1]'
+    );
+    const targetItems = [ITEM['왕관'], ITEM['지휘관의 갑옷'], ITEM['황금']];
+
+    expect(
+      targetItems
+        .reduce((result, item) => {
+          return result.merge(item.recipe?.subItems as ItemPile);
+        }, new ItemPile())
+        .toString()
+    ).toBe(
+      `[가위(101101): 1, 곡괭이(105102): 1.5, 쇠사슬(119101): 1, 모자(201102): 1, 베레모(201203): 1, 왕관(201401): 1, 천 갑옷(202106): 1, 가죽 갑옷(202201): 1, 사슬 갑옷(202302): 1, 지휘관의 갑옷(202412): 1, 가죽(401103): 1, 원석(401114): 1.5, 황금(401214): 3]`
+    );
   });
 
   test('union', () => {

@@ -3,10 +3,8 @@ import { ITEM, Item } from '@/modules/api';
 export class ItemPile {
   private data: Record<number, number> = {};
 
-  constructor(items?: Item[]) {
-    if (items) {
-      items.forEach((item) => this.add(item));
-    }
+  constructor(...items: Item[]) {
+    items.forEach((item) => this.add(item));
   }
 
   public toString(): string {
@@ -28,18 +26,16 @@ export class ItemPile {
     return array;
   }
 
-  public forEach(callback: (item: Item) => void) {
+  public forEach(callback: (item: Item, quantity: number) => void) {
     for (const [itemCode, quantity] of Object.entries(this.data)) {
-      for (let i = 0; i < quantity; i++) {
-        callback(ITEM[itemCode]);
-      }
+      callback(ITEM[itemCode], quantity);
     }
   }
 
-  public every(callback: (item: Item) => boolean): boolean {
+  public every(callback: (item: Item, quantity: number) => boolean): boolean {
     for (const [itemCode, quantity] of Object.entries(this.data)) {
       for (let i = 0; i < quantity; i++) {
-        if (!callback(ITEM[itemCode])) {
+        if (!callback(ITEM[itemCode], quantity)) {
           return false;
         }
       }
@@ -47,10 +43,10 @@ export class ItemPile {
     return true;
   }
 
-  public some(callback: (item: Item) => boolean): boolean {
+  public some(callback: (item: Item, quantity: number) => boolean): boolean {
     for (const [itemCode, quantity] of Object.entries(this.data)) {
       for (let i = 0; i < quantity; i++) {
-        if (callback(ITEM[itemCode])) {
+        if (callback(ITEM[itemCode], quantity)) {
           return true;
         }
       }
@@ -58,19 +54,34 @@ export class ItemPile {
     return false;
   }
 
-  public filter(callback: (item: Item) => boolean) {
+  public filter(callback: (item: Item, quantity: number) => boolean) {
     const filteredPile = new ItemPile();
     for (const [itemCode, quantity] of Object.entries(this.data)) {
       const item = ITEM[itemCode];
-      if (callback(item)) {
-        filteredPile.add(item);
+      if (callback(item, quantity)) {
+        filteredPile.add(item, quantity);
       }
     }
     return filteredPile;
   }
 
+  public map(callback: (item: Item, quantity: number) => [Item, number]) {
+    const mappedPile = new ItemPile();
+    for (const [itemCode, quantity] of Object.entries(this.data)) {
+      const item = ITEM[itemCode];
+      mappedPile.add(...callback(item, quantity));
+    }
+    return mappedPile;
+  }
+
+  public merge(...piles: ItemPile[]): ItemPile {
+    const newItemPile = this.clone();
+    piles.forEach((pile) => pile.forEach((item, quantity) => newItemPile.add(item, quantity)));
+    return newItemPile;
+  }
+
   public clone(): ItemPile {
-    const clonedPile = new ItemPile([]);
+    const clonedPile = new ItemPile();
     clonedPile.data = { ...this.data };
     return clonedPile;
   }
@@ -93,13 +104,7 @@ export class ItemPile {
   }
 
   public set(item: Item, quantity: number) {
-    while (quantity === this.data[item.code]) {
-      if (this.data[item.code] < quantity) {
-        this.data[item.code]++;
-      } else if (this.data[item.code] > quantity) {
-        this.data[item.code]--;
-      }
-    }
+    this.data[item.code] = quantity;
   }
 
   public get(item: Item): number {

@@ -31,15 +31,69 @@ export interface AreaData {
   isHyperLoopInstalled: boolean;
   nearByAreaCodes: AreaCode[];
   itemSpawns: ItemSpawnData[];
+  collectableItems: number[];
 }
+
+export type ItemGrade = 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legend';
+
+export type ItemType =
+  | 'Armor'
+  | 'Weapon'
+  | 'Consume'
+  | 'Misc'
+  | 'DnaBracelet'
+  | 'EscapeMaterial'
+  | 'EscapeKey'
+  | 'EscapeQualification'
+  | 'Special';
+
+export type SubType =
+  | 'Head'
+  | 'Chest'
+  | 'Arm'
+  | 'Leg'
+  | 'OneHandSword'
+  | 'TwoHandSword'
+  | 'DualSword'
+  | 'Hammer'
+  | 'Axe'
+  | 'Spear'
+  | 'Bat'
+  | 'Whip'
+  | 'Glove'
+  | 'Tonfa'
+  | 'HighAngleFire'
+  | 'DirectFire'
+  | 'Bow'
+  | 'CrossBow'
+  | 'Pistol'
+  | 'AssaultRifle'
+  | 'SniperRifle'
+  | 'Nunchaku'
+  | 'Rapier'
+  | 'Guitar'
+  | 'Camera'
+  | 'Arcana'
+  | 'VFArm'
+  | 'Beverage'
+  | 'SpecialBeverage'
+  | 'SpecialFood'
+  | 'Food'
+  | 'Bounty'
+  | 'Material'
+  | 'None'
+  | 'Summon'
+  | 'GhostItem';
+
+export type EquipType = 'Weapon' | 'Head' | 'Chest' | 'Arm' | 'Leg';
 
 export interface ItemData {
   code: number;
   name: string;
   modeType: number;
-  itemType: string;
-  subType: string;
-  itemGrade: string;
+  itemType: ItemType;
+  subType: SubType;
+  itemGrade: ItemGrade;
   isCompletedItem: boolean;
   alertInSpectator: boolean;
   markingType: string;
@@ -54,7 +108,7 @@ export interface ItemData {
   manufacturableType: number;
   restoreItemWhenResurrected: boolean;
   creditValueWhenConvertedToBounty: number;
-  equipType?: string;
+  equipType?: EquipType;
   isRemovedFromPlayerCorpseInventoryWhenPlayerKilled?: boolean;
   notDisarm?: boolean;
   attackPower?: number;

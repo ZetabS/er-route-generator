@@ -23,19 +23,11 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108102,
         dropCount: 2
       },
       {
         itemCode: 110102,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -59,27 +51,11 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301113,
         dropCount: 1
       },
       {
-        itemCode: 301405,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
-        dropCount: 1
-      },
-      {
-        itemCode: 401103,
         dropCount: 1
       },
       {
@@ -103,13 +79,18 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502104,
         dropCount: 2
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      502101,
+      301405
     ]
   },
   {
@@ -125,14 +106,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 101102,
         dropCount: 2
-      },
-      {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 112104,
@@ -155,10 +128,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301113,
         dropCount: 1
       },
@@ -177,10 +146,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 302104,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401105,
@@ -205,11 +170,14 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401121,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -240,20 +208,12 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108102,
         dropCount: 2
       },
       {
         itemCode: 108103,
         dropCount: 2
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 118101,
@@ -272,39 +232,15 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 205102,
-        dropCount: 2
-      },
-      {
         itemCode: 205103,
         dropCount: 2
-      },
-      {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
       },
       {
         itemCode: 301116,
         dropCount: 1
       },
       {
-        itemCode: 301405,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
-        dropCount: 1
-      },
-      {
-        itemCode: 302102,
-        dropCount: 3
-      },
-      {
-        itemCode: 401103,
         dropCount: 1
       },
       {
@@ -320,13 +256,20 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502102,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      302102,
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      205102,
+      502101,
+      301405
     ]
   },
   {
@@ -347,14 +290,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 105102,
         dropCount: 3
-      },
-      {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 114101,
@@ -381,10 +316,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 205102,
-        dropCount: 2
-      },
-      {
         itemCode: 205103,
         dropCount: 2
       },
@@ -393,19 +324,7 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301102,
-        dropCount: 1
-      },
-      {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
         itemCode: 301106,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
         dropCount: 1
       },
       {
@@ -413,27 +332,11 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301405,
-        dropCount: 1
-      },
-      {
-        itemCode: 301406,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
         dropCount: 1
       },
       {
-        itemCode: 302102,
-        dropCount: 3
-      },
-      {
         itemCode: 302107,
-        dropCount: 1
-      },
-      {
-        itemCode: 401103,
         dropCount: 1
       },
       {
@@ -441,13 +344,22 @@ export const areaData: AreaData[] = [
         dropCount: 3
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502103,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      301102,
+      302102,
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      205102,
+      502101,
+      301406,
+      301405
     ]
   },
   {
@@ -481,15 +393,7 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 109101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -517,27 +421,11 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
-        itemCode: 301405,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
         dropCount: 1
       },
       {
         itemCode: 302107,
-        dropCount: 1
-      },
-      {
-        itemCode: 401103,
         dropCount: 1
       },
       {
@@ -553,10 +441,6 @@ export const areaData: AreaData[] = [
         dropCount: 3
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502103,
         dropCount: 1
       },
@@ -564,6 +448,15 @@ export const areaData: AreaData[] = [
         itemCode: 502104,
         dropCount: 2
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      502101,
+      301405
     ]
   },
   {
@@ -580,14 +473,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 101102,
         dropCount: 2
-      },
-      {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 112105,
@@ -630,27 +515,11 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 205102,
-        dropCount: 2
-      },
-      {
         itemCode: 205103,
         dropCount: 2
       },
       {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301119,
-        dropCount: 1
-      },
-      {
-        itemCode: 301405,
         dropCount: 1
       },
       {
@@ -666,20 +535,12 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 401103,
-        dropCount: 1
-      },
-      {
         itemCode: 401108,
         dropCount: 2
       },
       {
         itemCode: 401112,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       },
       {
         itemCode: 502102,
@@ -689,6 +550,16 @@ export const areaData: AreaData[] = [
         itemCode: 502104,
         dropCount: 2
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      205102,
+      502101,
+      301405
     ]
   },
   {
@@ -707,14 +578,6 @@ export const areaData: AreaData[] = [
       },
       {
         itemCode: 101104,
-        dropCount: 1
-      },
-      {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -746,10 +609,6 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
         dropCount: 1
       },
@@ -760,10 +619,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 302104,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401105,
@@ -782,13 +637,16 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502104,
         dropCount: 2
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -815,19 +673,11 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108102,
         dropCount: 2
       },
       {
         itemCode: 109101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -855,19 +705,7 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301102,
-        dropCount: 1
-      },
-      {
         itemCode: 301110,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
-        itemCode: 301406,
         dropCount: 1
       },
       {
@@ -883,10 +721,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 401103,
-        dropCount: 1
-      },
-      {
         itemCode: 401107,
         dropCount: 2
       },
@@ -895,13 +729,18 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502103,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      301102,
+      108101,
+      112101,
+      401103,
+      301111,
+      502101,
+      301406
     ]
   },
   {
@@ -920,15 +759,7 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 110102,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -968,20 +799,12 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301119,
         dropCount: 1
       },
       {
         itemCode: 301407,
         dropCount: 1
-      },
-      {
-        itemCode: 302102,
-        dropCount: 3
       },
       {
         itemCode: 302103,
@@ -993,10 +816,6 @@ export const areaData: AreaData[] = [
       },
       {
         itemCode: 302107,
-        dropCount: 1
-      },
-      {
-        itemCode: 401103,
         dropCount: 1
       },
       {
@@ -1012,13 +831,17 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502104,
         dropCount: 2
       }
+    ],
+    collectableItems: [
+      302102,
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -1041,16 +864,8 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108102,
         dropCount: 2
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 112103,
@@ -1085,10 +900,6 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
         dropCount: 1
       },
@@ -1101,10 +912,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 401103,
-        dropCount: 1
-      },
-      {
         itemCode: 401108,
         dropCount: 2
       },
@@ -1113,13 +920,16 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502102,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -1137,14 +947,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 101102,
         dropCount: 2
-      },
-      {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 112104,
@@ -1187,10 +989,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301119,
         dropCount: 1
       },
@@ -1207,10 +1005,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 401103,
-        dropCount: 1
-      },
-      {
         itemCode: 401106,
         dropCount: 4
       },
@@ -1225,11 +1019,14 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401113,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -1252,15 +1049,7 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 110102,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -1292,10 +1081,6 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
         dropCount: 1
       },
@@ -1306,10 +1091,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 302108,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401106,
@@ -1326,11 +1107,14 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401116,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -1360,16 +1144,8 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108103,
         dropCount: 2
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 130101,
@@ -1396,15 +1172,7 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301102,
-        dropCount: 1
-      },
-      {
         itemCode: 301106,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
         dropCount: 1
       },
       {
@@ -1416,19 +1184,7 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301406,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
-        dropCount: 1
-      },
-      {
-        itemCode: 302102,
-        dropCount: 3
-      },
-      {
-        itemCode: 401103,
         dropCount: 1
       },
       {
@@ -1450,11 +1206,17 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401121,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       }
+    ],
+    collectableItems: [
+      301102,
+      302102,
+      108101,
+      112101,
+      401103,
+      301111,
+      502101,
+      301406
     ]
   },
   {
@@ -1472,16 +1234,8 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108103,
         dropCount: 2
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 112103,
@@ -1516,10 +1270,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301119,
         dropCount: 1
       },
@@ -1530,10 +1280,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401101,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401105,
@@ -1550,11 +1296,14 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401121,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -1574,16 +1323,8 @@ export const areaData: AreaData[] = [
         dropCount: 3
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108103,
         dropCount: 2
-      },
-      {
-        itemCode: 112101,
-        dropCount: 1
       },
       {
         itemCode: 112105,
@@ -1614,35 +1355,11 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 205102,
-        dropCount: 2
-      },
-      {
         itemCode: 205110,
         dropCount: 2
       },
       {
-        itemCode: 301102,
-        dropCount: 1
-      },
-      {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
         itemCode: 301106,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
-        itemCode: 301405,
-        dropCount: 1
-      },
-      {
-        itemCode: 301406,
         dropCount: 1
       },
       {
@@ -1650,16 +1367,8 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 302102,
-        dropCount: 3
-      },
-      {
         itemCode: 302103,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401105,
@@ -1672,11 +1381,20 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401121,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       }
+    ],
+    collectableItems: [
+      301102,
+      302102,
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      205102,
+      502101,
+      301406,
+      301405
     ]
   },
   {
@@ -1701,19 +1419,11 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108103,
         dropCount: 2
       },
       {
         itemCode: 110102,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -1749,31 +1459,7 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 205102,
-        dropCount: 2
-      },
-      {
-        itemCode: 301102,
-        dropCount: 1
-      },
-      {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301116,
-        dropCount: 1
-      },
-      {
-        itemCode: 301405,
-        dropCount: 1
-      },
-      {
-        itemCode: 301406,
         dropCount: 1
       },
       {
@@ -1783,14 +1469,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 302101,
         dropCount: 2
-      },
-      {
-        itemCode: 302102,
-        dropCount: 3
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401104,
@@ -1805,13 +1483,22 @@ export const areaData: AreaData[] = [
         dropCount: 3
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502102,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      301102,
+      302102,
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      205102,
+      502101,
+      301406,
+      301405
     ]
   },
   {
@@ -1830,15 +1517,7 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 109101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -1878,19 +1557,7 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 301104,
-        dropCount: 1
-      },
-      {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301113,
-        dropCount: 1
-      },
-      {
-        itemCode: 301405,
         dropCount: 1
       },
       {
@@ -1900,10 +1567,6 @@ export const areaData: AreaData[] = [
       {
         itemCode: 401101,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401106,
@@ -1926,13 +1589,18 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502102,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      108101,
+      112101,
+      301104,
+      401103,
+      301111,
+      502101,
+      301405
     ]
   },
   {
@@ -1960,19 +1628,11 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
         itemCode: 108102,
         dropCount: 2
       },
       {
         itemCode: 109101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -2020,16 +1680,8 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301407,
         dropCount: 1
-      },
-      {
-        itemCode: 302102,
-        dropCount: 3
       },
       {
         itemCode: 302104,
@@ -2040,21 +1692,21 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 401103,
-        dropCount: 1
-      },
-      {
         itemCode: 401117,
         dropCount: 2
-      },
-      {
-        itemCode: 502101,
-        dropCount: 1
       },
       {
         itemCode: 502103,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      302102,
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   },
   {
@@ -2080,14 +1732,6 @@ export const areaData: AreaData[] = [
       },
       {
         itemCode: 105103,
-        dropCount: 1
-      },
-      {
-        itemCode: 108101,
-        dropCount: 1
-      },
-      {
-        itemCode: 112101,
         dropCount: 1
       },
       {
@@ -2131,10 +1775,6 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 301111,
-        dropCount: 1
-      },
-      {
         itemCode: 301113,
         dropCount: 1
       },
@@ -2143,16 +1783,8 @@ export const areaData: AreaData[] = [
         dropCount: 1
       },
       {
-        itemCode: 302102,
-        dropCount: 3
-      },
-      {
         itemCode: 302108,
         dropCount: 2
-      },
-      {
-        itemCode: 401103,
-        dropCount: 1
       },
       {
         itemCode: 401107,
@@ -2163,10 +1795,6 @@ export const areaData: AreaData[] = [
         dropCount: 2
       },
       {
-        itemCode: 502101,
-        dropCount: 1
-      },
-      {
         itemCode: 502102,
         dropCount: 1
       },
@@ -2174,6 +1802,14 @@ export const areaData: AreaData[] = [
         itemCode: 502103,
         dropCount: 1
       }
+    ],
+    collectableItems: [
+      302102,
+      108101,
+      112101,
+      401103,
+      301111,
+      502101
     ]
   }
 ]

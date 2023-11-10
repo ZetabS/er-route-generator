@@ -1,7 +1,8 @@
 import { Inventory } from './Inventory';
 import { Area, Item } from '@/modules/api';
-import { calculateInventory, type CalculateResult, State } from './utils';
+import { calculateInventory, getSubItems, separateMaterialsByRequirement, State } from './utils';
 import { ItemPile } from '@/modules/plan/ItemPile';
+import { ItemGrade } from '@/modules/api/enums';
 
 export interface SeparatedMaterials {
   requiredMaterials: ItemPile;
@@ -10,38 +11,40 @@ export interface SeparatedMaterials {
 
 export class PlanState {
   public inventory: Inventory;
+  public craftedInventory: Inventory;
   public remainMaterials: ItemPile;
   public craftingItems: ItemPile;
 
-  constructor(inventory: Inventory, remainMaterials: ItemPile, craftingItems: ItemPile) {
+  constructor(
+    inventory: Inventory,
+    craftedInventory: Inventory,
+    remainMaterials: ItemPile,
+    craftingItems: ItemPile
+  ) {
     this.inventory = inventory.clone();
+    this.craftedInventory = craftedInventory.clone();
     this.remainMaterials = remainMaterials.clone();
     this.craftingItems = craftingItems.clone();
   }
 
   toString(): string {
-    return `State[inventory: ${this.inventory}, ` + `commonMaterials: ${this.remainMaterials}]`;
-  }
-
-  getMaterialsInArea(area: Area): ItemPile {
-    return this.remainMaterials.intersection(area.areaItems);
-  }
-
-  getSeparatedMaterialsByRequirement(area: Area, plannedAreas: Area[]): SeparatedMaterials {
-    const materialsInArea: ItemPile = this.getMaterialsInArea(area);
-    const plannedAreasItems: ItemPile = new ItemPile();
-    plannedAreas.forEach((area: Area) => {
-      area.areaItems.forEach((item: Item) => {
-        plannedAreasItems.add(item);
-      });
-    });
-    const requiredMaterials: ItemPile = materialsInArea.difference(plannedAreasItems);
-    const optionalMaterials: ItemPile = materialsInArea.intersection(plannedAreasItems);
-    return { requiredMaterials, optionalMaterials };
+    return (
+      'State[' +
+      `inventory: ${this.inventory}, ` +
+      `craftedInventory: ${this.craftedInventory}, ` +
+      `remainMaterials: ${this.remainMaterials}, ` +
+      `craftingItems: ${this.craftingItems}` +
+      ']'
+    );
   }
 
   clone(): PlanState {
-    return new PlanState(this.inventory, this.remainMaterials, this.craftingItems);
+    return new PlanState(
+      this.inventory,
+      this.craftedInventory,
+      this.remainMaterials,
+      this.craftingItems
+    );
   }
 }
 
@@ -58,57 +61,61 @@ export class Plan {
   }
 
   validate() {
-    let validState;
-    let invalidState;
-    const initialRemainMaterials: ItemPile = this.targetItems.reduce(
-      // 수집해야 하는 남은 아이템
-      (pile, item: Item): ItemPile => {
-        if (item.recipe) {
-          return pile.union(item.recipe.getCommonMaterials());
-        }
-        return pile;
-      },
-      new ItemPile()
+    const initialSubMaterials: ItemPile = getSubItems(this.targetItems);
+    const initialRemainMaterials: ItemPile = initialSubMaterials.filter(
+      (item: Item) => item.itemGrade === ItemGrade.Common
     );
 
-    const initialCraftingItems: ItemPile = this.targetItems // 만들어야 하는 아이템
-      .reduce((pile, item: Item): ItemPile => {
-        if (item.recipe) {
-          return pile.union(item.recipe.getSubMaterials());
-        }
-        return pile;
-      }, new ItemPile())
-      .difference(initialRemainMaterials);
+    const initialCraftingItems: ItemPile = initialSubMaterials.filter(
+      (item: Item) => item.itemGrade !== ItemGrade.Common
+    );
 
-    const planState = new PlanState(new Inventory(), initialRemainMaterials, initialCraftingItems);
+    const planState: PlanState = new PlanState(
+      new Inventory(),
+      new Inventory(),
+      initialRemainMaterials,
+      initialCraftingItems
+    );
 
     for (let routeNumber = 0; routeNumber < this.route.length; routeNumber++) {
       const currentArea: Area = this.route[routeNumber];
       const plannedAreas: Area[] = [...this.route.slice(routeNumber + 1, this.length)];
-      const materialsInArea = planState.getMaterialsInArea(currentArea);
-      const separatedMaterials: SeparatedMaterials = planState.getSeparatedMaterialsByRequirement(
+      const separatedMaterials: SeparatedMaterials = separateMaterialsByRequirement(
+        planState.remainMaterials,
         currentArea,
         plannedAreas
       );
-      const initialState = new State(
-        planState.inventory,
+
+      const initialState: State = new State(
+        planState.craftedInventory,
         separatedMaterials.requiredMaterials,
         planState.craftingItems
       );
-      const result: CalculateResult = calculateInventory(initialState, true);
 
-      if (!result.validState) {
+      const result: State = calculateInventory(initialState, false);
+      const craftedResult: State = calculateInventory(initialState, true);
+
+      if (!result || !craftedResult) {
         this._isValid = false;
         return;
       }
 
-      planState.inventory = result.validState.inventory;
+      planState.inventory = result.inventory;
+      planState.craftedInventory = craftedResult.inventory;
+      planState.remainMaterials = planState.remainMaterials.difference(
+        separatedMaterials.requiredMaterials
+      );
+      planState.craftingItems = craftedResult.craftingItems;
       this.planStates.push(planState.clone());
     }
   }
 
-  inventoryAt(n: number): Inventory {
-    return this.planStates[n].inventory;
+  inventoryAt(n: number, crafted: boolean = true): Inventory {
+    if (crafted) {
+      return this.planStates[n].craftedInventory;
+    } else {
+      return this.planStates[n].inventory;
+    }
   }
 
   get targetItems(): Item[] {
