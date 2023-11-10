@@ -1,4 +1,4 @@
-import { ITEM, Item } from '@/modules/api';
+import { ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
 import { ItemPile } from '@/modules/plan/ItemPile';
 
 describe('ItemPile', () => {
@@ -61,7 +61,7 @@ describe('ItemPile', () => {
     expect(pile1.merge(pile2).toString()).toBe(
       '[붕대(203102): 1.5, 꽃(205102): 0.5, 고철(401106): 1]'
     );
-    const targetItems = [ITEM['왕관'], ITEM['지휘관의 갑옷'], ITEM['황금']];
+    const targetItems = [ITEM_BY_NAME['왕관'], ITEM_BY_NAME['지휘관의 갑옷'], ITEM_BY_NAME['황금']];
 
     expect(
       targetItems

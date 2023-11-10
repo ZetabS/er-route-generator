@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { ITEM, Item, RECIPE } from '@/modules/api/Item';
+import { ITEM, Item, RECIPE, RECIPE_BY_NAME } from '@/modules/api/Item';
 
 const swordOfJustice: Item = ITEM[120302];
 const material1 = swordOfJustice.material1 as Item;
@@ -12,11 +12,8 @@ const needle = rapier.material1 as Item;
 const scrap = rapier.material2 as Item;
 
 test('new Recipe', () => {
-  const recipe1 = RECIPE['활빈검'];
+  const recipe1 = RECIPE_BY_NAME['활빈검'];
   const recipe2 = RECIPE[120302];
-  const recipe3 = RECIPE[swordOfJustice.toString()];
 
   expect(recipe1).toBe(recipe2);
-  expect(recipe1).toBe(recipe3);
-  expect(recipe2).toBe(recipe3);
 });

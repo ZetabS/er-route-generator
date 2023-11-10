@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest';
 import { Inventory } from '@/modules/plan/Inventory';
-import { Item, ITEM } from '@/modules/api';
+import { Item, ITEM, ITEM_BY_NAME } from '@/modules/api';
 
 const swordOfJustice: Item = ITEM[120302];
 const blooming = swordOfJustice.material1 as Item;
@@ -13,11 +13,11 @@ const needle = rapier.material1 as Item;
 const scrap = rapier.material2 as Item;
 
 const targetItems: Item[] = [
-  ITEM['활빈검'],
-  ITEM['지휘관의 갑옷'],
-  ITEM['제국 왕관'],
-  ITEM['드라우프니르'],
-  ITEM['SCV']
+  ITEM_BY_NAME['활빈검'],
+  ITEM_BY_NAME['지휘관의 갑옷'],
+  ITEM_BY_NAME['제국 왕관'],
+  ITEM_BY_NAME['드라우프니르'],
+  ITEM_BY_NAME['SCV']
 ];
 
 describe('Inventory', () => {

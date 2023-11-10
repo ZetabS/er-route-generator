@@ -1,6 +1,6 @@
 import { PlanState } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan';
-import { AREA, Area, ITEM, Item } from '@/modules/api';
+import { AREA, Area, AREA_BY_NAME, ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import {
   getSubItems,
@@ -22,11 +22,11 @@ describe('calculateInventory', () => {
   const scrap = rapier.material2 as Item;
 
   const targetItems: Item[] = [
-    ITEM['활빈검'],
-    ITEM['지휘관의 갑옷'],
-    ITEM['제국 왕관'],
-    ITEM['드라우프니르'],
-    ITEM['SCV']
+    ITEM_BY_NAME['활빈검'],
+    ITEM_BY_NAME['지휘관의 갑옷'],
+    ITEM_BY_NAME['제국 왕관'],
+    ITEM_BY_NAME['드라우프니르'],
+    ITEM_BY_NAME['SCV']
   ];
 
   test('calculateInventory', () => {
@@ -45,8 +45,8 @@ describe('calculateInventory', () => {
       initialRemainMaterials,
       initialCraftingItems
     );
-    const currentArea: Area = AREA['병원'];
-    const plannedArea: Area[] = [AREA['고급 주택가'], AREA['숲']];
+    const currentArea: Area = AREA_BY_NAME['병원'];
+    const plannedArea: Area[] = [AREA_BY_NAME['고급 주택가'], AREA_BY_NAME['숲']];
 
     const separatedMaterials: SeparatedMaterials = separateMaterialsByRequirement(
       planState.remainMaterials,
