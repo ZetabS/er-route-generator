@@ -95,10 +95,10 @@ function craftItem(stack: State[], state: State): boolean {
     if (state.inventory.has(material1) && state.inventory.has(material2)) {
       nextState.inventory.remove(material1);
       nextState.inventory.remove(material2);
-    } else if (state.inventory.has(material1) && state.remainMaterials.includes(material2)) {
+    } else if (state.inventory.has(material1) && state.remainMaterials.has(material2)) {
       nextState.inventory.remove(material1);
       nextState.remainMaterials.remove(material2);
-    } else if (state.remainMaterials.includes(material1) && state.inventory.has(material2)) {
+    } else if (state.remainMaterials.has(material1) && state.inventory.has(material2)) {
       nextState.remainMaterials.remove(material1);
       nextState.inventory.remove(material2);
     } else {

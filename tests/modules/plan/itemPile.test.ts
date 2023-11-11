@@ -45,12 +45,12 @@ describe('ItemPile', () => {
     expect(pile.toString()).toBe('[꽃(205102): 3, 고철(401106): 2]');
   });
 
-  test('includes', () => {
+  test('has', () => {
     const pile = new ItemPile();
     pile.add(flower, 3);
     pile.add(scrap, 2);
-    expect(pile.includes(flower)).toBe(true);
-    expect(pile.includes(scrap)).toBe(true);
+    expect(pile.has(flower)).toBe(true);
+    expect(pile.has(scrap)).toBe(true);
   });
 
   test('merge', () => {

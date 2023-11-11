@@ -111,8 +111,8 @@ export class ItemPile {
     return this.data[item.code];
   }
 
-  public includes(item: Item): boolean {
-    return !!this.data[item.code];
+  public has(item: Item, quantity: number = 1): boolean {
+    return !!this.data[item.code] && this.data[item.code] >= quantity;
   }
 
   public union(otherPile: ItemPile): ItemPile {
