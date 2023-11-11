@@ -53,8 +53,14 @@ export class Area {
     return itemPile;
   }
 
-  get collectableItems(): Item[] {
-    return this.data.collectableItems.map((itemCode: number) => ITEM[itemCode]);
+  get collectableItems(): ItemPile {
+    const itemPile = new ItemPile();
+
+    for (const itemCode of this.data.collectableItems) {
+      itemPile.add(ITEM[itemCode], 4);
+    }
+
+    return itemPile;
   }
 }
 
