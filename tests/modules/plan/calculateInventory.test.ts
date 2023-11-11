@@ -3,6 +3,7 @@ import { Inventory } from '@/modules/plan';
 import { AREA, Area, AREA_BY_NAME, ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import {
+  getState,
   getSubItems,
   type SeparatedMaterials,
   separateMaterialsByRequirement
@@ -46,30 +47,29 @@ describe('calculateInventory', () => {
       initialCraftingItems
     );
     const currentArea: Area = AREA_BY_NAME['병원'];
-    const plannedArea: Area[] = [AREA_BY_NAME['고급 주택가'], AREA_BY_NAME['숲']];
+    const plannedAreas: Area[] = [AREA_BY_NAME['고급 주택가'], AREA_BY_NAME['숲']];
 
-    const separatedMaterials: SeparatedMaterials = separateMaterialsByRequirement(
-      planState.remainMaterials,
-      currentArea,
-      plannedArea
+    const initialState = getState(planState, currentArea, plannedAreas);
+
+    const [result, canBeInvalidByInsertOrder]: [State | undefined, boolean] = calculateInventory(
+      initialState,
+      false
     );
 
-    const initialState: State = new State(
-      planState.craftedInventory,
-      separatedMaterials.requiredMaterials,
-      planState.craftingItems
+    expect(result?.inventory.toString()).toBe(
+      `Inventory[
+Slot: [Slot 6: 가위(101101): 1, Slot 7: 붕대(203102): 1, Slot 8: 가죽(401103): 2, Slot 9: 고철(401106): 1, Slot 10: 배터리(401110): 1],
+Equipment: [Weapon: 바늘(120101), Chest: Empty, Head: Empty, Arm: 붕대(203102), Leg: Empty]
+]`
     );
 
-    const result: State = calculateInventory(initialState, false);
-
-    expect(result.inventory.toString()).toBe(
-      `Inventory: [Slot 6: 가위(101101): 1, Slot 7: 붕대(203102): 1, Slot 8: 가죽(401103): 2, Slot 9: 고철(401106): 1, Slot 10: 배터리(401110): 1], Equipment: [Weapon: 바늘(120101), Chest: Empty, Head: Empty, Arm: 붕대(203102), Leg: Empty]`
-    );
-
-    const craftedResult: State = calculateInventory(initialState, true);
-
-    expect(craftedResult.inventory.toString()).toBe(
-      `Inventory: [Slot 7: 가위(101101): 1, Slot 8: 붕대(203102): 1, Slot 9: 가죽(401103): 1, Slot 10: 배터리(401110): 1], Equipment: [Weapon: 레이피어(120201), Chest: Empty, Head: Empty, Arm: 브레이서(203203), Leg: Empty]`
+    const [craftedResult]: [State | undefined, boolean] = calculateInventory(initialState, true);
+    console.log(craftedResult?.toString());
+    expect(craftedResult?.inventory.toString()).toBe(
+      `Inventory[
+Slot: [Slot 7: 가위(101101): 1, Slot 8: 붕대(203102): 1, Slot 9: 가죽(401103): 1, Slot 10: 배터리(401110): 1],
+Equipment: [Weapon: 레이피어(120201), Chest: Empty, Head: Empty, Arm: 브레이서(203203), Leg: Empty]
+]`
     );
   });
 });

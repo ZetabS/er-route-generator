@@ -63,7 +63,12 @@ export class Inventory {
       []
     );
 
-    return `Inventory: [${slotStrings.join(', ')}], Equipment: [${equipmentStrings.join(', ')}]`;
+    return (
+      `Inventory[\n` +
+      `Slot: [${slotStrings.join(', ')}],\n` +
+      `Equipment: [${equipmentStrings.join(', ')}]\n` +
+      `]`
+    );
   }
 
   add(item: Item, quantity: number = 1): boolean {

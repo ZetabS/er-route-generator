@@ -1,9 +1,7 @@
 import { Inventory } from './Inventory';
-import { Area, Item } from '@/modules/api';
-import { getSubItems, type SeparatedMaterials, separateMaterialsByRequirement } from './utils';
+import type { Area, Item } from '@/modules/api';
 import { ItemPile } from '@/modules/plan/ItemPile';
-import { ItemGrade } from '@/modules/api/enums';
-import { calculateInventory, State } from '@/modules/plan/calculateInventory';
+import { validatePlan } from '@/modules/plan/ValidatePlan';
 
 export class PlanState {
   public inventory: Inventory;
@@ -25,11 +23,11 @@ export class PlanState {
 
   toString(): string {
     return (
-      'State[' +
-      `inventory: ${this.inventory}, ` +
-      `craftedInventory: ${this.craftedInventory}, ` +
-      `remainMaterials: ${this.remainMaterials}, ` +
-      `craftingItems: ${this.craftingItems}` +
+      'PlanState[\n' +
+      `inventory: ${this.inventory},\n` +
+      `craftedInventory: ${this.craftedInventory},\n` +
+      `remainMaterials: ${this.remainMaterials},\n` +
+      `craftingItems: ${this.craftingItems}\n` +
       ']'
     );
   }
@@ -53,70 +51,10 @@ export class Plan {
   constructor(route: Area[], targetItems: Item[]) {
     this._route = [...route];
     this._targetItems = [...targetItems];
-    this.validate();
+    [this.planStates, this._isValid] = validatePlan(targetItems, route);
   }
 
-  validate() {
-    const initialSubMaterials: ItemPile = getSubItems(this.targetItems);
-    const initialRemainMaterials: ItemPile = initialSubMaterials.filter(
-      (item: Item) => item.itemGrade === ItemGrade.Common
-    );
-
-    const initialCraftingItems: ItemPile = initialSubMaterials.filter(
-      (item: Item) => item.itemGrade !== ItemGrade.Common
-    );
-
-    const allAreaItems: ItemPile = this._route.reduce(
-      (result: ItemPile, area: Area) => result.merge(area.areaItems),
-      new ItemPile()
-    );
-
-    if (initialRemainMaterials.some((item, quantity) => !allAreaItems.has(item, quantity))) {
-      this._isValid = false;
-      return;
-    }
-
-    const planState: PlanState = new PlanState(
-      new Inventory(),
-      new Inventory(),
-      initialRemainMaterials,
-      initialCraftingItems
-    );
-
-    for (let routeNumber = 0; routeNumber < this._route.length; routeNumber++) {
-      const currentArea: Area = this._route[routeNumber];
-      const plannedAreas: Area[] = [...this._route.slice(routeNumber + 1, this.length)];
-      const separatedMaterials: SeparatedMaterials = separateMaterialsByRequirement(
-        planState.remainMaterials,
-        currentArea,
-        plannedAreas
-      );
-
-      const initialState: State = new State(
-        planState.craftedInventory,
-        separatedMaterials.requiredMaterials,
-        planState.craftingItems
-      );
-
-      const result: State = calculateInventory(initialState, false);
-      const craftedResult: State = calculateInventory(initialState, true);
-
-      if (!result || !craftedResult) {
-        this._isValid = false;
-        return;
-      }
-
-      planState.inventory = result.inventory;
-      planState.craftedInventory = craftedResult.inventory;
-      planState.remainMaterials = planState.remainMaterials.difference(
-        separatedMaterials.requiredMaterials
-      );
-      planState.craftingItems = craftedResult.craftingItems;
-      this.planStates.push(planState.clone());
-    }
-  }
-
-  inventoryAt(n: number, crafted: boolean = true): Inventory {
+  public inventoryAt(n: number, crafted: boolean = true): Inventory {
     if (crafted) {
       return this.planStates[n]?.craftedInventory;
     } else {
@@ -124,23 +62,23 @@ export class Plan {
     }
   }
 
-  append(area: Area) {
+  public append(area: Area) {
     this._route.push(area);
   }
 
-  get route(): Area[] {
+  public get route(): Area[] {
     return this._route;
   }
 
-  get targetItems(): Item[] {
+  public get targetItems(): Item[] {
     return this._targetItems;
   }
 
-  get length(): number {
+  public get length(): number {
     return this._route.length;
   }
 
-  get isValid(): boolean {
+  public get isValid(): boolean {
     return this._isValid;
   }
 }

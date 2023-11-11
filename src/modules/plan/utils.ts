@@ -1,5 +1,7 @@
 import { Area, Item } from '@/modules/api';
 import { ItemPile } from '@/modules/plan/ItemPile';
+import { State } from '@/modules/plan/calculateInventory';
+import type { PlanState } from '@/modules/plan/Plan';
 
 export function getSubItems(targetItems: Item[]) {
   return targetItems.reduce((itemPile: ItemPile, item: Item) => {
@@ -13,16 +15,9 @@ export function getSubItems(targetItems: Item[]) {
 }
 
 export function getMaterialsInArea(remainMaterials: ItemPile, area: Area): ItemPile {
-  return remainMaterials.intersection(area.areaItems);
-}
-
-export function getCollectableItems(remainMaterials: ItemPile, area: Area): ItemPile {
-  return area.collectableItems
-    .reduce((result: ItemPile, item) => {
-      result.add(item, 10);
-      return result;
-    }, new ItemPile())
-    .intersection(remainMaterials);
+  return remainMaterials
+    .intersection(area.areaItems)
+    .merge(remainMaterials.intersection(area.collectableItems));
 }
 
 export interface SeparatedMaterials {
@@ -35,17 +30,27 @@ export function separateMaterialsByRequirement(
   area: Area,
   plannedAreas: Area[]
 ): SeparatedMaterials {
-  const collectableItems: ItemPile = getCollectableItems(remainMaterials, area);
-  const materialsInArea: ItemPile = getMaterialsInArea(remainMaterials, area).merge(
-    collectableItems
-  );
-  const plannedAreasItems: ItemPile = new ItemPile();
-  plannedAreas.reduce(
-    (result: ItemPile, area: Area) =>
-      result.merge(area.areaItems).merge(getCollectableItems(remainMaterials, area)),
+  const materialsInArea: ItemPile = getMaterialsInArea(remainMaterials, area);
+  const plannedAreasItems: ItemPile = plannedAreas.reduce(
+    (result: ItemPile, area: Area) => result.merge(area.areaItems).merge(area.collectableItems),
     new ItemPile()
   );
   const requiredMaterials: ItemPile = materialsInArea.difference(plannedAreasItems);
   const optionalMaterials: ItemPile = materialsInArea.intersection(plannedAreasItems);
   return { requiredMaterials, optionalMaterials };
+}
+
+export function getState(planState: PlanState, area: Area, plannedAreas: Area[]): State {
+  const separatedMaterials: SeparatedMaterials = separateMaterialsByRequirement(
+    planState.remainMaterials,
+    area,
+    plannedAreas
+  );
+
+  return new State(
+    planState.craftedInventory,
+    separatedMaterials.requiredMaterials,
+    separatedMaterials.optionalMaterials,
+    planState.craftingItems
+  );
 }

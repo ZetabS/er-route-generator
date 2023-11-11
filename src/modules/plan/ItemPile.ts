@@ -26,6 +26,18 @@ export class ItemPile {
     return array;
   }
 
+  public get length(): number {
+    return Object.keys(this).length;
+  }
+
+  public get count(): number {
+    let count = 0;
+    for (const [, quantity] of Object.entries(this.data)) {
+      count += quantity;
+    }
+    return count;
+  }
+
   public forEach(callback: (item: Item, quantity: number) => void) {
     for (const [itemCode, quantity] of Object.entries(this.data)) {
       callback(ITEM[itemCode], quantity);
@@ -174,7 +186,7 @@ export class ItemPile {
     return unionResult.difference(intersectionResult);
   }
 
-  isEmpty() {
+  public isEmpty() {
     return Object.keys(this.data).length === 0;
   }
 }
