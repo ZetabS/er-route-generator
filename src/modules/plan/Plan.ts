@@ -46,12 +46,12 @@ export class PlanState {
 
 export class Plan {
   private readonly _targetItems: Item[];
-  private readonly route: Area[] = [];
+  private _route: Area[] = [];
   private planStates: PlanState[] = [];
   private _isValid: boolean = true;
 
   constructor(route: Area[], targetItems: Item[]) {
-    this.route = [...route];
+    this._route = [...route];
     this._targetItems = [...targetItems];
     this.validate();
   }
@@ -73,9 +73,9 @@ export class Plan {
       initialCraftingItems
     );
 
-    for (let routeNumber = 0; routeNumber < this.route.length; routeNumber++) {
-      const currentArea: Area = this.route[routeNumber];
-      const plannedAreas: Area[] = [...this.route.slice(routeNumber + 1, this.length)];
+    for (let routeNumber = 0; routeNumber < this._route.length; routeNumber++) {
+      const currentArea: Area = this._route[routeNumber];
+      const plannedAreas: Area[] = [...this._route.slice(routeNumber + 1, this.length)];
       const separatedMaterials: SeparatedMaterials = separateMaterialsByRequirement(
         planState.remainMaterials,
         currentArea,
@@ -114,12 +114,20 @@ export class Plan {
     }
   }
 
+  append(area: Area) {
+    this._route.push(area);
+  }
+
+  get route(): Area[] {
+    return this._route;
+  }
+
   get targetItems(): Item[] {
     return this._targetItems;
   }
 
   get length(): number {
-    return this.route.length;
+    return this._route.length;
   }
 
   get isValid(): boolean {
