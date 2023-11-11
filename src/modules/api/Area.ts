@@ -46,9 +46,9 @@ export class Area {
   get areaItems(): ItemPile {
     const itemPile = new ItemPile();
 
-    this.data.itemSpawns.forEach((itemSpawn: ItemSpawnData) => {
+    for (const itemSpawn of this.data.itemSpawns) {
       itemPile.add(ITEM[itemSpawn.itemCode], itemSpawn.dropCount);
-    });
+    }
 
     return itemPile;
   }
