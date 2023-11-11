@@ -48,4 +48,9 @@ describe('Plan', () => {
     expect(plan.inventoryAt(1).toArray().sort()).toStrictEqual([bandage, blooming].sort());
     expect(plan.inventoryAt(2).toArray().sort()).toStrictEqual([swordOfJustice].sort());
   });
+
+  test('empty route', () => {
+    const plan = new Plan([], [swordOfJustice]);
+    expect(plan.inventoryAt(0)).toBeUndefined();
+  });
 });

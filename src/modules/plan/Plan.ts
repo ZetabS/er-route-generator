@@ -66,6 +66,16 @@ export class Plan {
       (item: Item) => item.itemGrade !== ItemGrade.Common
     );
 
+    const allAreaItems: ItemPile = this._route.reduce(
+      (result: ItemPile, area: Area) => result.merge(area.areaItems),
+      new ItemPile()
+    );
+
+    if (initialRemainMaterials.some((item, quantity) => !allAreaItems.has(item, quantity))) {
+      this._isValid = false;
+      return;
+    }
+
     const planState: PlanState = new PlanState(
       new Inventory(),
       new Inventory(),
@@ -108,9 +118,9 @@ export class Plan {
 
   inventoryAt(n: number, crafted: boolean = true): Inventory {
     if (crafted) {
-      return this.planStates[n].craftedInventory;
+      return this.planStates[n]?.craftedInventory;
     } else {
-      return this.planStates[n].inventory;
+      return this.planStates[n]?.inventory;
     }
   }
 
