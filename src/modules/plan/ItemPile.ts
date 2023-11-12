@@ -44,6 +44,28 @@ export class ItemPile {
     }
   }
 
+  public [Symbol.iterator](): Iterator<[Item, number]> {
+    let index = 0;
+    const entries: [string, number][] = Object.entries(this.data);
+
+    return {
+      next: (): IteratorResult<[Item, number]> => {
+        if (index < entries.length) {
+          const item = ITEM[entries[index][0]];
+          return {
+            value: [item, entries[index++][1]],
+            done: false
+          };
+        } else {
+          return {
+            value: undefined as any,
+            done: true
+          };
+        }
+      }
+    };
+  }
+
   public every(callback: (item: Item, quantity: number) => boolean): boolean {
     for (const [itemCode, quantity] of Object.entries(this.data)) {
       for (let i = 0; i < quantity; i++) {
