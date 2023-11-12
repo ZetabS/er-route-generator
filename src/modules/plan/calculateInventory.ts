@@ -7,17 +7,20 @@ export class State {
   public remainRequiredMaterials: ItemPile;
   public remainOptionalMaterials: ItemPile;
   public craftingItems: ItemPile;
+  public addedItems: ItemPile;
 
   constructor(
     inventory: Inventory,
     remainRequiredMaterials: ItemPile,
     remainOptionalMaterials: ItemPile,
-    craftingItems: ItemPile
+    craftingItems: ItemPile,
+    addedItems: ItemPile
   ) {
     this.inventory = inventory.clone();
     this.remainRequiredMaterials = remainRequiredMaterials.clone();
     this.remainOptionalMaterials = remainOptionalMaterials.clone();
     this.craftingItems = craftingItems.clone();
+    this.addedItems = addedItems.clone();
   }
 
   toString(): string {
@@ -36,7 +39,8 @@ export class State {
       this.inventory,
       this.remainRequiredMaterials,
       this.remainOptionalMaterials,
-      this.craftingItems
+      this.craftingItems,
+      this.addedItems
     );
   }
 }
@@ -47,18 +51,19 @@ export function calculateInventory(
 ): [State | undefined, boolean] {
   let result: State | undefined;
   let canBeInvalidByInsertOrder = false;
-  const memoizationTable: Map<string, State> = new Map();
+  const memoizationTable: Record<string, boolean> = {};
   const stack: State[] = [];
 
   stack.push(initialState);
 
   while (stack.length > 0) {
     const state: State | undefined = stack.pop() as State;
+    const stateString = state.addedItems.hashCode();
 
-    if (memoizationTable.has(state.toString())) {
+    if (memoizationTable[stateString]) {
       continue;
     } else {
-      memoizationTable.set(state.toString(), state);
+      memoizationTable[stateString] = true;
     }
 
     if (craftFirst) {
@@ -103,6 +108,7 @@ function addItem(stack: State[], state: State): boolean {
 
         nextState.remainRequiredMaterials.remove(material);
         nextState.inventory.add(material);
+        nextState.addedItems.add(material);
         stack.push(nextState);
         found = true;
       }
@@ -116,6 +122,7 @@ function addItem(stack: State[], state: State): boolean {
 
         nextState.remainOptionalMaterials.remove(material);
         nextState.inventory.add(material);
+        nextState.addedItems.add(material);
         stack.push(nextState);
         found = true;
       }
@@ -170,6 +177,10 @@ function craftItem(stack: State[], state: State): boolean {
     );
 
     nextState.inventory.add(
+      craftingItem,
+      Math.min(craftingItem.initialCount, Math.max(quantity, 1))
+    );
+    nextState.addedItems.add(
       craftingItem,
       Math.min(craftingItem.initialCount, Math.max(quantity, 1))
     );

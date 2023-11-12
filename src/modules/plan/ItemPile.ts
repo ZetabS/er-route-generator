@@ -16,6 +16,10 @@ export class ItemPile {
     return `[${itemsString}]`;
   }
 
+  public hashCode(): number {
+    return Object.entries(this.data).reduce((n, [k, v]) => n + (parseInt(k) * 101 + v), 0);
+  }
+
   public toArray(): Item[] {
     const array: Item[] = [];
     for (const [itemCode, quantity] of Object.entries(this.data)) {

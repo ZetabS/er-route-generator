@@ -49,6 +49,7 @@ export function getState(planState: PlanState, area: Area, plannedAreas: Area[])
     planState.craftedInventory,
     separatedMaterials.requiredMaterials,
     separatedMaterials.optionalMaterials,
-    planState.craftingItems
+    planState.craftingItems,
+    new ItemPile()
   );
 }
