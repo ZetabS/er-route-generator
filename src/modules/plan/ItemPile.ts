@@ -149,6 +149,15 @@ export class ItemPile {
     return !!this.data[item.code] && this.data[item.code] >= quantity;
   }
 
+  public includesAll(otherPile: ItemPile): boolean {
+    for (const [item, quantity] of this) {
+      if (!otherPile.has(item, quantity)) {
+        return false;
+      }
+    }
+    return true;
+  }
+
   public union(otherPile: ItemPile): ItemPile {
     const unionData: Record<number, number> = { ...this.data };
 
