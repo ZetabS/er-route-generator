@@ -940,8 +940,7 @@ export const areaData: AreaData[] = [
       3,
       8,
       10,
-      19,
-      100
+      19
     ],
     itemSpawns: [
       {
@@ -1314,8 +1313,7 @@ export const areaData: AreaData[] = [
       3,
       12,
       17,
-      18,
-      100
+      18
     ],
     itemSpawns: [
       {
@@ -1406,8 +1404,7 @@ export const areaData: AreaData[] = [
       6,
       9,
       18,
-      19,
-      100
+      19
     ],
     itemSpawns: [
       {
@@ -1718,8 +1715,7 @@ export const areaData: AreaData[] = [
       9,
       11,
       14,
-      16,
-      100
+      16
     ],
     itemSpawns: [
       {
