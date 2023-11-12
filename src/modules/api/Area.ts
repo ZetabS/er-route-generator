@@ -50,6 +50,20 @@ export class Area {
       itemPile.add(ITEM[itemSpawn.itemCode], itemSpawn.dropCount);
     }
 
+    for (const itemCode of this.data.collectableItems) {
+      itemPile.add(ITEM[itemCode], 4);
+    }
+
+    return itemPile;
+  }
+
+  get nonCollectableItems(): ItemPile {
+    const itemPile = new ItemPile();
+
+    for (const itemSpawn of this.data.itemSpawns) {
+      itemPile.add(ITEM[itemSpawn.itemCode], itemSpawn.dropCount);
+    }
+
     return itemPile;
   }
 

@@ -15,9 +15,7 @@ export function getSubItems(targetItems: Item[]) {
 }
 
 export function getMaterialsInArea(remainMaterials: ItemPile, area: Area): ItemPile {
-  return remainMaterials
-    .intersection(area.areaItems)
-    .merge(remainMaterials.intersection(area.collectableItems));
+  return remainMaterials.intersection(area.areaItems);
 }
 
 export interface SeparatedMaterials {
@@ -32,7 +30,7 @@ export function separateMaterialsByRequirement(
 ): SeparatedMaterials {
   const materialsInArea: ItemPile = getMaterialsInArea(remainMaterials, area);
   const plannedAreasItems: ItemPile = plannedAreas.reduce(
-    (result: ItemPile, area: Area) => result.merge(area.areaItems).merge(area.collectableItems),
+    (result: ItemPile, area: Area) => result.merge(area.areaItems),
     new ItemPile()
   );
   const requiredMaterials: ItemPile = materialsInArea.difference(plannedAreasItems);

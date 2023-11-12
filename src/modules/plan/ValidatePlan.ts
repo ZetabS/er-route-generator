@@ -19,7 +19,7 @@ export function validatePlan(targetItems: Item[], _route: Area[]): [PlanState[],
   );
 
   const allAreaItems: ItemPile = _route.reduce(
-    (result: ItemPile, area: Area) => result.merge(area.areaItems).merge(area.collectableItems),
+    (result: ItemPile, area: Area) => result.merge(area.areaItems),
     new ItemPile()
   );
 
