@@ -91,6 +91,8 @@ describe('ItemPile', () => {
     const pile1 = new ItemPile();
     pile1.add(flower, 3);
     pile1.add(scrap, 2);
+    pile1.add(bandage, 2);
+    pile1.add(robe, 2);
 
     const pile2 = new ItemPile();
     pile2.add(flower, 2);
