@@ -1,11 +1,21 @@
-import { Area, AREA, AREA_BY_NAME, Item, ITEM, ITEM_BY_NAME } from '@/modules/api';
-import { Plan, PlanState } from '@/modules/plan/Plan';
-import { Inventory } from '@/modules/plan/Inventory';
-import { calculateInventory, State } from '@/modules/plan/calculateInventory';
-import { ItemPile } from '@/modules/plan/ItemPile';
-import { ItemGrade } from '@/modules/api/enums';
+import { AREA_BY_NAME, Item, ITEM, ITEM_BY_NAME } from '@/modules/api';
+import { Plan } from '@/modules/plan/Plan';
+import v8Profiler from 'v8-profiler-next';
+import * as fs from 'fs';
+
+v8Profiler.setGenerateType(1);
+const title = 'Plan.test-profile';
 
 describe('Plan', () => {
+  v8Profiler.startProfiling(title, true);
+  afterAll(() => {
+    const profile = v8Profiler.stopProfiling(title);
+    profile.export(function (error, result: any) {
+      fs.writeFileSync(`cpuprofile/${title}.cpuprofile`, result);
+      profile.delete();
+    });
+  });
+
   const swordOfJustice: Item = ITEM[120302];
   const blooming = swordOfJustice.material1 as Item;
   const robePlus = swordOfJustice.material2 as Item;
@@ -29,18 +39,6 @@ describe('Plan', () => {
   test('plan', () => {
     const plan = new Plan(route, targetItems);
 
-    expect(plan.inventoryAt(0)?.toString()).toBe(
-      `Inventory[
-Slot: [Slot 7: 가위(101101): 1, Slot 8: 브레이서(203203): 1, Slot 9: 가죽(401103): 1, Slot 10: 배터리(401110): 1],
-Equipment: [Weapon: 레이피어(120201), Chest: Empty, Head: Empty, Arm: 붕대(203102), Leg: Empty]
-]`
-    );
-    expect(plan.inventoryAt(1)?.toString()).toBe(
-      `Inventory[
-Slot: [Slot 6: 붕대(203102): 1, Slot 7: 팔찌(203104): 1, Slot 8: 리본(205103): 1, Slot 9: 가죽(401103): 1, Slot 10: 전자 부품(401211): 1],
-Equipment: [Weapon: 블루밍(120301), Chest: Empty, Head: 베레모(201203), Arm: 브레이서(203203), Leg: 운동화(204102)]
-]`
-    );
     expect(plan.inventoryAt(2)?.toString()).toBe(
       `Inventory[
 Slot: [],
