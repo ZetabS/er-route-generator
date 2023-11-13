@@ -1,15 +1,20 @@
 import { ITEM, Item } from '@/modules/api';
 
 export class ItemPile {
-  private data: Record<number, number> = {};
+  private data: Map<Item, number> = new Map<Item, number>();
 
   constructor(...items: Item[]) {
     items.forEach((item) => this.add(item));
   }
 
   public toString(): string {
-    const itemsString = Object.entries(this.data)
-      .sort(([a], [b]) => parseInt(a) - parseInt(b))
+    const entries: [number, number][] = [];
+    for (const [item, quantity] of this.data.entries()) {
+      entries.push([item.code, quantity]);
+    }
+
+    const itemsString = entries
+      .sort(([a], [b]) => a - b)
       .map(([itemCode, quantity]) => `${ITEM[itemCode]}: ${quantity}`)
       .join(', ');
 
@@ -17,63 +22,51 @@ export class ItemPile {
   }
 
   public hashCode(): number {
-    return Object.entries(this.data).reduce((n, [k, v]) => n + (parseInt(k) * 101 + v), 0);
+    let hash = 0;
+
+    for (const [item, quantity] of this.data.entries()) {
+      hash += item.code * 101 + quantity;
+    }
+
+    return hash;
   }
 
   public toArray(): Item[] {
     const array: Item[] = [];
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
+    for (const [item, quantity] of this.data.entries()) {
       for (let i = 0; i < quantity; i++) {
-        array.push(ITEM[itemCode]);
+        array.push(item);
       }
     }
     return array;
   }
 
   public get length(): number {
-    return Object.keys(this).length;
+    return this.data.size;
   }
 
   public get count(): number {
     let count = 0;
-    for (const [, quantity] of Object.entries(this.data)) {
+    for (const quantity of this.data.values()) {
       count += quantity;
     }
     return count;
   }
 
   public forEach(callback: (item: Item, quantity: number) => void) {
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
-      callback(ITEM[itemCode], quantity);
+    for (const [item, quantity] of this.data.entries()) {
+      callback(item, quantity);
     }
   }
 
   public [Symbol.iterator](): Iterator<[Item, number]> {
-    let index = 0;
-    const entries: [string, number][] = Object.entries(this.data);
-
-    return {
-      next: (): IteratorResult<[Item, number]> => {
-        if (index < entries.length) {
-          const item = ITEM[entries[index][0]];
-          return {
-            value: [item, entries[index++][1]],
-            done: false
-          };
-        } else {
-          return {
-            value: undefined as any,
-            done: true
-          };
-        }
-      }
-    };
+    return this.data.entries();
   }
 
   public every(callback: (item: Item, quantity: number) => boolean): boolean {
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
+    for (const [item, quantity] of this.data.entries()) {
       for (let i = 0; i < quantity; i++) {
-        if (!callback(ITEM[itemCode], quantity)) {
+        if (!callback(item, quantity)) {
           return false;
         }
       }
@@ -82,9 +75,9 @@ export class ItemPile {
   }
 
   public some(callback: (item: Item, quantity: number) => boolean): boolean {
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
+    for (const [item, quantity] of this.data.entries()) {
       for (let i = 0; i < quantity; i++) {
-        if (callback(ITEM[itemCode], quantity)) {
+        if (callback(item, quantity)) {
           return true;
         }
       }
@@ -94,8 +87,7 @@ export class ItemPile {
 
   public filter(callback: (item: Item, quantity: number) => boolean) {
     const filteredPile = new ItemPile();
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
-      const item = ITEM[itemCode];
+    for (const [item, quantity] of this.data.entries()) {
       if (callback(item, quantity)) {
         filteredPile.add(item, quantity);
       }
@@ -105,8 +97,7 @@ export class ItemPile {
 
   public map(callback: (item: Item, quantity: number) => [Item, number]) {
     const mappedPile = new ItemPile();
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
-      const item = ITEM[itemCode];
+    for (const [item, quantity] of this.data.entries()) {
       mappedPile.add(...callback(item, quantity));
     }
     return mappedPile;
@@ -124,39 +115,43 @@ export class ItemPile {
 
   public clone(): ItemPile {
     const clonedPile = new ItemPile();
-    for (const itemCode in this.data) {
-      clonedPile.data[itemCode] = this.data[itemCode];
+    for (const [item, quantity] of this.data.entries()) {
+      clonedPile.data.set(item, quantity);
     }
     return clonedPile;
   }
 
   public add(item: Item, quantity: number = 1) {
-    if (this.data[item.code]) {
-      this.data[item.code] += quantity;
-    } else {
-      this.data[item.code] = quantity;
-    }
+    const prev = this.data.get(item);
+    this.data.set(item, (prev ? prev : 0) + quantity);
   }
 
   public remove(item: Item, quantity: number = 1) {
-    if (this.data[item.code]) {
-      this.data[item.code] -= quantity;
-      if (this.data[item.code] <= 0) {
-        delete this.data[item.code];
+    const prev = this.data.get(item);
+    if (prev) {
+      if (prev > quantity) {
+        this.data.set(item, prev - quantity);
+      } else {
+        this.data.delete(item);
       }
     }
   }
 
   public set(item: Item, quantity: number) {
-    this.data[item.code] = quantity;
+    if (quantity > 0) {
+      this.data.set(item, quantity);
+    } else {
+      this.data.delete(item);
+    }
   }
 
-  public get(item: Item): number {
-    return this.data[item.code];
+  public get(item: Item): number | undefined {
+    return this.data.get(item);
   }
 
   public has(item: Item, quantity: number = 1): boolean {
-    return !!this.data[item.code] && this.data[item.code] >= quantity;
+    const current = this.data.get(item);
+    return !!current && current >= quantity;
   }
 
   public includesAll(otherPile: ItemPile): boolean {
@@ -169,62 +164,56 @@ export class ItemPile {
   }
 
   public union(otherPile: ItemPile): ItemPile {
-    const unionData: Record<number, number> = { ...this.data };
+    const newPile = this.clone();
 
-    for (const [itemCode, quantity] of Object.entries(otherPile.data)) {
-      if (unionData[parseInt(itemCode)]) {
-        unionData[parseInt(itemCode)] = Math.max(unionData[parseInt(itemCode)], quantity);
+    for (const [item, quantity] of otherPile) {
+      const prev = newPile.get(item);
+      if (prev) {
+        newPile.set(item, Math.max(prev, quantity));
       } else {
-        unionData[parseInt(itemCode)] = quantity;
+        newPile.set(item, quantity);
       }
     }
-
-    const resultPile = new ItemPile();
-    resultPile.data = unionData;
-
-    return resultPile;
+    return newPile;
   }
 
   public intersection(otherPile: ItemPile): ItemPile {
-    const intersectionData: Record<number, number> = {};
+    const newPile = new ItemPile();
 
-    for (const [itemCode, quantity] of Object.entries(this.data)) {
-      if (otherPile.data[parseInt(itemCode)]) {
-        intersectionData[parseInt(itemCode)] = Math.min(
-          quantity,
-          otherPile.data[parseInt(itemCode)]
-        );
+    for (const [item, quantity] of this) {
+      const prev = otherPile.get(item);
+      if (prev) {
+        newPile.set(item, Math.min(prev, quantity));
       }
     }
-
-    const resultPile = new ItemPile();
-    resultPile.data = intersectionData;
-
-    return resultPile;
+    return newPile;
   }
 
   public difference(otherPile: ItemPile): ItemPile {
-    const differenceData: Record<number, number> = { ...this.data };
+    const newPile = this.clone();
 
-    for (const [itemCode, quantity] of Object.entries(otherPile.data)) {
-      if (differenceData[parseInt(itemCode)]) {
-        differenceData[parseInt(itemCode)] -= quantity;
-        if (differenceData[parseInt(itemCode)] <= 0) {
-          delete differenceData[parseInt(itemCode)];
-        }
+    for (const [item, quantity] of otherPile) {
+      const prev = newPile.get(item);
+      if (prev) {
+        newPile.set(item, Math.max(prev - quantity, 0));
       }
     }
-
-    const resultPile = new ItemPile();
-    resultPile.data = differenceData;
-
-    return resultPile;
+    return newPile;
   }
 
   public symmetricDifference(otherPile: ItemPile): ItemPile {
-    const unionResult = this.union(otherPile);
-    const intersectionResult = this.intersection(otherPile);
-    return unionResult.difference(intersectionResult);
+    const newPile = this.clone();
+
+    for (const [item, quantity] of otherPile) {
+      const prev = newPile.get(item);
+      if (prev) {
+        newPile.set(item, Math.abs(prev - quantity));
+      } else {
+        newPile.set(item, quantity);
+      }
+    }
+
+    return newPile;
   }
 
   public isEmpty() {
