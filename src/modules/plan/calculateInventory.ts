@@ -101,31 +101,27 @@ export function calculateInventory(
 function addItem(stack: State[], state: State): boolean {
   let found = false;
 
-  for (const [material, quantity] of state.remainRequiredMaterials) {
-    for (let i = 0; i < quantity; i++) {
-      if (state.inventory.canAdd(material)) {
-        const nextState: State = state.clone();
+  for (const [material] of state.remainRequiredMaterials) {
+    if (state.inventory.canAdd(material)) {
+      const nextState: State = state.clone();
 
-        nextState.remainRequiredMaterials.remove(material);
-        nextState.inventory.add(material);
-        nextState.addedItems.add(material);
-        stack.push(nextState);
-        found = true;
-      }
+      nextState.remainRequiredMaterials.remove(material);
+      nextState.inventory.add(material);
+      nextState.addedItems.add(material);
+      stack.push(nextState);
+      found = true;
     }
   }
 
-  for (const [material, quantity] of state.remainOptionalMaterials) {
-    for (let i = 0; i < quantity; i++) {
-      if (state.inventory.canAdd(material)) {
-        const nextState: State = state.clone();
+  for (const [material] of state.remainOptionalMaterials) {
+    if (state.inventory.canAdd(material)) {
+      const nextState: State = state.clone();
 
-        nextState.remainOptionalMaterials.remove(material);
-        nextState.inventory.add(material);
-        nextState.addedItems.add(material);
-        stack.push(nextState);
-        found = true;
-      }
+      nextState.remainOptionalMaterials.remove(material);
+      nextState.inventory.add(material);
+      nextState.addedItems.add(material);
+      stack.push(nextState);
+      found = true;
     }
   }
 
