@@ -114,13 +114,19 @@ export class ItemPile {
 
   public merge(...piles: ItemPile[]): ItemPile {
     const newItemPile = this.clone();
-    piles.forEach((pile) => pile.forEach((item, quantity) => newItemPile.add(item, quantity)));
+    for (const pile of piles) {
+      for (const [item, quantity] of pile) {
+        newItemPile.add(item, quantity);
+      }
+    }
     return newItemPile;
   }
 
   public clone(): ItemPile {
     const clonedPile = new ItemPile();
-    clonedPile.data = { ...this.data };
+    for (const itemCode in this.data) {
+      clonedPile.data[itemCode] = this.data[itemCode];
+    }
     return clonedPile;
   }
 

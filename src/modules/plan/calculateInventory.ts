@@ -101,7 +101,7 @@ export function calculateInventory(
 function addItem(stack: State[], state: State): boolean {
   let found = false;
 
-  state.remainRequiredMaterials.forEach((material: Item, quantity: number) => {
+  for (const [material, quantity] of state.remainRequiredMaterials) {
     for (let i = 0; i < quantity; i++) {
       if (state.inventory.canAdd(material)) {
         const nextState: State = state.clone();
@@ -113,9 +113,9 @@ function addItem(stack: State[], state: State): boolean {
         found = true;
       }
     }
-  });
+  }
 
-  state.remainOptionalMaterials.forEach((material: Item, quantity: number) => {
+  for (const [material, quantity] of state.remainOptionalMaterials) {
     for (let i = 0; i < quantity; i++) {
       if (state.inventory.canAdd(material)) {
         const nextState: State = state.clone();
@@ -127,14 +127,14 @@ function addItem(stack: State[], state: State): boolean {
         found = true;
       }
     }
-  });
+  }
 
   return found;
 }
 
 function craftItem(stack: State[], state: State): boolean {
   let found = false;
-  state.craftingItems.forEach((craftingItem: Item, quantity) => {
+  for (const [craftingItem, quantity] of state.craftingItems) {
     const material1: Item = craftingItem.material1 as Item; // Assume craftingItem always have material.
     const material2: Item = craftingItem.material2 as Item;
     const nextState: State = state.clone();
@@ -149,7 +149,7 @@ function craftItem(stack: State[], state: State): boolean {
       } else if (state.remainOptionalMaterials.has(material2)) {
         nextState.remainOptionalMaterials.remove(material2);
       } else {
-        return;
+        continue;
       }
     } else if (state.inventory.has(material2)) {
       nextState.inventory.remove(material2);
@@ -161,14 +161,14 @@ function craftItem(stack: State[], state: State): boolean {
       } else if (state.remainOptionalMaterials.has(material1)) {
         nextState.remainOptionalMaterials.remove(material1);
       } else {
-        return;
+        continue;
       }
     } else {
-      return;
+      continue;
     }
 
     if (!nextState.inventory.canAdd(craftingItem)) {
-      return;
+      continue;
     }
 
     nextState.craftingItems.remove(
@@ -187,7 +187,7 @@ function craftItem(stack: State[], state: State): boolean {
 
     stack.push(nextState);
     found = true;
-  });
+  }
 
   return found;
 }
