@@ -57,7 +57,7 @@ export function calculateInventory(
   stack.push(initialState);
 
   while (stack.length > 0) {
-    const state: State | undefined = stack.pop() as State;
+    const state: State = stack.pop() as State;
     const stateString = state.addedItems.hashCode();
 
     if (memoizationTable[stateString]) {
@@ -167,19 +167,11 @@ function craftItem(stack: State[], state: State): boolean {
       continue;
     }
 
-    nextState.craftingItems.remove(
-      craftingItem,
-      Math.min(craftingItem.initialCount, Math.max(quantity, 1))
-    );
+    const calculatedQuantity = Math.min(craftingItem.initialCount, Math.max(quantity, 1));
+    nextState.craftingItems.remove(craftingItem, calculatedQuantity);
 
-    nextState.inventory.add(
-      craftingItem,
-      Math.min(craftingItem.initialCount, Math.max(quantity, 1))
-    );
-    nextState.addedItems.add(
-      craftingItem,
-      Math.min(craftingItem.initialCount, Math.max(quantity, 1))
-    );
+    nextState.inventory.add(craftingItem, calculatedQuantity);
+    nextState.addedItems.add(craftingItem, calculatedQuantity);
 
     stack.push(nextState);
     found = true;
