@@ -67,8 +67,8 @@ Equipment: [Weapon: 바늘(120101), Chest: Empty, Head: Empty, Arm: 붕대(20310
     console.log(craftedResult?.toString());
     expect(craftedResult?.inventory.toString()).toBe(
       `Inventory[
-Slot: [Slot 7: 가위(101101): 1, Slot 8: 붕대(203102): 1, Slot 9: 가죽(401103): 1, Slot 10: 배터리(401110): 1],
-Equipment: [Weapon: 레이피어(120201), Chest: Empty, Head: Empty, Arm: 브레이서(203203), Leg: Empty]
+Slot: [Slot 7: 가위(101101): 1, Slot 8: 브레이서(203203): 1, Slot 9: 가죽(401103): 1, Slot 10: 배터리(401110): 1],
+Equipment: [Weapon: 레이피어(120201), Chest: Empty, Head: Empty, Arm: 붕대(203102), Leg: Empty]
 ]`
     );
   });
