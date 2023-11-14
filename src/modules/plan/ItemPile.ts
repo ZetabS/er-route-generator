@@ -31,7 +31,7 @@ export class ItemPile {
   }
 
   public get length(): number {
-    return Object.keys(this).length;
+    return Object.keys(this.data).length;
   }
 
   public get count(): number {
