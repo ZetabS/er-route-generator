@@ -19,6 +19,40 @@ describe('ItemPile', () => {
     expect(pile2.toString()).toBe('[꽃(205102): 1]');
   });
 
+  test('hashCode', () => {
+    const pile1 = new ItemPile();
+    const pile2 = new ItemPile(flower);
+    expect(pile1.hashCode() === pile2.hashCode()).toBeFalsy();
+  });
+
+  test('length', () => {
+    const pile = new ItemPile();
+    expect(pile.length).toBe(0);
+    pile.add(flower);
+    expect(pile.length).toBe(1);
+    pile.add(flower);
+    expect(pile.length).toBe(1);
+  });
+
+  test('count', () => {
+    const pile = new ItemPile();
+    expect(pile.count).toBe(0);
+    pile.add(flower);
+    expect(pile.count).toBe(1);
+    pile.add(flower);
+    expect(pile.count).toBe(2);
+  });
+
+  test('filter', () => {
+    const pile = new ItemPile(swordOfJustice, blooming, bandage, scrap);
+    expect(
+      pile
+        .filter((item) => item.itemGrade === 'Common')
+        .toArray()
+        .sort()
+    ).toStrictEqual([bandage, scrap].sort());
+  });
+
   test('add', () => {
     const pile = new ItemPile();
     pile.add(flower, 2.5);
@@ -36,6 +70,12 @@ describe('ItemPile', () => {
     expect(pile.toString()).toBe('[꽃(205102): 2, 고철(401106): 2]');
     pile.remove(scrap, 3);
     expect(pile.toString()).toBe('[꽃(205102): 2]');
+  });
+
+  test('setter getter', () => {
+    const pile = new ItemPile();
+    pile.set(flower, 3);
+    expect(pile.get(flower)).toBe(3);
   });
 
   test('toString', () => {
