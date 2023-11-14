@@ -217,6 +217,6 @@ export class ItemPile {
   }
 
   public isEmpty() {
-    return Object.keys(this.data).length === 0;
+    return this.data.size === 0;
   }
 }
