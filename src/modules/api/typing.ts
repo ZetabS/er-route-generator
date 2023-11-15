@@ -34,58 +34,80 @@ export interface AreaData {
   collectableItems: number[];
 }
 
-export type ItemGrade = 'Common' | 'Uncommon' | 'Rare' | 'Epic' | 'Legend';
+export const ItemGrade = {
+  Common: 'Common',
+  Uncommon: 'Uncommon',
+  Rare: 'Rare',
+  Epic: 'Epic',
+  Legend: 'Legend'
+} as const;
+export type ItemGrade = keyof typeof ItemGrade;
+export const ItemGrades: readonly ItemGrade[] = Object.values(ItemGrade);
 
-export type ItemType =
-  | 'Armor'
-  | 'Weapon'
-  | 'Consume'
-  | 'Misc'
-  | 'DnaBracelet'
-  | 'EscapeMaterial'
-  | 'EscapeKey'
-  | 'EscapeQualification'
-  | 'Special';
+export const ItemType = {
+  Armor: 'Armor',
+  Weapon: 'Weapon',
+  Consume: 'Consume',
+  Misc: 'Misc',
+  DnaBracelet: 'DnaBracelet',
+  EscapeMaterial: 'EscapeMaterial',
+  EscapeKey: 'EscapeKey',
+  EscapeQualification: 'EscapeQualification',
+  Special: 'Special'
+} as const;
+export type ItemType = keyof typeof ItemType;
+export const ItemTypes: readonly ItemType[] = Object.values(ItemType);
 
-export type SubType =
-  | 'Head'
-  | 'Chest'
-  | 'Arm'
-  | 'Leg'
-  | 'OneHandSword'
-  | 'TwoHandSword'
-  | 'DualSword'
-  | 'Hammer'
-  | 'Axe'
-  | 'Spear'
-  | 'Bat'
-  | 'Whip'
-  | 'Glove'
-  | 'Tonfa'
-  | 'HighAngleFire'
-  | 'DirectFire'
-  | 'Bow'
-  | 'CrossBow'
-  | 'Pistol'
-  | 'AssaultRifle'
-  | 'SniperRifle'
-  | 'Nunchaku'
-  | 'Rapier'
-  | 'Guitar'
-  | 'Camera'
-  | 'Arcana'
-  | 'VFArm'
-  | 'Beverage'
-  | 'SpecialBeverage'
-  | 'SpecialFood'
-  | 'Food'
-  | 'Bounty'
-  | 'Material'
-  | 'None'
-  | 'Summon'
-  | 'GhostItem';
+export const SubType = {
+  Head: 'Head',
+  Chest: 'Chest',
+  Arm: 'Arm',
+  Leg: 'Leg',
+  OneHandSword: 'OneHandSword',
+  TwoHandSword: 'TwoHandSword',
+  DualSword: 'DualSword',
+  Hammer: 'Hammer',
+  Axe: 'Axe',
+  Spear: 'Spear',
+  Bat: 'Bat',
+  Whip: 'Whip',
+  Glove: 'Glove',
+  Tonfa: 'Tonfa',
+  HighAngleFire: 'HighAngleFire',
+  DirectFire: 'DirectFire',
+  Bow: 'Bow',
+  CrossBow: 'CrossBow',
+  Pistol: 'Pistol',
+  AssaultRifle: 'AssaultRifle',
+  SniperRifle: 'SniperRifle',
+  Nunchaku: 'Nunchaku',
+  Rapier: 'Rapier',
+  Guitar: 'Guitar',
+  Camera: 'Camera',
+  Arcana: 'Arcana',
+  VFArm: 'VFArm',
+  Beverage: 'Beverage',
+  SpecialBeverage: 'SpecialBeverage',
+  SpecialFood: 'SpecialFood',
+  Food: 'Food',
+  Bounty: 'Bounty',
+  Material: 'Material',
+  None: 'None',
+  Summon: 'Summon',
+  GhostItem: 'GhostItem'
+} as const;
+export type SubType = keyof typeof SubType;
+export const SubTypes: readonly SubType[] = Object.values(SubType);
 
-export type EquipType = 'Weapon' | 'Head' | 'Chest' | 'Arm' | 'Leg';
+export const EquipType = {
+  Weapon: 'Weapon',
+  Head: 'Head',
+  Chest: 'Chest',
+  Arm: 'Arm',
+  Leg: 'Leg'
+} as const;
+export type EquipType = keyof typeof EquipType;
+export const EquipTypes: readonly EquipType[] = Object.values(EquipType);
 
 export interface ItemData {
   code: number;

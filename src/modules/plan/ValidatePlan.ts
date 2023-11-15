@@ -1,10 +1,10 @@
 import type { Area, Item } from '@/modules/api';
 import { ItemPile } from '@/modules/plan/ItemPile';
 import { getState, getSubItems } from '@/modules/plan/utils';
-import { ItemGrade } from '@/modules/api/enums';
 import { Inventory } from '@/modules/plan/Inventory';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import { PlanState } from '@/modules/plan/Plan';
+import { ItemGrade } from '@/modules/api/typing';
 
 export function validatePlan(targetItems: Item[], _route: Area[]): [PlanState[], boolean] {
   const planStates: PlanState[] = [];

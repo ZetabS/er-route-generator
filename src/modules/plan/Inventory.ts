@@ -1,67 +1,42 @@
-import { Slot, EquipmentSlot } from '@/modules/plan/Slot';
 import { Item } from '@/modules/api';
+import { EquipType, EquipTypes } from '@/modules/api/typing';
+
+function getSlotCount(item: Item, quantity: number) {
+  return Math.ceil(quantity / item.stackable);
+}
 
 export class Inventory {
-  private readonly slots: Slot[];
-  private readonly equipmentSlots: Record<string, EquipmentSlot>;
+  private readonly slots: Map<Item, number> = new Map<Item, number>();
+  private readonly equipmentSlots: Map<EquipType, Item> = new Map<EquipType, Item>();
+  private slotCount: number = 0;
 
   constructor(...items: Item[]) {
-    this.slots = [];
-
-    for (let i = 0; i < 10; i++) {
-      this.slots.push(new Slot());
+    for (const item of items) {
+      this.add(item);
     }
-
-    this.equipmentSlots = {
-      Weapon: new EquipmentSlot('Weapon'),
-      Chest: new EquipmentSlot('Chest'),
-      Head: new EquipmentSlot('Head'),
-      Arm: new EquipmentSlot('Arm'),
-      Leg: new EquipmentSlot('Leg')
-    };
-
-    items.forEach((item: Item) => this.add(item));
   }
 
   public toString(): string {
-    const slotStrings = this.slots
-      .sort((a, b) => {
-        if (!a.item && !b.item) {
-          return 0;
-        }
-        if (!a.item) {
-          return -1;
-        }
-        if (!b.item) {
-          return 1;
-        }
+    const slotEntries: [Item, number][] = [];
+    for (const entry of this.slots.entries()) {
+      slotEntries.push(entry);
+    }
 
-        if (a.item.equals(b.item)) {
-          return a.quantity - b.quantity;
-        }
-
-        return a.item.code - b.item.code;
-      })
-      .reduce((strings: string[], slot, index) => {
-        const item = slot.item;
-        if (item) {
-          strings.push(`Slot ${index + 1}: ${item}: ${slot.quantity}`);
-        }
-        return strings;
-      }, []);
-
-    const equipmentStrings = ['Weapon', 'Chest', 'Head', 'Arm', 'Leg'].reduce(
-      (strings: string[], slotName: string) => {
-        const item = this.equipmentSlots[slotName].item;
-        if (item) {
-          strings.push(`${slotName}: ${item}`);
-        } else {
-          strings.push(`${slotName}: Empty`);
-        }
-        return strings;
-      },
-      []
+    slotEntries.sort(([aItem, aQuantity], [bItem, bQuantity]) =>
+      aItem.equals(bItem) ? aQuantity - bQuantity : aItem.code - bItem.code
     );
+
+    let slotStrings = [];
+    for (let i = 0; i < slotEntries.length; i++) {
+      const [item, quantity] = slotEntries[i];
+      slotStrings.push(`Slot ${i + 1}: ${item}: ${quantity}`);
+    }
+
+    let equipmentStrings = [];
+    for (let i = 0; i < EquipTypes.length; i++) {
+      const item = this.equipmentSlots.get(EquipTypes[i]);
+      equipmentStrings.push(`${EquipTypes[i]}: ${item ? item : 'Empty'}`);
+    }
 
     return (
       `Inventory[\n` +
@@ -72,17 +47,27 @@ export class Inventory {
   }
 
   add(item: Item, quantity: number = 1): boolean {
-    if (item.equipType) {
-      const slot: EquipmentSlot = this.equipmentSlots[item.equipType];
-      if (slot.canAdd(item)) {
-        slot.add(item);
-        return true;
-      }
+    if (quantity === 1 && item.equipType && !this.equipmentSlots.has(item.equipType)) {
+      this.equipmentSlots.set(item.equipType, item);
+      return true;
     }
 
-    for (const slot of this.slots) {
-      if (slot.canAdd(item, quantity)) {
-        slot.add(item, quantity);
+    if (this.slots.has(item)) {
+      const prevQuantity = this.slots.get(item) as number;
+      const newQuantity = prevQuantity + quantity;
+      const prevSlotCount = getSlotCount(item, prevQuantity);
+      const newSlotCount = this.slotCount - prevSlotCount + getSlotCount(item, newQuantity);
+
+      if (newSlotCount <= 10) {
+        this.slots.set(item, newQuantity);
+        this.slotCount = newSlotCount;
+        return true;
+      }
+    } else {
+      const newSlotCount = this.slotCount + getSlotCount(item, quantity);
+      if (newSlotCount <= 10) {
+        this.slots.set(item, quantity);
+        this.slotCount = newSlotCount;
         return true;
       }
     }
@@ -91,16 +76,26 @@ export class Inventory {
   }
 
   remove(item: Item, quantity: number = 1): boolean {
-    if (item.equipType) {
-      const slot: EquipmentSlot = this.equipmentSlots[item.equipType];
-      if (slot.has(item)) {
-        slot.remove();
-        return true;
-      }
+    if (quantity === 1 && item.equipType && this.equipmentSlots.get(item.equipType)?.equals(item)) {
+      this.equipmentSlots.delete(item.equipType);
+      return true;
     }
-    for (const slot of this.slots) {
-      if (slot.has(item)) {
-        slot.remove(quantity);
+
+    if (this.slots.has(item)) {
+      const prevQuantity = this.slots.get(item) as number;
+      const newQuantity = prevQuantity - quantity;
+      if (newQuantity === 0) {
+        this.slots.delete(item);
+        return true;
+      } else if (newQuantity < 0) {
+        return false;
+      }
+      const prevSlotCount = getSlotCount(item, prevQuantity);
+      const newSlotCount = this.slotCount - prevSlotCount + getSlotCount(item, newQuantity);
+
+      if (newSlotCount <= 10) {
+        this.slots.set(item, newQuantity);
+        this.slotCount = newSlotCount;
         return true;
       }
     }
@@ -108,71 +103,28 @@ export class Inventory {
     return false;
   }
 
-  canAdd(item: Item, quantity: number = 1): boolean {
-    if (quantity === 1) {
-      return (
-        (item.equipType && this.equipmentSlots[item.equipType].isEmpty()) ||
-        this.slots.some((slot) => slot.canAdd(item))
-      );
-    } else {
-      return this.slots.some((slot) => slot.canAdd(item, quantity));
-    }
-  }
-
   has(item: Item): boolean {
     return (
-      this.slots.some((slot) => slot.has(item)) ||
-      Object.values(this.equipmentSlots).some((slot) => slot.has(item))
-    );
-  }
-
-  isFull(): boolean {
-    return (
-      this.slots.every((slot) => slot.isFull) &&
-      Object.values(this.equipmentSlots).every((slot) => slot.isFull)
-    );
-  }
-
-  isEmpty(): boolean {
-    return (
-      this.slots.every((slot) => slot.isEmpty()) &&
-      Object.values(this.equipmentSlots).every((slot) => slot.isEmpty())
+      this.slots.has(item) ||
+      !!(item.equipType && this.equipmentSlots.get(item.equipType)?.equals(item))
     );
   }
 
   toArray(): Item[] {
     const items: Item[] = [];
-    this.slots.forEach((slot: Slot) => {
-      if (slot.item) {
-        for (let i = 0; i < slot.quantity; i++) {
-          items.push(slot.item);
-        }
+    for (const [item, quantity] of this.slots) {
+      for (let i = 0; i < quantity; i++) {
+        items.push(item);
       }
-    });
+    }
 
-    Object.values(this.equipmentSlots).forEach((slot: EquipmentSlot) => {
-      if (slot.item) {
-        items.push(slot.item);
-      }
-    });
+    for (const [, item] of this.equipmentSlots) {
+      items.push(item);
+    }
     return items;
   }
 
   clone() {
-    const inventory = new Inventory();
-    this.slots.forEach((slot) => {
-      if (slot.item) {
-        for (let i = 0; i < slot.quantity; i++) {
-          inventory.add(slot.item);
-        }
-      }
-    });
-
-    Object.values(this.equipmentSlots).forEach((slot) => {
-      if (slot.item) {
-        inventory.add(slot.item);
-      }
-    });
-    return inventory;
+    return new Inventory(...this.toArray());
   }
 }
