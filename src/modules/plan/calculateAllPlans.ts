@@ -1,7 +1,7 @@
 import { Plan } from '@/modules/plan';
 import { Area, AREA, Item } from '@/modules/api';
 import { ItemPile } from '@/modules/plan/ItemPile';
-import { ItemGrade } from '@/modules/api/typing';
+import { ItemGrade } from '@/modules/api/enums';
 
 export type Route = Area[];
 

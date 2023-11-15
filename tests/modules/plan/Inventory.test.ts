@@ -47,6 +47,15 @@ describe('Inventory', () => {
     expect(inventory.toArray().sort()).toStrictEqual([scrap, needle, bandage, flower].sort());
   });
 
+  test('Inventory canAdd', () => {
+    const inventory = new Inventory();
+    expect(inventory.add(flower)).toBe(true);
+    expect(inventory.add(flower)).toBe(true);
+    expect(inventory.add(needle)).toBe(true);
+    expect(inventory.add(robe)).toBe(true);
+    expect(inventory.canAdd(flower)).toBe(true);
+  });
+
   test('Inventory remove', () => {
     const inventory = new Inventory(flower, needle);
     inventory.remove(flower);

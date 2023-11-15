@@ -1,4 +1,5 @@
+import { Slot, EquipmentSlot } from './Slot';
 import { Inventory } from './Inventory';
 import { Plan } from './Plan';
 
-export { Inventory, Plan };
+export { Slot, EquipmentSlot, Inventory, Plan };
