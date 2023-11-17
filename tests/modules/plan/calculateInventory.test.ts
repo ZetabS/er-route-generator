@@ -1,15 +1,10 @@
 import { PlanState } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan';
-import { AREA, Area, AREA_BY_NAME, ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
+import { Area, AREA_BY_NAME, ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
-import {
-  getState,
-  getSubItems,
-  type SeparatedMaterials,
-  separateMaterialsByRequirement
-} from '@/modules/plan/utils';
+import { getState, getSubItems } from '@/modules/plan/utils';
 import { ItemPile } from '@/modules/plan/ItemPile';
-import { ItemGrade } from '@/modules/api/enums';
+import { ItemGrade } from '@/modules/api/typing';
 
 describe('calculateInventory', () => {
   const swordOfJustice: Item = ITEM[120302];
@@ -56,20 +51,43 @@ describe('calculateInventory', () => {
       false
     );
 
-    expect(result?.inventory.toString()).toBe(
-      `Inventory[
-Slot: [Slot 6: 가위(101101): 1, Slot 7: 붕대(203102): 1, Slot 8: 가죽(401103): 2, Slot 9: 고철(401106): 1, Slot 10: 배터리(401110): 1],
-Equipment: [Weapon: 바늘(120101), Chest: Empty, Head: Empty, Arm: 붕대(203102), Leg: Empty]
-]`
+    expect(result?.remainRequiredMaterials.toArray()).toStrictEqual([]);
+    expect(result?.remainOptionalMaterials.toArray()).toStrictEqual([]);
+    expect(result?.addedItems.toArray().sort()).toStrictEqual(
+      [
+        ITEM_BY_NAME['가위'],
+        ITEM_BY_NAME['붕대'],
+        ITEM_BY_NAME['붕대'],
+        ITEM_BY_NAME['가죽'],
+        ITEM_BY_NAME['가죽'],
+        ITEM_BY_NAME['고철'],
+        ITEM_BY_NAME['배터리'],
+        ITEM_BY_NAME['바늘']
+      ].sort()
+    );
+    expect(result?.inventory.toArray().sort()).toStrictEqual(
+      [
+        ITEM_BY_NAME['가위'],
+        ITEM_BY_NAME['붕대'],
+        ITEM_BY_NAME['붕대'],
+        ITEM_BY_NAME['가죽'],
+        ITEM_BY_NAME['가죽'],
+        ITEM_BY_NAME['고철'],
+        ITEM_BY_NAME['배터리'],
+        ITEM_BY_NAME['바늘']
+      ].sort()
     );
 
     const [craftedResult]: [State | undefined, boolean] = calculateInventory(initialState, true);
-    console.log(craftedResult?.toString());
-    expect(craftedResult?.inventory.toString()).toBe(
-      `Inventory[
-Slot: [Slot 7: 가위(101101): 1, Slot 8: 브레이서(203203): 1, Slot 9: 가죽(401103): 1, Slot 10: 배터리(401110): 1],
-Equipment: [Weapon: 레이피어(120201), Chest: Empty, Head: Empty, Arm: 붕대(203102), Leg: Empty]
-]`
+    expect(craftedResult?.inventory.toArray().sort()).toStrictEqual(
+      [
+        ITEM_BY_NAME['가위'],
+        ITEM_BY_NAME['붕대'],
+        ITEM_BY_NAME['가죽'],
+        ITEM_BY_NAME['배터리'],
+        ITEM_BY_NAME['레이피어'],
+        ITEM_BY_NAME['브레이서']
+      ].sort()
     );
   });
 });

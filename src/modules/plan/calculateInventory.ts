@@ -101,27 +101,24 @@ export function calculateInventory(
 function addItem(stack: State[], state: State): boolean {
   let found = false;
 
+  let nextState: State = state.clone();
   for (const [material] of state.remainRequiredMaterials) {
-    if (state.inventory.canAdd(material)) {
-      const nextState: State = state.clone();
-
+    if (nextState.inventory.add(material)) {
       nextState.remainRequiredMaterials.remove(material);
-      nextState.inventory.add(material);
       nextState.addedItems.add(material);
       stack.push(nextState);
       found = true;
+      nextState = state.clone();
     }
   }
 
   for (const [material] of state.remainOptionalMaterials) {
-    if (state.inventory.canAdd(material)) {
-      const nextState: State = state.clone();
-
+    if (nextState.inventory.add(material)) {
       nextState.remainOptionalMaterials.remove(material);
-      nextState.inventory.add(material);
       nextState.addedItems.add(material);
       stack.push(nextState);
       found = true;
+      nextState = state.clone();
     }
   }
 
@@ -163,14 +160,13 @@ function craftItem(stack: State[], state: State): boolean {
       continue;
     }
 
-    if (!nextState.inventory.canAdd(craftingItem)) {
+    const calculatedQuantity = Math.min(craftingItem.initialCount, Math.max(quantity, 1));
+
+    if (!nextState.inventory.add(craftingItem, calculatedQuantity)) {
       continue;
     }
 
-    const calculatedQuantity = Math.min(craftingItem.initialCount, Math.max(quantity, 1));
     nextState.craftingItems.remove(craftingItem, calculatedQuantity);
-
-    nextState.inventory.add(craftingItem, calculatedQuantity);
     nextState.addedItems.add(craftingItem, calculatedQuantity);
 
     stack.push(nextState);
