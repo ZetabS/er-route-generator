@@ -2,8 +2,8 @@ import { Item } from '@/modules/api';
 import { EquipType, EquipTypes } from '@/modules/api/typing';
 
 export class Inventory {
-  private readonly slots: Map<Item, number> = new Map<Item, number>();
-  private readonly equipmentSlots: Map<EquipType, Item> = new Map<EquipType, Item>();
+  private readonly slots: Map<Item, number>;
+  private readonly equipmentSlots: Map<EquipType, Item>;
   private usedSlotCount: number = 0;
 
   constructor(
@@ -49,17 +49,17 @@ export class Inventory {
   }
 
   toArray(): Item[] {
-    const items: Item[] = [];
+    const array: Item[] = [];
     for (const [item, quantity] of this.slots) {
       for (let i = 0; i < quantity; i++) {
-        items.push(item);
+        array.push(item);
       }
     }
 
     for (const [, item] of this.equipmentSlots) {
-      items.push(item);
+      array.push(item);
     }
-    return items;
+    return array;
   }
 
   clone() {
