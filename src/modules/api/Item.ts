@@ -1,6 +1,7 @@
-import type { EquipType, ItemData, ItemGrade, ItemType, SubType } from './typing';
+import type { ItemData } from './types';
 import { itemData } from './data';
 import { ItemPile } from '@/modules/plan/ItemPile';
+import { EquipType, ItemGrade, ItemType, SubType } from '@/modules/api/enums';
 
 export class Item {
   private readonly index: number;
@@ -91,8 +92,8 @@ export class Item {
   }
 }
 
-export const ITEM: Record<string | number, Item> = {};
-export const ITEM_BY_NAME: Record<string | number, Item> = {};
+export const ITEM: Record<number, Item> = {};
+export const ITEM_BY_NAME: Record<string, Item> = {};
 
 itemData.forEach((rawItem, index) => {
   const item = new Item(index);
@@ -174,8 +175,8 @@ export class Recipe {
   }
 }
 
-export const RECIPE: Record<string | number, Recipe> = {};
-export const RECIPE_BY_NAME: Record<string | number, Recipe> = {};
+export const RECIPE: Record<number, Recipe> = {};
+export const RECIPE_BY_NAME: Record<string, Recipe> = {};
 
 itemData.forEach((rawItem, index) => {
   if (rawItem.makeMaterial1) {

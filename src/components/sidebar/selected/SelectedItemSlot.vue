@@ -4,11 +4,14 @@ import DeselectItemButton from './DeselectItemButton.vue';
 import SelectItemPopup from './popup/SelectItemPopup.vue';
 import { computed, ref } from 'vue';
 import { useSelectedStore } from '@/stores/selected';
-const props = defineProps(['slotType']);
-const selectedStore = useSelectedStore();
+
+import { EquipType } from '@/modules/api/enums';
+
+const props = defineProps<{ slotType: EquipType }>();
+const selected = useSelectedStore();
 
 const imgPath = import.meta.env.BASE_URL + `images/equipable-type/${props.slotType}.webp`;
-const isItemSelected = computed(() => selectedStore.items[props.slotType]);
+const selectedItem = computed(() => selected.items[props.slotType]);
 const isPopupOpen = ref(false);
 
 function closePopup() {
@@ -19,11 +22,11 @@ function closePopup() {
 <template>
   <div class="item-slot" :id="`item-slot-${slotType.toLowerCase()}`">
     <div class="background" @click="isPopupOpen = true">
-      <img v-if="!isItemSelected" :src="imgPath" :alt="slotType" />
-      <ItemIcon v-if="isItemSelected" :item="selectedStore.items[slotType]" :size="3" />
+      <img v-if="!selectedItem" :src="imgPath" :alt="slotType" />
+      <ItemIcon v-if="selectedItem" :item="selectedItem" :size="3" />
       <div class="overlay"></div>
     </div>
-    <DeselectItemButton v-if="isItemSelected" :slotType="slotType" :size="18" />
+    <DeselectItemButton v-if="selectedItem" :slotType="slotType" :size="18" />
   </div>
   <SelectItemPopup v-if="isPopupOpen" :slotType="slotType" :closePopup="closePopup" />
 </template>

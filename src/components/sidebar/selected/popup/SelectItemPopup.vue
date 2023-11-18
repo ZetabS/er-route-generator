@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectItemButton from './SelectItemButton.vue';
-import type { Item } from '@/modules/api/typing';
+import type { Item } from '@/modules/api/types';
 import { itemData } from '@/modules/api/data/itemData';
 import { useSelectedStore } from '@/stores/selected';
 import { computed } from 'vue';
+
 const selected = useSelectedStore();
 
 const props = defineProps(['slotType', 'closePopup']);

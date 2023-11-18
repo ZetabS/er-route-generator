@@ -1,38 +1,43 @@
-import { computed, ComputedRef, ref, type Ref, UnwrapRef } from 'vue';
+import { computed, reactive, ref } from 'vue';
+import type { ComputedRef, Ref, UnwrapRef } from 'vue';
 import { defineStore } from 'pinia';
-import { ITEM, Item } from '@/modules/api';
+import { type Item, ITEM_BY_NAME } from '@/modules/api';
 
-interface Items {
-  Weapon?: Item;
-  Chest?: Item;
-  Head?: Item;
-  Arm?: Item;
-  Leg?: Item;
-}
+import { EquipType, EquipTypes } from '@/modules/api/enums';
 
 export const useSelectedStore = defineStore('selected', () => {
   const weaponType: Ref<string> = ref('Rapier');
 
-  const items: Ref<UnwrapRef<Record<string, Item>>> = ref({
-    Weapon: ITEM['활빈검'],
-    Chest: ITEM['지휘관의 갑옷'],
-    Head: ITEM['황실 부르고넷'],
-    Arm: ITEM['드라우프니르'],
-    Leg: ITEM['SCV']
+  const items: Record<EquipType, Item> = reactive({
+    Weapon: ITEM_BY_NAME['활빈검'],
+    Chest: ITEM_BY_NAME['지휘관의 갑옷'],
+    Head: ITEM_BY_NAME['황실 부르고넷'],
+    Arm: ITEM_BY_NAME['드라우프니르'],
+    Leg: ITEM_BY_NAME['SCV']
   });
 
-  const itemsArray: ComputedRef<Item[]> = computed(
-    () => Object.values(items.value).filter((item) => !!item) as Item[]
+  const itemsArray: ComputedRef<UnwrapRef<Item[]>> = computed(() =>
+    EquipTypes.reduce(
+      (result: Item[], equipType: EquipType) => result.concat([items.value[equipType]]),
+      []
+    )
   );
 
-  function deselectItem(slotType: string) {
-    items.value[slotType] = undefined;
+  function selectItem(item: Item) {
+    if (item.equipType) {
+      items.value[item.equipType] = item;
+    }
+  }
+
+  function deselectItem(equipType: EquipType) {
+    delete items.value[equipType];
   }
 
   return {
     items,
     itemsArray,
     weaponType,
+    selectItem,
     deselectItem
   };
 });

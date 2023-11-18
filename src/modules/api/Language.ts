@@ -1,4 +1,4 @@
-import type { LanguageData } from './typing';
+import type { LanguageData } from './types';
 import { koreanRawData } from './data';
 
 export const koreanData: LanguageData = parseLanguageData(koreanRawData);

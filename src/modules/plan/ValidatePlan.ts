@@ -4,7 +4,8 @@ import { getState, getSubItems } from '@/modules/plan/utils';
 import { Inventory } from '@/modules/plan/Inventory';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import { PlanState } from '@/modules/plan/Plan';
-import { ItemGrade } from '@/modules/api/typing';
+
+import { ItemGrade } from '@/modules/api/enums';
 
 export function validatePlan(targetItems: Item[], _route: Area[]): [PlanState[], boolean] {
   const planStates: PlanState[] = [];

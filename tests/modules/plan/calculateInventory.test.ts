@@ -4,7 +4,8 @@ import { Area, AREA_BY_NAME, ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import { getState, getSubItems } from '@/modules/plan/utils';
 import { ItemPile } from '@/modules/plan/ItemPile';
-import { ItemGrade } from '@/modules/api/typing';
+
+import { ItemGrade } from '@/modules/api/enums';
 
 describe('calculateInventory', () => {
   const swordOfJustice: Item = ITEM[120302];

@@ -2,7 +2,8 @@
 import SidebarWrapper from '@/components/wrapper/SidebarWrapper.vue';
 import SelectedWeaponTypeSlot from './SelectedWeaponTypeSlot.vue';
 import SelectedItemSlot from './SelectedItemSlot.vue';
-import { equipableItemTypes as slotTypes } from '@/common/enums';
+
+import { EquipTypes as slotTypes } from '@/modules/api/enums';
 </script>
 
 <template>

@@ -3,7 +3,8 @@ import { getState, getSubItems, separateMaterialsByRequirement } from '@/modules
 import { ItemPile } from '@/modules/plan/ItemPile';
 import { PlanState } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan';
-import { ItemGrade } from '@/modules/api/typing';
+
+import { ItemGrade } from '@/modules/api/enums';
 
 describe('plan/utils', () => {
   const swordOfJustice: Item = ITEM[120302];

@@ -1,4 +1,4 @@
-import type { AreaData, ItemSpawnData } from './typing';
+import type { AreaData, ItemSpawnData } from './types';
 import { areaData } from './data';
 import { Item, ITEM } from '@/modules/api/Item';
 import { ItemPile } from '@/modules/plan/ItemPile';
