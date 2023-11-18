@@ -47,7 +47,7 @@ describe('plan/utils', () => {
   });
 
   test('separateMaterialsByRequirement', () => {
-    const remainMaterials = new ItemPile(bandage, robe, tights, leather);
+    const remainMaterials = new ItemPile([bandage, robe, tights, leather]);
 
     const separatedMaterials = separateMaterialsByRequirement(
       remainMaterials,

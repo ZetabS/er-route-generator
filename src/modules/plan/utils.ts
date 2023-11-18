@@ -15,7 +15,9 @@ export function getSubItems(targetItems: Item[]) {
 }
 
 export function getMaterialsInArea(remainMaterials: ItemPile, area: Area): ItemPile {
-  return remainMaterials.intersection(area.areaItems);
+  return remainMaterials
+    .intersection(area.areaItems)
+    .map((item, quantity) => [item, Math.ceil(quantity)]);
 }
 
 export interface SeparatedMaterials {

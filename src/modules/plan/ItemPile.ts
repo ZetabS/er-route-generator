@@ -1,10 +1,14 @@
 import { ITEM, Item } from '@/modules/api';
 
 export class ItemPile {
-  private data: Map<Item, number> = new Map<Item, number>();
+  private readonly data: Map<Item, number>;
 
-  constructor(...items: Item[]) {
-    items.forEach((item) => this.add(item));
+  constructor(items: Item[] = [], data: Map<Item, number> = new Map<Item, number>()) {
+    this.data = data;
+
+    for (const item of items) {
+      this.add(item);
+    }
   }
 
   public toString(): string {
@@ -13,22 +17,13 @@ export class ItemPile {
       entries.push([item.code, quantity]);
     }
 
+    entries.sort(([a], [b]) => a - b);
+
     const itemsString = entries
-      .sort(([a], [b]) => a - b)
       .map(([itemCode, quantity]) => `${ITEM[itemCode]}: ${quantity}`)
       .join(', ');
 
     return `[${itemsString}]`;
-  }
-
-  public hashCode(): number {
-    let hash = 0;
-
-    for (const [item, quantity] of this.data.entries()) {
-      hash += item.code * 101 + quantity;
-    }
-
-    return hash;
   }
 
   public toArray(): Item[] {
@@ -39,6 +34,16 @@ export class ItemPile {
       }
     }
     return array;
+  }
+
+  public hash(): number {
+    let hash = 0;
+
+    for (const [item, quantity] of this.data.entries()) {
+      hash += item.code * 101 + quantity;
+    }
+
+    return hash;
   }
 
   public get length(): number {
@@ -53,6 +58,10 @@ export class ItemPile {
     return count;
   }
 
+  public isEmpty() {
+    return this.data.size === 0;
+  }
+
   public forEach(callback: (item: Item, quantity: number) => void) {
     for (const [item, quantity] of this.data.entries()) {
       callback(item, quantity);
@@ -63,29 +72,7 @@ export class ItemPile {
     return this.data.entries();
   }
 
-  public every(callback: (item: Item, quantity: number) => boolean): boolean {
-    for (const [item, quantity] of this.data.entries()) {
-      for (let i = 0; i < quantity; i++) {
-        if (!callback(item, quantity)) {
-          return false;
-        }
-      }
-    }
-    return true;
-  }
-
-  public some(callback: (item: Item, quantity: number) => boolean): boolean {
-    for (const [item, quantity] of this.data.entries()) {
-      for (let i = 0; i < quantity; i++) {
-        if (callback(item, quantity)) {
-          return true;
-        }
-      }
-    }
-    return false;
-  }
-
-  public filter(callback: (item: Item, quantity: number) => boolean) {
+  public filter(callback: (item: Item, quantity: number) => boolean): ItemPile {
     const filteredPile = new ItemPile();
     for (const [item, quantity] of this.data.entries()) {
       if (callback(item, quantity)) {
@@ -114,48 +101,71 @@ export class ItemPile {
   }
 
   public clone(): ItemPile {
-    const clonedPile = new ItemPile();
-    for (const [item, quantity] of this.data.entries()) {
-      clonedPile.data.set(item, quantity);
+    return new ItemPile([], new Map(this.data));
+  }
+
+  public add(item: Item, quantity: number = 1): boolean {
+    if (quantity <= 0) {
+      throw Error('Quantity must be a positive number');
     }
-    return clonedPile;
+
+    const currentQuantity = this.data.get(item) || 0;
+    const updatedQuantity = currentQuantity + quantity;
+
+    this.data.set(item, updatedQuantity);
+    return true;
   }
 
-  public add(item: Item, quantity: number = 1) {
-    const prev = this.data.get(item);
-    this.data.set(item, (prev ? prev : 0) + quantity);
-  }
-
-  public remove(item: Item, quantity: number = 1) {
-    const prev = this.data.get(item);
-    if (prev) {
-      if (prev > quantity) {
-        this.data.set(item, prev - quantity);
-      } else {
-        this.data.delete(item);
-      }
+  public remove(item: Item, quantity: number = 1): boolean {
+    if (quantity <= 0) {
+      throw Error('Quantity must be a positive number');
     }
-  }
 
-  public set(item: Item, quantity: number) {
-    if (quantity > 0) {
-      this.data.set(item, quantity);
-    } else {
+    const currentQuantity = this.data.get(item) || 0;
+    const updatedQuantity = currentQuantity - quantity;
+
+    if (updatedQuantity < 0) {
+      throw Error('Cannot remove more items than are currently in pile');
+    }
+
+    if (updatedQuantity <= 0) {
       this.data.delete(item);
+      return true;
     }
+
+    this.data.set(item, updatedQuantity);
+    return true;
+  }
+
+  public set(item: Item, quantity: number): ItemPile {
+    if (quantity < 0) {
+      throw Error('Quantity must be a non-negative number');
+    }
+
+    if (quantity === 0) {
+      this.data.delete(item);
+      return this;
+    }
+
+    this.data.set(item, quantity);
+    return this;
   }
 
   public get(item: Item): number | undefined {
     return this.data.get(item);
   }
 
+  public delete(item: Item): boolean {
+    return this.data.delete(item);
+  }
+
   public has(item: Item, quantity: number = 1): boolean {
-    const current = this.data.get(item);
-    return !!current && current >= quantity;
+    const currentQuantity = this.data.get(item) || 0;
+    return currentQuantity >= quantity;
   }
 
   public includesAll(otherPile: ItemPile): boolean {
-    for (const [item, quantity] of this) {
+    for (const [item, quantity] of this.data.entries()) {
       if (!otherPile.has(item, quantity)) {
         return false;
       }
@@ -167,9 +177,9 @@ export class ItemPile {
     const newPile = this.clone();
 
     for (const [item, quantity] of otherPile) {
-      const prev = newPile.get(item);
-      if (prev) {
-        newPile.set(item, Math.max(prev, quantity));
+      const currentQuantity = newPile.get(item);
+      if (currentQuantity) {
+        newPile.set(item, Math.max(currentQuantity, quantity));
       } else {
         newPile.set(item, quantity);
       }
@@ -181,9 +191,9 @@ export class ItemPile {
     const newPile = new ItemPile();
 
     for (const [item, quantity] of this) {
-      const prev = otherPile.get(item);
-      if (prev) {
-        newPile.set(item, Math.min(prev, quantity));
+      const currentQuantity = otherPile.get(item);
+      if (currentQuantity) {
+        newPile.set(item, Math.min(currentQuantity, quantity));
       }
     }
     return newPile;
@@ -193,9 +203,9 @@ export class ItemPile {
     const newPile = this.clone();
 
     for (const [item, quantity] of otherPile) {
-      const prev = newPile.get(item);
-      if (prev) {
-        newPile.set(item, Math.max(prev - quantity, 0));
+      const currentQuantity = newPile.get(item);
+      if (currentQuantity) {
+        newPile.set(item, Math.max(currentQuantity - quantity, 0));
       }
     }
     return newPile;
@@ -205,18 +215,14 @@ export class ItemPile {
     const newPile = this.clone();
 
     for (const [item, quantity] of otherPile) {
-      const prev = newPile.get(item);
-      if (prev) {
-        newPile.set(item, Math.abs(prev - quantity));
+      const currentQuantity = newPile.get(item);
+      if (currentQuantity) {
+        newPile.set(item, Math.abs(currentQuantity - quantity));
       } else {
         newPile.set(item, quantity);
       }
     }
 
     return newPile;
-  }
-
-  public isEmpty() {
-    return this.data.size === 0;
   }
 }

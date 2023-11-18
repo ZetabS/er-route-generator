@@ -15,14 +15,14 @@ describe('ItemPile', () => {
   test('constructor', () => {
     const pile1 = new ItemPile();
     expect(pile1.toString()).toBe('[]');
-    const pile2 = new ItemPile(flower);
+    const pile2 = new ItemPile([flower]);
     expect(pile2.toString()).toBe('[꽃(205102): 1]');
   });
 
   test('hashCode', () => {
     const pile1 = new ItemPile();
-    const pile2 = new ItemPile(flower);
-    expect(pile1.hashCode() === pile2.hashCode()).toBeFalsy();
+    const pile2 = new ItemPile([flower]);
+    expect(pile1.hash()).not.toBe(pile2.hash());
   });
 
   test('length', () => {
@@ -44,7 +44,7 @@ describe('ItemPile', () => {
   });
 
   test('filter', () => {
-    const pile = new ItemPile(swordOfJustice, blooming, bandage, scrap);
+    const pile = new ItemPile([swordOfJustice, blooming, bandage, scrap]);
     expect(
       pile
         .filter((item) => item.itemGrade === 'Common')
@@ -68,8 +68,7 @@ describe('ItemPile', () => {
     pile.add(scrap, 2);
     pile.remove(flower, 1);
     expect(pile.toString()).toBe('[꽃(205102): 2, 고철(401106): 2]');
-    pile.remove(scrap, 3);
-    expect(pile.toString()).toBe('[꽃(205102): 2]');
+    expect(() => pile.remove(scrap, 3)).toThrowError();
   });
 
   test('setter getter', () => {
@@ -94,7 +93,7 @@ describe('ItemPile', () => {
   });
 
   test('merge', () => {
-    const pile1 = new ItemPile(scrap);
+    const pile1 = new ItemPile([scrap]);
     pile1.add(flower, 0.5);
     const pile2 = new ItemPile();
     pile2.add(bandage, 1.5);

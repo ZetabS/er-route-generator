@@ -58,7 +58,7 @@ export function calculateInventory(
 
   while (stack.length > 0) {
     const state: State = stack.pop() as State;
-    const stateString = state.addedItems.hashCode();
+    const stateString = state.addedItems.hash();
 
     if (memoizationTable[stateString]) {
       continue;
