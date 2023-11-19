@@ -63,6 +63,34 @@ export const SubType = {
 export type SubType = keyof typeof SubType;
 export const SubTypes: readonly SubType[] = Object.values(SubType);
 
+export const WeaponType = {
+  OneHandSword: 'OneHandSword',
+  TwoHandSword: 'TwoHandSword',
+  DualSword: 'DualSword',
+  Hammer: 'Hammer',
+  Axe: 'Axe',
+  Spear: 'Spear',
+  Bat: 'Bat',
+  Whip: 'Whip',
+  Glove: 'Glove',
+  Tonfa: 'Tonfa',
+  HighAngleFire: 'HighAngleFire',
+  DirectFire: 'DirectFire',
+  Bow: 'Bow',
+  CrossBow: 'CrossBow',
+  Pistol: 'Pistol',
+  AssaultRifle: 'AssaultRifle',
+  SniperRifle: 'SniperRifle',
+  Nunchaku: 'Nunchaku',
+  Rapier: 'Rapier',
+  Guitar: 'Guitar',
+  Camera: 'Camera',
+  Arcana: 'Arcana',
+  VFArm: 'VFArm'
+} as const;
+export type WeaponType = keyof typeof WeaponType;
+export const WeaponTypes: readonly WeaponType[] = Object.values(WeaponType);
+
 export const EquipType = {
   Weapon: 'Weapon',
   Chest: 'Chest',
