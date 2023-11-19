@@ -5,3 +5,4 @@ export { queryLanguageData } from './Language';
 export type { Area, Item, LanguageData } from './types';
 export { EquipType, ItemGrade, ItemType, SubType } from './enums';
 export { EquipTypes, ItemGrades, ItemTypes, SubTypes } from './enums';
+export { ItemPile } from './ItemPile';
