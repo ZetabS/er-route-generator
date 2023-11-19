@@ -1,5 +1,5 @@
-import { Item } from '@/modules/api';
-import { EquipType, EquipTypes } from '@/modules/api/enums';
+import type { Item } from '@/modules/api';
+import { EquipType, EquipTypes } from '@/modules/api';
 
 export class Inventory {
   private readonly slots: Map<Item, number>;

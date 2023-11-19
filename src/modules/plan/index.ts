@@ -1,4 +1,2 @@
-import { Inventory } from './Inventory';
-import { Plan } from './Plan';
-
-export { Inventory, Plan };
+export { Inventory } from './Inventory';
+export { Plan } from './Plan';
