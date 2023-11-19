@@ -1,6 +1,6 @@
-import type { ItemData } from '@/modules/api/typing';
+import type { ItemData } from '@/modules/api/types';
 
-export const itemData: ItemData[] = [
+export const itemsData: ItemData[] = [
   {
     code: 201101,
     name: '머리띠',

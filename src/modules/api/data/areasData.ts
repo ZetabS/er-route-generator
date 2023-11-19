@@ -1,6 +1,6 @@
-import type { AreaData } from '@/modules/api/typing';
+import type { AreaData } from '@/modules/api/types';
 
-export const areaData: AreaData[] = [
+export const areasData: AreaData[] = [
   {
     code: 1,
     name: '항구',

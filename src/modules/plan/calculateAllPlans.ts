@@ -1,8 +1,10 @@
 import { Plan } from '@/modules/plan';
 import { Area, AREA, Item } from '@/modules/api';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import { ItemPile } from '@/modules/api/ItemPile';
 
 import { ItemGrade } from '@/modules/api/enums';
+
+import { getSubItems } from '@/modules/plan/utils';
 
 export type Route = Area[];
 
@@ -16,7 +18,7 @@ export function calculateAllPlans(targetItems: Item[], maxLength: number = 4): P
   const stack: RouteState[] = [];
   const initialRemainMaterials = targetItems
     .reduce((result, item) => {
-      return item.recipe ? result.merge(item.recipe.subItems) : result;
+      return item.materials ? result.merge(getSubItems(item)) : result;
     }, new ItemPile())
     .filter((item) => item.itemGrade === ItemGrade.Common);
 

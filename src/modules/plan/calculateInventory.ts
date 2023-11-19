@@ -1,6 +1,6 @@
 import { Item } from '@/modules/api';
 import { Inventory } from '@/modules/plan/Inventory';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import { ItemPile } from '@/modules/api/ItemPile';
 
 export class State {
   public inventory: Inventory;

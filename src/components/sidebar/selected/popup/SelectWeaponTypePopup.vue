@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectWeaponTypeButtonVue from './SelectWeaponTypeButton.vue';
-import { itemData } from '@/modules/api/data/itemData';
+import { itemsData } from '@/modules/api/data/itemsData';
 import type { Item } from '@/modules/api/types';
 
 const allWeaponTypes = [
   ...new Set(
-    itemData.filter((item: Item) => item.itemType === 'Weapon').map((item: Item) => item.subType)
+    itemsData.filter((item: Item) => item.itemType === 'Weapon').map((item: Item) => item.subType)
   )
 ];
 defineProps(['closePopup']);

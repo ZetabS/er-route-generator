@@ -1,9 +1,12 @@
-import type { AreaData, ItemSpawnData } from './types';
-import { areaData } from './data';
-import { Item, ITEM } from '@/modules/api/Item';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import type { Area, AreaData } from './types';
+import { areasData } from './data/areasData';
+import { ITEM } from '@/modules/api/Item';
+import { ItemPile } from '@/modules/api/ItemPile';
 
-export class Area {
+export const AREA: Record<string | number, Area> = {};
+export const AREA_BY_NAME: Record<string | number, Area> = {};
+
+class BaseArea implements Area {
   private readonly index: number;
   private readonly _name: string;
 
@@ -15,16 +18,12 @@ export class Area {
     this._name = this.data.name;
   }
 
-  equals(other: Area): boolean {
-    return this.index === other.index;
-  }
-
-  hashCode(): number {
-    return this.index * 5;
+  equals(other: any): boolean {
+    return this.index === other?.index && this.code === other?.code;
   }
 
   private get data(): AreaData {
-    return areaData[this.index];
+    return areasData[this.index];
   }
 
   get code(): number {
@@ -78,11 +77,9 @@ export class Area {
   }
 }
 
-export const AREA: Record<string | number, Area> = {};
-export const AREA_BY_NAME: Record<string | number, Area> = {};
-
-areaData.forEach((rawArea, index) => {
-  const item = new Area(index);
-  AREA[rawArea.code] = item;
-  AREA_BY_NAME[rawArea.name] = item;
-});
+for (const areaData of areasData) {
+  const index = areasData.indexOf(areaData);
+  const area = new BaseArea(index);
+  AREA[areaData.code] = area;
+  AREA_BY_NAME[areaData.name] = area;
+}

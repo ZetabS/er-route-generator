@@ -1,6 +1,6 @@
 import { Inventory } from './Inventory';
 import type { Area, Item } from '@/modules/api';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import { ItemPile } from '@/modules/api/ItemPile';
 import { validatePlan } from '@/modules/plan/ValidatePlan';
 
 export class PlanState {

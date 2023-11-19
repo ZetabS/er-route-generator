@@ -1,5 +1,7 @@
 import { ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import { ItemPile } from '@/modules/api/ItemPile';
+
+import { getSubItems } from '@/modules/plan/utils';
 
 describe('ItemPile', () => {
   const swordOfJustice: Item = ITEM[120302];
@@ -19,7 +21,7 @@ describe('ItemPile', () => {
     expect(pile2.toString()).toBe('[꽃(205102): 1]');
   });
 
-  test('hashCode', () => {
+  test('hash', () => {
     const pile1 = new ItemPile();
     const pile2 = new ItemPile([flower]);
     expect(pile1.hash()).not.toBe(pile2.hash());
@@ -105,7 +107,7 @@ describe('ItemPile', () => {
     expect(
       targetItems
         .reduce((result, item) => {
-          return result.merge(item.recipe?.subItems as ItemPile);
+          return result.merge(getSubItems(item));
         }, new ItemPile())
         .toString()
     ).toBe(

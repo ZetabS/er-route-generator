@@ -1,41 +1,26 @@
-import type { LanguageData } from './types';
-import { koreanRawData } from './data';
+import { koreanData } from './data/koreanData';
+import type { Key, LanguageData } from '@/modules/api/types';
 
-export const koreanData: LanguageData = parseLanguageData(koreanRawData);
+export const languageData: Record<string, LanguageData> = {
+  korean: koreanData
+};
 
-function parseLanguageData(text: string): LanguageData {
-  const lines = text.split('\r\n');
-  const data: Record<string, string> = {};
+export function queryLanguageData(query: string, lang: string = 'korean'): Record<Key, string> {
+  const selectedLanguageData = languageData[lang];
+  const starCount = query.split('*').length - 1;
 
-  for (const line of lines) {
-    const [key, value] = line.split('┃');
-    data[key] = value;
+  if (starCount !== 1) {
+    return undefined as any;
   }
 
-  return createLanguageProxy(data);
-}
+  const data: Record<string, string> = {};
+  const pattern = new RegExp(`^${query.replace('*', '([^/]+)')}$`);
 
-function createLanguageProxy(data: Record<string, string>): LanguageData {
-  return new Proxy(data, {
-    get(target: Record<string, string>, prop) {
-      if (typeof prop === 'string') {
-        if (prop.includes('*')) {
-          if (!prop.replace('*', '').includes('*')) {
-            const record: Record<string, string> = {};
-            for (const key in target) {
-              const pattern = new RegExp(`^${prop.replace(/\*/g, '([^/]*)')}$`);
-              record[key.replace(pattern, '$1:')] = target[key];
-            }
-            return record;
-          } else {
-            return undefined;
-          }
-        } else {
-          return target[prop];
-        }
-      } else {
-        return undefined;
-      }
+  for (const key in selectedLanguageData) {
+    const matched = key.match(pattern);
+    if (matched) {
+      data[matched[1]] = selectedLanguageData[key];
     }
-  });
+  }
+  return data;
 }

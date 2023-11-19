@@ -1,4 +1,4 @@
-import { AREA_BY_NAME, Item, ITEM, ITEM_BY_NAME } from '@/modules/api';
+import { AREA_BY_NAME, type Item, ITEM, ITEM_BY_NAME } from '@/modules/api';
 import { Plan } from '@/modules/plan/Plan';
 import v8Profiler from 'v8-profiler-next';
 import * as fs from 'fs';

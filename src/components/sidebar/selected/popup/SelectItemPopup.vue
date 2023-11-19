@@ -2,7 +2,7 @@
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectItemButton from './SelectItemButton.vue';
 import type { Item } from '@/modules/api/types';
-import { itemData } from '@/modules/api/data/itemData';
+import { itemsData } from '@/modules/api/data/itemsData';
 import { useSelectedStore } from '@/stores/selected';
 import { computed } from 'vue';
 
@@ -22,7 +22,7 @@ function compareItemType(itemType: string | number) {
   return (item: Item) => item.subType === itemType;
 }
 
-const filteredItemData: Item[] = itemData.filter(compareItemType(itemType.value));
+const filteredItemData: Item[] = itemsData.filter(compareItemType(itemType.value));
 </script>
 
 <template>

@@ -1,4 +1,5 @@
-import { ITEM, Item } from '@/modules/api';
+import { ITEM } from './Item';
+import type { Item } from '@/modules/api/types';
 
 export class ItemPile {
   private readonly data: Map<Item, number>;

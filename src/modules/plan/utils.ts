@@ -1,16 +1,34 @@
 import { Area, Item } from '@/modules/api';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import { ItemPile } from '@/modules/api/ItemPile';
 import { State } from '@/modules/plan/calculateInventory';
 import type { PlanState } from '@/modules/plan/Plan';
 
-export function getSubItems(targetItems: Item[]) {
-  return targetItems.reduce((itemPile: ItemPile, item: Item) => {
-    if (item.recipe) {
-      return itemPile.merge(item.recipe.subItems);
-    } else {
-      return itemPile;
+export function getSubItems(item: Item): ItemPile {
+  const result: ItemPile = new ItemPile();
+  const stack: [Item, number][] = [];
+  stack.push([item, 1]);
+
+  while (stack.length > 0) {
+    const [item, quantity] = stack.pop() as [Item, number];
+    result.add(item, quantity);
+    const material1 = item.material1;
+    const material2 = item.material2;
+
+    if (material1 && material2) {
+      const materialQuantity = quantity / item.initialCount;
+      stack.push([material1, materialQuantity]);
+      stack.push([material2, materialQuantity]);
     }
-  }, new ItemPile());
+  }
+
+  return result;
+}
+
+export function getSubItemsByTargetItems(targetItems: Item[]) {
+  return targetItems.reduce(
+    (itemPile: ItemPile, item: Item) => itemPile.merge(getSubItems(item)),
+    new ItemPile()
+  );
   // .map((i, q) => [i, Math.max(q, 1)]);
 }
 

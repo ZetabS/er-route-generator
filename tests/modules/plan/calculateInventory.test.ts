@@ -2,8 +2,8 @@ import { PlanState } from '@/modules/plan/Plan';
 import { Inventory } from '@/modules/plan';
 import { Area, AREA_BY_NAME, ITEM, Item, ITEM_BY_NAME } from '@/modules/api';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
-import { getState, getSubItems } from '@/modules/plan/utils';
-import { ItemPile } from '@/modules/plan/ItemPile';
+import { getState, getSubItemsByTargetItems } from '@/modules/plan/utils';
+import { ItemPile } from '@/modules/api/ItemPile';
 
 import { ItemGrade } from '@/modules/api/enums';
 
@@ -27,7 +27,7 @@ describe('calculateInventory', () => {
   ];
 
   test('calculateInventory', () => {
-    const initialSubMaterials: ItemPile = getSubItems(targetItems);
+    const initialSubMaterials: ItemPile = getSubItemsByTargetItems(targetItems);
     const initialRemainMaterials: ItemPile = initialSubMaterials.filter(
       (item: Item) => item.itemGrade === ItemGrade.Common
     );

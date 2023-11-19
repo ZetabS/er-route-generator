@@ -1,6 +1,6 @@
 import type { Area, Item } from '@/modules/api';
-import { ItemPile } from '@/modules/plan/ItemPile';
-import { getState, getSubItems } from '@/modules/plan/utils';
+import { ItemPile } from '@/modules/api/ItemPile';
+import { getState, getSubItemsByTargetItems } from '@/modules/plan/utils';
 import { Inventory } from '@/modules/plan/Inventory';
 import { calculateInventory, State } from '@/modules/plan/calculateInventory';
 import { PlanState } from '@/modules/plan/Plan';
@@ -10,7 +10,7 @@ import { ItemGrade } from '@/modules/api/enums';
 export function validatePlan(targetItems: Item[], _route: Area[]): [PlanState[], boolean] {
   const planStates: PlanState[] = [];
 
-  const initialSubMaterials: ItemPile = getSubItems(targetItems);
+  const initialSubMaterials: ItemPile = getSubItemsByTargetItems(targetItems);
   const initialRemainMaterials: ItemPile = initialSubMaterials.filter(
     (item: Item) => item.itemGrade === ItemGrade.Common
   );
