@@ -23,7 +23,7 @@ const plan = computed(() => {
       {{ plan.inventoryAt(num)?.toString() }}
       <item-icon
         v-for="item of plan.inventoryAt(num)?.toArray()"
-        :key="item"
+        :key="item.code"
         :item="item"
         :size="3"
       />

@@ -1,5 +1,6 @@
 import { calculateAllPlans } from '@/modules/plan/calculateAllPlans';
-import { Item, ITEM_BY_NAME } from '@/modules/api';
+import { ITEM_BY_NAME } from '@/modules/api';
+import type { Item } from '@/modules/api';
 import { Plan } from '@/modules/plan';
 import * as fs from 'fs';
 import v8Profiler from 'v8-profiler-next';

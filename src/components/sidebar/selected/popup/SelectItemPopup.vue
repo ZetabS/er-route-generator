@@ -1,28 +1,28 @@
 <script setup lang="ts">
+import { computed } from 'vue';
+import type { Ref } from 'vue';
 import PopupWrapper from '@/components/wrapper/PopupWrapper.vue';
 import SelectItemButton from './SelectItemButton.vue';
-import type { Item } from '@/modules/api/types';
-import { itemsData } from '@/modules/api/data/itemsData';
+import { ITEM } from '@/modules/api/';
+import type { Item, SubType } from '@/modules/api/';
 import { useSelectedStore } from '@/stores/selected';
-import { computed } from 'vue';
 
+const props = defineProps<{ slotType: SubType | 'Weapon'; closePopup: Function }>();
 const selected = useSelectedStore();
 
-const props = defineProps(['slotType', 'closePopup']);
-
-const itemType = computed(() => {
-  if (props.slotType == 'Weapon') {
+const itemType: Ref<SubType> = computed(() => {
+  if (props.slotType === 'Weapon') {
     return selected.weaponType;
   } else {
     return props.slotType;
   }
 });
 
-function compareItemType(itemType: string | number) {
+function compareItemType(itemType: SubType) {
   return (item: Item) => item.subType === itemType;
 }
 
-const filteredItemData: Item[] = itemsData.filter(compareItemType(itemType.value));
+const filteredItemData: Item[] = Object.values(ITEM).filter(compareItemType(itemType.value));
 </script>
 
 <template>
